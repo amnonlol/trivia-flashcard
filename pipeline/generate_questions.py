@@ -55,7 +55,12 @@ MEDIUM_LEN = 6000
 # Keep any single value ("Marines") from dominating a template, and any single
 # entity from spawning too many questions.
 MAX_PER_ANSWER = 6
-MAX_PER_ENTITY = 4
+MAX_PER_ENTITY = 6
+
+# Small-cardinality fields (a Devil Fruit *class* is one of only a handful of
+# values) legitimately answer many questions, so they get a looser per-answer cap
+# than name-shaped fields where MAX_PER_ANSWER prevents one crew swamping the bank.
+MAX_PER_ANSWER_CLASS = 30
 
 
 # --------------------------------------------------------------------------- #
@@ -110,6 +115,22 @@ def clean_name(v) -> str | None:
     return None
 
 
+def combined_df_name(english, romaji) -> str | None:
+    """Render a Devil Fruit as ``"English / Romaji"`` (e.g. ``"Gum-Gum Fruit /
+    Gomu Gomu no Mi"``).
+
+    Both halves are ``clean_name``-normalised (first listed value, translation
+    notes stripped). Falls back to whichever half exists, and drops the ``" / "``
+    when the two coincide so a fruit known only by its romaji doesn't read
+    ``"Gomu Gomu no Mi / Gomu Gomu no Mi"``.
+    """
+    eng = clean_name(english)
+    rom = clean_name(romaji)
+    if eng and rom and norm_key(eng) != norm_key(rom):
+        return f"{eng} / {rom}"
+    return eng or rom
+
+
 def clean_bounty(v) -> str | None:
     """Return a canonical ``"1,234 Berries"`` string, or None.
 
@@ -120,6 +141,28 @@ def clean_bounty(v) -> str | None:
         s = str(item).strip()
         if _BOUNTY.match(s) and len(s.replace(",", "")) >= 4:
             return f"{s} Berries"
+    return None
+
+
+_NIHONGO = re.compile(r"\{\{Nihongo\|([^|}]*)")
+
+
+def clean_epithet(v) -> str | None:
+    """Pull the display (English) epithet out of a ``{{Nihongo|...}}`` template.
+
+    Epithets are iconic ("Pirate Hunter", "God Enel") but the raw field is noisy:
+    only the templated ``{{Nihongo|"Chaser"|...}}`` form carries a clean English
+    string. Bare dub-note junk (``"(former)"``, ``"Beast Breaker (4Kids)"``) has no
+    ``Nihongo`` wrapper, so it never matches and is dropped — we keep quality high
+    at the cost of volume.
+    """
+    for item in as_list(v):
+        m = _NIHONGO.search(str(item))
+        if not m:
+            continue
+        e = strip_quals(m.group(1).replace('"', "").strip())
+        if e and len(e) > 1 and "{{{" not in e:
+            return e
     return None
 
 
@@ -217,8 +260,8 @@ def generate(by_kind):
 
     # Field pools (real values -> plausible distractors).
     pool_df_name = build_pool(
-        [c for c in chars if "dfename" in c["fields"]],
-        lambda c: clean_name(c["fields"]["dfename"]),
+        chars,
+        lambda c: combined_df_name(c["fields"].get("dfename"), c["fields"].get("dfname")),
     )
     pool_affiliation = build_pool(chars, lambda c: primary(c["fields"].get("affiliation")))
     pool_bounty = build_pool(chars, lambda c: clean_bounty(c["fields"].get("bounty")))
@@ -226,15 +269,19 @@ def generate(by_kind):
     pool_df_user = build_pool(fruits, lambda fr: clean_name(fr["fields"].get("user")))
     pool_df_type = build_pool(fruits, lambda fr: primary(fr["fields"].get("type")))
     pool_region = build_pool(locs, lambda l: primary(l["fields"].get("region")))
+    pool_residence = build_pool(chars, lambda c: primary(c["fields"].get("residence")))
+    pool_epithet = build_pool(chars, lambda c: clean_epithet(c["fields"].get("epithet")))
+    pool_df_meaning = build_pool(fruits, lambda fr: clean_name(fr["fields"].get("meaning")))
+    pool_loc_affil = build_pool(locs, lambda l: primary(l["fields"].get("affiliation")))
 
     out: list[dict] = []
     per_answer = Counter()
     per_entity = Counter()
 
-    def emit(entity, q):
+    def emit(entity, q, max_answer=MAX_PER_ANSWER):
         if q is None:
             return
-        if per_answer[(q["category"], norm_key(q["correct_answer"]))] >= MAX_PER_ANSWER:
+        if per_answer[(q["category"], norm_key(q["correct_answer"]))] >= max_answer:
             return
         if per_entity[entity] >= MAX_PER_ENTITY:
             return
@@ -251,7 +298,7 @@ def generate(by_kind):
         diff = difficulty(c.get("article_len", 0))
         src = c["source"]
 
-        df = clean_name(f["dfename"]) if "dfename" in f else None
+        df = combined_df_name(f.get("dfename"), f.get("dfname"))
         if df:
             emit(name, make_question(
                 name, f"Which Devil Fruit did {name} eat?", df, pool_df_name,
@@ -275,10 +322,22 @@ def generate(by_kind):
                 name, f"Where does {name} originate from?", origin, pool_origin,
                 rng, "Characters", diff, src))
 
+        residence = primary(f.get("residence"))
+        if residence:
+            emit(name, make_question(
+                name, f"Where does {name} reside?", residence, pool_residence,
+                rng, "Geography", diff, src))
+
+        epithet = clean_epithet(f.get("epithet"))
+        if epithet:
+            emit(name, make_question(
+                name, f"By what epithet is {name} known?", epithet, pool_epithet,
+                rng, "Characters", diff, src))
+
     # --- Devil Fruit templates ----------------------------------------------
     for fr in fruits:
         f = fr["fields"]
-        fruit_name = clean_name(f.get("ename")) or fr["title"]
+        fruit_name = combined_df_name(f.get("ename"), f.get("rname") or fr["title"])
         diff = difficulty(fr.get("article_len", 0))
         src = fr["source"]
 
@@ -292,17 +351,30 @@ def generate(by_kind):
         if dtype and dtype.lower() != "unknown":
             emit(fr["title"], make_question(
                 fr["title"], f"What type of Devil Fruit is the {fruit_name}?",
-                dtype, pool_df_type, rng, "Devil Fruits", diff, src))
+                dtype, pool_df_type, rng, "Devil Fruits", diff, src),
+                max_answer=MAX_PER_ANSWER_CLASS)
+
+        meaning = clean_name(f.get("meaning"))
+        if meaning:
+            emit(fr["title"], make_question(
+                fr["title"], f"What does the name of the {fruit_name} translate to?",
+                meaning, pool_df_meaning, rng, "Devil Fruits", diff, src))
 
     # --- Location templates --------------------------------------------------
     for l in locs:
         f = l["fields"]
+        diff = difficulty(l.get("article_len", 0))
         region = primary(f.get("region"))
         if region:
-            diff = difficulty(l.get("article_len", 0))
             emit(l["title"], make_question(
                 l["title"], f"In which region of the world is {l['title']} located?",
                 region, pool_region, rng, "Geography", diff, l["source"]))
+
+        affil = primary(f.get("affiliation"))
+        if affil:
+            emit(l["title"], make_question(
+                l["title"], f"Which faction is {l['title']} affiliated with?",
+                affil, pool_loc_affil, rng, "Crews & Organizations", diff, l["source"]))
 
     return out
 
