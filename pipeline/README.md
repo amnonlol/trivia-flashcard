@@ -41,9 +41,39 @@ Outputs (under `../wiki-data/`, **gitignored** — large, regenerable):
 
 Per CLAUDE.md: work from this cache; don't re-hit the network during normal dev.
 
-## Next (Phase 3, not built yet)
+## Phase 3 — parse infoboxes → facts (done by `parse_wiki.py`)
 
-- `parse_wiki.py` — stream the XML (`lxml.iterparse`), parse infobox templates
-  with `mwparserfromhell` → `wiki-data/facts.jsonl` (one entity per line).
+```powershell
+py pipeline/parse_wiki.py                 # full dump -> wiki-data/facts.jsonl
+py pipeline/parse_wiki.py --limit 20000   # first N pages only (dev)
+```
+
+Streams the XML (`lxml.iterparse`) and pulls infobox templates out of each page
+with `mwparserfromhell`, cleaning wiki markup (`{{Qref}}` citations, `[[links]]`,
+`{{Nihongo}}`/`{{W}}`/`{{B}}`, `<br/>`, `'' ''`) down to plain values. Scans both
+article (ns 0) and template (ns 10) namespaces — major characters (Straw Hats,
+headline villains) hide their `{{Char Box}}` inside `Template:<Name> Tabs Top`,
+keyed by a `root =` param that names the real article.
+
+Infoboxes extracted → `kind`: `Char Box`→character, `Devil Fruit Box`→devil_fruit,
+`Island Box`→location, `Chapter Box`→chapter, `Episode Box`→episode.
+
+Output `../wiki-data/facts.jsonl` (**gitignored**, regenerable), one entity per line:
+
+```json
+{"title": "Monkey D. Luffy", "kind": "character", "tabbed": true,
+ "source": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy", "article_len": 32264,
+ "fields": {"bounty": ["3,000,000,000", "1,500,000,000", …], "origin": "East Blue (Foosha Village)",
+            "dfname": ["Gomu Gomu no Mi", …], "occupation": "Pirate Captain; Emperor; …", …}}
+```
+
+`fields` values are a `str` (single value) or `list[str]` when the wiki listed
+several with `<br/>` (e.g. bounty history, newest first; ages across timeskips).
+`article_len` is the prominence proxy for the difficulty heuristic. Latest full
+run: **5398 entities** — 2375 character, 1218 episode, 1203 chapter, 394 location,
+208 devil_fruit.
+
+## Next (Phase 3, remaining)
+
 - `generate_questions.py` — deterministic template MCQs + same-category distractors.
 - `validate.py` — schema / 4-options / dedupe → `app/public/data/questions.json`.
