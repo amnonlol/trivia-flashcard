@@ -5,6 +5,11 @@ const DIFFICULTY = [
     value: '0',
   },
   {
+    key: 'adaptive',
+    text: 'Adaptive (match my skill)',
+    value: 'adaptive',
+  },
+  {
     key: 'easy',
     text: 'Easy',
     value: 'easy',

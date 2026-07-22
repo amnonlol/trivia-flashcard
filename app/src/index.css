@@ -1,1 +1,554 @@
 @import url(../node_modules/semantic-ui-css/semantic.min.css);
+
+/* ---------------------------------------------------------------------------
+   One Piece Trivia — mobile-first design layer
+   Sits on top of Semantic UI to give the app a cleaner, phone-friendly look
+   (chip selectors, cards, big tap targets, iPhone safe-area insets).
+--------------------------------------------------------------------------- */
+
+:root {
+  --op-accent: #e2001a;
+  --op-accent-ink: #ffffff;
+  --op-bg: #eaeef4;
+  --op-card: #ffffff;
+  --op-ink: #12151c;
+  --op-muted: #6b7280;
+  --op-border: #e5e8ee;
+  --op-chip-bg: #f2f4f8;
+  --op-radius: 18px;
+  --op-shadow: 0 10px 30px rgba(20, 25, 40, 0.08);
+  --op-good: #21ba45;
+  --op-bad: #db2828;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --op-bg: #0e1117;
+    --op-card: #171b23;
+    --op-ink: #eef1f6;
+    --op-muted: #9aa4b2;
+    --op-border: #262c38;
+    --op-chip-bg: #1f2530;
+    --op-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--op-bg);
+  color: var(--op-ink);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ---- Layout shell -------------------------------------------------------- */
+
+.op-shell {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: calc(env(safe-area-inset-top) + 12px)
+    max(16px, env(safe-area-inset-right)) calc(env(safe-area-inset-bottom) + 24px)
+    max(16px, env(safe-area-inset-left));
+}
+
+.op-card {
+  background: var(--op-card);
+  border: 1px solid var(--op-border);
+  border-radius: var(--op-radius);
+  box-shadow: var(--op-shadow);
+  padding: 20px;
+}
+
+/* ---- Hero ---------------------------------------------------------------- */
+
+.op-hero {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.op-hero img {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+}
+
+.op-hero h1 {
+  font-size: 1.5rem;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--op-ink);
+}
+
+.op-hero p {
+  margin: 2px 0 0;
+  color: var(--op-muted);
+  font-size: 0.9rem;
+}
+
+/* ---- Profile summary line ----------------------------------------------- */
+
+.op-profile {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 0.88rem;
+  color: var(--op-muted);
+}
+
+.op-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+/* ---- Fields + chip selectors -------------------------------------------- */
+
+.op-field {
+  margin-top: 22px;
+}
+
+.op-field-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--op-muted);
+  margin-bottom: 10px;
+}
+
+.op-field-hint {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: var(--op-muted);
+}
+
+.op-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.op-chip {
+  appearance: none;
+  border: 1.5px solid var(--op-border);
+  background: var(--op-chip-bg);
+  color: var(--op-ink);
+  padding: 9px 15px;
+  min-height: 42px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.12s ease, border-color 0.12s ease;
+}
+
+.op-chip:active {
+  transform: scale(0.95);
+}
+
+.op-chip.selected {
+  background: var(--op-accent);
+  border-color: var(--op-accent);
+  color: var(--op-accent-ink);
+  box-shadow: 0 4px 12px rgba(226, 0, 26, 0.32);
+}
+
+.op-chip:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---- Primary action button ---------------------------------------------- */
+
+.op-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  background: var(--op-accent);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(226, 0, 26, 0.38);
+  transition: transform 0.1s ease, opacity 0.12s ease;
+}
+
+.op-play:active {
+  transform: scale(0.99);
+}
+
+.op-play:disabled {
+  opacity: 0.45;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* Secondary action: drill the questions you've missed. */
+.op-review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 13px;
+  border: 1.5px solid var(--op-border);
+  border-radius: 14px;
+  background: var(--op-chip-bg);
+  color: var(--op-ink);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease, border-color 0.12s ease;
+}
+
+.op-review:active {
+  transform: scale(0.99);
+}
+
+.op-review:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* ---- Weak-area dashboard (per-category accuracy) ------------------------- */
+
+.op-catstats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 14px;
+  border: 1px solid var(--op-border);
+  border-radius: 12px;
+  background: var(--op-chip-bg);
+}
+
+.op-catstat {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 34% auto;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.op-catstat-name {
+  font-weight: 600;
+  color: var(--op-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.op-catstat-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--op-border);
+  overflow: hidden;
+}
+
+.op-catstat-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--op-accent);
+  transition: width 0.3s ease;
+}
+
+.op-catstat-pct {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--op-ink);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.op-catstat-pct small {
+  font-weight: 500;
+  color: var(--op-muted);
+}
+
+/* ---- Quiz screen --------------------------------------------------------- */
+
+.op-quiz-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.op-quiz-count {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--op-muted);
+}
+
+.op-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--op-border);
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.op-progress > span {
+  display: block;
+  height: 100%;
+  background: var(--op-accent);
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}
+
+.op-question {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: -0.01em;
+  margin: 0 0 18px;
+  color: var(--op-ink);
+}
+
+.op-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.op-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  background: var(--op-chip-bg);
+  border: 1.5px solid var(--op-border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  min-height: 56px;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--op-ink);
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.12s ease, border-color 0.12s ease;
+}
+
+.op-option:not(:disabled):active {
+  transform: scale(0.99);
+}
+
+.op-option:disabled {
+  cursor: default;
+}
+
+.op-option .op-letter {
+  flex: 0 0 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: var(--op-card);
+  border: 1.5px solid var(--op-border);
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.op-option .op-mark {
+  margin-left: auto;
+  font-size: 1.1rem;
+}
+
+.op-option.op-dimmed {
+  opacity: 0.5;
+}
+
+.op-option.op-dontknow {
+  color: var(--op-muted);
+  font-style: italic;
+  justify-content: center;
+  min-height: 48px;
+}
+
+/* Mock-Event mode: the picked option gets a neutral accent highlight (no
+   correct/wrong colour — that's withheld until the results screen). */
+.op-option.op-selected {
+  background: var(--op-chip-bg);
+  border-color: var(--op-accent) !important;
+  box-shadow: 0 0 0 1.5px var(--op-accent) inset;
+}
+
+/* Reveal + flash states (buttons keep their tint until auto-advance). */
+.op-reveal-correct,
+.op-flash-green {
+  background: #e7f8ec !important;
+  border-color: var(--op-good) !important;
+  color: #0f5132 !important;
+}
+
+.op-reveal-wrong,
+.op-flash-red {
+  background: #fdeaea !important;
+  border-color: var(--op-bad) !important;
+  color: #842029 !important;
+}
+
+.op-flash-green {
+  animation: opFlashGreen 1.3s ease-in-out;
+}
+
+.op-flash-red {
+  animation: opFlashRed 1.3s ease-in-out;
+}
+
+@keyframes opFlashGreen {
+  0%,
+  100% {
+    background-color: #e7f8ec;
+  }
+  20%,
+  60% {
+    background-color: var(--op-good);
+    color: #fff;
+  }
+}
+
+@keyframes opFlashRed {
+  0%,
+  100% {
+    background-color: #fdeaea;
+  }
+  20%,
+  60% {
+    background-color: var(--op-bad);
+    color: #fff;
+  }
+}
+
+/* ---- Answer feedback panel ---------------------------------------------- */
+
+.op-feedback {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.op-feedback .op-fb-icon {
+  font-size: 1.3rem;
+  flex: 0 0 auto;
+}
+
+.op-feedback strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.op-feedback a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.op-feedback.correct {
+  background: #e7f8ec;
+  color: #0f5132;
+}
+
+.op-feedback.wrong {
+  background: #fdeaea;
+  color: #842029;
+}
+
+.op-feedback.idk {
+  background: #fff6e0;
+  color: #7a5b00;
+}
+
+/* ---- Quiz nav ------------------------------------------------------------ */
+
+.op-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.op-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid var(--op-border);
+  background: var(--op-card);
+  color: var(--op-ink);
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.12s ease;
+}
+
+.op-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.op-nav-btn.primary {
+  background: var(--op-accent);
+  border-color: var(--op-accent);
+  color: #fff;
+}
+
+/* Compact countdown pill used inside the quiz header. */
+.op-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--op-chip-bg);
+  border: 1.5px solid var(--op-border);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.95rem;
+  color: var(--op-ink);
+}
+
+.op-timer.low {
+  background: #fdeaea;
+  border-color: var(--op-bad);
+  color: #842029;
+}

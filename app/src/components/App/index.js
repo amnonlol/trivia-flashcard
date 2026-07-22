@@ -6,24 +6,26 @@ import Main from '../Main';
 import Quiz from '../Quiz';
 import Result from '../Result';
 
-import { shuffle } from '../../utils';
+import { shuffle, getActiveProfileId, recordAnswers } from '../../utils';
 
 const App = () => {
   const [loading, setLoading] = useState(false);
   const [loadingMessage, setLoadingMessage] = useState(null);
   const [data, setData] = useState(null);
   const [countdownTime, setCountdownTime] = useState(null);
+  const [eventMode, setEventMode] = useState(false);
   const [isQuizStarted, setIsQuizStarted] = useState(false);
   const [isQuizCompleted, setIsQuizCompleted] = useState(false);
   const [resultData, setResultData] = useState(null);
 
-  const startQuiz = (data, countdownTime) => {
+  const startQuiz = (data, countdownTime, isEvent = false) => {
     setLoading(true);
     setLoadingMessage({
       title: 'Loading your quiz...',
       message: "It won't be long!",
     });
     setCountdownTime(countdownTime);
+    setEventMode(isEvent);
 
     setTimeout(() => {
       setData(data);
@@ -39,10 +41,18 @@ const App = () => {
       message: 'Just a moment!',
     });
 
+    // Persist this round into the active profile's progress (localStorage).
+    // recordAnswers returns how many questions newly reached mastery so the
+    // Result screen can celebrate it. No-ops safely if there's no profile.
+    const newlyMastered = recordAnswers(
+      getActiveProfileId(),
+      resultData.questionsAndAnswers
+    );
+
     setTimeout(() => {
       setIsQuizStarted(false);
       setIsQuizCompleted(true);
-      setResultData(resultData);
+      setResultData({ ...resultData, newlyMastered });
       setLoading(false);
     }, 2000);
   };
@@ -93,7 +103,12 @@ const App = () => {
         <Main startQuiz={startQuiz} />
       )}
       {!loading && isQuizStarted && (
-        <Quiz data={data} countdownTime={countdownTime} endQuiz={endQuiz} />
+        <Quiz
+          data={data}
+          countdownTime={countdownTime}
+          eventMode={eventMode}
+          endQuiz={endQuiz}
+        />
       )}
       {!loading && isQuizCompleted && (
         <Result {...resultData} replayQuiz={replayQuiz} resetQuiz={resetQuiz} />

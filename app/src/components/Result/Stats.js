@@ -9,6 +9,7 @@ const Stats = ({
   totalQuestions,
   correctAnswers,
   timeTaken,
+  newlyMastered,
   replayQuiz,
   resetQuiz,
 }) => {
@@ -36,6 +37,13 @@ const Stats = ({
       <Header as="h3" textAlign="center" block>
         Passing Score: 60%
       </Header>
+      {newlyMastered > 0 && (
+        <Header as="h3" textAlign="center" color="green" block>
+          🏴‍☠️ Mastered this round: {newlyMastered}
+          {newlyMastered === 1 ? ' question' : ' questions'} — you won't be
+          quizzed on {newlyMastered === 1 ? 'it' : 'them'} again
+        </Header>
+      )}
       <Header as="h3" textAlign="center" block>
         Time Taken:{' '}
         {`${Number(hours)}h ${Number(minutes)}m ${Number(seconds)}s`}
@@ -69,6 +77,7 @@ Stats.propTypes = {
   totalQuestions: PropTypes.number.isRequired,
   correctAnswers: PropTypes.number.isRequired,
   timeTaken: PropTypes.number.isRequired,
+  newlyMastered: PropTypes.number,
   replayQuiz: PropTypes.func.isRequired,
   resetQuiz: PropTypes.func.isRequired,
 };

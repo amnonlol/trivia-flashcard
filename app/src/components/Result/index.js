@@ -10,6 +10,7 @@ const Result = ({
   correctAnswers,
   timeTaken,
   questionsAndAnswers,
+  newlyMastered,
   replayQuiz,
   resetQuiz,
 }) => {
@@ -38,6 +39,7 @@ const Result = ({
           totalQuestions={totalQuestions}
           correctAnswers={correctAnswers}
           timeTaken={timeTaken}
+          newlyMastered={newlyMastered}
           replayQuiz={replayQuiz}
           resetQuiz={resetQuiz}
         />
@@ -53,6 +55,7 @@ Result.propTypes = {
   correctAnswers: PropTypes.number.isRequired,
   timeTaken: PropTypes.number.isRequired,
   questionsAndAnswers: PropTypes.array.isRequired,
+  newlyMastered: PropTypes.number,
   replayQuiz: PropTypes.func.isRequired,
   resetQuiz: PropTypes.func.isRequired,
 };

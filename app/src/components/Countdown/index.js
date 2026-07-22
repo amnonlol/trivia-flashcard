@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Button, Popup } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import Swal from 'sweetalert2';
-
-import { timeConverter } from '../../utils';
 
 const Countdown = ({ countdownTime, timeOver, setTimeTaken }) => {
   // No countdown selected → run as a count-up stopwatch so the quiz never
@@ -11,7 +9,6 @@ const Countdown = ({ countdownTime, timeOver, setTimeTaken }) => {
   const isCountUp = countdownTime === 0;
   const totalTime = countdownTime * 1000;
   const [timerTime, setTimerTime] = useState(isCountUp ? 0 : totalTime);
-  const { hours, minutes, seconds } = timeConverter(timerTime);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -46,24 +43,19 @@ const Countdown = ({ countdownTime, timeOver, setTimeTaken }) => {
     // eslint-disable-next-line
   }, [timerTime]);
 
+  // Compact mm:ss pill. Counts up when there's no timer, counts down otherwise
+  // and turns red in the final 30 seconds.
+  const totalSeconds = Math.max(0, Math.round(timerTime / 1000));
+  const mm = Math.floor(totalSeconds / 60);
+  const ss = totalSeconds % 60;
+  const label = `${mm}:${String(ss).padStart(2, '0')}`;
+  const low = !isCountUp && timerTime <= 30000;
+
   return (
-    <Button.Group size="massive" basic floated="right">
-      <Popup
-        content="Hours"
-        trigger={<Button active>{hours}</Button>}
-        position="bottom left"
-      />
-      <Popup
-        content="Minutes"
-        trigger={<Button active>{minutes}</Button>}
-        position="bottom left"
-      />
-      <Popup
-        content="Seconds"
-        trigger={<Button active>{seconds}</Button>}
-        position="bottom left"
-      />
-    </Button.Group>
+    <span className={`op-timer${low ? ' low' : ''}`}>
+      <Icon name={isCountUp ? 'stopwatch' : 'clock outline'} fitted />
+      {label}
+    </span>
   );
 };
 
