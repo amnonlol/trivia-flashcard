@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "A mobile-friendly One Piece trivia flash-card PWA. Forked from SafdarJamal/quiz-app (MIT).",
-  "homepage": ".",
+  "homepage": "https://amnonlol.github.io/trivia-flashcard",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
