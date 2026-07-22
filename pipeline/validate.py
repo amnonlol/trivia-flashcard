@@ -50,6 +50,15 @@ VALID_CATEGORIES = {
 }
 SOURCE_RE = re.compile(r"^https://onepiece\.fandom\.com/wiki/.+")
 
+# Real-world / publishing / meta tokens that are never valid in-world answers.
+# Kept in sync with generate_questions.py's META_NOISE so a regression there is
+# caught here instead of shipping.
+META_NOISE = {
+    "bandai", "toei", "toeianimation", "4kids", "funimation", "shueisha",
+    "viz", "vizmedia", "namco", "bandainamco", "crunchyroll", "netflix",
+    "space", "n/a", "na", "unknown", "none", "various", "other",
+}
+
 
 def norm_key(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", str(s).lower())
@@ -102,6 +111,17 @@ def validate_one(q: dict) -> str | None:
         for j in range(i + 1, len(options)):
             if near_dupe(options[i], options[j]):
                 return f"near-duplicate options: {options[i]!r} ~ {options[j]!r}"
+
+    # No option may be a meta/real-world value or an un-split comma list. A
+    # comma-*space* (e.g. "Red Arrows Pirates, The Four Wise Men") signals parse
+    # noise; bounties like "1,234 Berries" use commas *without* a space, and Zoan
+    # Devil Fruit names use a canonical ", Model: X" qualifier — both are legit and
+    # exempted, so this only fires on un-split multi-entity lists.
+    for opt in options:
+        if norm_key(opt) in META_NOISE:
+            return f"meta/real-world option: {opt!r}"
+        if ", " in str(opt) and ", Model:" not in str(opt):
+            return f"comma-joined list option: {opt!r}"
     return None
 
 

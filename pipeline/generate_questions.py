@@ -48,14 +48,43 @@ DEFAULT_OUT = WIKI_DATA_DIR / "questions.generated.json"
 # option order is stable per question regardless of generation order.
 SEED = 20260722
 
-# article_len prominence proxy -> difficulty tier (see parse_wiki.py).
-EASY_LEN = 20000
-MEDIUM_LEN = 6000
+# Subject-prominence tiers from the article-length proxy (see parse_wiki.py).
+# Prominence is what makes a fact "easy" at a trivia event — everyone knows Luffy's
+# Devil Fruit; almost no one knows a one-off marine's residence.
+PROMINENT_LEN = 20000   # tier 2: headline characters / fruits / locations
+KNOWN_LEN = 6000        # tier 1: recurring supporting cast
 
-# Keep any single value ("Marines") from dominating a template, and any single
-# entity from spawning too many questions.
+# The event core: names everyone is expected to know, pinned to the top prominence
+# tier regardless of the length proxy (some huge pages are split across tabs, which
+# deflates the raw article_len). Single-word keys match a whole word in the title;
+# multi-word keys match as a substring — see is_must_know().
+MUST_KNOW = {
+    "luffy", "zoro", "nami", "usopp", "sanji", "chopper", "robin", "franky",
+    "brook", "jinbe", "jimbei", "shanks", "buggy", "kaido", "kaidou", "linlin",
+    "teach", "newgate", "roger", "rayleigh", "garp", "sengoku", "kuzan", "aokiji",
+    "borsalino", "kizaru", "sakazuki", "akainu", "mihawk", "doflamingo",
+    "crocodile", "ace", "sabo", "dragon", "hancock", "kuma", "moria", "oden",
+    "yamato", "vivi", "koby", "smoker", "enel", "arlong", "katakuri", "marco",
+    "vegapunk", "carrot", "momonosuke", "perona", "bartolomeo", "bellamy",
+    "big mom", "boa hancock", "trafalgar", "eustass kid", "bon clay",
+    "jewelry bonney", "gecko moria", "portgas d", "monkey d", "roronoa",
+}
+_MUST_MULTI = {k for k in MUST_KNOW if " " in k}
+_MUST_SINGLE = {k for k in MUST_KNOW if " " not in k}
+
+# Per-prominence cap on how many questions one entity may spawn. Famous subjects
+# carry more of the bank (they have more headline facts worth knowing); one-off
+# entities are limited so they can't flood it as they do today.
+ENTITY_CAP = {2: 10, 1: 5, 0: 2}
+
+# No single question template may exceed this many questions, so the bank stays
+# varied instead of ~40% "which crew is X affiliated with?". Because entities are
+# processed most-prominent-first, the slots fill with the famous subjects and the
+# trimmed tail is the least-prominent ones.
+MAX_PER_TEMPLATE = 300
+
+# Keep any single value ("Marines") from dominating a template.
 MAX_PER_ANSWER = 6
-MAX_PER_ENTITY = 6
 
 # Small-cardinality fields (a Devil Fruit *class* is one of only a handful of
 # values) legitimately answer many questions, so they get a looser per-answer cap
@@ -70,6 +99,17 @@ MAX_PER_ANSWER_CLASS = 30
 _PAREN = re.compile(r"\s*\([^()]*\)")          # balanced "(VIZ)", "(former)" ...
 _DANGLE = re.compile(r"\s*\(.*$")               # unbalanced "(Ryugu Kingdom" -> ""
 _BOUNTY = re.compile(r"^[\d,]+$")               # a bare comma-grouped number
+
+# Real-world / publishing / meta tokens that leak in from non-canon subjects
+# (card-game mascots, license notes) and make nonsensical distractors like
+# "Bandai" as a character's origin. Matched on norm_key so punctuation/casing
+# don't matter. Kept deliberately small and unambiguous — anything here is never
+# an in-world One Piece answer.
+META_NOISE = {
+    "bandai", "toei", "toeianimation", "4kids", "funimation", "shueisha",
+    "viz", "vizmedia", "namco", "bandainamco", "crunchyroll", "netflix",
+    "space", "n/a", "na", "unknown", "none", "various", "other",
+}
 
 
 def as_list(v):
@@ -92,18 +132,26 @@ def strip_quals(s: str) -> str:
 
 
 def primary(v) -> str | None:
-    """First listed value, first ``;``-separated clause, no qualifiers.
+    """First listed value, first clause, no qualifiers.
 
     Used for affiliation / occupation / origin / region where the source packs a
-    primary value plus history: ``"Marines; G-2"`` -> ``"Marines"``. Parentheses
-    are stripped *before* the ``;`` split so ``"Grand Line (Ryugu Kingdom; ...)"``
-    reduces cleanly to ``"Grand Line"``.
+    primary value plus history: ``"Marines; G-2"`` -> ``"Marines"``. We split on
+    both ``;`` and ``,`` because the source mixes the two separators
+    (``"Marines, Marine 77th Branch"`` -> ``"Marines"``); keeping the comma tail
+    would produce distractors like ``"Red Arrows Pirates, The Four Wise Men"`` that
+    read as parse noise. Parentheses are stripped *before* the split so
+    ``"Grand Line (Ryugu Kingdom; ...)"`` reduces cleanly to ``"Grand Line"``.
     """
     for item in as_list(v):
-        head = strip_quals(item).split(";")[0].strip()
+        head = re.split(r"[;,]", strip_quals(item))[0].strip()
         if head and head.lower() != "none":
             return head
     return None
+
+
+def is_noise(value) -> bool:
+    """True for real-world/meta values that are never a valid in-world answer."""
+    return not value or norm_key(value) in META_NOISE
 
 
 def clean_name(v) -> str | None:
@@ -166,10 +214,36 @@ def clean_epithet(v) -> str | None:
     return None
 
 
-def difficulty(article_len: int) -> str:
-    if article_len >= EASY_LEN:
+def is_must_know(title: str) -> bool:
+    """True for the curated event-core names (see ``MUST_KNOW``)."""
+    t = title.lower()
+    if any(k in t for k in _MUST_MULTI):
+        return True
+    tokens = set(re.findall(r"[a-z]+", t))
+    return bool(tokens & _MUST_SINGLE)
+
+
+def prominence(title: str, article_len: int) -> int:
+    """Subject fame tier: 2 (headline), 1 (recurring), 0 (obscure)."""
+    if is_must_know(title) or article_len >= PROMINENT_LEN:
+        return 2
+    if article_len >= KNOWN_LEN:
+        return 1
+    return 0
+
+
+def difficulty(prom: int, depth: int) -> str:
+    """Difficulty from subject prominence and template depth.
+
+    ``depth`` is 0 for a headline fact (Devil Fruit, crew, bounty, epithet) and 1
+    for a deep cut (residence, region, translation). A deep cut is one tier harder
+    than a headline fact about the same subject, so "Luffy's Devil Fruit" is easy
+    while "Luffy's residence" is medium.
+    """
+    score = prom - depth
+    if score >= 2:
         return "easy"
-    if article_len >= MEDIUM_LEN:
+    if score >= 1:
         return "medium"
     return "hard"
 
@@ -212,6 +286,10 @@ def sample_distractors(correct: str, pool: list[str], rng: random.Random, n: int
 
 def make_question(subject_seed, question, correct, pool, rng_master,
                   category, diff, source):
+    # Never build a question around a meta/real-world value (e.g. a card-game
+    # mascot whose "origin" parsed to "Bandai").
+    if is_noise(correct):
+        return None
     rng = random.Random(f"{SEED}:{subject_seed}:{question}")
     distractors = sample_distractors(correct, pool, rng)
     if not distractors:
@@ -244,11 +322,15 @@ def load_facts(path: Path):
 
 
 def build_pool(records, extract):
-    """Deduped list of normalised values across ``records`` for a field."""
+    """Deduped list of normalised values across ``records`` for a field.
+
+    Meta/real-world noise (see ``META_NOISE``) is dropped so it can never surface
+    as a distractor.
+    """
     seen = {}
     for rec in records:
         val = extract(rec)
-        if val:
+        if val and not is_noise(val):
             seen[norm_key(val)] = val
     return list(seen.values())
 
@@ -264,6 +346,7 @@ def generate(by_kind):
         lambda c: combined_df_name(c["fields"].get("dfename"), c["fields"].get("dfname")),
     )
     pool_affiliation = build_pool(chars, lambda c: primary(c["fields"].get("affiliation")))
+    pool_occupation = build_pool(chars, lambda c: primary(c["fields"].get("occupation")))
     pool_bounty = build_pool(chars, lambda c: clean_bounty(c["fields"].get("bounty")))
     pool_origin = build_pool(chars, lambda c: primary(c["fields"].get("origin")))
     pool_df_user = build_pool(fruits, lambda fr: clean_name(fr["fields"].get("user")))
@@ -274,107 +357,137 @@ def generate(by_kind):
     pool_df_meaning = build_pool(fruits, lambda fr: clean_name(fr["fields"].get("meaning")))
     pool_loc_affil = build_pool(locs, lambda l: primary(l["fields"].get("affiliation")))
 
+    # Process the most-prominent subjects first so the per-template / per-answer
+    # caps fill with the famous entities an event actually asks about, instead of
+    # whichever obscure character happened to appear first in the dump.
+    chars.sort(
+        key=lambda c: (prominence(c["title"], c.get("article_len", 0)),
+                       c.get("article_len", 0)),
+        reverse=True,
+    )
+    fruits.sort(key=lambda fr: fr.get("article_len", 0), reverse=True)
+    locs.sort(key=lambda l: l.get("article_len", 0), reverse=True)
+
     out: list[dict] = []
     per_answer = Counter()
     per_entity = Counter()
+    per_template = Counter()
 
-    def emit(entity, q, max_answer=MAX_PER_ANSWER):
+    def emit(entity, q, template, prom, max_answer=MAX_PER_ANSWER):
         if q is None:
             return
         if per_answer[(q["category"], norm_key(q["correct_answer"]))] >= max_answer:
             return
-        if per_entity[entity] >= MAX_PER_ENTITY:
+        if per_entity[entity] >= ENTITY_CAP[prom]:
+            return
+        if per_template[template] >= MAX_PER_TEMPLATE:
             return
         per_answer[(q["category"], norm_key(q["correct_answer"]))] += 1
         per_entity[entity] += 1
+        per_template[template] += 1
         out.append(q)
 
     rng = random.Random(SEED)
 
     # --- Character templates -------------------------------------------------
+    # depth 0 = headline fact, depth 1 = deep cut (see difficulty()).
     for c in chars:
         name = c["title"]
         f = c["fields"]
-        diff = difficulty(c.get("article_len", 0))
+        prom = prominence(name, c.get("article_len", 0))
         src = c["source"]
 
         df = combined_df_name(f.get("dfename"), f.get("dfname"))
         if df:
             emit(name, make_question(
                 name, f"Which Devil Fruit did {name} eat?", df, pool_df_name,
-                rng, "Devil Fruits", diff, src))
+                rng, "Devil Fruits", difficulty(prom, 0), src), "char_df", prom)
 
         aff = primary(f.get("affiliation"))
         if aff:
             emit(name, make_question(
                 name, f"Which crew or organization is {name} affiliated with?",
-                aff, pool_affiliation, rng, "Crews & Organizations", diff, src))
+                aff, pool_affiliation, rng, "Crews & Organizations",
+                difficulty(prom, 0), src), "char_affiliation", prom)
 
         bounty = clean_bounty(f.get("bounty"))
         if bounty:
             emit(name, make_question(
                 name, f"What is {name}'s known bounty?", bounty, pool_bounty,
-                rng, "Bounties", diff, src))
+                rng, "Bounties", difficulty(prom, 0), src), "char_bounty", prom)
+
+        # Occupation self-selects for informative answers: the per-answer cap
+        # limits generic values ("Pirate" covers ~400 characters) so the surviving
+        # questions skew to distinctive roles (Doctor, Vice Admiral, Samurai...).
+        occupation = primary(f.get("occupation"))
+        if occupation:
+            emit(name, make_question(
+                name, f"What is {name}'s occupation?", occupation, pool_occupation,
+                rng, "Characters", difficulty(prom, 0), src), "char_occupation", prom)
 
         origin = primary(f.get("origin"))
         if origin:
             emit(name, make_question(
                 name, f"Where does {name} originate from?", origin, pool_origin,
-                rng, "Characters", diff, src))
+                rng, "Characters", difficulty(prom, 1), src), "char_origin", prom)
 
         residence = primary(f.get("residence"))
         if residence:
             emit(name, make_question(
                 name, f"Where does {name} reside?", residence, pool_residence,
-                rng, "Geography", diff, src))
+                rng, "Geography", difficulty(prom, 1), src), "char_residence", prom)
 
         epithet = clean_epithet(f.get("epithet"))
         if epithet:
             emit(name, make_question(
                 name, f"By what epithet is {name} known?", epithet, pool_epithet,
-                rng, "Characters", diff, src))
+                rng, "Characters", difficulty(prom, 0), src), "char_epithet", prom)
 
     # --- Devil Fruit templates ----------------------------------------------
     for fr in fruits:
         f = fr["fields"]
         fruit_name = combined_df_name(f.get("ename"), f.get("rname") or fr["title"])
-        diff = difficulty(fr.get("article_len", 0))
+        prom = prominence(fr["title"], fr.get("article_len", 0))
         src = fr["source"]
 
         user = clean_name(f.get("user"))
         if user:
             emit(fr["title"], make_question(
                 fr["title"], f"Who is the user of the {fruit_name}?", user,
-                pool_df_user, rng, "Devil Fruits", diff, src))
+                pool_df_user, rng, "Devil Fruits", difficulty(prom, 0), src),
+                "fruit_user", prom)
 
         dtype = primary(f.get("type"))
         if dtype and dtype.lower() != "unknown":
             emit(fr["title"], make_question(
                 fr["title"], f"What type of Devil Fruit is the {fruit_name}?",
-                dtype, pool_df_type, rng, "Devil Fruits", diff, src),
-                max_answer=MAX_PER_ANSWER_CLASS)
+                dtype, pool_df_type, rng, "Devil Fruits", difficulty(prom, 0), src),
+                "fruit_type", prom, max_answer=MAX_PER_ANSWER_CLASS)
 
         meaning = clean_name(f.get("meaning"))
         if meaning:
             emit(fr["title"], make_question(
                 fr["title"], f"What does the name of the {fruit_name} translate to?",
-                meaning, pool_df_meaning, rng, "Devil Fruits", diff, src))
+                meaning, pool_df_meaning, rng, "Devil Fruits", difficulty(prom, 1),
+                src), "fruit_meaning", prom)
 
     # --- Location templates --------------------------------------------------
     for l in locs:
         f = l["fields"]
-        diff = difficulty(l.get("article_len", 0))
+        prom = prominence(l["title"], l.get("article_len", 0))
         region = primary(f.get("region"))
         if region:
             emit(l["title"], make_question(
                 l["title"], f"In which region of the world is {l['title']} located?",
-                region, pool_region, rng, "Geography", diff, l["source"]))
+                region, pool_region, rng, "Geography", difficulty(prom, 1),
+                l["source"]), "loc_region", prom)
 
         affil = primary(f.get("affiliation"))
         if affil:
             emit(l["title"], make_question(
                 l["title"], f"Which faction is {l['title']} affiliated with?",
-                affil, pool_loc_affil, rng, "Crews & Organizations", diff, l["source"]))
+                affil, pool_loc_affil, rng, "Crews & Organizations",
+                difficulty(prom, 1), l["source"]), "loc_affiliation", prom)
 
     return out
 
