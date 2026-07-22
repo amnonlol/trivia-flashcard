@@ -248,6 +248,40 @@ def difficulty(prom: int, depth: int) -> str:
     return "hard"
 
 
+# Manga-canon saga boundaries by *first* story chapter (upper bound inclusive).
+# Ordered; the app's "up to saga" spoiler filter compares against ``order``.
+SAGA_BOUNDS = [
+    (100, 1, "East Blue"),
+    (217, 2, "Alabasta"),
+    (302, 3, "Sky Island"),
+    (441, 4, "Water 7"),
+    (489, 5, "Thriller Bark"),
+    (597, 6, "Summit War"),
+    (653, 7, "Fish-Man Island"),
+    (801, 8, "Dressrosa"),
+    (902, 9, "Whole Cake Island"),
+    (1057, 10, "Wano Country"),
+    (float("inf"), 11, "Final Saga"),
+]
+
+_CHAPTER_RE = re.compile(r"Chapter\s+(\d+)")
+
+
+def saga_from_first(first) -> dict | None:
+    """Map an entity's ``first`` field ("Chapter 234; Episode 151") to the saga it
+    debuts in, so questions can be scoped by how far a reader has come. Returns
+    ``{"name", "order"}`` or None when no chapter can be read."""
+    for item in as_list(first):
+        m = _CHAPTER_RE.search(str(item))
+        if not m:
+            continue
+        ch = int(m.group(1))
+        for max_ch, order, name in SAGA_BOUNDS:
+            if ch <= max_ch:
+                return {"name": name, "order": order}
+    return None
+
+
 def norm_key(s: str) -> str:
     """Loose key for collision checks between options."""
     return re.sub(r"[^a-z0-9]", "", str(s).lower())
@@ -373,7 +407,7 @@ def generate(by_kind):
     per_entity = Counter()
     per_template = Counter()
 
-    def emit(entity, q, template, prom, max_answer=MAX_PER_ANSWER):
+    def emit(entity, q, template, prom, saga=None, max_answer=MAX_PER_ANSWER):
         if q is None:
             return
         if per_answer[(q["category"], norm_key(q["correct_answer"]))] >= max_answer:
@@ -385,6 +419,11 @@ def generate(by_kind):
         per_answer[(q["category"], norm_key(q["correct_answer"]))] += 1
         per_entity[entity] += 1
         per_template[template] += 1
+        # Spoiler scope: tag which saga the subject debuts in (order for the app's
+        # "up to saga" filter, name for display). Omitted when unknown.
+        if saga:
+            q["saga"] = saga["name"]
+            q["sagaOrder"] = saga["order"]
         out.append(q)
 
     rng = random.Random(SEED)
@@ -395,26 +434,27 @@ def generate(by_kind):
         name = c["title"]
         f = c["fields"]
         prom = prominence(name, c.get("article_len", 0))
+        saga = saga_from_first(f.get("first"))
         src = c["source"]
 
         df = combined_df_name(f.get("dfename"), f.get("dfname"))
         if df:
             emit(name, make_question(
                 name, f"Which Devil Fruit did {name} eat?", df, pool_df_name,
-                rng, "Devil Fruits", difficulty(prom, 0), src), "char_df", prom)
+                rng, "Devil Fruits", difficulty(prom, 0), src), "char_df", prom, saga)
 
         aff = primary(f.get("affiliation"))
         if aff:
             emit(name, make_question(
                 name, f"Which crew or organization is {name} affiliated with?",
                 aff, pool_affiliation, rng, "Crews & Organizations",
-                difficulty(prom, 0), src), "char_affiliation", prom)
+                difficulty(prom, 0), src), "char_affiliation", prom, saga)
 
         bounty = clean_bounty(f.get("bounty"))
         if bounty:
             emit(name, make_question(
                 name, f"What is {name}'s known bounty?", bounty, pool_bounty,
-                rng, "Bounties", difficulty(prom, 0), src), "char_bounty", prom)
+                rng, "Bounties", difficulty(prom, 0), src), "char_bounty", prom, saga)
 
         # Occupation self-selects for informative answers: the per-answer cap
         # limits generic values ("Pirate" covers ~400 characters) so the surviving
@@ -423,31 +463,36 @@ def generate(by_kind):
         if occupation:
             emit(name, make_question(
                 name, f"What is {name}'s occupation?", occupation, pool_occupation,
-                rng, "Characters", difficulty(prom, 0), src), "char_occupation", prom)
+                rng, "Characters", difficulty(prom, 0), src),
+                "char_occupation", prom, saga)
 
         origin = primary(f.get("origin"))
         if origin:
             emit(name, make_question(
                 name, f"Where does {name} originate from?", origin, pool_origin,
-                rng, "Characters", difficulty(prom, 1), src), "char_origin", prom)
+                rng, "Characters", difficulty(prom, 1), src),
+                "char_origin", prom, saga)
 
         residence = primary(f.get("residence"))
         if residence:
             emit(name, make_question(
                 name, f"Where does {name} reside?", residence, pool_residence,
-                rng, "Geography", difficulty(prom, 1), src), "char_residence", prom)
+                rng, "Geography", difficulty(prom, 1), src),
+                "char_residence", prom, saga)
 
         epithet = clean_epithet(f.get("epithet"))
         if epithet:
             emit(name, make_question(
                 name, f"By what epithet is {name} known?", epithet, pool_epithet,
-                rng, "Characters", difficulty(prom, 0), src), "char_epithet", prom)
+                rng, "Characters", difficulty(prom, 0), src),
+                "char_epithet", prom, saga)
 
     # --- Devil Fruit templates ----------------------------------------------
     for fr in fruits:
         f = fr["fields"]
         fruit_name = combined_df_name(f.get("ename"), f.get("rname") or fr["title"])
         prom = prominence(fr["title"], fr.get("article_len", 0))
+        saga = saga_from_first(f.get("first"))
         src = fr["source"]
 
         user = clean_name(f.get("user"))
@@ -455,39 +500,40 @@ def generate(by_kind):
             emit(fr["title"], make_question(
                 fr["title"], f"Who is the user of the {fruit_name}?", user,
                 pool_df_user, rng, "Devil Fruits", difficulty(prom, 0), src),
-                "fruit_user", prom)
+                "fruit_user", prom, saga)
 
         dtype = primary(f.get("type"))
         if dtype and dtype.lower() != "unknown":
             emit(fr["title"], make_question(
                 fr["title"], f"What type of Devil Fruit is the {fruit_name}?",
                 dtype, pool_df_type, rng, "Devil Fruits", difficulty(prom, 0), src),
-                "fruit_type", prom, max_answer=MAX_PER_ANSWER_CLASS)
+                "fruit_type", prom, saga, max_answer=MAX_PER_ANSWER_CLASS)
 
         meaning = clean_name(f.get("meaning"))
         if meaning:
             emit(fr["title"], make_question(
                 fr["title"], f"What does the name of the {fruit_name} translate to?",
                 meaning, pool_df_meaning, rng, "Devil Fruits", difficulty(prom, 1),
-                src), "fruit_meaning", prom)
+                src), "fruit_meaning", prom, saga)
 
     # --- Location templates --------------------------------------------------
     for l in locs:
         f = l["fields"]
         prom = prominence(l["title"], l.get("article_len", 0))
+        saga = saga_from_first(f.get("first"))
         region = primary(f.get("region"))
         if region:
             emit(l["title"], make_question(
                 l["title"], f"In which region of the world is {l['title']} located?",
                 region, pool_region, rng, "Geography", difficulty(prom, 1),
-                l["source"]), "loc_region", prom)
+                l["source"]), "loc_region", prom, saga)
 
         affil = primary(f.get("affiliation"))
         if affil:
             emit(l["title"], make_question(
                 l["title"], f"Which faction is {l['title']} affiliated with?",
                 affil, pool_loc_affil, rng, "Crews & Organizations",
-                difficulty(prom, 1), l["source"]), "loc_affiliation", prom)
+                difficulty(prom, 1), l["source"]), "loc_affiliation", prom, saga)
 
     return out
 
