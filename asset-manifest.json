@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/trivia-flashcard/static/css/main.ecd3a653.css",
-    "main.js": "/trivia-flashcard/static/js/main.1bc30c14.js",
+    "main.css": "/trivia-flashcard/static/css/main.89ed4fb1.css",
+    "main.js": "/trivia-flashcard/static/js/main.d8777439.js",
     "static/media/brand-icons.svg": "/trivia-flashcard/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/trivia-flashcard/static/media/icons.62d9dae4e0040e81c980.svg",
     "static/media/outline-icons.svg": "/trivia-flashcard/static/media/outline-icons.9c4845b4b41ef40a22fa.svg",
@@ -21,11 +21,11 @@
     "static/media/outline-icons.woff2": "/trivia-flashcard/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "static/media/mind.svg": "/trivia-flashcard/static/media/mind.525a3ae0c00043d18a470320ab3981a9.svg",
     "index.html": "/trivia-flashcard/index.html",
-    "main.ecd3a653.css.map": "/trivia-flashcard/static/css/main.ecd3a653.css.map",
-    "main.1bc30c14.js.map": "/trivia-flashcard/static/js/main.1bc30c14.js.map"
+    "main.89ed4fb1.css.map": "/trivia-flashcard/static/css/main.89ed4fb1.css.map",
+    "main.d8777439.js.map": "/trivia-flashcard/static/js/main.d8777439.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecd3a653.css",
-    "static/js/main.1bc30c14.js"
+    "static/css/main.89ed4fb1.css",
+    "static/js/main.d8777439.js"
   ]
 }
