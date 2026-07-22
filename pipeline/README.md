@@ -73,7 +73,60 @@ several with `<br/>` (e.g. bounty history, newest first; ages across timeskips).
 run: **5398 entities** — 2375 character, 1218 episode, 1203 chapter, 394 location,
 208 devil_fruit.
 
-## Next (Phase 3, remaining)
+## Phase 3 — facts → questions (done by `generate_questions.py`)
 
-- `generate_questions.py` — deterministic template MCQs + same-category distractors.
-- `validate.py` — schema / 4-options / dedupe → `app/public/data/questions.json`.
+```powershell
+py pipeline/generate_questions.py         # facts.jsonl -> wiki-data/questions.generated.json
+```
+
+Deterministic, **no hallucination**: every question and its correct answer come
+straight from an infobox field, and distractors are sampled from *real* values of
+the same field on other entities (so wrong answers are plausible and never
+invented). Options are pre-shuffled with a per-question seed for reproducibility;
+the app reshuffles at load anyway.
+
+Templates (field → question, distractors from the same field's pool):
+
+| Template | Category | Correct field |
+|---|---|---|
+| Which Devil Fruit did *X* eat? | Devil Fruits | character `dfename` |
+| Who is the user of the *fruit*? | Devil Fruits | devil_fruit `user` |
+| What type is the *fruit*? (Paramecia/Zoan/Logia…) | Devil Fruits | devil_fruit `type` |
+| Which crew/org is *X* affiliated with? | Crews & Organizations | character `affiliation` |
+| What is *X*'s known bounty? | Bounties | character `bounty` (official numbers only) |
+| Where does *X* originate from? | Characters | character `origin` |
+| In which region is *place* located? | Geography | location `region` |
+
+Values are normalised first (lists/translation notes/`;`-history → one clean
+value); difficulty comes from `article_len` (easy ≥20k, medium ≥6k, else hard);
+per-answer (≤6) and per-entity (≤4) caps stop one value/character dominating.
+Output `../wiki-data/questions.generated.json` (gitignored, regenerable).
+
+## Phase 3 — validate → app bank (done by `validate.py`)
+
+```powershell
+py pipeline/validate.py                   # -> app/public/data/questions.json
+py pipeline/validate.py --check-only      # validate without writing
+```
+
+Enforces the exact quiz-engine schema and drops any malformed or duplicate
+question (fatal-exit only if the input is missing or *nothing* survives): required
+keys, `type == "multiple"`, known category (kept in sync with
+`app/src/constants/categories.js`), exactly 4 options, `correct_answer` present
+exactly once, no near-duplicate options, `onepiece.fandom.com` source URL.
+
+Latest full run: **1949 questions** written — 1059 Crews & Organizations,
+460 Devil Fruits, 220 Bounties, 139 Geography, 71 Characters
+(424 easy / 622 medium / 903 hard), across 1565 unique wiki sources.
+
+## Full regeneration (one shot)
+
+```powershell
+py pipeline/parse_wiki.py; if ($?) { py pipeline/generate_questions.py }; if ($?) { py pipeline/validate.py }
+```
+
+## Next
+
+- **Arcs & Story** category has no source yet — arcs aren't captured as an infobox
+  `kind`; needs a dedicated parse (arc/saga navboxes) before it can be generated.
+- Optional Phase 6 LLM enrichment for plot/relationship questions (`enrich_llm.py`).
