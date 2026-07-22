@@ -282,6 +282,38 @@ def saga_from_first(first) -> dict | None:
     return None
 
 
+# Title suffixes the wiki uses to disambiguate a *non-canon* variant of an entity
+# (a stage-play, novel or explicitly filler version). These cite the canon
+# counterpart's chapter in ``first``, so they'd otherwise slip past the chapter
+# test below — exclude them by name. Plain "(Wano)"/"(Zombie)"-style qualifiers are
+# canon disambiguators and are deliberately not listed.
+_NON_CANON_TITLE = ("(non-canon)", "(novel)", "one piece in love")
+
+
+def is_canon(rec: dict) -> bool:
+    """True only for manga-canon entities.
+
+    An entity is canon iff its ``first`` field cites a manga *Chapter* and its
+    title isn't flagged as a non-canon variant. Anime-only fillers, movies, TV
+    specials, stage shows, video games and novels debut with an
+    ``Episode``/``Movie``/game-title ``first`` and never a chapter, so
+    ``saga_from_first`` returns None for them — we drop those entirely rather than
+    build questions (or distractors) from non-canon material.
+    """
+    title = rec["title"].lower()
+    if any(marker in title for marker in _NON_CANON_TITLE):
+        return False
+    return saga_from_first(rec["fields"].get("first")) is not None
+
+
+_KINGDOM_RE = re.compile(r"\bKingdom\b")
+
+
+def is_kingdom(value) -> bool:
+    """True when an affiliation value names a kingdom (e.g. ``Goa Kingdom``)."""
+    return bool(value) and bool(_KINGDOM_RE.search(str(value)))
+
+
 def norm_key(s: str) -> str:
     """Loose key for collision checks between options."""
     return re.sub(r"[^a-z0-9]", "", str(s).lower())
@@ -319,7 +351,7 @@ def sample_distractors(correct: str, pool: list[str], rng: random.Random, n: int
 
 
 def make_question(subject_seed, question, correct, pool, rng_master,
-                  category, diff, source):
+                  category, diff, source, explainer=None, image=None):
     # Never build a question around a meta/real-world value (e.g. a card-game
     # mascot whose "origin" parsed to "Bandai").
     if is_noise(correct):
@@ -330,7 +362,7 @@ def make_question(subject_seed, question, correct, pool, rng_master,
         return None
     options = distractors + [correct]
     rng.shuffle(options)
-    return {
+    q = {
         "category": category,
         "type": "multiple",
         "difficulty": diff,
@@ -340,6 +372,14 @@ def make_question(subject_seed, question, correct, pool, rng_master,
         "options": options,
         "source": source,
     }
+    # Optional teaching aids shown after a wrong / "I don't know" answer. The
+    # explainer is the subject's wiki lead ("who/what the question was about");
+    # image is a portrait URL (populated by the optional image-enrichment step).
+    if explainer:
+        q["explainer"] = explainer
+    if image:
+        q["image"] = image
+    return q
 
 
 # --------------------------------------------------------------------------- #
@@ -370,9 +410,24 @@ def build_pool(records, extract):
 
 
 def generate(by_kind):
-    chars = by_kind.get("character", [])
-    fruits = by_kind.get("devil_fruit", [])
-    locs = by_kind.get("location", [])
+    # Drop non-canon entities up front so they seed neither questions nor
+    # distractors (a filler-only crew must never appear as a wrong answer either).
+    chars = [c for c in by_kind.get("character", []) if is_canon(c)]
+    fruits = [fr for fr in by_kind.get("devil_fruit", []) if is_canon(fr)]
+    locs = [l for l in by_kind.get("location", []) if is_canon(l)]
+
+    # Kingdom distractor pool: every canon "* Kingdom" named as a place's
+    # affiliation or a character's origin/affiliation, so "Which kingdom does X
+    # belong to?" draws plausible same-category wrong answers.
+    pool_kingdom = build_pool(
+        locs + chars,
+        lambda r: next(
+            (primary(r["fields"].get(k))
+             for k in ("affiliation", "origin")
+             if is_kingdom(primary(r["fields"].get(k)))),
+            None,
+        ),
+    )
 
     # Field pools (real values -> plausible distractors).
     pool_df_name = build_pool(
@@ -389,7 +444,6 @@ def generate(by_kind):
     pool_residence = build_pool(chars, lambda c: primary(c["fields"].get("residence")))
     pool_epithet = build_pool(chars, lambda c: clean_epithet(c["fields"].get("epithet")))
     pool_df_meaning = build_pool(fruits, lambda fr: clean_name(fr["fields"].get("meaning")))
-    pool_loc_affil = build_pool(locs, lambda l: primary(l["fields"].get("affiliation")))
 
     # Process the most-prominent subjects first so the per-template / per-answer
     # caps fill with the famous entities an event actually asks about, instead of
@@ -436,25 +490,28 @@ def generate(by_kind):
         prom = prominence(name, c.get("article_len", 0))
         saga = saga_from_first(f.get("first"))
         src = c["source"]
+        exp = c.get("summary")  # subject's wiki lead — the post-answer explainer
 
         df = combined_df_name(f.get("dfename"), f.get("dfname"))
         if df:
             emit(name, make_question(
                 name, f"Which Devil Fruit did {name} eat?", df, pool_df_name,
-                rng, "Devil Fruits", difficulty(prom, 0), src), "char_df", prom, saga)
+                rng, "Devil Fruits", difficulty(prom, 0), src, exp),
+                "char_df", prom, saga)
 
         aff = primary(f.get("affiliation"))
         if aff:
             emit(name, make_question(
                 name, f"Which crew or organization is {name} affiliated with?",
                 aff, pool_affiliation, rng, "Crews & Organizations",
-                difficulty(prom, 0), src), "char_affiliation", prom, saga)
+                difficulty(prom, 0), src, exp), "char_affiliation", prom, saga)
 
         bounty = clean_bounty(f.get("bounty"))
         if bounty:
             emit(name, make_question(
                 name, f"What is {name}'s known bounty?", bounty, pool_bounty,
-                rng, "Bounties", difficulty(prom, 0), src), "char_bounty", prom, saga)
+                rng, "Bounties", difficulty(prom, 0), src, exp),
+                "char_bounty", prom, saga)
 
         # Occupation self-selects for informative answers: the per-answer cap
         # limits generic values ("Pirate" covers ~400 characters) so the surviving
@@ -463,28 +520,28 @@ def generate(by_kind):
         if occupation:
             emit(name, make_question(
                 name, f"What is {name}'s occupation?", occupation, pool_occupation,
-                rng, "Characters", difficulty(prom, 0), src),
+                rng, "Characters", difficulty(prom, 0), src, exp),
                 "char_occupation", prom, saga)
 
         origin = primary(f.get("origin"))
         if origin:
             emit(name, make_question(
                 name, f"Where does {name} originate from?", origin, pool_origin,
-                rng, "Characters", difficulty(prom, 1), src),
+                rng, "Characters", difficulty(prom, 1), src, exp),
                 "char_origin", prom, saga)
 
         residence = primary(f.get("residence"))
         if residence:
             emit(name, make_question(
                 name, f"Where does {name} reside?", residence, pool_residence,
-                rng, "Geography", difficulty(prom, 1), src),
+                rng, "Geography", difficulty(prom, 1), src, exp),
                 "char_residence", prom, saga)
 
         epithet = clean_epithet(f.get("epithet"))
         if epithet:
             emit(name, make_question(
                 name, f"By what epithet is {name} known?", epithet, pool_epithet,
-                rng, "Characters", difficulty(prom, 0), src),
+                rng, "Characters", difficulty(prom, 0), src, exp),
                 "char_epithet", prom, saga)
 
     # --- Devil Fruit templates ----------------------------------------------
@@ -494,46 +551,53 @@ def generate(by_kind):
         prom = prominence(fr["title"], fr.get("article_len", 0))
         saga = saga_from_first(f.get("first"))
         src = fr["source"]
+        exp = fr.get("summary")
 
         user = clean_name(f.get("user"))
         if user:
             emit(fr["title"], make_question(
                 fr["title"], f"Who is the user of the {fruit_name}?", user,
-                pool_df_user, rng, "Devil Fruits", difficulty(prom, 0), src),
+                pool_df_user, rng, "Devil Fruits", difficulty(prom, 0), src, exp),
                 "fruit_user", prom, saga)
 
         dtype = primary(f.get("type"))
         if dtype and dtype.lower() != "unknown":
             emit(fr["title"], make_question(
                 fr["title"], f"What type of Devil Fruit is the {fruit_name}?",
-                dtype, pool_df_type, rng, "Devil Fruits", difficulty(prom, 0), src),
-                "fruit_type", prom, saga, max_answer=MAX_PER_ANSWER_CLASS)
+                dtype, pool_df_type, rng, "Devil Fruits", difficulty(prom, 0), src,
+                exp), "fruit_type", prom, saga, max_answer=MAX_PER_ANSWER_CLASS)
 
         meaning = clean_name(f.get("meaning"))
         if meaning:
             emit(fr["title"], make_question(
                 fr["title"], f"What does the name of the {fruit_name} translate to?",
                 meaning, pool_df_meaning, rng, "Devil Fruits", difficulty(prom, 1),
-                src), "fruit_meaning", prom, saga)
+                src, exp), "fruit_meaning", prom, saga)
 
     # --- Location templates --------------------------------------------------
     for l in locs:
         f = l["fields"]
         prom = prominence(l["title"], l.get("article_len", 0))
         saga = saga_from_first(f.get("first"))
+        exp = l.get("summary")
         region = primary(f.get("region"))
         if region:
             emit(l["title"], make_question(
                 l["title"], f"In which region of the world is {l['title']} located?",
                 region, pool_region, rng, "Geography", difficulty(prom, 1),
-                l["source"]), "loc_region", prom, saga)
+                l["source"], exp), "loc_region", prom, saga)
 
+        # Repurposed from the old vague "Which faction is X affiliated with?"
+        # (answers ranged over kingdoms, crews, families and even characters). We
+        # now only ask when the affiliation is a *kingdom*, giving a crisp
+        # "Which kingdom does X belong to?" with other kingdoms as distractors;
+        # non-kingdom affiliations are dropped rather than asked vaguely.
         affil = primary(f.get("affiliation"))
-        if affil:
+        if is_kingdom(affil):
             emit(l["title"], make_question(
-                l["title"], f"Which faction is {l['title']} affiliated with?",
-                affil, pool_loc_affil, rng, "Crews & Organizations",
-                difficulty(prom, 1), l["source"]), "loc_affiliation", prom, saga)
+                l["title"], f"Which kingdom does {l['title']} belong to?",
+                affil, pool_kingdom, rng, "Geography",
+                difficulty(prom, 1), l["source"], exp), "loc_kingdom", prom, saga)
 
     return out
 

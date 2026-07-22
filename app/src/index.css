@@ -504,6 +504,34 @@ body {
   color: #7a5b00;
 }
 
+/* Post-answer explainer: who/what the question was about, shown only after a
+   wrong / "I don't know" answer. Sits inside the feedback panel and inherits its
+   tint, so it stays readable in both light and dark themes. */
+.op-explainer {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.op-explainer p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  opacity: 0.9;
+}
+
+.op-explainer-img {
+  flex: 0 0 auto;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
 /* ---- Quiz nav ------------------------------------------------------------ */
 
 .op-nav {

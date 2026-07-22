@@ -77,10 +77,13 @@ const Quiz = ({ data, countdownTime, eventMode, endQuiz }) => {
       questionsAndAnswers: buildQnA(allAnswers),
     });
 
-  // Picking an answer flashes the result, then auto-advances to the next
-  // question (or finishes on the last one). In event mode there's no reveal or
-  // auto-advance: the choice is just recorded (and can be changed) and the player
-  // moves on with the Next button.
+  // Picking an answer flashes the result. A *correct* answer then auto-advances
+  // to the next question (or finishes on the last one) — no need to dwell. A
+  // *wrong* answer or "I don't know" instead stops on an explainer so the player
+  // can read who/what the question was about and the right answer, then taps
+  // Continue to move on. In event mode there's no reveal or auto-advance: the
+  // choice is just recorded (and can be changed) and the player moves on with the
+  // Next button.
   const handleSelect = answer => {
     if (reveal) return; // learn mode: locked after the first answer
 
@@ -89,9 +92,13 @@ const Quiz = ({ data, countdownTime, eventMode, endQuiz }) => {
 
     if (eventMode) return;
 
+    const isRight = answer === correctAnswer;
     setFlashing(true);
     advanceTimer.current = setTimeout(() => {
       setFlashing(false);
+      // Wrong / "I don't know": hold on the explainer (the reveal panel + the
+      // Continue button now appear because flashing is off). Correct: advance.
+      if (!isRight) return;
       if (isLastQuestion) {
         finish(nextAnswers);
       } else {
@@ -242,6 +249,25 @@ const Quiz = ({ data, countdownTime, eventMode, endQuiz }) => {
                   The correct answer is <b>{correctAnswer}</b>.
                 </span>
               )}
+              {/* Explainer: only on a wrong / "I don't know" answer, turning the
+                  miss into a teaching moment. An image shows alongside when the
+                  question carries one; a broken/absent image simply hides. */}
+              {!gotItRight && currentQuestion.explainer && (
+                <div className="op-explainer">
+                  {currentQuestion.image && (
+                    <img
+                      className="op-explainer-img"
+                      src={currentQuestion.image}
+                      alt=""
+                      loading="lazy"
+                      onError={e => {
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
+                  )}
+                  <p>{currentQuestion.explainer}</p>
+                </div>
+              )}
               {currentQuestion.source && (
                 <div style={{ marginTop: 6 }}>
                   <a
@@ -268,15 +294,21 @@ const Quiz = ({ data, countdownTime, eventMode, endQuiz }) => {
           >
             <Icon name="arrow left" fitted /> Previous
           </button>
-          {/* Learn mode shows Next after the reveal; event mode always shows it
-              so the player can advance (or skip) at their own pace. */}
+          {/* Learn mode shows the advance button after the reveal; event mode
+              always shows it so the player can advance (or skip) at their own
+              pace. On a wrong / "I don't know" answer it reads "Continue" —
+              the player is dismissing the explainer, not skipping ahead. */}
           {(eventMode || (reveal && !flashing)) && (
             <button
               type="button"
               className="op-nav-btn primary"
               onClick={goToNext}
             >
-              {isLastQuestion ? 'Finish Quiz' : 'Next'}{' '}
+              {isLastQuestion
+                ? 'Finish Quiz'
+                : !eventMode && !gotItRight
+                ? 'Continue'
+                : 'Next'}{' '}
               <Icon
                 name={isLastQuestion ? 'flag checkered' : 'arrow right'}
                 fitted

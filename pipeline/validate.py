@@ -112,6 +112,13 @@ def validate_one(q: dict) -> str | None:
             if near_dupe(options[i], options[j]):
                 return f"near-duplicate options: {options[i]!r} ~ {options[j]!r}"
 
+    # Optional teaching aids. Present-but-malformed is a real defect (the app
+    # renders them), so validate when present; absence is fine.
+    if "explainer" in q and not str(q.get("explainer", "")).strip():
+        return "empty explainer"
+    if "image" in q and q["image"] is not None and not str(q["image"]).startswith("http"):
+        return f"bad image url: {q['image']!r}"
+
     # No option may be a meta/real-world value or an un-split comma list. A
     # comma-*space* (e.g. "Red Arrows Pirates, The Four Wise Men") signals parse
     # noise; bounties like "1,234 Berries" use commas *without* a space, and Zoan

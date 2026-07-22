@@ -93,10 +93,21 @@ def render_template(t: mwparserfromhell.nodes.Template) -> str:
     return positional[-1] if positional else ""
 
 
+def _is_leaf_template(t: mwparserfromhell.nodes.Template) -> bool:
+    """True when ``t`` has no nested template (so it's safe to render now).
+
+    Detected by scanning its param values for ``{{`` — the ``Template`` node has
+    no ``filter_templates`` method in mwparserfromhell 0.7.x, so the older
+    ``len(t.filter_templates()) == 1`` check raised ``AttributeError`` and silently
+    disabled all template rendering.
+    """
+    return not any("{{" in str(p.value) for p in t.params)
+
+
 def _resolve_templates(code: mwparserfromhell.wikicode.Wikicode) -> None:
     """Replace every template in ``code`` with its rendered text, innermost first."""
     for _ in range(12):
-        leaves = [t for t in code.filter_templates() if len(t.filter_templates()) == 1]
+        leaves = [t for t in code.filter_templates() if _is_leaf_template(t)]
         if not leaves:
             break
         for t in leaves:
@@ -154,6 +165,113 @@ def clean_field(raw: str):
     return segments[0] if len(segments) == 1 else segments
 
 
+# Lead-paragraph summary extraction. The first prose paragraph of an article is a
+# clean, sourced, one-sentence "who/what is this" — used by the app to explain a
+# question after a wrong / "I don't know" answer.
+_HEADING = re.compile(r"(?m)^=+.*?=+\s*$")
+_SENTENCE = re.compile(r"(?<=[.!?])\s+")
+# A sentence still ending on a connective/orphan word means its final noun was an
+# unrenderable template (a citation, an empty templated link) — trim that clause.
+_DANGLING = re.compile(
+    r"[,;]?\s+(?:a|an|the|of|to|in|on|for|with|and|as|by|from|into|being|"
+    r"is|was|were|are|known|called|named|serving|designated|nicknamed)$",
+    re.IGNORECASE,
+)
+_LEAD_WINDOW = 12000       # only the top of the article can hold the lead
+_SUMMARY_MAX = 240         # cap so the app panel stays a couple of lines
+
+
+# Hatnote / cross-reference templates that sit above the lead. They're short and
+# single-line (so the size test below misses them) but render to link text like
+# "Straw Hat Luffy (Disambiguation)" that would masquerade as the lead sentence.
+_HATNOTE_TEMPLATES = {
+    "you may", "for", "about", "main", "distinguish", "redirect", "see also",
+    "seealso", "otheruses", "merge", "note", "spoiler", "expand", "cleanup",
+}
+
+
+def _is_block_template(t: mwparserfromhell.nodes.Template) -> bool:
+    """A layout/hatnote template (infobox, quote, cross-reference) above the lead.
+
+    Kept distinct from the *inline* templates that carry sentence content
+    (``{{Nihongo|Rubber Human|…}}``): those are short, single-line and not
+    hatnotes, so they survive to ``clean_field`` and the sentence keeps its words.
+    """
+    if str(t.name).strip().lower() in _HATNOTE_TEMPLATES:
+        return True
+    body = str(t)
+    return "\n" in body or len(body) > 120
+
+
+def _tidy_sentence(sent: str) -> str:
+    """Trim spacing artifacts and any dangling trailing clause from a sentence."""
+    sent = re.sub(r"\s+([.,;:!?])", r"\1", sent)   # drop space before punctuation
+    sent = re.sub(r"\(\s*\)", "", sent)            # empty "()"
+    sent = _WS.sub(" ", sent).strip(" ,;.")
+    prev = None
+    while prev != sent and _DANGLING.search(sent):
+        prev = sent
+        cut = max(sent.rfind(","), sent.rfind(";"))
+        sent = sent[:cut].strip(" ,;") if cut != -1 else ""
+    return sent
+
+
+def lead_summary(text: str) -> str | None:
+    """Extract the article's first prose paragraph as a short plain-text summary.
+
+    Removes the leading infobox/quote block templates, takes the first real
+    paragraph (the bolded ``'''Name''' ... is ...`` lead), renders inline templates
+    and flattens wiki markup via ``clean_field``, and keeps one or two sentences.
+    Returns ``None`` when no prose lead can be found (list/gallery pages).
+    """
+    window = text[:_LEAD_WINDOW]
+    if "'''" not in window:            # no bolded lead -> not a prose article
+        return None
+
+    window = _COMMENT.sub("", window)
+    try:
+        code = mwparserfromhell.parse(window)
+        for t in code.filter_templates(recursive=False):
+            if _is_block_template(t):
+                try:
+                    code.remove(t)
+                except ValueError:
+                    pass
+        window = str(code)
+    except Exception:
+        pass
+    window = _FILE_LINK.sub("", window)
+    window = _HEADING.sub("", window)
+
+    # Try successive paragraphs until one yields a real lead (an early block might
+    # still clean down to a stray link or an indented hatnote line).
+    for block in re.split(r"\n\s*\n", window):
+        raw = block.strip()
+        if raw.startswith(":") or raw.startswith(";"):
+            continue
+        if len(re.sub(r"[^A-Za-z]", "", raw)) < 20:
+            continue
+
+        value = clean_field(raw)
+        if isinstance(value, list):
+            value = " ".join(value)
+        value = _WS.sub(" ", str(value)).strip()
+
+        sentences = [s for s in
+                     (_tidy_sentence(s) for s in _SENTENCE.split(value)) if s]
+        if not sentences:
+            continue
+        summary = sentences[0]
+        if len(summary) < 120 and len(sentences) > 1:
+            summary = f"{summary}. {sentences[1]}"
+        if len(re.sub(r"[^A-Za-z]", "", summary)) < 20:
+            continue
+        if len(summary) > _SUMMARY_MAX:
+            return summary[:_SUMMARY_MAX].rsplit(" ", 1)[0].rstrip(" ,;") + "…"
+        return summary + "."
+    return None
+
+
 def extract_fields(t: mwparserfromhell.nodes.Template) -> dict:
     """Clean every content param of an infobox template into a fields dict."""
     fields = {}
@@ -183,6 +301,7 @@ def parse(xml_path: Path, limit: int | None = None):
     """Yield nothing; return (records, article_lens). Single streaming pass."""
     records: dict[tuple[str, str], dict] = {}  # (title, kind) -> record
     article_lens: dict[str, int] = {}
+    article_leads: dict[str, str] = {}         # ns-0 title -> lead summary
     n_pages = 0
 
     ctx = etree.iterparse(str(xml_path), events=("end",), tag=NS + "page")
@@ -194,6 +313,11 @@ def parse(xml_path: Path, limit: int | None = None):
 
         if ns == "0":
             article_lens[title] = len(text)
+            # A tabbed major character's prose lives on this ns-0 article while
+            # its infobox sits in ns-10; stash the lead here and attach by title.
+            summary = lead_summary(text)
+            if summary:
+                article_leads[title] = summary
 
         # Cheap pre-filter: skip pages with no infobox template at all.
         if ns in ("0", "10") and "Box" in text:
@@ -245,9 +369,13 @@ def parse(xml_path: Path, limit: int | None = None):
         if limit and n_pages >= limit:
             break
 
-    # Attach the article-length prominence proxy (drives difficulty later).
+    # Attach the article-length prominence proxy (drives difficulty later) and
+    # the lead-paragraph summary (the app's post-answer explainer).
     for rec in records.values():
         rec["article_len"] = article_lens.get(rec["title"], 0)
+        summary = article_leads.get(rec["title"])
+        if summary:
+            rec["summary"] = summary
 
     return list(records.values()), n_pages
 
