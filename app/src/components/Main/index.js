@@ -4,7 +4,7 @@ import { Icon } from 'semantic-ui-react';
 
 import mindImg from '../../images/mind.svg';
 
-import { CATEGORIES, DIFFICULTY } from '../../constants';
+import { CATEGORIES, DIFFICULTY, SAGAS } from '../../constants';
 import {
   shuffle,
   questionId,
@@ -41,6 +41,8 @@ const DIFFICULTY_OPTIONS = DIFFICULTY.map(d => ({
   value: d.value,
   label: d.text.replace(' Difficulty', '').replace(' (match my skill)', ''),
 }));
+
+const SAGA_OPTIONS = SAGAS.map(s => ({ value: s.value, label: s.text }));
 
 // A wrapping row of single-select pills.
 const ChipGroup = ({ options, value, onChange, disabled }) => (
@@ -115,6 +117,9 @@ const Main = ({ startQuiz }) => {
   const [category, setCategory] = useState('0');
   const [numOfQuestions, setNumOfQuestions] = useState(10);
   const [difficulty, setDifficulty] = useState('easy');
+  // Spoiler scope: 0 = whole series (no limit); otherwise only questions whose
+  // subject debuts up to and including this saga (see sagaOrder in the bank).
+  const [sagaLimit, setSagaLimit] = useState(0);
   const [countdownSeconds, setCountdownSeconds] = useState(0);
   // Mock-Event mode: no per-question reveal, timed, results only at the end —
   // rehearsal for the real trivia event. Off = the instant-feedback learn mode.
@@ -151,7 +156,11 @@ const Main = ({ startQuiz }) => {
           const order = missedQuestionIds(activeProfile.id);
           const rank = new Map(order.map((id, i) => [id, i]));
           const pool = bank
-            .filter(q => rank.has(questionId(q.question)))
+            .filter(
+              q =>
+                rank.has(questionId(q.question)) &&
+                (sagaLimit === 0 || !q.sagaOrder || q.sagaOrder <= sagaLimit)
+            )
             .sort(
               (a, b) =>
                 rank.get(questionId(a.question)) -
@@ -200,11 +209,18 @@ const Main = ({ startQuiz }) => {
           const isAdaptive = difficulty === 'adaptive';
 
           // Base filter: category always applies; a fixed difficulty applies
-          // only when the user picked one (Adaptive & Any skip it). All bank
-          // questions are multiple-choice, so there's no type filter.
+          // only when the user picked one (Adaptive & Any skip it). The saga
+          // scope hides subjects that debut later than the reader has come;
+          // untagged questions (no sagaOrder) can't be gated, so they always
+          // show. All bank questions are multiple-choice, so there's no type
+          // filter.
+          const withinSaga = q =>
+            sagaLimit === 0 || !q.sagaOrder || q.sagaOrder <= sagaLimit;
+
           const matchesQuery = q =>
             (category === '0' || q.category === category) &&
-            (isAdaptive || difficulty === '0' || q.difficulty === difficulty);
+            (isAdaptive || difficulty === '0' || q.difficulty === difficulty) &&
+            withinSaga(q);
 
           const matched = bank.filter(matchesQuery);
 
@@ -355,6 +371,19 @@ const Main = ({ startQuiz }) => {
             options={CATEGORY_OPTIONS}
             value={category}
             onChange={setCategory}
+            disabled={processing}
+          />
+        </div>
+
+        <div className="op-field">
+          <div className="op-field-label">
+            <Icon name="book" fitted /> Up to saga{' '}
+            <span className="op-field-note">(avoid spoilers)</span>
+          </div>
+          <ChipGroup
+            options={SAGA_OPTIONS}
+            value={sagaLimit}
+            onChange={setSagaLimit}
             disabled={processing}
           />
         </div>

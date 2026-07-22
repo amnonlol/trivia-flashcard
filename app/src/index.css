@@ -145,6 +145,14 @@ body {
   color: var(--op-muted);
 }
 
+/* Inline aside inside an uppercase field label (e.g. "(avoid spoilers)"). */
+.op-field-note {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
 .op-chips {
   display: flex;
   flex-wrap: wrap;
