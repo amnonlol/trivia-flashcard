@@ -1,12 +1,9 @@
 {
-  "name": "quiz-app",
-  "version": "6.0.0",
+  "name": "one-piece-flash-cards",
+  "version": "0.1.0",
   "private": true,
-  "author": {
-    "name": "Safdar Jamal",
-    "url": "https://safdarjamal.github.io"
-  },
-  "homepage": "https://safdarjamal.github.io/quiz-app/",
+  "description": "A mobile-friendly One Piece trivia flash-card PWA. Forked from SafdarJamal/quiz-app (MIT).",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

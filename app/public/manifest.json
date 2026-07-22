@@ -1,7 +1,7 @@
 {
-  "short_name": "QuizApp",
-  "name": "QuizApp",
-  "description": "QuizApp is a free and open-source quiz application that lets you play fully customized quizzes right in the browser.",
+  "short_name": "OP Trivia",
+  "name": "One Piece Trivia Flash Cards",
+  "description": "A mobile-friendly One Piece trivia flash-card app: play multiple-choice quizzes by category and difficulty, right in your browser.",
   "icons": [
     {
       "src": "android-chrome-192x192.png",

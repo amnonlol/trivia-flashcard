@@ -148,9 +148,11 @@ installable on phones and usable offline once loaded.
 
 ## 8. Phased milestones
 
-- **Phase 0 — Setup:** promote base-repo → `app/`, install, run baseline, init git.
-- **Phase 1 — Data seam:** hardcode a ~30-question hand-made One Piece
-  `questions.json`, wire the app to load local JSON, rebrand. **Shippable demo.**
+- **Phase 0 — Setup:** ✅ promote base-repo → `app/`, install, run baseline, init git.
+- **Phase 1 — Data seam:** ✅ hand-made 32-question One Piece
+  `questions.json`, app loads local JSON (`Main/fetchData` → cached
+  `fetch('/data/questions.json')` + client-side filter/sample), One Piece
+  categories, rebranded title/manifest/header, CC-BY-SA footer. **Shippable demo.**
 - **Phase 2 — Wiki pipeline:** download dump, parse infoboxes → facts.
 - **Phase 3 — Question generation:** templates + distractors → validated bank
   (target ≥500 questions across categories).

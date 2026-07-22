@@ -1,0 +1,331 @@
+[
+  {
+    "category": "Characters",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who is the captain of the Straw Hat Pirates?",
+    "correct_answer": "Monkey D. Luffy",
+    "incorrect_answers": ["Roronoa Zoro", "Sanji", "Nami"],
+    "options": ["Roronoa Zoro", "Monkey D. Luffy", "Nami", "Sanji"],
+    "source": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy"
+  },
+  {
+    "category": "Characters",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is Roronoa Zoro's dream?",
+    "correct_answer": "To become the world's greatest swordsman",
+    "incorrect_answers": [
+      "To find the All Blue",
+      "To become the Pirate King",
+      "To draw a complete map of the world"
+    ],
+    "options": [
+      "To find the All Blue",
+      "To become the world's greatest swordsman",
+      "To draw a complete map of the world",
+      "To become the Pirate King"
+    ],
+    "source": "https://onepiece.fandom.com/wiki/Roronoa_Zoro"
+  },
+  {
+    "category": "Characters",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is Nami's role aboard the Straw Hat Pirates?",
+    "correct_answer": "Navigator",
+    "incorrect_answers": ["Cook", "Sniper", "Doctor"],
+    "options": ["Cook", "Navigator", "Doctor", "Sniper"],
+    "source": "https://onepiece.fandom.com/wiki/Nami"
+  },
+  {
+    "category": "Characters",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who is the cook of the Straw Hat Pirates?",
+    "correct_answer": "Sanji",
+    "incorrect_answers": ["Usopp", "Franky", "Brook"],
+    "options": ["Usopp", "Sanji", "Brook", "Franky"],
+    "source": "https://onepiece.fandom.com/wiki/Sanji"
+  },
+  {
+    "category": "Characters",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What kind of animal is Tony Tony Chopper?",
+    "correct_answer": "Reindeer",
+    "incorrect_answers": ["Tanuki", "Dog", "Bear"],
+    "options": ["Tanuki", "Reindeer", "Bear", "Dog"],
+    "source": "https://onepiece.fandom.com/wiki/Tony_Tony_Chopper"
+  },
+  {
+    "category": "Characters",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is Nico Robin's occupation aboard the Straw Hat Pirates?",
+    "correct_answer": "Archaeologist",
+    "incorrect_answers": ["Shipwright", "Musician", "Helmsman"],
+    "options": ["Shipwright", "Archaeologist", "Helmsman", "Musician"],
+    "source": "https://onepiece.fandom.com/wiki/Nico_Robin"
+  },
+  {
+    "category": "Characters",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who is the shipwright of the Straw Hat Pirates?",
+    "correct_answer": "Franky",
+    "incorrect_answers": ["Usopp", "Brook", "Jinbe"],
+    "options": ["Jinbe", "Franky", "Usopp", "Brook"],
+    "source": "https://onepiece.fandom.com/wiki/Franky"
+  },
+  {
+    "category": "Characters",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Brook, the Straw Hats' musician, is a living what?",
+    "correct_answer": "Skeleton",
+    "incorrect_answers": ["Zombie", "Ghost", "Cyborg"],
+    "options": ["Zombie", "Skeleton", "Cyborg", "Ghost"],
+    "source": "https://onepiece.fandom.com/wiki/Brook"
+  },
+  {
+    "category": "Characters",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which fish-man became the Straw Hat Pirates' helmsman?",
+    "correct_answer": "Jinbe",
+    "incorrect_answers": ["Arlong", "Hody Jones", "Fisher Tiger"],
+    "options": ["Arlong", "Jinbe", "Fisher Tiger", "Hody Jones"],
+    "source": "https://onepiece.fandom.com/wiki/Jinbe"
+  },
+  {
+    "category": "Devil Fruits",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the name of Monkey D. Luffy's Devil Fruit?",
+    "correct_answer": "Gomu Gomu no Mi",
+    "incorrect_answers": ["Mera Mera no Mi", "Hito Hito no Mi", "Bara Bara no Mi"],
+    "options": ["Hito Hito no Mi", "Gomu Gomu no Mi", "Bara Bara no Mi", "Mera Mera no Mi"],
+    "source": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi"
+  },
+  {
+    "category": "Devil Fruits",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which Devil Fruit did Portgas D. Ace possess?",
+    "correct_answer": "Mera Mera no Mi",
+    "incorrect_answers": ["Magu Magu no Mi", "Yami Yami no Mi", "Gura Gura no Mi"],
+    "options": ["Magu Magu no Mi", "Mera Mera no Mi", "Gura Gura no Mi", "Yami Yami no Mi"],
+    "source": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+  },
+  {
+    "category": "Devil Fruits",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What type of Devil Fruit is Ace's Mera Mera no Mi?",
+    "correct_answer": "Logia",
+    "incorrect_answers": ["Paramecia", "Zoan", "Ancient Zoan"],
+    "options": ["Paramecia", "Logia", "Ancient Zoan", "Zoan"],
+    "source": "https://onepiece.fandom.com/wiki/Devil_Fruit"
+  },
+  {
+    "category": "Devil Fruits",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the name of Trafalgar Law's Devil Fruit?",
+    "correct_answer": "Ope Ope no Mi",
+    "incorrect_answers": ["Bara Bara no Mi", "Ito Ito no Mi", "Hobi Hobi no Mi"],
+    "options": ["Bara Bara no Mi", "Ope Ope no Mi", "Hobi Hobi no Mi", "Ito Ito no Mi"],
+    "source": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi"
+  },
+  {
+    "category": "Devil Fruits",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which Devil Fruit does Sir Crocodile possess?",
+    "correct_answer": "Suna Suna no Mi",
+    "incorrect_answers": ["Doku Doku no Mi", "Moku Moku no Mi", "Pika Pika no Mi"],
+    "options": ["Doku Doku no Mi", "Suna Suna no Mi", "Pika Pika no Mi", "Moku Moku no Mi"],
+    "source": "https://onepiece.fandom.com/wiki/Suna_Suna_no_Mi"
+  },
+  {
+    "category": "Devil Fruits",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which Devil Fruit did Marshall D. Teach (Blackbeard) first obtain?",
+    "correct_answer": "Yami Yami no Mi",
+    "incorrect_answers": ["Gura Gura no Mi", "Goro Goro no Mi", "Hie Hie no Mi"],
+    "options": ["Gura Gura no Mi", "Yami Yami no Mi", "Hie Hie no Mi", "Goro Goro no Mi"],
+    "source": "https://onepiece.fandom.com/wiki/Yami_Yami_no_Mi"
+  },
+  {
+    "category": "Devil Fruits",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which Devil Fruit gives Marine officer Smoker his powers?",
+    "correct_answer": "Moku Moku no Mi",
+    "incorrect_answers": ["Suna Suna no Mi", "Yuki Yuki no Mi", "Gasu Gasu no Mi"],
+    "options": ["Suna Suna no Mi", "Moku Moku no Mi", "Gasu Gasu no Mi", "Yuki Yuki no Mi"],
+    "source": "https://onepiece.fandom.com/wiki/Moku_Moku_no_Mi"
+  },
+  {
+    "category": "Crews & Organizations",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the name of Monkey D. Luffy's pirate crew?",
+    "correct_answer": "Straw Hat Pirates",
+    "incorrect_answers": ["Heart Pirates", "Red Hair Pirates", "Whitebeard Pirates"],
+    "options": ["Heart Pirates", "Straw Hat Pirates", "Whitebeard Pirates", "Red Hair Pirates"],
+    "source": "https://onepiece.fandom.com/wiki/Straw_Hat_Pirates"
+  },
+  {
+    "category": "Crews & Organizations",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who is the captain of the Red Hair Pirates?",
+    "correct_answer": "Shanks",
+    "incorrect_answers": ["Buggy", "Dracule Mihawk", "Silvers Rayleigh"],
+    "options": ["Buggy", "Shanks", "Silvers Rayleigh", "Dracule Mihawk"],
+    "source": "https://onepiece.fandom.com/wiki/Shanks"
+  },
+  {
+    "category": "Crews & Organizations",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The Marines serve as the military sea force of which organization?",
+    "correct_answer": "World Government",
+    "incorrect_answers": ["Revolutionary Army", "Cipher Pol", "Seven Warlords of the Sea"],
+    "options": ["Revolutionary Army", "World Government", "Seven Warlords of the Sea", "Cipher Pol"],
+    "source": "https://onepiece.fandom.com/wiki/Marines"
+  },
+  {
+    "category": "Crews & Organizations",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Trafalgar Law is the captain of which pirate crew?",
+    "correct_answer": "Heart Pirates",
+    "incorrect_answers": ["Kid Pirates", "On Air Pirates", "Straw Hat Pirates"],
+    "options": ["Kid Pirates", "Heart Pirates", "Straw Hat Pirates", "On Air Pirates"],
+    "source": "https://onepiece.fandom.com/wiki/Heart_Pirates"
+  },
+  {
+    "category": "Crews & Organizations",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which organization is led by Monkey D. Dragon?",
+    "correct_answer": "Revolutionary Army",
+    "incorrect_answers": ["World Government", "Cipher Pol", "The Marines"],
+    "options": ["World Government", "Revolutionary Army", "The Marines", "Cipher Pol"],
+    "source": "https://onepiece.fandom.com/wiki/Revolutionary_Army"
+  },
+  {
+    "category": "Crews & Organizations",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Edward Newgate is the captain of which pirate crew?",
+    "correct_answer": "Whitebeard Pirates",
+    "incorrect_answers": ["Beasts Pirates", "Big Mom Pirates", "Roger Pirates"],
+    "options": ["Beasts Pirates", "Whitebeard Pirates", "Roger Pirates", "Big Mom Pirates"],
+    "source": "https://onepiece.fandom.com/wiki/Whitebeard_Pirates"
+  },
+  {
+    "category": "Arcs & Story",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In which arc do the Straw Hats fight Crocodile and Baroque Works?",
+    "correct_answer": "Alabasta",
+    "incorrect_answers": ["Skypiea", "Water 7", "Dressrosa"],
+    "options": ["Skypiea", "Alabasta", "Dressrosa", "Water 7"],
+    "source": "https://onepiece.fandom.com/wiki/Alabasta_Arc"
+  },
+  {
+    "category": "Arcs & Story",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which arc depicts the great war to rescue Portgas D. Ace from execution?",
+    "correct_answer": "Marineford",
+    "incorrect_answers": ["Enies Lobby", "Impel Down", "Sabaody Archipelago"],
+    "options": ["Enies Lobby", "Marineford", "Sabaody Archipelago", "Impel Down"],
+    "source": "https://onepiece.fandom.com/wiki/Marineford_Arc"
+  },
+  {
+    "category": "Arcs & Story",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "On which sky island do the Straw Hats confront the god Enel?",
+    "correct_answer": "Skypiea",
+    "incorrect_answers": ["Alabasta", "Thriller Bark", "Water 7"],
+    "options": ["Alabasta", "Skypiea", "Water 7", "Thriller Bark"],
+    "source": "https://onepiece.fandom.com/wiki/Skypiea_Arc"
+  },
+  {
+    "category": "Arcs & Story",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "On which island do the Straw Hats battle Warlord Gecko Moria?",
+    "correct_answer": "Thriller Bark",
+    "incorrect_answers": ["Skypiea", "Punk Hazard", "Zou"],
+    "options": ["Skypiea", "Thriller Bark", "Zou", "Punk Hazard"],
+    "source": "https://onepiece.fandom.com/wiki/Thriller_Bark_Arc"
+  },
+  {
+    "category": "Bounties",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was Monkey D. Luffy's very first bounty, issued after Arlong Park?",
+    "correct_answer": "30,000,000 Berries",
+    "incorrect_answers": ["15,000,000 Berries", "100,000,000 Berries", "50,000,000 Berries"],
+    "options": ["15,000,000 Berries", "30,000,000 Berries", "50,000,000 Berries", "100,000,000 Berries"],
+    "source": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy"
+  },
+  {
+    "category": "Bounties",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "After the Enies Lobby arc, Luffy's bounty was raised to what amount?",
+    "correct_answer": "300,000,000 Berries",
+    "incorrect_answers": ["100,000,000 Berries", "200,000,000 Berries", "400,000,000 Berries"],
+    "options": ["100,000,000 Berries", "300,000,000 Berries", "400,000,000 Berries", "200,000,000 Berries"],
+    "source": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy"
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In which village does Monkey D. Luffy grow up and begin his journey?",
+    "correct_answer": "Foosha Village",
+    "incorrect_answers": ["Syrup Village", "Cocoyasi Village", "Shells Town"],
+    "options": ["Syrup Village", "Foosha Village", "Shells Town", "Cocoyasi Village"],
+    "source": "https://onepiece.fandom.com/wiki/Foosha_Village"
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which mountain marks the entrance to the Grand Line?",
+    "correct_answer": "Reverse Mountain",
+    "incorrect_answers": ["The Red Line", "Drum Rockies", "Gyoncorde Plaza"],
+    "options": ["The Red Line", "Reverse Mountain", "Gyoncorde Plaza", "Drum Rockies"],
+    "source": "https://onepiece.fandom.com/wiki/Reverse_Mountain"
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the second half of the Grand Line commonly called?",
+    "correct_answer": "The New World",
+    "incorrect_answers": ["Paradise", "The Calm Belt", "The All Blue"],
+    "options": ["Paradise", "The New World", "The All Blue", "The Calm Belt"],
+    "source": "https://onepiece.fandom.com/wiki/New_World"
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Sanji dreams of finding which legendary sea said to contain every kind of fish?",
+    "correct_answer": "All Blue",
+    "incorrect_answers": ["The New World", "The Grand Line", "The Calm Belt"],
+    "options": ["The New World", "All Blue", "The Calm Belt", "The Grand Line"],
+    "source": "https://onepiece.fandom.com/wiki/All_Blue"
+  }
+]

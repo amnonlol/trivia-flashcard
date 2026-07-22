@@ -23,6 +23,26 @@ import { shuffle } from '../../utils';
 
 import Offline from '../Offline';
 
+// Fetch the local question bank once and memoize the promise so repeated
+// quizzes reuse the same in-memory copy.
+let questionBankPromise = null;
+const loadQuestionBank = () => {
+  if (!questionBankPromise) {
+    questionBankPromise = fetch(`${process.env.PUBLIC_URL}/data/questions.json`)
+      .then(response => {
+        if (!response.ok) throw new Error('Failed to load question bank');
+        return response.json();
+      })
+      .catch(error => {
+        // Don't cache a failed fetch — allow a retry on the next click.
+        questionBankPromise = null;
+        throw error;
+      });
+  }
+
+  return questionBankPromise;
+};
+
 const Main = ({ startQuiz }) => {
   const [category, setCategory] = useState('0');
   const [numOfQuestions, setNumOfQuestions] = useState(5);
@@ -57,23 +77,28 @@ const Main = ({ startQuiz }) => {
 
     if (error) setError(null);
 
-    const API = `https://opentdb.com/api.php?amount=${numOfQuestions}&category=${category}&difficulty=${difficulty}&type=${questionsType}`;
-
-    fetch(API)
-      .then(respone => respone.json())
-      .then(data =>
+    // Load the local One Piece question bank (served statically, cached by the
+    // service worker) instead of hitting an external trivia API. The response is
+    // memoized so subsequent quizzes filter in-memory without re-fetching.
+    loadQuestionBank()
+      .then(bank =>
         setTimeout(() => {
-          const { response_code, results } = data;
+          const pool = bank.filter(
+            q =>
+              (category === '0' || q.category === category) &&
+              (difficulty === '0' || q.difficulty === difficulty) &&
+              (questionsType === '0' || q.type === questionsType)
+          );
 
-          if (response_code === 1) {
+          if (pool.length < numOfQuestions) {
             const message = (
               <p>
-                The API doesn't have enough questions for your query. (Ex.
-                Asking for 50 Questions in a Category that only has 20.)
+                The question bank doesn't have enough questions for your query.
+                (Only {pool.length} match, but you asked for {numOfQuestions}.)
                 <br />
                 <br />
-                Please change the <strong>No. of Questions</strong>,{' '}
-                <strong>Difficulty Level</strong>, or{' '}
+                Please lower the <strong>No. of Questions</strong>, or change the{' '}
+                <strong>Category</strong>, <strong>Difficulty Level</strong>, or{' '}
                 <strong>Type of Questions</strong>.
               </p>
             );
@@ -84,12 +109,15 @@ const Main = ({ startQuiz }) => {
             return;
           }
 
-          results.forEach(element => {
-            element.options = shuffle([
-              element.correct_answer,
-              ...element.incorrect_answers,
-            ]);
-          });
+          const results = shuffle(pool)
+            .slice(0, numOfQuestions)
+            .map(element => ({
+              ...element,
+              options: shuffle([
+                element.correct_answer,
+                ...element.incorrect_answers,
+              ]),
+            }));
 
           setProcessing(false);
           startQuiz(
@@ -120,7 +148,7 @@ const Main = ({ startQuiz }) => {
             <Item.Image src={mindImg} />
             <Item.Content>
               <Item.Header>
-                <h1>The Ultimate Trivia Quiz</h1>
+                <h1>One Piece Trivia Quiz</h1>
               </Item.Header>
               {error && (
                 <Message error onDismiss={() => setError(null)}>
