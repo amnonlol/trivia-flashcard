@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# App build output
+app/build/
+app/storybook-static/
+
+# Local wiki dump + extracted data (large, regenerable)
+wiki-data/
+
+# Python pipeline
+pipeline/__pycache__/
+pipeline/.venv/
+*.pyc
+
+# Env / secrets
+.env
+.env.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
