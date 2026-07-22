@@ -289,21 +289,70 @@ def saga_from_first(first) -> dict | None:
 # canon disambiguators and are deliberately not listed.
 _NON_CANON_TITLE = ("(non-canon)", "(novel)", "one piece in love")
 
+# Titles of non-canon *works* (movies, games, novels, spin-off/parody manga, stage
+# shows) as they appear in a ``first`` field. A chapter citation alongside one of
+# these is a promotional cover/cameo tie-in, not a story debut: e.g. Uta
+# ("Chapter 1055 (flashback); One Piece Film: Red"), Zephyr ("One Piece Film: Z;
+# Chapter 691 (cover)"), the Odyssey game cast, and the Chin Piece / One Piece in
+# Love / MiraBato / novel casts. Matched case-insensitively against ``first``.
+_NON_CANON_WORK = re.compile(
+    r"One Piece Film|Film:|\bMovie\b|Odyssey|One Piece Party|One Piece in Love|"
+    r"One Piece Short|One Piece School|Chin Piece|Fischer's|Shokugeki no Sanji|"
+    r"One Piece novel|\bnovel\b|Chopperman|MiraBato|Dream Adventure Log|Stampede|"
+    r"Heart of Gold|Strong World|Dance Carnival|Live Attraction|Omake Manga Corner|"
+    r"episode A\b|3D2Y|Glorious Island|Cross Epoch|Romance Dawn Story",
+    re.IGNORECASE,
+)
+
+# A *clean* chapter citation — a bare "Chapter 907" clause, a genuine story debut.
+# Deliberately excludes qualified forms the wiki uses for non-story appearances:
+# "Chapter 691 (cover)", "Chapter 155 (mentioned)", "Chapter 1055 (flashback)",
+# "Chapter 817 cover", and work-prefixed ones like "Chin Piece Chapter 1" or
+# "novel HEROINES, Chapter 3" (none of which match ^Chapter <n>$).
+_CLEAN_CHAPTER = re.compile(r"^Chapter\s+\d+\.?$")
+
+
+def _has_non_canon_work(first) -> bool:
+    """True if any ``first`` entry names a non-canon work (movie/game/novel/etc.)."""
+    return any(_NON_CANON_WORK.search(str(item)) for item in as_list(first))
+
+
+def _has_clean_chapter(first) -> bool:
+    """True if ``first`` carries a bare "Chapter <n>" story debut (see
+    ``_CLEAN_CHAPTER``). Splits on ``;`` so "Chapter 907; Episode 887" counts."""
+    for item in as_list(first):
+        for clause in str(item).split(";"):
+            if _CLEAN_CHAPTER.match(clause.strip()):
+                return True
+    return False
+
 
 def is_canon(rec: dict) -> bool:
     """True only for manga-canon entities.
 
     An entity is canon iff its ``first`` field cites a manga *Chapter* and its
-    title isn't flagged as a non-canon variant. Anime-only fillers, movies, TV
-    specials, stage shows, video games and novels debut with an
-    ``Episode``/``Movie``/game-title ``first`` and never a chapter, so
-    ``saga_from_first`` returns None for them — we drop those entirely rather than
-    build questions (or distractors) from non-canon material.
+    title isn't flagged as a non-canon variant. Anime-only fillers debut with an
+    ``Episode``-only ``first`` (never a chapter), so ``saga_from_first`` returns
+    None for them and they're dropped.
+
+    Movies, games, novels and spin-off/parody manga are trickier: their original
+    characters often get a promotional manga *cover* or *flashback* cameo, which
+    cites a chapter and would otherwise pass. We drop an entity that names a
+    non-canon work in ``first`` **unless** it also has a clean standalone chapter
+    debut — that keeps canon figures who merely cameo'd in a film (e.g. Vice
+    Admirals Gion and Tokikake, who debut in Chapter 907 but appear in Film Gold)
+    while dropping the film/game/novel originals (Uta, Zephyr, Tesoro, the Odyssey
+    and Chin Piece casts, ...).
     """
     title = rec["title"].lower()
     if any(marker in title for marker in _NON_CANON_TITLE):
         return False
-    return saga_from_first(rec["fields"].get("first")) is not None
+    first = rec["fields"].get("first")
+    if saga_from_first(first) is None:
+        return False
+    if _has_non_canon_work(first) and not _has_clean_chapter(first):
+        return False
+    return True
 
 
 _KINGDOM_RE = re.compile(r"\bKingdom\b")
@@ -443,7 +492,6 @@ def generate(by_kind):
     pool_region = build_pool(locs, lambda l: primary(l["fields"].get("region")))
     pool_residence = build_pool(chars, lambda c: primary(c["fields"].get("residence")))
     pool_epithet = build_pool(chars, lambda c: clean_epithet(c["fields"].get("epithet")))
-    pool_df_meaning = build_pool(fruits, lambda fr: clean_name(fr["fields"].get("meaning")))
 
     # Process the most-prominent subjects first so the per-template / per-answer
     # caps fill with the famous entities an event actually asks about, instead of
@@ -566,13 +614,6 @@ def generate(by_kind):
                 fr["title"], f"What type of Devil Fruit is the {fruit_name}?",
                 dtype, pool_df_type, rng, "Devil Fruits", difficulty(prom, 0), src,
                 exp), "fruit_type", prom, saga, max_answer=MAX_PER_ANSWER_CLASS)
-
-        meaning = clean_name(f.get("meaning"))
-        if meaning:
-            emit(fr["title"], make_question(
-                fr["title"], f"What does the name of the {fruit_name} translate to?",
-                meaning, pool_df_meaning, rng, "Devil Fruits", difficulty(prom, 1),
-                src, exp), "fruit_meaning", prom, saga)
 
     # --- Location templates --------------------------------------------------
     for l in locs:

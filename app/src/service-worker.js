@@ -36,6 +36,22 @@ registerRoute(
   })
 );
 
+// The One Piece question bank is the entire content of the app, so it must be
+// available offline for the PWA promise to hold. Precaching via __WB_MANIFEST
+// isn't guaranteed — the bank can exceed CRA's default precache size cap — so we
+// register an explicit runtime route. StaleWhileRevalidate serves the cached copy
+// instantly (fast, offline-safe) while refreshing it in the background, so a
+// redeployed bank is picked up on the next visit without a version bump.
+registerRoute(
+  ({ url }) =>
+    url.origin === self.location.origin &&
+    url.pathname.endsWith('/data/questions.json'),
+  new StaleWhileRevalidate({
+    cacheName: 'question-bank',
+    plugins: [new ExpirationPlugin({ maxEntries: 4 })]
+  })
+);
+
 self.addEventListener('message', event => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
