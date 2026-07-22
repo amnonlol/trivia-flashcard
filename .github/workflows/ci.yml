@@ -1,0 +1,63 @@
+name: CI
+
+# Guards the two halves of the repo on every push / PR to main:
+#   * the React PWA in app/ — must lint-build and pass its unit tests;
+#   * the committed question bank — must still satisfy the quiz-engine schema.
+# CI never regenerates the bank (that needs the multi-hundred-MB wiki dump, which
+# is gitignored); it validates whatever questions.json is checked in.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# A newer push to the same branch cancels an in-flight run.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  app:
+    name: App (test + build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Test
+        # CI=true makes react-scripts run the suite once and treat warnings as
+        # errors, so a lint regression fails the build.
+        run: npm test -- --watchAll=false
+        env:
+          CI: true
+
+      - name: Build
+        run: npm run build
+        env:
+          CI: true
+
+  question-bank:
+    name: Question bank (schema validation)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # validate.py uses only the standard library, so no pip install is needed.
+      - name: Validate committed bank
+        run: python pipeline/validate.py --in app/public/data/questions.json --check-only
