@@ -6,12 +6,20 @@ import Swal from 'sweetalert2';
 import { timeConverter } from '../../utils';
 
 const Countdown = ({ countdownTime, timeOver, setTimeTaken }) => {
+  // No countdown selected → run as a count-up stopwatch so the quiz never
+  // times out but "Time Taken" is still tracked for the results screen.
+  const isCountUp = countdownTime === 0;
   const totalTime = countdownTime * 1000;
-  const [timerTime, setTimerTime] = useState(totalTime);
+  const [timerTime, setTimerTime] = useState(isCountUp ? 0 : totalTime);
   const { hours, minutes, seconds } = timeConverter(timerTime);
 
   useEffect(() => {
     const timer = setInterval(() => {
+      if (isCountUp) {
+        setTimerTime(timerTime + 1000);
+        return;
+      }
+
       const newTime = timerTime - 1000;
 
       if (newTime >= 0) {
@@ -32,7 +40,7 @@ const Countdown = ({ countdownTime, timeOver, setTimeTaken }) => {
 
     return () => {
       clearInterval(timer);
-      setTimeTaken(totalTime - timerTime + 1000);
+      setTimeTaken(isCountUp ? timerTime : totalTime - timerTime + 1000);
     };
 
     // eslint-disable-next-line

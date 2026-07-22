@@ -5,7 +5,6 @@ import {
   Segment,
   Item,
   Divider,
-  Button,
   Icon,
   Message,
   Menu,
@@ -19,7 +18,6 @@ import { getLetter } from '../../utils';
 const Quiz = ({ data, countdownTime, endQuiz }) => {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
-  const [userSlectedAns, setUserSlectedAns] = useState(null);
   const [questionsAndAnswers, setQuestionsAndAnswers] = useState([]);
   const [timeTaken, setTimeTaken] = useState(null);
 
@@ -27,20 +25,17 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
     if (questionIndex > 0) window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [questionIndex]);
 
-  const handleItemClick = (e, { name }) => {
-    setUserSlectedAns(name);
-  };
-
-  const handleNext = () => {
+  // Selecting an answer submits it immediately and advances the quiz.
+  const handleAnswer = selectedAnswer => {
     let point = 0;
-    if (userSlectedAns === he.decode(data[questionIndex].correct_answer)) {
+    if (selectedAnswer === he.decode(data[questionIndex].correct_answer)) {
       point = 1;
     }
 
     const qna = questionsAndAnswers;
     qna.push({
       question: he.decode(data[questionIndex].question),
-      user_answer: userSlectedAns,
+      user_answer: selectedAnswer,
       correct_answer: he.decode(data[questionIndex].correct_answer),
       point,
     });
@@ -56,7 +51,6 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
 
     setCorrectAnswers(correctAnswers + point);
     setQuestionIndex(questionIndex + 1);
-    setUserSlectedAns(null);
     setQuestionsAndAnswers(qna);
   };
 
@@ -108,8 +102,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                         <Menu.Item
                           key={decodedOption}
                           name={decodedOption}
-                          active={userSlectedAns === decodedOption}
-                          onClick={handleItemClick}
+                          onClick={() => handleAnswer(decodedOption)}
                         >
                           <b style={{ marginRight: '8px' }}>{letter}</b>
                           {decodedOption}
@@ -118,19 +111,6 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                     })}
                   </Menu>
                 </Item.Meta>
-                <Divider />
-                <Item.Extra>
-                  <Button
-                    primary
-                    content="Next"
-                    onClick={handleNext}
-                    floated="right"
-                    size="big"
-                    icon="right chevron"
-                    labelPosition="right"
-                    disabled={!userSlectedAns}
-                  />
-                </Item.Extra>
               </Item.Content>
             </Item>
           </Item.Group>

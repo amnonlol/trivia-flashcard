@@ -48,9 +48,10 @@ const Main = ({ startQuiz }) => {
   const [numOfQuestions, setNumOfQuestions] = useState(5);
   const [difficulty, setDifficulty] = useState('easy');
   const [questionsType, setQuestionsType] = useState('0');
+  // Default to no countdown; the timer only kicks in if the user picks one.
   const [countdownTime, setCountdownTime] = useState({
     hours: 0,
-    minutes: 120,
+    minutes: 0,
     seconds: 0,
   });
   const [processing, setProcessing] = useState(false);
@@ -61,14 +62,9 @@ const Main = ({ startQuiz }) => {
     setCountdownTime({ ...countdownTime, [name]: value });
   };
 
+  // Countdown is optional (defaults to none), so it isn't a required field.
   let allFieldsSelected = false;
-  if (
-    category &&
-    numOfQuestions &&
-    difficulty &&
-    questionsType &&
-    (countdownTime.hours || countdownTime.minutes || countdownTime.seconds)
-  ) {
+  if (category && numOfQuestions && difficulty && questionsType) {
     allFieldsSelected = true;
   }
 
@@ -210,7 +206,10 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
-                <p>Please select the countdown time for your quiz.</p>
+                <p>
+                  Optionally, set a countdown time for your quiz (leave at 0 for
+                  no timer).
+                </p>
                 <Dropdown
                   search
                   selection
