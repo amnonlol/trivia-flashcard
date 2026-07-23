@@ -41,6 +41,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_IN = REPO_ROOT / "wiki-data" / "questions.generated.json"
 DEFAULT_OUT = REPO_ROOT / "app" / "public" / "data" / "questions.json"
+GOLDEN = Path(__file__).resolve().parent / "golden.json"
 
 VALID_DIFFICULTIES = {"easy", "medium", "hard"}
 # Must stay in sync with app/src/constants/categories.js.
@@ -132,11 +133,34 @@ def validate_one(q: dict) -> str | None:
     return None
 
 
+def check_golden(valid: list[dict], path: Path) -> list[str]:
+    """Assert hand-verified canon facts survived generation with the right answer.
+
+    Returns a list of failure strings (empty == all good). A regression guard: if a
+    parse/normalisation change silently corrupts, drops, or re-answers a well-known
+    fact (e.g. Luffy's Devil Fruit), the expected Q/A no longer matches the built
+    bank and the run fails instead of shipping bad questions.
+    """
+    golden = json.loads(path.read_text(encoding="utf-8")).get("facts", [])
+    by_q = {norm_key(q["question"]): q for q in valid}
+    failures = []
+    for g in golden:
+        q = by_q.get(norm_key(g["question"]))
+        if q is None:
+            failures.append(f"missing: {g['question']!r}")
+        elif norm_key(q["correct_answer"]) != norm_key(g["answer"]):
+            failures.append(
+                f"wrong answer for {g['question']!r}: "
+                f"got {q['correct_answer']!r}, expected {g['answer']!r}")
+    return failures
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--in", dest="inp", type=Path, default=DEFAULT_IN, help="input questions JSON array")
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT, help="output question bank for the app")
     ap.add_argument("--check-only", action="store_true", help="validate but do not write output")
+    ap.add_argument("--skip-golden", action="store_true", help="skip the hand-verified golden-fact regression check")
     args = ap.parse_args(argv)
 
     if not args.inp.exists():
@@ -178,6 +202,15 @@ def main(argv=None) -> int:
     for cat, n in Counter(q["category"] for q in valid).most_common():
         print(f"    {n:5d}  {cat}")
     print("  by difficulty:", dict(Counter(q["difficulty"] for q in valid)))
+
+    if not args.skip_golden and GOLDEN.exists():
+        failures = check_golden(valid, GOLDEN)
+        if failures:
+            print(f"GOLDEN CHECK FAILED ({len(failures)}):")
+            for fail in failures:
+                print(f"  {fail}")
+            raise SystemExit("golden-fact regression — refusing to write bank")
+        print("  golden check: all verified facts present and correct")
 
     if args.check_only:
         print("check-only: not writing output")

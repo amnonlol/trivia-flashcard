@@ -91,6 +91,17 @@ MAX_PER_ANSWER = 6
 # than name-shaped fields where MAX_PER_ANSWER prevents one crew swamping the bank.
 MAX_PER_ANSWER_CLASS = 30
 
+# There are only 11 sagas, so "which saga does X debut in?" would hit MAX_PER_ANSWER
+# almost immediately. This looser cap lets the arc-debut template contribute a real
+# slice of the bank without letting any one saga dominate it.
+MAX_PER_ANSWER_SAGA = 14
+
+# An "occupation" that only one character in the whole dump carries (e.g. "God of
+# Skypiea", "Biwa hoshi") is really a one-off title, not a gradeable occupation, and
+# it makes an odd-one-out distractor. We only ask/offer occupations shared by at
+# least this many characters, so both answers and distractors are recognisable roles.
+MIN_OCCUPATION_FREQ = 2
+
 
 # --------------------------------------------------------------------------- #
 # Value normalisation
@@ -192,24 +203,45 @@ def clean_bounty(v) -> str | None:
     return None
 
 
+def bounty_amount(v) -> int | None:
+    """Numeric value of a character's canonical bounty (``clean_bounty`` -> int), or
+    None. Used to rank pirates by bounty for the "highest bounty?" template."""
+    b = clean_bounty(v)
+    if not b:
+        return None
+    digits = b.replace(",", "").split()[0]
+    return int(digits) if digits.isdigit() else None
+
+
 _NIHONGO = re.compile(r"\{\{Nihongo\|([^|}]*)")
+_QUOTES = re.compile(r'["“”]')          # any double-quote mark (also mid-string)
+# Dub-only variants ("Sky Punk (4Kids...)", "...in the edited dub"). Whole *list
+# items* that are purely a dub note are skipped in favour of the canon epithet.
+_DUB_NOTE = re.compile(r"4Kids|Funimation|\bVIZ\b|edited dub|English version|subs",
+                       re.IGNORECASE)
 
 
 def clean_epithet(v) -> str | None:
-    """Pull the display (English) epithet out of a ``{{Nihongo|...}}`` template.
+    """Extract a clean display epithet from the ``epithet`` field.
 
-    Epithets are iconic ("Pirate Hunter", "God Enel") but the raw field is noisy:
-    only the templated ``{{Nihongo|"Chaser"|...}}`` form carries a clean English
-    string. Bare dub-note junk (``"(former)"``, ``"Beast Breaker (4Kids)"``) has no
-    ``Nihongo`` wrapper, so it never matches and is dropped — we keep quality high
-    at the cost of volume.
+    Epithets are iconic ("Pirate Hunter", "Cat Burglar", "Fire Fist"). The parser
+    resolves the wiki's ``{{Nihongo|...}}`` wrapper to a plain string ahead of us,
+    so the field arrives as a quoted string or a list of them
+    (``'"Chaser"'``, ``['"Sengoku the Buddha"', '"The Resourceful General"']``).
+    We take the first canon entry, drop parenthetical dub/translation notes and the
+    surrounding quotes, and skip list items that are *only* a dub variant so a
+    character keeps their real epithet rather than a 4Kids rename.
     """
     for item in as_list(v):
-        m = _NIHONGO.search(str(item))
-        if not m:
-            continue
-        e = strip_quals(m.group(1).replace('"', "").strip())
-        if e and len(e) > 1 and "{{{" not in e:
+        s = str(item)
+        m = _NIHONGO.search(s)          # tolerate a still-wrapped value, just in case
+        if m:
+            s = m.group(1)
+        if _DUB_NOTE.search(s) and "(" not in s:
+            continue                    # a bare dub-only alt; prefer the next entry
+        e = _QUOTES.sub("", strip_quals(s.split(";")[0])).strip(" ;,.")
+        if e and len(e) > 2 and "{{" not in e and e.lower() not in (
+                "former", "formerly", "n/a", "none", "unknown"):
             return e
     return None
 
@@ -379,34 +411,74 @@ def near_dupe(a: str, b: str) -> bool:
     return ka == kb or ka in kb or kb in ka
 
 
-def sample_distractors(correct: str, pool: list[str], rng: random.Random, n: int = 3):
+def sample_distractors(correct: str, pool, rng: random.Random, n: int = 3,
+                       ctx_tier=None, ctx_saga=None):
     """Pick ``n`` distinct distractors from ``pool``, skipping near-dupes.
 
-    ``pool`` is the deduped list of every real value for this field. Returns None
-    if fewer than ``n`` plausible distinct distractors survive filtering.
+    ``pool`` is the deduped list of ``{"v", "tier", "saga"}`` entries for this
+    field (see ``build_pool``). Candidates are shuffled for variety, then stably
+    ordered so that wrong answers from the **same prominence tier** and the
+    **same-or-earlier saga** as the subject come first — a famous East-Blue-era
+    question gets famous, era-appropriate distractors instead of a random deep cut.
+    Ordering is only a preference: the whole pool is still traversed, so volume is
+    unchanged. Returns None if fewer than ``n`` plausible distinct distractors
+    survive.
     """
-    chosen: list[str] = []
-    candidates = pool[:]
+    candidates = [p for p in pool if not near_dupe(p["v"], correct)]
     rng.shuffle(candidates)
-    for cand in candidates:
-        if near_dupe(cand, correct):
+
+    def closeness(p):
+        # Prefer same prominence tier (smaller gap first). Unknown tiers are neutral.
+        if ctx_tier is not None and p["tier"] is not None:
+            tier_gap = abs(p["tier"] - ctx_tier)
+        else:
+            tier_gap = 0
+        # Prefer distractors that already exist by the subject's debut saga; later
+        # debuts are pushed back (and mildly penalised by how much later).
+        if ctx_saga is not None and p["saga"] is not None:
+            saga_gap = 0 if p["saga"] <= ctx_saga else (p["saga"] - ctx_saga)
+        else:
+            saga_gap = 0
+        return (tier_gap, saga_gap)
+
+    candidates.sort(key=closeness)  # stable: keeps the shuffle order within a tie
+    chosen: list[str] = []
+    for p in candidates:
+        if any(near_dupe(p["v"], c) for c in chosen):
             continue
-        if any(near_dupe(cand, c) for c in chosen):
-            continue
-        chosen.append(cand)
+        chosen.append(p["v"])
         if len(chosen) == n:
             return chosen
     return None
 
 
+def lead(fact: str, summary) -> str:
+    """Compose an answer-specific explainer: a one-line statement of the fact just
+    asked, followed by the subject's wiki lead for context.
+
+    The old behaviour handed every question about a subject that subject's generic
+    ``summary``, so all four Vegapunk questions showed the same "leading scientist
+    of the SSG" blurb and none of them explained the actual answer. Prefixing the
+    fact ("Vegapunk ate the Nomi Nomi no Mi.") makes the teaching aid specific to
+    what was asked while keeping the lead for colour.
+    """
+    fact = fact.strip()
+    if fact and fact[-1] not in ".!?":
+        fact += "."
+    summary = (summary or "").strip()
+    return f"{fact} {summary}".strip() if summary else fact
+
+
 def make_question(subject_seed, question, correct, pool, rng_master,
-                  category, diff, source, explainer=None, image=None):
+                  category, diff, source, explainer=None, image=None,
+                  ctx_tier=None, ctx_saga=None):
     # Never build a question around a meta/real-world value (e.g. a card-game
     # mascot whose "origin" parsed to "Bandai").
     if is_noise(correct):
         return None
     rng = random.Random(f"{SEED}:{subject_seed}:{question}")
-    distractors = sample_distractors(correct, pool, rng)
+    distractors = sample_distractors(correct, pool, rng,
+                                     ctx_tier=ctx_tier, ctx_saga=ctx_saga)
     if not distractors:
         return None
     options = distractors + [correct]
@@ -447,15 +519,36 @@ def load_facts(path: Path):
 def build_pool(records, extract):
     """Deduped list of normalised values across ``records`` for a field.
 
+    Each entry is a dict ``{"v", "tier", "saga"}`` carrying the value plus the
+    prominence tier and debut-saga order of the entity it came from, so
+    ``sample_distractors`` can prefer era-/tier-appropriate wrong answers. First
+    occurrence of a value wins (records aren't prominence-sorted yet at pool-build
+    time, but the tier is only a sampling *preference*, not a hard filter).
+
     Meta/real-world noise (see ``META_NOISE``) is dropped so it can never surface
     as a distractor.
     """
     seen = {}
     for rec in records:
         val = extract(rec)
-        if val and not is_noise(val):
-            seen[norm_key(val)] = val
+        if not val or is_noise(val):
+            continue
+        k = norm_key(val)
+        if k in seen:
+            continue
+        saga = saga_from_first(rec.get("fields", {}).get("first"))
+        seen[k] = {
+            "v": val,
+            "tier": prominence(rec.get("title", ""), rec.get("article_len", 0)),
+            "saga": saga["order"] if saga else None,
+        }
     return list(seen.values())
+
+
+def saga_pool():
+    """Distractor pool of every saga name (for arc-debut questions). Tier/saga are
+    left ``None`` so sampling treats all sagas as equally plausible distractors."""
+    return [{"v": name, "tier": None, "saga": None} for _, _, name in SAGA_BOUNDS]
 
 
 def generate(by_kind):
@@ -492,6 +585,48 @@ def generate(by_kind):
     pool_region = build_pool(locs, lambda l: primary(l["fields"].get("region")))
     pool_residence = build_pool(chars, lambda c: primary(c["fields"].get("residence")))
     pool_epithet = build_pool(chars, lambda c: clean_epithet(c["fields"].get("epithet")))
+
+    # Character-name pool: the distractor source for the reverse/relational templates
+    # whose *answer is a character* (reverse-epithet, crew membership, bounty ranking).
+    pool_name = build_pool(chars, lambda c: c["title"])
+    pool_saga = saga_pool()
+
+    # Occupation frequency: an occupation only one character carries is really a
+    # one-off title, not a gradeable role. Restrict the occupation pool (answers and
+    # distractors) to occupations shared by >= MIN_OCCUPATION_FREQ characters.
+    occ_freq = Counter(
+        norm_key(primary(c["fields"].get("occupation")))
+        for c in chars if primary(c["fields"].get("occupation"))
+    )
+    pool_occupation = [p for p in pool_occupation
+                       if occ_freq[norm_key(p["v"])] >= MIN_OCCUPATION_FREQ]
+
+    # Crew-membership index: norm(affiliation) -> set of member norm-names, built from
+    # *every* affiliation a character lists (not just the primary) so a former member
+    # is never offered as a wrong "member of crew X" distractor.
+    members_by_crew: dict[str, set[str]] = defaultdict(set)
+    for c in chars:
+        for item in as_list(c["fields"].get("affiliation")):
+            for clause in re.split(r"[;,]", strip_quals(item)):
+                key = norm_key(clause)
+                if key:
+                    members_by_crew[key].add(norm_key(c["title"]))
+
+    # Bounty-holder name pool: the distractor source for the reverse-bounty template
+    # ("which character has a bounty of X?"). Drawing wrong answers only from other
+    # bounty-carrying characters keeps them plausibly bounty-worthy pirates.
+    pool_bounty_names = build_pool(
+        [c for c in chars if bounty_amount(c["fields"].get("bounty")) is not None],
+        lambda c: c["title"],
+    )
+
+    def within_saga(items, limit):
+        """Keep only pool items debuting no later than ``limit`` (spoiler bound for
+        name-answer templates, whose distractors are themselves characters). Items of
+        unknown debut are kept — they can't be gated and are rarely late-saga."""
+        if limit is None:
+            return items
+        return [p for p in items if p["saga"] is None or p["saga"] <= limit]
 
     # Process the most-prominent subjects first so the per-template / per-answer
     # caps fill with the famous entities an event actually asks about, instead of
@@ -531,66 +666,130 @@ def generate(by_kind):
     rng = random.Random(SEED)
 
     # --- Character templates -------------------------------------------------
-    # depth 0 = headline fact, depth 1 = deep cut (see difficulty()).
+    # depth 0 = headline fact, depth 1 = deep cut (see difficulty()). Every call
+    # passes ctx_tier/ctx_saga so distractors are era- and fame-appropriate, and a
+    # fact-specific explainer (see lead()) so the post-answer teaching aid explains
+    # the actual answer rather than repeating the subject's generic wiki lead.
     for c in chars:
         name = c["title"]
         f = c["fields"]
         prom = prominence(name, c.get("article_len", 0))
         saga = saga_from_first(f.get("first"))
+        so = saga["order"] if saga else None
         src = c["source"]
-        exp = c.get("summary")  # subject's wiki lead — the post-answer explainer
+        exp = c.get("summary")  # subject's wiki lead — context after the fact line
 
         df = combined_df_name(f.get("dfename"), f.get("dfname"))
         if df:
             emit(name, make_question(
                 name, f"Which Devil Fruit did {name} eat?", df, pool_df_name,
-                rng, "Devil Fruits", difficulty(prom, 0), src, exp),
-                "char_df", prom, saga)
+                rng, "Devil Fruits", difficulty(prom, 0), src,
+                lead(f"{name}'s Devil Fruit is the {df}", exp),
+                ctx_tier=prom, ctx_saga=so), "char_df", prom, saga)
 
         aff = primary(f.get("affiliation"))
         if aff:
             emit(name, make_question(
                 name, f"Which crew or organization is {name} affiliated with?",
                 aff, pool_affiliation, rng, "Crews & Organizations",
-                difficulty(prom, 0), src, exp), "char_affiliation", prom, saga)
+                difficulty(prom, 0), src,
+                lead(f"{name} is affiliated with the {aff}", exp),
+                ctx_tier=prom, ctx_saga=so), "char_affiliation", prom, saga)
 
         bounty = clean_bounty(f.get("bounty"))
         if bounty:
             emit(name, make_question(
                 name, f"What is {name}'s known bounty?", bounty, pool_bounty,
-                rng, "Bounties", difficulty(prom, 0), src, exp),
-                "char_bounty", prom, saga)
+                rng, "Bounties", difficulty(prom, 0), src,
+                lead(f"{name}'s known bounty is {bounty}", exp),
+                ctx_tier=prom, ctx_saga=so), "char_bounty", prom, saga)
 
-        # Occupation self-selects for informative answers: the per-answer cap
-        # limits generic values ("Pirate" covers ~400 characters) so the surviving
-        # questions skew to distinctive roles (Doctor, Vice Admiral, Samurai...).
+        # Occupation self-selects for informative answers: the per-answer cap limits
+        # generic values ("Pirate" covers ~400 characters), and the pool is already
+        # filtered to occupations >= 2 characters share, so the surviving questions
+        # skew to distinctive, gradeable roles (Doctor, Vice Admiral, Samurai...).
         occupation = primary(f.get("occupation"))
-        if occupation:
+        if occupation and occ_freq[norm_key(occupation)] >= MIN_OCCUPATION_FREQ:
             emit(name, make_question(
                 name, f"What is {name}'s occupation?", occupation, pool_occupation,
-                rng, "Characters", difficulty(prom, 0), src, exp),
-                "char_occupation", prom, saga)
+                rng, "Characters", difficulty(prom, 0), src,
+                lead(f"{name}'s occupation is {occupation}", exp),
+                ctx_tier=prom, ctx_saga=so), "char_occupation", prom, saga)
 
         origin = primary(f.get("origin"))
         if origin:
             emit(name, make_question(
                 name, f"Where does {name} originate from?", origin, pool_origin,
-                rng, "Characters", difficulty(prom, 1), src, exp),
-                "char_origin", prom, saga)
+                rng, "Characters", difficulty(prom, 1), src,
+                lead(f"{name} originates from {origin}", exp),
+                ctx_tier=prom, ctx_saga=so), "char_origin", prom, saga)
 
         residence = primary(f.get("residence"))
         if residence:
             emit(name, make_question(
                 name, f"Where does {name} reside?", residence, pool_residence,
-                rng, "Geography", difficulty(prom, 1), src, exp),
-                "char_residence", prom, saga)
+                rng, "Geography", difficulty(prom, 1), src,
+                lead(f"{name} resides in {residence}", exp),
+                ctx_tier=prom, ctx_saga=so), "char_residence", prom, saga)
 
         epithet = clean_epithet(f.get("epithet"))
         if epithet:
             emit(name, make_question(
                 name, f"By what epithet is {name} known?", epithet, pool_epithet,
-                rng, "Characters", difficulty(prom, 0), src, exp),
-                "char_epithet", prom, saga)
+                rng, "Characters", difficulty(prom, 0), src,
+                lead(f'{name} is known as "{epithet}"', exp),
+                ctx_tier=prom, ctx_saga=so), "char_epithet", prom, saga)
+
+        # Reverse-epithet: the same fact asked the other way. Iconic and only worth
+        # asking for recognisable subjects, so gate on prominence. Distractors are
+        # other characters, bounded to the subject's debut saga so a later-arc name
+        # can't leak as a wrong answer. Skip epithets that embed the character's own
+        # name ("Pirate Hunter Zoro", "Kaidou of the Beasts") — they'd give the
+        # answer away in this direction (the forward question still asks them).
+        name_tokens = {t for t in re.findall(r"[A-Za-z]+", name) if len(t) >= 3}
+        epithet_gives_name = bool(epithet) and any(
+            t.lower() in epithet.lower() for t in name_tokens)
+        if epithet and prom >= 1 and not epithet_gives_name:
+            emit(name, make_question(
+                name, f"Which character is known by the epithet \"{epithet}\"?",
+                name, within_saga(pool_name, so), rng, "Characters",
+                difficulty(prom, 0), src,
+                lead(f'"{epithet}" is the epithet of {name}', exp),
+                ctx_tier=prom, ctx_saga=so), "epithet_reverse", prom, saga)
+
+        # Crew membership (relational): "which of these is a member of X?". Answer is
+        # the subject; distractors are characters who are *not* in that crew (checked
+        # against every affiliation they list), bounded to the subject's debut saga.
+        if aff and prom >= 1:
+            non_members = [p for p in within_saga(pool_name, so)
+                           if norm_key(p["v"]) not in members_by_crew[norm_key(aff)]]
+            emit(name, make_question(
+                name, f"Which of these characters is a member of the {aff}?",
+                name, non_members, rng, "Crews & Organizations",
+                difficulty(prom, 1), src,
+                lead(f"{name} is a member of the {aff}", exp),
+                ctx_tier=prom, ctx_saga=so), "crew_member", prom, saga)
+
+        # Reverse-bounty (bounty -> character): the amount is the prompt, other
+        # bounty-carrying pirates are the distractors (saga-bounded). Unlike a
+        # generic "who has the highest bounty?" its text is unique per amount, so it
+        # doesn't collapse under duplicate-text dedupe.
+        if bounty and prom >= 1:
+            emit(name, make_question(
+                name, f"Which character has a known bounty of {bounty}?", name,
+                within_saga(pool_bounty_names, so), rng, "Bounties",
+                difficulty(prom, 1), src,
+                lead(f"{name} has a known bounty of {bounty}", exp),
+                ctx_tier=prom, ctx_saga=so), "bounty_reverse", prom, saga)
+
+        # Arc debut (Arcs & Story): when a recognisable character first appears. The
+        # answer is a saga name; the saga distractor pool covers every saga.
+        if saga and prom >= 1:
+            emit(name, make_question(
+                name, f"In which saga does {name} first appear?", saga["name"],
+                pool_saga, rng, "Arcs & Story", difficulty(prom, 1), src,
+                lead(f"{name} first appears in the {saga['name']} Saga", exp)),
+                "char_saga", prom, saga, max_answer=MAX_PER_ANSWER_SAGA)
 
     # --- Devil Fruit templates ----------------------------------------------
     for fr in fruits:
@@ -601,32 +800,40 @@ def generate(by_kind):
         src = fr["source"]
         exp = fr.get("summary")
 
+        so = saga["order"] if saga else None
+
         user = clean_name(f.get("user"))
         if user:
             emit(fr["title"], make_question(
                 fr["title"], f"Who is the user of the {fruit_name}?", user,
-                pool_df_user, rng, "Devil Fruits", difficulty(prom, 0), src, exp),
-                "fruit_user", prom, saga)
+                pool_df_user, rng, "Devil Fruits", difficulty(prom, 0), src,
+                lead(f"The {fruit_name} is eaten by {user}", exp),
+                ctx_tier=prom, ctx_saga=so), "fruit_user", prom, saga)
 
         dtype = primary(f.get("type"))
         if dtype and dtype.lower() != "unknown":
             emit(fr["title"], make_question(
                 fr["title"], f"What type of Devil Fruit is the {fruit_name}?",
                 dtype, pool_df_type, rng, "Devil Fruits", difficulty(prom, 0), src,
-                exp), "fruit_type", prom, saga, max_answer=MAX_PER_ANSWER_CLASS)
+                lead(f"The {fruit_name} is a {dtype}-type Devil Fruit", exp),
+                ctx_tier=prom, ctx_saga=so),
+                "fruit_type", prom, saga, max_answer=MAX_PER_ANSWER_CLASS)
 
     # --- Location templates --------------------------------------------------
     for l in locs:
         f = l["fields"]
-        prom = prominence(l["title"], l.get("article_len", 0))
+        title = l["title"]
+        prom = prominence(title, l.get("article_len", 0))
         saga = saga_from_first(f.get("first"))
+        so = saga["order"] if saga else None
         exp = l.get("summary")
         region = primary(f.get("region"))
         if region:
-            emit(l["title"], make_question(
-                l["title"], f"In which region of the world is {l['title']} located?",
+            emit(title, make_question(
+                title, f"In which region of the world is {title} located?",
                 region, pool_region, rng, "Geography", difficulty(prom, 1),
-                l["source"], exp), "loc_region", prom, saga)
+                l["source"], lead(f"{title} is located in {region}", exp),
+                ctx_tier=prom, ctx_saga=so), "loc_region", prom, saga)
 
         # Repurposed from the old vague "Which faction is X affiliated with?"
         # (answers ranged over kingdoms, crews, families and even characters). We
@@ -635,10 +842,20 @@ def generate(by_kind):
         # non-kingdom affiliations are dropped rather than asked vaguely.
         affil = primary(f.get("affiliation"))
         if is_kingdom(affil):
-            emit(l["title"], make_question(
-                l["title"], f"Which kingdom does {l['title']} belong to?",
+            emit(title, make_question(
+                title, f"Which kingdom does {title} belong to?",
                 affil, pool_kingdom, rng, "Geography",
-                difficulty(prom, 1), l["source"], exp), "loc_kingdom", prom, saga)
+                difficulty(prom, 1), l["source"],
+                lead(f"{title} belongs to the {affil}", exp),
+                ctx_tier=prom, ctx_saga=so), "loc_kingdom", prom, saga)
+
+        # Arc debut of a recognisable location (Arcs & Story).
+        if saga and prom >= 1:
+            emit(title, make_question(
+                title, f"In which saga does {title} first appear?", saga["name"],
+                pool_saga, rng, "Arcs & Story", difficulty(prom, 1), l["source"],
+                lead(f"{title} first appears in the {saga['name']} Saga", exp)),
+                "loc_saga", prom, saga, max_answer=MAX_PER_ANSWER_SAGA)
 
     return out
 

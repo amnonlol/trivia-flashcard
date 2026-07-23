@@ -1,0 +1,27 @@
+{
+  "_comment": "Hand-verified canon facts that MUST survive generation+validation unchanged. A regression guard for pipeline parse/normalisation changes (validate.py checks these against the built bank). Each entry: the exact question text and its expected correct_answer. Prefer immutable facts (Devil Fruits, crews, occupations, epithets, debut saga) over volatile ones (bounties). Update alongside deliberate phrasing changes.",
+  "facts": [
+    {"question": "Which Devil Fruit did Monkey D. Luffy eat?", "answer": "Gum-Gum Fruit / Gomu Gomu no Mi"},
+    {"question": "Which Devil Fruit did Portgas D. Ace eat?", "answer": "Flame-Flame Fruit / Mera Mera no Mi"},
+    {"question": "Which Devil Fruit did Nico Robin eat?", "answer": "Hana-Hana Fruit / Hana Hana no Mi"},
+    {"question": "Which Devil Fruit did Tony Tony Chopper eat?", "answer": "Human-Human Fruit / Hito Hito no Mi"},
+    {"question": "Which Devil Fruit did Trafalgar D. Water Law eat?", "answer": "Op-Op Fruit / Ope Ope no Mi"},
+    {"question": "Which Devil Fruit did Brook eat?", "answer": "Revive-Revive Fruit / Yomi Yomi no Mi"},
+    {"question": "Which Devil Fruit did Marshall D. Teach eat?", "answer": "Dark-Dark Fruit / Yami Yami no Mi"},
+    {"question": "Which crew or organization is Monkey D. Luffy affiliated with?", "answer": "Straw Hat Pirates"},
+    {"question": "Which crew or organization is Portgas D. Ace affiliated with?", "answer": "Whitebeard Pirates"},
+    {"question": "Which crew or organization is Marshall D. Teach affiliated with?", "answer": "Blackbeard Pirates"},
+    {"question": "Which crew or organization is Trafalgar D. Water Law affiliated with?", "answer": "Heart Pirates"},
+    {"question": "What is Nami's occupation?", "answer": "Navigator"},
+    {"question": "What is Sanji's occupation?", "answer": "Cook"},
+    {"question": "What is Tony Tony Chopper's occupation?", "answer": "Doctor"},
+    {"question": "What is Nico Robin's occupation?", "answer": "Archaeologist"},
+    {"question": "What is Brook's occupation?", "answer": "Musician"},
+    {"question": "By what epithet is Nami known?", "answer": "Cat Burglar"},
+    {"question": "By what epithet is Nico Robin known?", "answer": "Devil Child"},
+    {"question": "By what epithet is Trafalgar D. Water Law known?", "answer": "Surgeon of Death"},
+    {"question": "By what epithet is Marshall D. Teach known?", "answer": "Blackbeard"},
+    {"question": "In which saga does Portgas D. Ace first appear?", "answer": "Alabasta"},
+    {"question": "In which saga does Brook first appear?", "answer": "Thriller Bark"}
+  ]
+}
