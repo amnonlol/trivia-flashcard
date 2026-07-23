@@ -260,6 +260,10 @@ const Quiz = ({ data, countdownTime, eventMode, endQuiz }) => {
                       src={currentQuestion.image}
                       alt=""
                       loading="lazy"
+                      // Fandom's CDN hotlink-protects: a request carrying our
+                      // github.io Referer 404s, but a referer-less one is served.
+                      // Omit the Referer so portraits actually load off-wiki.
+                      referrerPolicy="no-referrer"
                       onError={e => {
                         e.currentTarget.style.display = 'none';
                       }}
