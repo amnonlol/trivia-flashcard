@@ -581,7 +581,6 @@ def generate(by_kind):
     pool_bounty = build_pool(chars, lambda c: clean_bounty(c["fields"].get("bounty")))
     pool_origin = build_pool(chars, lambda c: primary(c["fields"].get("origin")))
     pool_df_user = build_pool(fruits, lambda fr: clean_name(fr["fields"].get("user")))
-    pool_df_type = build_pool(fruits, lambda fr: primary(fr["fields"].get("type")))
     pool_region = build_pool(locs, lambda l: primary(l["fields"].get("region")))
     pool_residence = build_pool(chars, lambda c: primary(c["fields"].get("residence")))
     pool_epithet = build_pool(chars, lambda c: clean_epithet(c["fields"].get("epithet")))
@@ -810,14 +809,6 @@ def generate(by_kind):
                 lead(f"The {fruit_name} is eaten by {user}", exp),
                 ctx_tier=prom, ctx_saga=so), "fruit_user", prom, saga)
 
-        dtype = primary(f.get("type"))
-        if dtype and dtype.lower() != "unknown":
-            emit(fr["title"], make_question(
-                fr["title"], f"What type of Devil Fruit is the {fruit_name}?",
-                dtype, pool_df_type, rng, "Devil Fruits", difficulty(prom, 0), src,
-                lead(f"The {fruit_name} is a {dtype}-type Devil Fruit", exp),
-                ctx_tier=prom, ctx_saga=so),
-                "fruit_type", prom, saga, max_answer=MAX_PER_ANSWER_CLASS)
 
     # --- Location templates --------------------------------------------------
     for l in locs:

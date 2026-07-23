@@ -4,3 +4,4 @@ export { default as DIFFICULTY } from './difficulty';
 export { default as NUM_OF_QUESTIONS } from './numOfQuestions';
 export { default as QUESTIONS_TYPE } from './questionsType';
 export { default as SAGAS } from './sagas';
+export { default as APP_VERSION } from './version';

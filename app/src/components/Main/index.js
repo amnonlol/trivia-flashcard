@@ -4,7 +4,7 @@ import { Icon } from 'semantic-ui-react';
 
 import mindImg from '../../images/mind.svg';
 
-import { CATEGORIES, DIFFICULTY, SAGAS } from '../../constants';
+import { CATEGORIES, DIFFICULTY, SAGAS, APP_VERSION } from '../../constants';
 import {
   shuffle,
   questionId,
@@ -298,6 +298,7 @@ const Main = ({ startQuiz }) => {
             <h1>One Piece Trivia</h1>
             <p>Pick your challenge and set sail.</p>
           </div>
+          <span className="op-version">v{APP_VERSION}</span>
         </div>
 
         {activeProfile && summary && (

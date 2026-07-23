@@ -51,6 +51,26 @@ BATCH = 40              # titles per API call (MediaWiki allows up to 50)
 DELAY = 0.5             # seconds between calls — be a polite guest
 
 
+def force_png(url: str) -> str:
+    """Force Fandom's thumbnailer to serve a real PNG.
+
+    Fandom's ``static.wikia.nocookie.net`` thumbnails are content-negotiated:
+    the URL ends in ``.png`` but the bytes are **always WebP**, regardless of the
+    browser's ``Accept`` header. Desktop browsers decode WebP fine, but any client
+    that can't (notably older iOS Safari) fails to render and the app's ``onError``
+    hides the image — so portraits silently vanish on some phones. Appending
+    ``format=png`` makes the thumbnailer emit genuine PNG bytes everywhere.
+    """
+    if not url or "nocookie.net" not in url:
+        return url
+    parts = urllib.parse.urlsplit(url)
+    query = urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+    if any(k == "format" for k, _ in query):
+        return url
+    query.append(("format", "png"))
+    return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
+
+
 def title_from_source(source: str) -> str | None:
     """Recover the wiki page title from a question's ``source`` URL."""
     marker = "/wiki/"
@@ -137,7 +157,7 @@ def main(argv=None) -> int:
         title = title_from_source(str(q.get("source", "")))
         url = cache.get(title) if title else None
         if url:
-            q["image"] = url
+            q["image"] = force_png(url)
             enriched += 1
         else:
             q.pop("image", None)
