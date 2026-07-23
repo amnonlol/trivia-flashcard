@@ -42,6 +42,10 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_IN = REPO_ROOT / "wiki-data" / "questions.generated.json"
 DEFAULT_OUT = REPO_ROOT / "app" / "public" / "data" / "questions.json"
 GOLDEN = Path(__file__).resolve().parent / "golden.json"
+# Hand-/agent-authored natural-language questions, checked into the repo. These
+# are merged ahead of the template-generated bank and validated identically, so
+# the bank stays reproducible without ever hand-editing questions.json.
+CURATED = Path(__file__).resolve().parent / "curated_questions.json"
 
 VALID_DIFFICULTIES = {"easy", "medium", "hard"}
 # Must stay in sync with app/src/constants/categories.js.
@@ -159,6 +163,8 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--in", dest="inp", type=Path, default=DEFAULT_IN, help="input questions JSON array")
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT, help="output question bank for the app")
+    ap.add_argument("--curated", type=Path, default=CURATED, help="hand-/agent-authored natural questions to merge in")
+    ap.add_argument("--no-curated", action="store_true", help="skip merging the curated question file")
     ap.add_argument("--check-only", action="store_true", help="validate but do not write output")
     ap.add_argument("--skip-golden", action="store_true", help="skip the hand-verified golden-fact regression check")
     args = ap.parse_args(argv)
@@ -169,6 +175,15 @@ def main(argv=None) -> int:
     questions = json.loads(args.inp.read_text(encoding="utf-8"))
     if not isinstance(questions, list):
         raise SystemExit("input must be a JSON array of questions")
+
+    # Merge curated natural-language questions ahead of the generated bank so a
+    # hand-authored question wins the de-dupe tie against any template collision.
+    if not args.no_curated and args.curated.exists():
+        curated = json.loads(args.curated.read_text(encoding="utf-8"))
+        if not isinstance(curated, list):
+            raise SystemExit(f"{args.curated} must be a JSON array of questions")
+        print(f"merging {len(curated)} curated questions from {args.curated.name}")
+        questions = curated + questions
 
     valid: list[dict] = []
     seen: set[str] = set()

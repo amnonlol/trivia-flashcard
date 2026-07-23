@@ -1,0 +1,2906 @@
+[
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Zoro vowed to become the world's greatest swordsman for the sake of a childhood rival who died young at his dojo. Who was she?",
+  "correct_answer": "Kuina",
+  "incorrect_answers": [
+   "Tashigi",
+   "Makino",
+   "Kaya"
+  ],
+  "options": [
+   "Tashigi",
+   "Kuina",
+   "Makino",
+   "Kaya"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kuina",
+  "explainer": "Kuina was the dojo master's daughter who always beat Zoro; after she died in an accident, Zoro carried on their shared dream of being the greatest swordsman.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "In Loguetown, Zoro tested whether a cursed blade would accept him by tossing it spinning over his outstretched arm. Which sword was it?",
+  "correct_answer": "Sandai Kitetsu",
+  "incorrect_answers": [
+   "Yubashiri",
+   "Wado Ichimonji",
+   "Shusui"
+  ],
+  "options": [
+   "Yubashiri",
+   "Sandai Kitetsu",
+   "Wado Ichimonji",
+   "Shusui"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Sandai_Kitetsu",
+  "explainer": "The cursed Sandai Kitetsu spun down but missed Zoro's arm, so he accepted it, betting his luck against its curse.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "With only enough money to pay Arlong's tribute for one person, how did Bell-mère choose to spend it before Arlong killed her?",
+  "correct_answer": "She publicly claimed Nami and Nojiko as her own daughters",
+  "incorrect_answers": [
+   "She paid the tribute for the two girls instead of herself",
+   "She opened fire on Arlong with her rifle",
+   "She hid the girls in the tangerine grove"
+  ],
+  "options": [
+   "She paid the tribute for the two girls instead of herself",
+   "She publicly claimed Nami and Nojiko as her own daughters",
+   "She opened fire on Arlong with her rifle",
+   "She hid the girls in the tangerine grove"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Bellemere",
+  "explainer": "Bell-mère could have denied the girls to save herself, but she refused to disown them as her family and was shot for it.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Usopp's father, Yasopp, left Syrup Village behind to sail as a marksman for which crew?",
+  "correct_answer": "The Red Hair Pirates",
+  "incorrect_answers": [
+   "The Whitebeard Pirates",
+   "The Roger Pirates",
+   "The Buggy Pirates"
+  ],
+  "options": [
+   "The Red Hair Pirates",
+   "The Whitebeard Pirates",
+   "The Roger Pirates",
+   "The Buggy Pirates"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Yasopp",
+  "explainer": "Yasopp is Shanks' sharpshooter; Shanks even tells Luffy about him, connecting the two families.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Which pirate captain spent three years posing as the butler 'Klahadore' to scheme his way into Kaya's fortune?",
+  "correct_answer": "Kuro",
+  "incorrect_answers": [
+   "Don Krieg",
+   "Arlong",
+   "Buggy"
+  ],
+  "options": [
+   "Kuro",
+   "Don Krieg",
+   "Arlong",
+   "Buggy"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kuro",
+  "explainer": "Captain Kuro of the Black Cat Pirates faked his own death and infiltrated Kaya's household as the butler Klahadore to inherit her wealth.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Stranded on a barren rock, Zeff secretly gave young Sanji all of their food. How did Zeff himself survive the wait for rescue?",
+  "correct_answer": "He ate his own leg",
+  "incorrect_answers": [
+   "He fished from the surrounding rocks",
+   "He hunted seagulls for meat",
+   "He rationed a hidden chest of food"
+  ],
+  "options": [
+   "He fished from the surrounding rocks",
+   "He ate his own leg",
+   "He hunted seagulls for meat",
+   "He rationed a hidden chest of food"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Zeff",
+  "explainer": "Sanji discovered Zeff's bag held treasure, not food, realizing the cook had eaten his own leg so the boy could have every scrap.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "At the Baratie, which Warlord effortlessly defeated Zoro, becoming the rival Zoro must one day surpass?",
+  "correct_answer": "Dracule Mihawk",
+  "incorrect_answers": [
+   "Crocodile",
+   "Jinbe",
+   "Gecko Moria"
+  ],
+  "options": [
+   "Crocodile",
+   "Dracule Mihawk",
+   "Jinbe",
+   "Gecko Moria"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Dracule_Mihawk",
+  "explainer": "Mihawk, the world's greatest swordsman, sought out Zoro and beat him decisively, telling him to grow stronger and seek him again.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Buggy and Shanks both got their start as apprentices aboard which legendary crew?",
+  "correct_answer": "The Roger Pirates",
+  "incorrect_answers": [
+   "The Whitebeard Pirates",
+   "The Red Hair Pirates",
+   "The Golden Lion Pirates"
+  ],
+  "options": [
+   "The Roger Pirates",
+   "The Whitebeard Pirates",
+   "The Red Hair Pirates",
+   "The Golden Lion Pirates"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Buggy",
+  "explainer": "Both served as cabin-boy-era crewmates under Gol D. Roger, which is why Buggy's grudge against Shanks runs so deep.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Buggy the Clown can split his body into floating pieces thanks to which Devil Fruit?",
+  "correct_answer": "Bara Bara no Mi",
+  "incorrect_answers": [
+   "Gomu Gomu no Mi",
+   "Sube Sube no Mi",
+   "Bane Bane no Mi"
+  ],
+  "options": [
+   "Bara Bara no Mi",
+   "Gomu Gomu no Mi",
+   "Sube Sube no Mi",
+   "Bane Bane no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Bara_Bara_no_Mi",
+  "explainer": "The Bara Bara no Mi lets Buggy separate his body at will, making him immune to slashing attacks like Zoro's swords.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "After eating the Sube Sube no Mi, the pirate Alvida gained slippery skin along with what dramatic change to her appearance?",
+  "correct_answer": "She became slim and beautiful",
+  "incorrect_answers": [
+   "She turned invisible",
+   "She grew several feet taller",
+   "Her skin hardened into iron"
+  ],
+  "options": [
+   "She became slim and beautiful",
+   "She turned invisible",
+   "She grew several feet taller",
+   "Her skin hardened into iron"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Sube_Sube_no_Mi",
+  "explainer": "A side effect of the Smooth-Smooth Fruit shed Alvida's fat along with everything else that slid off her, leaving her slim and smooth-skinned.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Zoro was strung up for execution at the Shells Town Marine base ruled by which tyrannical officer?",
+  "correct_answer": "Axe-Hand Morgan",
+  "incorrect_answers": [
+   "Nezumi",
+   "Fullbody",
+   "Hina"
+  ],
+  "options": [
+   "Axe-Hand Morgan",
+   "Nezumi",
+   "Fullbody",
+   "Hina"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Morgan",
+  "explainer": "Captain 'Axe-Hand' Morgan terrorized Shells Town; Luffy freed Zoro and helped topple him in the arc that formed the crew's first partnership.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "In Loguetown, Buggy nearly executed Luffy on the very platform where Gol D. Roger died. What suddenly saved Luffy's life?",
+  "correct_answer": "A bolt of lightning struck the execution platform",
+  "incorrect_answers": [
+   "Zoro cut Buggy down from behind",
+   "Smoker arrested Buggy first",
+   "Sanji kicked the scaffold apart"
+  ],
+  "options": [
+   "A bolt of lightning struck the execution platform",
+   "Zoro cut Buggy down from behind",
+   "Smoker arrested Buggy first",
+   "Sanji kicked the scaffold apart"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Loguetown",
+  "explainer": "A sudden storm sent lightning into the scaffold as the blade fell, destroying it and sparing a grinning Luffy.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The Marine captain Smoker, who first hunts Luffy in Loguetown, turns his body into smoke using which Logia fruit?",
+  "correct_answer": "Moku Moku no Mi",
+  "incorrect_answers": [
+   "Mera Mera no Mi",
+   "Suna Suna no Mi",
+   "Gasu Gasu no Mi"
+  ],
+  "options": [
+   "Moku Moku no Mi",
+   "Mera Mera no Mi",
+   "Suna Suna no Mi",
+   "Gasu Gasu no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Smoker",
+  "explainer": "Smoker's Moku Moku no Mi lets him become and control smoke, which he uses to pin Luffy in Loguetown.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "A mysterious man shields Luffy from Smoker's grasp as he escapes Loguetown. He is later revealed to lead which organization?",
+  "correct_answer": "The Revolutionary Army",
+  "incorrect_answers": [
+   "The World Government",
+   "The Seven Warlords of the Sea",
+   "Cipher Pol"
+  ],
+  "options": [
+   "The Revolutionary Army",
+   "The World Government",
+   "The Seven Warlords of the Sea",
+   "Cipher Pol"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Monkey_D._Dragon",
+  "explainer": "The stranger is Monkey D. Dragon, Luffy's father and leader of the Revolutionary Army that opposes the World Government.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Bounties",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Luffy earned the first bounty of his career after defeating which East Blue pirate?",
+  "correct_answer": "Arlong",
+  "incorrect_answers": [
+   "Buggy the Clown",
+   "Captain Kuro",
+   "Don Krieg"
+  ],
+  "options": [
+   "Arlong",
+   "Buggy the Clown",
+   "Captain Kuro",
+   "Don Krieg"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy",
+  "explainer": "Freeing Cocoyasi Village from the Arlong Pirates earned Luffy his first bounty, an unusually high one for a rookie.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Princess Vivi infiltrated Baroque Works to expose Crocodile using which agent codename?",
+  "correct_answer": "Miss Wednesday",
+  "incorrect_answers": [
+   "Miss All Sunday",
+   "Miss Valentine",
+   "Miss Monday"
+  ],
+  "options": [
+   "Miss Wednesday",
+   "Miss All Sunday",
+   "Miss Valentine",
+   "Miss Monday"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Nefertari_Vivi",
+  "explainer": "Vivi posed as the low-ranking agent Miss Wednesday, partnered with Igaram, to uncover Baroque Works' plot against Alabasta.",
+  "saga": "Alabasta",
+  "sagaOrder": 2
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Crocodile can dissolve into sand and drain the moisture from his enemies thanks to which Devil Fruit?",
+  "correct_answer": "Suna Suna no Mi",
+  "incorrect_answers": [
+   "Doru Doru no Mi",
+   "Moku Moku no Mi",
+   "Gomu Gomu no Mi"
+  ],
+  "options": [
+   "Suna Suna no Mi",
+   "Doru Doru no Mi",
+   "Moku Moku no Mi",
+   "Gomu Gomu no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Crocodile",
+  "explainer": "The Logia Suna Suna no Mi turns Crocodile into sand and lets him dehydrate anything he touches, a deadly edge in the desert of Alabasta.",
+  "saga": "Alabasta",
+  "sagaOrder": 2
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Before she ever joined the Straw Hats, Nico Robin served Crocodile as vice-president of Baroque Works under which codename?",
+  "correct_answer": "Miss All Sunday",
+  "incorrect_answers": [
+   "Miss Wednesday",
+   "Miss Doublefinger",
+   "Miss Goldenweek"
+  ],
+  "options": [
+   "Miss All Sunday",
+   "Miss Wednesday",
+   "Miss Doublefinger",
+   "Miss Goldenweek"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Nico_Robin",
+  "explainer": "Robin operated as Miss All Sunday, Crocodile's right hand, first appearing in Alabasta before later joining Luffy's crew.",
+  "saga": "Alabasta",
+  "sagaOrder": 2
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Ace is introduced during the Alabasta saga while tracking a target. Which crew does he serve as a division commander?",
+  "correct_answer": "The Whitebeard Pirates",
+  "incorrect_answers": [
+   "The Roger Pirates",
+   "The Red Hair Pirates",
+   "The Blackbeard Pirates"
+  ],
+  "options": [
+   "The Whitebeard Pirates",
+   "The Roger Pirates",
+   "The Red Hair Pirates",
+   "The Blackbeard Pirates"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Portgas_D._Ace",
+  "explainer": "Ace is the 2nd division commander of the Whitebeard Pirates, and reunites with his brother Luffy in Alabasta.",
+  "saga": "Alabasta",
+  "sagaOrder": 2
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "In Alabasta, Ace tells Luffy he is hunting a traitor who murdered one of Whitebeard's commanders. Who is Ace pursuing?",
+  "correct_answer": "Blackbeard",
+  "incorrect_answers": [
+   "Bellamy",
+   "Rob Lucci",
+   "Bartholomew Kuma"
+  ],
+  "options": [
+   "Blackbeard",
+   "Bellamy",
+   "Rob Lucci",
+   "Bartholomew Kuma"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Marshall_D._Teach",
+  "explainer": "Ace is chasing Marshall D. Teach, better known as Blackbeard, a former Whitebeard subordinate who killed a fellow commander and fled.",
+  "saga": "Alabasta",
+  "sagaOrder": 2
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Who used a falcon Zoan power to fly the giant bomb high above Alubarna, sacrificing himself to save the city?",
+  "correct_answer": "Pell",
+  "incorrect_answers": [
+   "Chaka",
+   "Igaram",
+   "Koza"
+  ],
+  "options": [
+   "Pell",
+   "Chaka",
+   "Igaram",
+   "Koza"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Pell",
+  "explainer": "Pell, one of Alabasta's royal guardians, transformed via the Tori Tori no Mi, Model: Falcon and carried the bomb skyward as it detonated.",
+  "saga": "Alabasta",
+  "sagaOrder": 2
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Crocodile's real aim in seizing Alabasta was to uncover the location of which ancient weapon rumored to be hidden there?",
+  "correct_answer": "Pluton",
+  "incorrect_answers": [
+   "Poseidon",
+   "Uranus",
+   "Poneglyph"
+  ],
+  "options": [
+   "Pluton",
+   "Poseidon",
+   "Uranus",
+   "Poneglyph"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Pluton",
+  "explainer": "Behind his civil-war scheme, Crocodile sought the ancient weapon Pluton, whose whereabouts are recorded on a hidden Poneglyph in Alabasta.",
+  "saga": "Alabasta",
+  "sagaOrder": 2
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "In Mock Town, Luffy and Zoro take a beating without fighting back until which pirate captain mocks the very idea of chasing dreams?",
+  "correct_answer": "Bellamy",
+  "incorrect_answers": [
+   "Krieg",
+   "Buggy",
+   "Foxy"
+  ],
+  "options": [
+   "Krieg",
+   "Bellamy",
+   "Buggy",
+   "Foxy"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Bellamy",
+  "explainer": "Bellamy 'the Hyena' ridicules those who believe in the City of Gold; Luffy endures his beating and later fells him with a single punch.",
+  "saga": "Sky Island",
+  "sagaOrder": 3
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Montblanc Cricket, who dredges the sea for a lost city of gold, is a descendant of which man executed as a liar four centuries earlier?",
+  "correct_answer": "Mont Blanc Noland",
+  "incorrect_answers": [
+   "Jaguar D. Saul",
+   "Kozuki Oden",
+   "Gol D. Roger"
+  ],
+  "options": [
+   "Mont Blanc Noland",
+   "Jaguar D. Saul",
+   "Kozuki Oden",
+   "Gol D. Roger"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Mont_Blanc_Noland",
+  "explainer": "Noland told his king of a city of gold that had vanished, and was beheaded as a liar; Cricket is his outcast descendant trying to clear the family name.",
+  "saga": "Sky Island",
+  "sagaOrder": 3
+ },
+ {
+  "category": "Geography",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The golden city of Shandora did not sink as everyone believed. What actually happened to that part of the island?",
+  "correct_answer": "It was launched into the sky by the Knock-Up Stream",
+  "incorrect_answers": [
+   "It sank beneath the Grand Line",
+   "It was buried under volcanic ash",
+   "It was seized by the World Government"
+  ],
+  "options": [
+   "It was launched into the sky by the Knock-Up Stream",
+   "It sank beneath the Grand Line",
+   "It was buried under volcanic ash",
+   "It was seized by the World Government"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Shandora",
+  "explainer": "A chunk of Jaya carrying the golden city was blasted up to the White Sea by the Knock-Up Stream, becoming Upper Yard in Skypiea.",
+  "saga": "Sky Island",
+  "sagaOrder": 3
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Enel, who proclaims himself a god over Skypiea, wields which Logia Devil Fruit?",
+  "correct_answer": "Goro Goro no Mi",
+  "incorrect_answers": [
+   "Mera Mera no Mi",
+   "Suna Suna no Mi",
+   "Moku Moku no Mi"
+  ],
+  "options": [
+   "Mera Mera no Mi",
+   "Goro Goro no Mi",
+   "Suna Suna no Mi",
+   "Moku Moku no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Enel",
+  "explainer": "The Goro Goro no Mi lets Enel become and control lightning, the source of his god-like power over Skypiea.",
+  "saga": "Sky Island",
+  "sagaOrder": 3
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Enel intended to abandon Skypiea and travel to a boundless promised land he called what?",
+  "correct_answer": "Fairy Vearth",
+  "incorrect_answers": [
+   "Raftel",
+   "Elbaf",
+   "the Florian Triangle"
+  ],
+  "options": [
+   "Fairy Vearth",
+   "Raftel",
+   "Elbaf",
+   "the Florian Triangle"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Enel",
+  "explainer": "Enel dreamed of reaching Fairy Vearth, the 'endless land'; a cover-story arc reveals it to be the moon.",
+  "saga": "Sky Island",
+  "sagaOrder": 3
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "The warrior Wyper fights to reclaim Upper Yard on behalf of which people, the descendants of Shandora?",
+  "correct_answer": "the Shandia",
+  "incorrect_answers": [
+   "the Skypieans",
+   "the Birkans",
+   "the Minks"
+  ],
+  "options": [
+   "the Shandia",
+   "the Skypieans",
+   "the Birkans",
+   "the Minks"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Shandia",
+  "explainer": "The Shandia are the descendants of Shandora's people and have fought for 400 years to reclaim their ancestral homeland, now Upper Yard.",
+  "saga": "Sky Island",
+  "sagaOrder": 3
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Enel's four priests could predict attacks using an ability later revealed to be an early form of Observation Haki. What was it called?",
+  "correct_answer": "Mantra",
+  "incorrect_answers": [
+   "Rokushiki",
+   "Busoshoku",
+   "Rokuogan"
+  ],
+  "options": [
+   "Mantra",
+   "Rokushiki",
+   "Busoshoku",
+   "Rokuogan"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kenbunshoku_Haki",
+  "explainer": "In Skypiea it is called Mantra; the story later confirms this is the same power as Kenbunshoku (Observation) Haki.",
+  "saga": "Sky Island",
+  "sagaOrder": 3
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "At Skypiea's climax, how did Luffy prove that Noland had told the truth about the golden city?",
+  "correct_answer": "He rang the island's long-silent Golden Bell",
+  "incorrect_answers": [
+   "He recovered a solid gold pillar",
+   "He read the ancient Poneglyph aloud",
+   "He defeated the false god Gan Fall"
+  ],
+  "options": [
+   "He rang the island's long-silent Golden Bell",
+   "He recovered a solid gold pillar",
+   "He read the ancient Poneglyph aloud",
+   "He defeated the false god Gan Fall"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Shandora",
+  "explainer": "Luffy strikes the Golden Bell of Shandora so its toll rings out, the very 'song of the island' Noland once heard, finally reaching Cricket below.",
+  "saga": "Sky Island",
+  "sagaOrder": 3
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Beside the Poneglyph at the golden belfry, Robin discovers a carved message proving that which figure had reached Skypiea?",
+  "correct_answer": "Gol D. Roger",
+  "incorrect_answers": [
+   "Kozuki Oden",
+   "Silvers Rayleigh",
+   "Edward Newgate"
+  ],
+  "options": [
+   "Gol D. Roger",
+   "Kozuki Oden",
+   "Silvers Rayleigh",
+   "Edward Newgate"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Poneglyph",
+  "explainer": "Robin finds that Gol D. Roger left his own inscription on the Poneglyph, revealing the Pirate King had once stood in Skypiea.",
+  "saga": "Sky Island",
+  "sagaOrder": 3
+ },
+ {
+  "category": "Geography",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Water 7 braces every year for a catastrophic tidal surge known by what name?",
+  "correct_answer": "Aqua Laguna",
+  "incorrect_answers": [
+   "the Knock-Up Stream",
+   "the Calm Belt",
+   "the Reverse Mountain current"
+  ],
+  "options": [
+   "Aqua Laguna",
+   "the Knock-Up Stream",
+   "the Calm Belt",
+   "the Reverse Mountain current"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Aqua_Laguna",
+  "explainer": "Aqua Laguna is the annual high tide that floods the low-lying city of water, forcing residents to evacuate to higher ground.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Nico Robin is the sole survivor of the destruction of which island, home to the world's greatest scholars?",
+  "correct_answer": "Ohara",
+  "incorrect_answers": [
+   "Elbaf",
+   "Baltigo",
+   "Water 7"
+  ],
+  "options": [
+   "Ohara",
+   "Elbaf",
+   "Baltigo",
+   "Water 7"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Nico_Robin",
+  "explainer": "Robin's home island of Ohara was wiped out by a Buster Call for researching the forbidden Void Century; she alone escaped.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Rob Lucci, Kaku, and Blueno secretly served which covert World Government agency at Enies Lobby?",
+  "correct_answer": "Cipher Pol No. 9",
+  "incorrect_answers": [
+   "the Revolutionary Army",
+   "Baroque Works",
+   "the Marine Science Division"
+  ],
+  "options": [
+   "Cipher Pol No. 9",
+   "the Revolutionary Army",
+   "Baroque Works",
+   "the Marine Science Division"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/CP9",
+  "explainer": "CP9 is an illegal assassination branch of Cipher Pol, licensed to kill in the name of Justice, embedded undercover in Water 7.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Which Devil Fruit gives Rob Lucci his powerful leopard-hybrid form?",
+  "correct_answer": "Neko Neko no Mi, Model: Leopard",
+  "incorrect_answers": [
+   "Ushi Ushi no Mi, Model: Giraffe",
+   "Inu Inu no Mi, Model: Wolf",
+   "Inu Inu no Mi, Model: Jackal"
+  ],
+  "options": [
+   "Neko Neko no Mi, Model: Leopard",
+   "Ushi Ushi no Mi, Model: Giraffe",
+   "Inu Inu no Mi, Model: Wolf",
+   "Inu Inu no Mi, Model: Jackal"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Rob_Lucci",
+  "explainer": "Lucci ate the Neko Neko no Mi, Model: Leopard, a Carnivorous Zoan that makes him a ferocious leopard-man.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "When the swordsman Kaku was made to eat a Zoan fruit at Enies Lobby, he transformed into which unexpected animal?",
+  "correct_answer": "Giraffe",
+  "incorrect_answers": [
+   "Wolf",
+   "Leopard",
+   "Elephant"
+  ],
+  "options": [
+   "Giraffe",
+   "Wolf",
+   "Leopard",
+   "Elephant"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kaku",
+  "explainer": "Kaku ate the Ushi Ushi no Mi, Model: Giraffe, leaving him dismayed at his awkward new giraffe-man body.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "CP9 agents rate a fighter's raw combat strength using which unit of measurement?",
+  "correct_answer": "Doriki",
+  "incorrect_answers": [
+   "Haki",
+   "Ryo",
+   "Vigor"
+  ],
+  "options": [
+   "Doriki",
+   "Haki",
+   "Ryo",
+   "Vigor"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Doriki",
+  "explainer": "Doriki is CP9's numerical measure of martial power; the elite Rob Lucci registers an unheard-of 4000 Doriki.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Franky and Iceburg both trained as apprentices under which master shipwright, the builder of the Pirate King's ship?",
+  "correct_answer": "Tom",
+  "incorrect_answers": [
+   "Paulie",
+   "Zambai",
+   "Kokoro"
+  ],
+  "options": [
+   "Tom",
+   "Paulie",
+   "Zambai",
+   "Kokoro"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Tom",
+  "explainer": "The legendary fish-man shipwright Tom mentored both Iceburg and Cutty Flam (Franky) in his Water 7 workshop.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The shipwright Tom was condemned by the World Government for the 'crime' of building whose ship?",
+  "correct_answer": "Gol D. Roger",
+  "incorrect_answers": [
+   "Edward Newgate",
+   "Kozuki Oden",
+   "Gecko Moria"
+  ],
+  "options": [
+   "Gol D. Roger",
+   "Edward Newgate",
+   "Kozuki Oden",
+   "Gecko Moria"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Tom",
+  "explainer": "Tom built the Oro Jackson, the ship that carried Gol D. Roger; constructing the Pirate King's vessel was treated as a capital crime.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Bounties",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "After the Straw Hats declared war on the World Government at Enies Lobby, Luffy's bounty leapt to what amount?",
+  "correct_answer": "300,000,000 Berries",
+  "incorrect_answers": [
+   "100,000,000 Berries",
+   "150,000,000 Berries",
+   "400,000,000 Berries"
+  ],
+  "options": [
+   "300,000,000 Berries",
+   "100,000,000 Berries",
+   "150,000,000 Berries",
+   "400,000,000 Berries"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy",
+  "explainer": "Luffy's bounty tripled from 100 million to 300 million Berries after his crew defied a Buster Call at Enies Lobby.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Bounties",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The World Government first placed a bounty on Nico Robin's head at what shockingly young age?",
+  "correct_answer": "8 years old",
+  "incorrect_answers": [
+   "6 years old",
+   "12 years old",
+   "20 years old"
+  ],
+  "options": [
+   "8 years old",
+   "6 years old",
+   "12 years old",
+   "20 years old"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Nico_Robin",
+  "explainer": "Robin was branded a criminal with a bounty at just 8 years old after surviving Ohara, feared for her ability to read Poneglyphs.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Which giant former Marine defied the World Government to help a young Robin escape the Buster Call on Ohara?",
+  "correct_answer": "Jaguar D. Saul",
+  "incorrect_answers": [
+   "John Giant",
+   "Oimo",
+   "Dorry"
+  ],
+  "options": [
+   "Jaguar D. Saul",
+   "John Giant",
+   "Oimo",
+   "Dorry"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Jaguar_D._Saul",
+  "explainer": "The giant Vice Admiral Saul turned against his orders to save Robin and taught her to laugh; he was frozen by his friend Kuzan (Aokiji).",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Usopp temporarily left the Straw Hats after a bitter duel with Luffy over what?",
+  "correct_answer": "Whether to keep the battered Going Merry",
+  "incorrect_answers": [
+   "Who should be the crew's captain",
+   "How to split the Skypiea gold",
+   "Whether to surrender Robin to CP9"
+  ],
+  "options": [
+   "Whether to keep the battered Going Merry",
+   "Who should be the crew's captain",
+   "How to split the Skypiea gold",
+   "Whether to surrender Robin to CP9"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Going_Merry",
+  "explainer": "When the crew decided the damaged Going Merry could no longer sail, Usopp refused to let it go and challenged Luffy to a duel before leaving.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Spandam's sword Funkfreed was extraordinary because it could transform into what animal?",
+  "correct_answer": "An elephant",
+  "incorrect_answers": [
+   "A serpent",
+   "A bull",
+   "A bear"
+  ],
+  "options": [
+   "An elephant",
+   "A serpent",
+   "A bull",
+   "A bear"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Funkfreed",
+  "explainer": "Funkfreed was fed the Zou Zou no Mi, letting the sword itself become an elephant, one of the first weapons shown to eat a Devil Fruit.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Long before he joined the Straw Hats, Brook served as musician aboard a crew that made a promise to a whale at Reverse Mountain. Who captained that crew?",
+  "correct_answer": "Yorki",
+  "incorrect_answers": [
+   "Fisher Tiger",
+   "Shiki",
+   "Gol D. Roger"
+  ],
+  "options": [
+   "Fisher Tiger",
+   "Yorki",
+   "Shiki",
+   "Gol D. Roger"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Yorki",
+  "explainer": "The Rumbar Pirates were led by Calico Yorki; Brook served as the crew's musician before disease and misfortune wiped them out.",
+  "saga": "Thriller Bark",
+  "sagaOrder": 5
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "When Brook's soul finally found its way back to his skeleton, he was enormously relieved that his afro had survived. Why did that hairstyle matter so much to him?",
+  "correct_answer": "So that Laboon would still recognize him",
+  "incorrect_answers": [
+   "So that his crew could identify his corpse",
+   "Because his hair shielded his skull from harm",
+   "So he could keep a blade hidden inside it"
+  ],
+  "options": [
+   "So that his crew could identify his corpse",
+   "So that Laboon would still recognize him",
+   "Because his hair shielded his skull from harm",
+   "So he could keep a blade hidden inside it"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Brook",
+  "explainer": "Brook clung to the hope of reuniting with the whale Laboon and was glad his distinctive afro stayed intact so Laboon would know him.",
+  "saga": "Thriller Bark",
+  "sagaOrder": 5
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Gecko Moria could tear the shadows off people and sew them into corpses to build a zombie army. What Devil Fruit gave him that power?",
+  "correct_answer": "Kage Kage no Mi",
+  "incorrect_answers": [
+   "Horo Horo no Mi",
+   "Yomi Yomi no Mi",
+   "Doku Doku no Mi"
+  ],
+  "options": [
+   "Horo Horo no Mi",
+   "Kage Kage no Mi",
+   "Yomi Yomi no Mi",
+   "Doku Doku no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Gecko_Moria",
+  "explainer": "The Kage Kage no Mi lets Moria manipulate shadows, ripping them from victims and implanting them into the dead.",
+  "saga": "Thriller Bark",
+  "sagaOrder": 5
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Moria's ultimate weapon on Thriller Bark was the reanimated corpse of a legendary giant said to have once dragged whole islands around. Who was this ancient giant?",
+  "correct_answer": "Oars",
+  "incorrect_answers": [
+   "Dorry",
+   "Brogy",
+   "John Giant"
+  ],
+  "options": [
+   "Dorry",
+   "Oars",
+   "Brogy",
+   "John Giant"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Oars",
+  "explainer": "Oars was an ancient demon-giant of legend; Moria revived his corpse and implanted Luffy's shadow to command him.",
+  "saga": "Thriller Bark",
+  "sagaOrder": 5
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Bartholomew Kuma can repel anything he touches with the paw pads on his hands, even launching people clear across the world. Name his Devil Fruit.",
+  "correct_answer": "Nikyu Nikyu no Mi",
+  "incorrect_answers": [
+   "Bane Bane no Mi",
+   "Sube Sube no Mi",
+   "Guru Guru no Mi"
+  ],
+  "options": [
+   "Bane Bane no Mi",
+   "Nikyu Nikyu no Mi",
+   "Sube Sube no Mi",
+   "Guru Guru no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Bartholomew_Kuma",
+  "explainer": "The Nikyu Nikyu no Mi gives Kuma paw pads that repel matter, air, pain, and even fatigue at high speed.",
+  "saga": "Thriller Bark",
+  "sagaOrder": 5
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Perona, Moria's subordinate on Thriller Bark, tormented intruders with ghosts that could drain a person's will to live. What is her Devil Fruit?",
+  "correct_answer": "Horo Horo no Mi",
+  "incorrect_answers": [
+   "Kage Kage no Mi",
+   "Suke Suke no Mi",
+   "Noro Noro no Mi"
+  ],
+  "options": [
+   "Kage Kage no Mi",
+   "Horo Horo no Mi",
+   "Suke Suke no Mi",
+   "Noro Noro no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Perona",
+  "explainer": "Perona's Horo Horo no Mi produces ghosts, including 'Negative Hollows' that sap victims' morale.",
+  "saga": "Thriller Bark",
+  "sagaOrder": 5
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Years before Thriller Bark, Gecko Moria lost his entire crew in a single catastrophic New World battle, an event that broke him and drove him to build zombies. Which Emperor crushed that crew?",
+  "correct_answer": "Kaido",
+  "incorrect_answers": [
+   "Big Mom",
+   "Shanks",
+   "Whitebeard"
+  ],
+  "options": [
+   "Big Mom",
+   "Kaido",
+   "Shanks",
+   "Whitebeard"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Gecko_Moria",
+  "explainer": "Moria's crew was annihilated by Kaido in the New World; the trauma pushed him toward an army of expendable, shadow-powered zombies.",
+  "saga": "Thriller Bark",
+  "sagaOrder": 5
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Brook endured decades alone as a living skeleton to honor a promise to return to a companion waiting at Reverse Mountain. Who was waiting?",
+  "correct_answer": "Laboon",
+  "incorrect_answers": [
+   "Momoo",
+   "Surume",
+   "Hatchan"
+  ],
+  "options": [
+   "Momoo",
+   "Laboon",
+   "Surume",
+   "Hatchan"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Laboon",
+  "explainer": "The Rumbar Pirates promised to come back to the whale Laboon at the Twin Capes; Brook, the last survivor, carried that promise for fifty years.",
+  "saga": "Thriller Bark",
+  "sagaOrder": 5
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "After the Straw Hats collapsed exhausted from beating Moria, Bartholomew Kuma agreed to spare them if he could take Luffy's life. Which crewmate offered his own life in Luffy's place?",
+  "correct_answer": "Zoro",
+  "incorrect_answers": [
+   "Sanji",
+   "Franky",
+   "Usopp"
+  ],
+  "options": [
+   "Sanji",
+   "Zoro",
+   "Franky",
+   "Usopp"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Roronoa_Zoro",
+  "explainer": "Zoro told Kuma to take his head instead of Luffy's; Kuma instead transferred Luffy's accumulated pain and fatigue into him.",
+  "saga": "Thriller Bark",
+  "sagaOrder": 5
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The powerful zombie general Brook dueled on Thriller Bark was animated by Brook's own stolen shadow and inhabited the corpse of a legendary samurai. Name that samurai.",
+  "correct_answer": "Ryuma",
+  "incorrect_answers": [
+   "Kozuki Oden",
+   "Shimotsuki Kozaburo",
+   "Kin'emon"
+  ],
+  "options": [
+   "Kozuki Oden",
+   "Ryuma",
+   "Shimotsuki Kozaburo",
+   "Kin'emon"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Ryuma",
+  "explainer": "Moria placed Brook's shadow into the corpse of Ryuma, a legendary Wano swordsman, creating the zombie Zombie Ryuma.",
+  "saga": "Thriller Bark",
+  "sagaOrder": 5
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "At the Sabaody auction house, Luffy threw a punch that horrified the whole archipelago and drew an admiral down on the Supernovas. Which Celestial Dragon did he hit?",
+  "correct_answer": "Saint Charloss",
+  "incorrect_answers": [
+   "Saint Rosward",
+   "Saint Shalria",
+   "Saint Jalmack"
+  ],
+  "options": [
+   "Saint Rosward",
+   "Saint Charloss",
+   "Saint Shalria",
+   "Saint Jalmack"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Charlos",
+  "explainer": "Luffy punched Saint Charloss for shooting Hatchan, an unthinkable offense against a World Noble that summoned Admiral Kizaru and the Pacifistas.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Bounties",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "When the eleven Supernovas converged on Sabaody Archipelago, one of them carried the highest bounty of the group. Who was it?",
+  "correct_answer": "Eustass Kid",
+  "incorrect_answers": [
+   "Monkey D. Luffy",
+   "Trafalgar Law",
+   "Scratchmen Apoo"
+  ],
+  "options": [
+   "Monkey D. Luffy",
+   "Eustass Kid",
+   "Trafalgar Law",
+   "Scratchmen Apoo"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Eustass_Kid",
+  "explainer": "At Sabaody, Eustass Kid held the largest bounty among the Supernovas, edging out Luffy for the top spot.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Geography",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "When Kuma scattered the Straw Hats across the world at Sabaody, Luffy was flung onto an island where men are forbidden. Where did he land?",
+  "correct_answer": "Amazon Lily",
+  "incorrect_answers": [
+   "Weatheria",
+   "Boin Archipelago",
+   "Kuraigana Island"
+  ],
+  "options": [
+   "Weatheria",
+   "Amazon Lily",
+   "Boin Archipelago",
+   "Kuraigana Island"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Amazon_Lily",
+  "explainer": "Kuma sent Luffy to Amazon Lily, home of the all-female Kuja tribe, while Nami went to Weatheria, Usopp to the Boin Archipelago, and Zoro to Kuraigana Island.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Boa Hancock can turn anyone who feels desire toward her into stone. What Devil Fruit gives her this ability?",
+  "correct_answer": "Mero Mero no Mi",
+  "incorrect_answers": [
+   "Suke Suke no Mi",
+   "Horu Horu no Mi",
+   "Bomu Bomu no Mi"
+  ],
+  "options": [
+   "Suke Suke no Mi",
+   "Mero Mero no Mi",
+   "Horu Horu no Mi",
+   "Bomu Bomu no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Boa_Hancock",
+  "explainer": "The Mero Mero no Mi petrifies those who harbor lust or attraction, weaponizing Hancock's beauty.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The Boa sisters hide a shameful mark on their backs, telling their people it is the curse of the Gorgon. What is that mark really?",
+  "correct_answer": "The Celestial Dragons' slave brand",
+  "incorrect_answers": [
+   "The emblem of the Sun Pirates",
+   "A Marine deserter's tattoo",
+   "The royal crest of the Kuja tribe"
+  ],
+  "options": [
+   "The emblem of the Sun Pirates",
+   "The Celestial Dragons' slave brand",
+   "A Marine deserter's tattoo",
+   "The royal crest of the Kuja tribe"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Boa_Hancock",
+  "explainer": "Hancock and her sisters were enslaved by Celestial Dragons and bear the Hoof of the Soaring Dragon brand, which they concealed by claiming it was a Gorgon's curse.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Boa Hancock rules Amazon Lily as its empress. What royal title do her people, the Kuja, use for her?",
+  "correct_answer": "Snake Princess",
+  "incorrect_answers": [
+   "Warrior Queen",
+   "Lily Empress",
+   "Serpent Queen"
+  ],
+  "options": [
+   "Warrior Queen",
+   "Snake Princess",
+   "Lily Empress",
+   "Serpent Queen"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Boa_Hancock",
+  "explainer": "Hancock is known to the Kuja as the Snake Princess (Hebihime), ruler of Amazon Lily and captain of the Kuja Pirates.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Magellan, the dreaded warden of Impel Down, nearly killed Luffy with a torrent of lethal poison. What Devil Fruit does he wield?",
+  "correct_answer": "Doku Doku no Mi",
+  "incorrect_answers": [
+   "Numa Numa no Mi",
+   "Doru Doru no Mi",
+   "Beta Beta no Mi"
+  ],
+  "options": [
+   "Numa Numa no Mi",
+   "Doku Doku no Mi",
+   "Doru Doru no Mi",
+   "Beta Beta no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Magellan",
+  "explainer": "Magellan's Doku Doku no Mi lets him generate and control deadly poisons, which he used to devastate Luffy in Impel Down.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "During the Impel Down breakout, the okama Bentham stayed behind to hold a crucial gate open so the escapees could reach the sea, sacrificing himself. By what codename was this Baroque Works veteran better known?",
+  "correct_answer": "Mr. 2 Bon Clay",
+  "incorrect_answers": [
+   "Mr. 1",
+   "Mr. 3",
+   "Mr. 5"
+  ],
+  "options": [
+   "Mr. 1",
+   "Mr. 2 Bon Clay",
+   "Mr. 3",
+   "Mr. 5"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Bentham",
+  "explainer": "Bentham, the former Baroque Works agent Mr. 2 Bon Clay, stayed behind to keep the gate open for the escaping ship, apparently sacrificing himself.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Whitebeard could crack the very air and shatter the ground with quakes, earning him the reputation of the strongest man in the world. What Devil Fruit did he have?",
+  "correct_answer": "Gura Gura no Mi",
+  "incorrect_answers": [
+   "Goro Goro no Mi",
+   "Magu Magu no Mi",
+   "Pika Pika no Mi"
+  ],
+  "options": [
+   "Goro Goro no Mi",
+   "Gura Gura no Mi",
+   "Magu Magu no Mi",
+   "Pika Pika no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Edward_Newgate",
+  "explainer": "Whitebeard's Gura Gura no Mi let him generate earthquakes and quake-shockwaves powerful enough to destroy the world.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "To justify Ace's public execution at Marineford, Sengoku revealed the identity of Ace's true father to the world. Who was it?",
+  "correct_answer": "Gol D. Roger",
+  "incorrect_answers": [
+   "Monkey D. Dragon",
+   "Silvers Rayleigh",
+   "Edward Newgate"
+  ],
+  "options": [
+   "Monkey D. Dragon",
+   "Gol D. Roger",
+   "Silvers Rayleigh",
+   "Edward Newgate"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Portgas_D._Ace",
+  "explainer": "Sengoku announced that Ace was the son of the late Pirate King Gol D. Roger, framing his execution as erasing Roger's bloodline.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "At the climax of Marineford, Ace died taking a fatal blow meant for Luffy. Which Marine admiral struck him down?",
+  "correct_answer": "Akainu",
+  "incorrect_answers": [
+   "Aokiji",
+   "Kizaru",
+   "Sengoku"
+  ],
+  "options": [
+   "Aokiji",
+   "Akainu",
+   "Kizaru",
+   "Sengoku"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Portgas_D._Ace",
+  "explainer": "Admiral Akainu goaded Ace and then drove a magma fist through him as Ace shielded Luffy, killing him.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Moments after Whitebeard fell at Marineford, Blackbeard stunned the world by wielding a second Devil Fruit power. Which power did he claim from the fallen Emperor?",
+  "correct_answer": "The Gura Gura no Mi",
+  "incorrect_answers": [
+   "The Yami Yami no Mi",
+   "The Mera Mera no Mi",
+   "The Ope Ope no Mi"
+  ],
+  "options": [
+   "The Yami Yami no Mi",
+   "The Gura Gura no Mi",
+   "The Mera Mera no Mi",
+   "The Ope Ope no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Marshall_D._Teach",
+  "explainer": "Blackbeard somehow took Whitebeard's Gura Gura no Mi from his corpse, becoming the only known person to wield two Devil Fruits at once.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Why did Fisher Tiger tattoo the mark of the sun over the bodies of the slaves he freed from Mariejois?",
+  "correct_answer": "To hide the Celestial Dragons' slave brand on freed slaves.",
+  "incorrect_answers": [
+   "To mark new recruits of the Sun Pirates.",
+   "To honor Queen Otohime's peace movement.",
+   "To intimidate the humans of the Grand Line."
+  ],
+  "options": [
+   "To mark new recruits of the Sun Pirates.",
+   "To hide the Celestial Dragons' slave brand on freed slaves.",
+   "To honor Queen Otohime's peace movement.",
+   "To intimidate the humans of the Grand Line."
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Fisher_Tiger",
+  "explainer": "Fisher Tiger stamped the sun symbol over each slave's Hoof of the Soaring Dragon brand so no one could tell who had been an escaped slave.",
+  "saga": "Fish-Man Island",
+  "sagaOrder": 7
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "After being fatally wounded, how did Fisher Tiger ultimately meet his end?",
+  "correct_answer": "He refused a human blood transfusion and bled to death.",
+  "incorrect_answers": [
+   "He was executed publicly at Marineford.",
+   "Arlong betrayed and killed him.",
+   "He drowned protecting Queen Otohime."
+  ],
+  "options": [
+   "He was executed publicly at Marineford.",
+   "He refused a human blood transfusion and bled to death.",
+   "Arlong betrayed and killed him.",
+   "He drowned protecting Queen Otohime."
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Fisher_Tiger",
+  "explainer": "Consumed by hatred born of his enslavement, Fisher Tiger rejected a blood transfusion offered by humans and died from his wounds.",
+  "saga": "Fish-Man Island",
+  "sagaOrder": 7
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Queen Otohime, who campaigned to move the fish-men to the surface, was secretly assassinated by whom?",
+  "correct_answer": "Hody Jones",
+  "incorrect_answers": [
+   "Vander Decken IX",
+   "Caribou",
+   "Kuroobi"
+  ],
+  "options": [
+   "Hody Jones",
+   "Vander Decken IX",
+   "Caribou",
+   "Kuroobi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Otohime",
+  "explainer": "Hody Jones shot Queen Otohime, while a human arsonist was framed as the culprit to inflame anti-human sentiment.",
+  "saga": "Fish-Man Island",
+  "sagaOrder": 7
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "What makes Hody Jones's hatred of humans strikingly different from Arlong's?",
+  "correct_answer": "He never personally suffered under humans; his hatred was pure ideology.",
+  "incorrect_answers": [
+   "Humans murdered his parents in front of him.",
+   "He was enslaved by the Celestial Dragons as a child.",
+   "A human friend once betrayed him."
+  ],
+  "options": [
+   "He never personally suffered under humans; his hatred was pure ideology.",
+   "Humans murdered his parents in front of him.",
+   "He was enslaved by the Celestial Dragons as a child.",
+   "A human friend once betrayed him."
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Hody_Jones",
+  "explainer": "Hody had no personal grievance against humans; his prejudice was inherited baseless hatred, which he himself admits.",
+  "saga": "Fish-Man Island",
+  "sagaOrder": 7
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Vander Decken IX can hurl any object so it homes in relentlessly on a target he has touched. Which Devil Fruit grants this?",
+  "correct_answer": "Mato Mato no Mi",
+  "incorrect_answers": [
+   "Noro Noro no Mi",
+   "Bane Bane no Mi",
+   "Beri Beri no Mi"
+  ],
+  "options": [
+   "Mato Mato no Mi",
+   "Noro Noro no Mi",
+   "Bane Bane no Mi",
+   "Beri Beri no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Mato_Mato_no_Mi",
+  "explainer": "The Mato Mato no Mi (Target-Target Fruit) lets Decken 'mark' a target by touch so anything he throws will chase them forever, which fueled his obsession with Shirahoshi.",
+  "saga": "Fish-Man Island",
+  "sagaOrder": 7
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "After Fisher Tiger's death, Jinbe went on to captain which crew?",
+  "correct_answer": "The Sun Pirates",
+  "incorrect_answers": [
+   "The Arlong Pirates",
+   "The New Fish-Man Pirates",
+   "The Flying Fish Riders"
+  ],
+  "options": [
+   "The Sun Pirates",
+   "The Arlong Pirates",
+   "The New Fish-Man Pirates",
+   "The Flying Fish Riders"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Sun_Pirates",
+  "explainer": "Jinbe became the second captain of the Sun Pirates following Fisher Tiger's death, later accepting a position as a Warlord.",
+  "saga": "Fish-Man Island",
+  "sagaOrder": 7
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The ancient ship Noah is bound to an unfulfilled promise made long ago to the Poseidon of that era. Who made that promise?",
+  "correct_answer": "Joy Boy",
+  "incorrect_answers": [
+   "Gol D. Roger",
+   "King Neptune",
+   "Fisher Tiger"
+  ],
+  "options": [
+   "Joy Boy",
+   "Gol D. Roger",
+   "King Neptune",
+   "Fisher Tiger"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Noah",
+  "explainer": "A poneglyph in Ryugu Palace records Joy Boy's apology to the Poseidon of the Void Century for a promise he could not keep, tied to the ship Noah.",
+  "saga": "Fish-Man Island",
+  "sagaOrder": 7
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Princess Shirahoshi is revealed during the arc to secretly be what?",
+  "correct_answer": "The ancient weapon Poseidon",
+  "incorrect_answers": [
+   "A disguised Celestial Dragon",
+   "The last living Lunarian",
+   "A giant Sea King in human form"
+  ],
+  "options": [
+   "The ancient weapon Poseidon",
+   "A disguised Celestial Dragon",
+   "The last living Lunarian",
+   "A giant Sea King in human form"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Shirahoshi",
+  "explainer": "Shirahoshi is the current incarnation of the ancient weapon Poseidon, able to summon and command the Sea Kings.",
+  "saga": "Fish-Man Island",
+  "sagaOrder": 7
+ },
+ {
+  "category": "Geography",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Roughly how deep beneath the sea does Fish-Man Island lie, at the base of the Red Line?",
+  "correct_answer": "10,000 meters",
+  "incorrect_answers": [
+   "5,000 meters",
+   "3,000 meters",
+   "1,000 meters"
+  ],
+  "options": [
+   "10,000 meters",
+   "5,000 meters",
+   "3,000 meters",
+   "1,000 meters"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Fish-Man_Island",
+  "explainer": "Fish-Man Island rests about 10,000 meters below sea level, in a zone of eternal darkness lit by the Sunlight Tree Eve.",
+  "saga": "Fish-Man Island",
+  "sagaOrder": 7
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Trafalgar Law's signature 'Room', in which he can freely rearrange and swap anything inside a sphere, comes from which Devil Fruit?",
+  "correct_answer": "Ope Ope no Mi",
+  "incorrect_answers": [
+   "Ito Ito no Mi",
+   "Hobi Hobi no Mi",
+   "Zushi Zushi no Mi"
+  ],
+  "options": [
+   "Ope Ope no Mi",
+   "Ito Ito no Mi",
+   "Hobi Hobi no Mi",
+   "Zushi Zushi no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi",
+  "explainer": "The Ope Ope no Mi makes Law a 'Surgeon of Death', letting him cut, swap, and manipulate anything within his Room.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Who fed Law the Ope Ope no Mi as a child and died to give him a future?",
+  "correct_answer": "Donquixote Rosinante (Corazon)",
+  "incorrect_answers": [
+   "Donquixote Doflamingo",
+   "Sengoku",
+   "Vergo"
+  ],
+  "options": [
+   "Donquixote Rosinante (Corazon)",
+   "Donquixote Doflamingo",
+   "Sengoku",
+   "Vergo"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Donquixote_Rosinante",
+  "explainer": "Rosinante, codenamed Corazon and secretly a Marine, stole the Ope Ope no Mi and fed it to Law to cure him, then was shot dead by his own brother Doflamingo.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The Ope Ope no Mi's ultimate 'Perennial Youth Surgery' can grant a person eternal life, but demands what of the user?",
+  "correct_answer": "It costs the user their own life.",
+  "incorrect_answers": [
+   "The user can never use the fruit again.",
+   "The user loses all their memories.",
+   "The user is turned permanently to stone."
+  ],
+  "options": [
+   "It costs the user their own life.",
+   "The user can never use the fruit again.",
+   "The user loses all their memories.",
+   "The user is turned permanently to stone."
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi",
+  "explainer": "The surgery grants eternal youth to another person at the cost of the user's own life, which is exactly what Doflamingo wanted from Law.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Law's hometown of Flevance was wiped out after its citizens fell fatally ill from what?",
+  "correct_answer": "Amber Lead Syndrome",
+  "incorrect_answers": [
+   "A plague spread by pirates",
+   "Caesar Clown's poison gas",
+   "A Celestial Dragon's purge"
+  ],
+  "options": [
+   "Amber Lead Syndrome",
+   "A plague spread by pirates",
+   "Caesar Clown's poison gas",
+   "A Celestial Dragon's purge"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Flevance",
+  "explainer": "Flevance prospered on toxic Amber Lead ore; the non-contagious Amber Lead Syndrome killed its people, and the government massacred the rest, falsely claiming it was infectious.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Beyond turning people into toys, what other cruel effect does Sugar's Hobi Hobi no Mi have?",
+  "correct_answer": "It erases everyone's memories of the victim.",
+  "incorrect_answers": [
+   "It steals the victim's Devil Fruit power.",
+   "It ages the victim into an old person.",
+   "It forces the victim to obey Sugar."
+  ],
+  "options": [
+   "It erases everyone's memories of the victim.",
+   "It steals the victim's Devil Fruit power.",
+   "It ages the victim into an old person.",
+   "It forces the victim to obey Sugar."
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Hobi_Hobi_no_Mi",
+  "explainer": "When Sugar turns someone into a toy, every person who knew them instantly forgets they ever existed; knocking her unconscious reverses all transformations.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Rebecca's father, a legendary gladiator turned into a toy soldier by Sugar, is who?",
+  "correct_answer": "Kyros",
+  "incorrect_answers": [
+   "Diamante",
+   "Bellamy",
+   "Gatz"
+  ],
+  "options": [
+   "Kyros",
+   "Diamante",
+   "Bellamy",
+   "Gatz"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kyros",
+  "explainer": "Kyros, Dressrosa's greatest gladiator and Rebecca's father, was transformed into a one-legged toy soldier, erased from everyone's memory.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "After his family lost their Celestial Dragon status, what did a young Doflamingo do to try to force his way back into Mariejois?",
+  "correct_answer": "He killed his own father and presented the head to the World Nobles.",
+  "incorrect_answers": [
+   "He handed his younger brother over as a slave.",
+   "He assassinated a Marine admiral.",
+   "He set fire to the island of Mariejois."
+  ],
+  "options": [
+   "He killed his own father and presented the head to the World Nobles.",
+   "He handed his younger brother over as a slave.",
+   "He assassinated a Marine admiral.",
+   "He set fire to the island of Mariejois."
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Donquixote_Doflamingo",
+  "explainer": "Doflamingo murdered his father Homing and offered his head to the World Nobles as an apology, hoping to be reinstated, but was rejected.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "In the underworld, Doflamingo brokered weapons and artificial fruits under which alias?",
+  "correct_answer": "Joker",
+  "incorrect_answers": [
+   "Corazon",
+   "Diamante",
+   "Spandam"
+  ],
+  "options": [
+   "Joker",
+   "Corazon",
+   "Diamante",
+   "Spandam"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Donquixote_Doflamingo",
+  "explainer": "Doflamingo secretly operated as the powerful underworld broker 'Joker', supplying weapons and SMILE fruits despite being a public Warlord.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "The artificial SMILE Devil Fruits produced through Punk Hazard were meant to build whose army?",
+  "correct_answer": "Kaido",
+  "incorrect_answers": [
+   "Big Mom",
+   "Blackbeard",
+   "Doflamingo"
+  ],
+  "options": [
+   "Kaido",
+   "Big Mom",
+   "Blackbeard",
+   "Doflamingo"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/SMILE",
+  "explainer": "SMILEs, made using Caesar's SAD, were sold by Doflamingo to Kaido to create an army of artificial Zoan users.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Fighters battled in the Corrida Colosseum to claim which prize Devil Fruit?",
+  "correct_answer": "Mera Mera no Mi",
+  "incorrect_answers": [
+   "Gomu Gomu no Mi",
+   "Yami Yami no Mi",
+   "Hobi Hobi no Mi"
+  ],
+  "options": [
+   "Mera Mera no Mi",
+   "Gomu Gomu no Mi",
+   "Yami Yami no Mi",
+   "Hobi Hobi no Mi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi",
+  "explainer": "Doflamingo offered the Mera Mera no Mi, Ace's former flame fruit, as the grand prize of the Corrida Colosseum tournament.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The victims turned into toys across Dressrosa were all restored the moment Sugar was knocked out. Who took her down?",
+  "correct_answer": "Usopp",
+  "incorrect_answers": [
+   "Trafalgar Law",
+   "Leo",
+   "Franky"
+  ],
+  "options": [
+   "Usopp",
+   "Trafalgar Law",
+   "Leo",
+   "Franky"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Usopp",
+  "explainer": "Usopp knocked Sugar unconscious with a horrifying face, breaking the Hobi Hobi no Mi's effect and freeing every toy at once, earning him the title 'God Usopp'.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Geography",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Punk Hazard is a bizarre island split into which two extreme halves?",
+  "correct_answer": "A blazing fire half and a frozen ice half.",
+  "incorrect_answers": [
+   "A scorching desert half and a jungle half.",
+   "An ocean half and a floating sky-island half.",
+   "A rocky mountain half and a swamp half."
+  ],
+  "options": [
+   "A blazing fire half and a frozen ice half.",
+   "A scorching desert half and a jungle half.",
+   "An ocean half and a floating sky-island half.",
+   "A rocky mountain half and a swamp half."
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Punk_Hazard",
+  "explainer": "Punk Hazard was left half-burning and half-frozen after the ten-day duel between Admirals Akainu and Aokiji.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Bounties",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "After toppling Doflamingo and Dressrosa, Luffy's bounty leapt to what figure?",
+  "correct_answer": "500,000,000 Berries",
+  "incorrect_answers": [
+   "400,000,000 Berries",
+   "300,000,000 Berries",
+   "800,000,000 Berries"
+  ],
+  "options": [
+   "500,000,000 Berries",
+   "400,000,000 Berries",
+   "300,000,000 Berries",
+   "800,000,000 Berries"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy",
+  "explainer": "Following the Dressrosa arc, Luffy's bounty rose to 500,000,000 Berries as the World Government recognized him as a rising threat.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Why was Sanji born without the emotionless, enhanced physiology that his Vinsmoke brothers all share?",
+  "correct_answer": "His mother Sora took a drug during pregnancy that undid Judge's modifications",
+  "incorrect_answers": [
+   "Judge deliberately kept him unmodified as an experimental control",
+   "He was born before Judge perfected the enhancement procedure",
+   "Reiju secretly reversed his modifications while he was an infant"
+  ],
+  "options": [
+   "His mother Sora took a drug during pregnancy that undid Judge's modifications",
+   "Judge deliberately kept him unmodified as an experimental control",
+   "He was born before Judge perfected the enhancement procedure",
+   "Reiju secretly reversed his modifications while he was an infant"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Sanji",
+  "explainer": "Sora secretly took a drug meant to counter Judge's genetic engineering, which is why Sanji alone retained normal human emotions.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Big Mom brings her 'homies' like Zeus and Prometheus to life by using her Devil Fruit to place what inside objects?",
+  "correct_answer": "Fragments of people's souls",
+  "incorrect_answers": [
+   "Shadows torn from their owners",
+   "Concentrated energy drawn from food",
+   "Bolts of her own lightning"
+  ],
+  "options": [
+   "Fragments of people's souls",
+   "Shadows torn from their owners",
+   "Concentrated energy drawn from food",
+   "Bolts of her own lightning"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Soru_Soru_no_Mi",
+  "explainer": "The Soru Soru no Mi lets Big Mom extract soul fragments and place them into objects or animals, animating them as homies.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "During his duel with Luffy, Charlotte Katakuri revealed his advanced Observation Haki lets him do what?",
+  "correct_answer": "See a short distance into the future",
+  "incorrect_answers": [
+   "Read his opponent's exact thoughts",
+   "Sense enemies across the entire island",
+   "Predict attacks by hearing heartbeats"
+  ],
+  "options": [
+   "See a short distance into the future",
+   "Read his opponent's exact thoughts",
+   "Sense enemies across the entire island",
+   "Predict attacks by hearing heartbeats"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Charlotte_Katakuri",
+  "explainer": "Katakuri's mastery of Observation Haki lets him glimpse moments into the future, which Luffy eventually learns to replicate.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "What makes Katakuri's Mochi Mochi no Mi unusual among Devil Fruits?",
+  "correct_answer": "A Paramecia that behaves like a Logia — he can turn his whole body into mochi",
+  "incorrect_answers": [
+   "It lets him absorb and copy other Devil Fruit powers",
+   "It grants him a second heart that resists fatal damage",
+   "It only works while he is touching the ground"
+  ],
+  "options": [
+   "A Paramecia that behaves like a Logia — he can turn his whole body into mochi",
+   "It lets him absorb and copy other Devil Fruit powers",
+   "It grants him a second heart that resists fatal damage",
+   "It only works while he is touching the ground"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Mochi_Mochi_no_Mi",
+  "explainer": "The Mochi Mochi no Mi is classified as a special Paramecia because Katakuri can turn his whole body into mochi, mimicking a Logia's intangibility.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Who formally severed ties with Big Mom's crew during the Whole Cake Island arc to eventually become a Straw Hat?",
+  "correct_answer": "Jinbe",
+  "incorrect_answers": [
+   "Pekoms",
+   "Capone Bege",
+   "Charlotte Katakuri"
+  ],
+  "options": [
+   "Jinbe",
+   "Pekoms",
+   "Capone Bege",
+   "Charlotte Katakuri"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Jinbe",
+  "explainer": "Jinbe declared his departure from the Big Mom Pirates to Big Mom's face during the arc, later officially joining the Straw Hats in Wano.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "What does Capone Bege's Shiro Shiro no Mi allow him to do?",
+  "correct_answer": "Turn his body into a fortress that houses people and weaponry",
+  "incorrect_answers": [
+   "Harden his skin into impenetrable iron",
+   "Shrink himself and others to miniature size",
+   "Command an army of ghost soldiers"
+  ],
+  "options": [
+   "Turn his body into a fortress that houses people and weaponry",
+   "Harden his skin into impenetrable iron",
+   "Shrink himself and others to miniature size",
+   "Command an army of ghost soldiers"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Shiro_Shiro_no_Mi",
+  "explainer": "The Shiro Shiro no Mi turns Bege into a living castle, letting him carry troops and cannons inside his body.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "What secret about herself did Charlotte Pudding desperately hide, having been mocked for it her whole life?",
+  "correct_answer": "A third eye on her forehead",
+  "incorrect_answers": [
+   "A pair of horns beneath her hair",
+   "Fish-man ancestry on her mother's side",
+   "A tail she kept tucked away"
+  ],
+  "options": [
+   "A third eye on her forehead",
+   "A pair of horns beneath her hair",
+   "Fish-man ancestry on her mother's side",
+   "A tail she kept tucked away"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Charlotte_Pudding",
+  "explainer": "Pudding is part of the Three-Eye Tribe, and the third eye she hid under her hair had made her a target of ridicule.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "What was Big Mom's true goal behind arranging the wedding between Sanji and Pudding?",
+  "correct_answer": "To assassinate the entire Vinsmoke family and seize Germa's technology",
+  "incorrect_answers": [
+   "To absorb the Vinsmokes' souls into a single powerful homie",
+   "To force Germa 66 into permanent servitude under her",
+   "To lure Luffy into a trap and claim his bounty"
+  ],
+  "options": [
+   "To assassinate the entire Vinsmoke family and seize Germa's technology",
+   "To absorb the Vinsmokes' souls into a single powerful homie",
+   "To force Germa 66 into permanent servitude under her",
+   "To lure Luffy into a trap and claim his bounty"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Whole_Cake_Island_Arc",
+  "explainer": "Big Mom intended to gun down the Vinsmokes at the ceremony and take Germa 66's cloning and science for herself.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "What are the rank-and-file soldiers of Germa 66, allowing Judge to field a massive expendable army?",
+  "correct_answer": "Genetically engineered clones",
+  "incorrect_answers": [
+   "Reanimated corpses",
+   "Brainwashed prisoners of war",
+   "Mass-produced battle androids"
+  ],
+  "options": [
+   "Genetically engineered clones",
+   "Reanimated corpses",
+   "Brainwashed prisoners of war",
+   "Mass-produced battle androids"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Germa_66",
+  "explainer": "Germa 66's troops are cloned soldiers, which is why Judge treats them as a disposable, endlessly replaceable force.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "When Big Mom is denied a food she is craving, what dangerous condition does she suffer?",
+  "correct_answer": "An uncontrollable rampage that endangers even her own family",
+  "incorrect_answers": [
+   "A trance where she relives her childhood at the orphanage",
+   "A collapse that leaves her bedridden for days",
+   "A total loss of her Devil Fruit powers until she eats"
+  ],
+  "options": [
+   "An uncontrollable rampage that endangers even her own family",
+   "A trance where she relives her childhood at the orphanage",
+   "A collapse that leaves her bedridden for days",
+   "A total loss of her Devil Fruit powers until she eats"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Charlotte_Linlin",
+  "explainer": "A denied craving sends Big Mom into a mindless, destructive fit in which she attacks anyone and anything nearby.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "What triggers the powerful Sulong transformation that Carrot and other Minks can undergo?",
+  "correct_answer": "Looking at a full moon",
+  "incorrect_answers": [
+   "Entering a berserker rage in battle",
+   "Absorbing a large amount of Electro",
+   "Being pushed to the brink of death"
+  ],
+  "options": [
+   "Looking at a full moon",
+   "Entering a berserker rage in battle",
+   "Absorbing a large amount of Electro",
+   "Being pushed to the brink of death"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Sulong",
+  "explainer": "Minks like Carrot enter their immensely powerful Sulong form by gazing at a full moon.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Kaido's Uo Uo no Mi, Model: Seiryu lets him transform into what?",
+  "correct_answer": "An enormous azure dragon",
+  "incorrect_answers": [
+   "A serpent with eight heads",
+   "A colossal winged phoenix",
+   "A massive golden lion"
+  ],
+  "options": [
+   "An enormous azure dragon",
+   "A serpent with eight heads",
+   "A colossal winged phoenix",
+   "A massive golden lion"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Uo_Uo_no_Mi,_Model:_Seiryu",
+  "explainer": "Kaido's Mythical Zoan fruit turns him into a giant azure dragon, the source of his weather-altering powers.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "During his execution by boiling, how did Kozuki Oden save his nine retainers?",
+  "correct_answer": "He stood in the boiling cauldron holding them up for a full hour",
+  "incorrect_answers": [
+   "He shielded them with his Haki-hardened body",
+   "He fought off the guards long enough for them to flee",
+   "He struck a deal with Orochi to spare their lives"
+  ],
+  "options": [
+   "He stood in the boiling cauldron holding them up for a full hour",
+   "He shielded them with his Haki-hardened body",
+   "He fought off the guards long enough for them to flee",
+   "He struck a deal with Orochi to spare their lives"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kozuki_Oden",
+  "explainer": "Oden endured the boiling oil while holding his retainers aloft for an hour, the feat behind the legend that 'Oden could hold.'",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Which member of the Nine Red Scabbards turned out to be a spy feeding information to Orochi for years?",
+  "correct_answer": "Kanjuro",
+  "incorrect_answers": [
+   "Kin'emon",
+   "Raizo",
+   "Denjiro"
+  ],
+  "options": [
+   "Kanjuro",
+   "Kin'emon",
+   "Raizo",
+   "Denjiro"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kanjuro",
+  "explainer": "Kanjuro, secretly of the Kurozumi clan, had long been a mole reporting the Scabbards' plans to Orochi.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Though the biological child of Kaido, Yamato identifies as whom after being inspired by his journals?",
+  "correct_answer": "Kozuki Oden",
+  "incorrect_answers": [
+   "Kozuki Sukiyaki",
+   "Shimotsuki Ryuma",
+   "Kurozumi Orochi"
+  ],
+  "options": [
+   "Kozuki Oden",
+   "Kozuki Sukiyaki",
+   "Shimotsuki Ryuma",
+   "Kurozumi Orochi"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Yamato",
+  "explainer": "Moved by Oden's journal, Yamato vowed to become Oden and inherit his will against Kaido.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Shogun Kurozumi Orochi's Devil Fruit lets him transform into what creature?",
+  "correct_answer": "An eight-headed serpent",
+  "incorrect_answers": [
+   "A nine-tailed fox",
+   "A giant azure dragon",
+   "A venomous king cobra"
+  ],
+  "options": [
+   "An eight-headed serpent",
+   "A nine-tailed fox",
+   "A giant azure dragon",
+   "A venomous king cobra"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kurozumi_Orochi",
+  "explainer": "Orochi's Mythical Zoan, the Hebi Hebi no Mi Model Yamata no Orochi, lets him become an eight-headed serpent, letting him survive several apparent beheadings.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Kozuki Oden achieved the rare feat of sailing as a crewmember under which two legendary captains?",
+  "correct_answer": "Whitebeard and then Gol D. Roger",
+  "incorrect_answers": [
+   "Rocks D. Xebec and then Whitebeard",
+   "Gol D. Roger and then Shanks",
+   "Kaido and then Whitebeard"
+  ],
+  "options": [
+   "Whitebeard and then Gol D. Roger",
+   "Rocks D. Xebec and then Whitebeard",
+   "Gol D. Roger and then Shanks",
+   "Kaido and then Whitebeard"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kozuki_Oden",
+  "explainer": "Oden first sailed with Whitebeard, then joined Roger's crew for the final voyage that reached Laugh Tale.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Oden's wife Toki possessed a Devil Fruit with what unique ability?",
+  "correct_answer": "Sending people forward through time",
+  "incorrect_answers": [
+   "Reversing a person's age to childhood",
+   "Erasing memories from a person's mind",
+   "Slowing time within a small area"
+  ],
+  "options": [
+   "Sending people forward through time",
+   "Reversing a person's age to childhood",
+   "Erasing memories from a person's mind",
+   "Slowing time within a small area"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kozuki_Toki",
+  "explainer": "Toki's Toki Toki no Mi let her leap forward in time, which she used to send Momonosuke and the Scabbards twenty years ahead.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Momonosuke can transform into a dragon resembling Kaido because he ate what?",
+  "correct_answer": "An artificial Devil Fruit created by Vegapunk",
+  "incorrect_answers": [
+   "A SMILE fruit stolen from the Beasts Pirates",
+   "The very same Mythical Zoan fruit as Kaido",
+   "A fruit grown from one of Kaido's shed scales"
+  ],
+  "options": [
+   "An artificial Devil Fruit created by Vegapunk",
+   "A SMILE fruit stolen from the Beasts Pirates",
+   "The very same Mythical Zoan fruit as Kaido",
+   "A fruit grown from one of Kaido's shed scales"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kozuki_Momonosuke",
+  "explainer": "Momonosuke ate an artificial Devil Fruit engineered by Vegapunk, which is why his dragon form resembles Kaido's.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "King, Kaido's right-hand man, is one of the last survivors of which nearly extinct race?",
+  "correct_answer": "The Lunarians",
+  "incorrect_answers": [
+   "The Minks",
+   "The Three-Eye Tribe",
+   "The Giants of Elbaf"
+  ],
+  "options": [
+   "The Lunarians",
+   "The Minks",
+   "The Three-Eye Tribe",
+   "The Giants of Elbaf"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/King",
+  "explainer": "King is a Lunarian, a race once thought extinct, giving him flames and remarkable durability.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "The three All-Stars, the highest-ranking members serving directly under Kaido, are King, Queen, and who?",
+  "correct_answer": "Jack",
+  "incorrect_answers": [
+   "Who's-Who",
+   "Sasaki",
+   "Ulti"
+  ],
+  "options": [
+   "Jack",
+   "Who's-Who",
+   "Sasaki",
+   "Ulti"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Beasts_Pirates",
+  "explainer": "Jack the Drought rounds out the Beasts Pirates' All-Stars alongside King and Queen; the others are lower-ranked Tobiroppo.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "To help lead the raid on Onigashima, Momonosuke used Shinobu's Devil Fruit to do what?",
+  "correct_answer": "Age himself twenty years into an adult",
+  "incorrect_answers": [
+   "Heal his wounds instantly",
+   "Shrink down to hide among the enemy",
+   "Rot the fortress gates to break in"
+  ],
+  "options": [
+   "Age himself twenty years into an adult",
+   "Heal his wounds instantly",
+   "Shrink down to hide among the enemy",
+   "Rot the fortress gates to break in"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Kozuki_Momonosuke",
+  "explainer": "Shinobu's Juku Juku no Mi 'ripened' Momonosuke by twenty years, turning the boy into an adult able to fight Kaido.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Besides seawater itself, contact with which material drains a Devil Fruit user's strength, which is why the Marines forge it into handcuffs and prison bars?",
+  "correct_answer": "Seastone",
+  "incorrect_answers": [
+   "Adam Wood",
+   "Wapometal",
+   "Dyna Rock"
+  ],
+  "options": [
+   "Adam Wood",
+   "Seastone",
+   "Wapometal",
+   "Dyna Rock"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Seastone",
+  "explainer": "Seastone (Kairoseki) emits the same energy as the sea, sapping the power of any Devil Fruit user who touches it, so it is used for restraints and cells.",
+  "saga": "Alabasta",
+  "sagaOrder": 2
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "According to established lore, what happens to a person who tries to gain a second power by eating another Devil Fruit?",
+  "correct_answer": "Their body is torn apart and they die",
+  "incorrect_answers": [
+   "They gain both powers at once",
+   "They lose their original power permanently",
+   "The second fruit simply has no effect"
+  ],
+  "options": [
+   "They gain both powers at once",
+   "Their body is torn apart and they die",
+   "They lose their original power permanently",
+   "The second fruit simply has no effect"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Devil_Fruit",
+  "explainer": "Eating a second Devil Fruit causes the user's body to violently rupture and kill them; how Blackbeard wields two powers remains an unexplained mystery.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "When a Paramecia user like Doflamingo achieves 'awakening,' what new capability does it grant them?",
+  "correct_answer": "They can apply their power to their surroundings — not just their own body",
+  "incorrect_answers": [
+   "They gain a second Devil Fruit power",
+   "They become immune to Armament Haki",
+   "They turn their body into an element like a Logia"
+  ],
+  "options": [
+   "They gain a second Devil Fruit power",
+   "They can apply their power to their surroundings — not just their own body",
+   "They become immune to Armament Haki",
+   "They turn their body into an element like a Logia"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Devil_Fruit_Awakening",
+  "explainer": "An awakened Paramecia can extend its power onto the environment; Doflamingo turned the ground and buildings of Dressrosa into string.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "What unusual property sets Zoan-type Devil Fruits apart from the Paramecia and Logia classes?",
+  "correct_answer": "The fruit itself possesses a will of its own",
+  "incorrect_answers": [
+   "It can be split and shared between two users",
+   "It only activates during a full moon",
+   "It removes the user's weakness to the sea"
+  ],
+  "options": [
+   "The fruit itself possesses a will of its own",
+   "It can be split and shared between two users",
+   "It only activates during a full moon",
+   "It removes the user's weakness to the sea"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Zoan",
+  "explainer": "Zoan fruits are described as having their own will, which lets them animate and grant beast forms to inanimate objects like Funkfreed the elephant sword.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Devil Fruits",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "A Logia user can turn their body into their element so most blows pass right through them. What is the reliable way to actually strike them?",
+  "correct_answer": "Armament Haki",
+  "incorrect_answers": [
+   "Observation Haki",
+   "Conqueror's Haki",
+   "Simply attacking faster"
+  ],
+  "options": [
+   "Observation Haki",
+   "Armament Haki",
+   "Conqueror's Haki",
+   "Simply attacking faster"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Logia",
+  "explainer": "Armament Haki (Busoshoku) lets a fighter bypass a Logia's intangibility and land a hit on their real body.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Conqueror's Haki (Haoshoku) is famously rare. Roughly how many people are said to be born with the ability to use it?",
+  "correct_answer": "One in a million",
+  "incorrect_answers": [
+   "One in a thousand",
+   "One in ten thousand",
+   "One in a hundred"
+  ],
+  "options": [
+   "One in a thousand",
+   "One in a million",
+   "One in ten thousand",
+   "One in a hundred"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Haki",
+  "explainer": "Only about one in a million people are said to possess Conqueror's Haki, the will to dominate others, which Luffy first unleashed at the Sabaody Archipelago.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Whose Observation Haki was so advanced that he could see a few seconds into the future, an ability Luffy fought hard to copy?",
+  "correct_answer": "Charlotte Katakuri",
+  "incorrect_answers": [
+   "Charlotte Cracker",
+   "Charlotte Perospero",
+   "Vinsmoke Sanji"
+  ],
+  "options": [
+   "Charlotte Cracker",
+   "Charlotte Katakuri",
+   "Charlotte Perospero",
+   "Vinsmoke Sanji"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Charlotte_Katakuri",
+  "explainer": "Katakuri's mastery of Observation Haki let him briefly foresee opponents' movements, and Luffy awakened the same future-sight during their duel on Whole Cake Island.",
+  "saga": "Whole Cake Island",
+  "sagaOrder": 9
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "The Poneglyphs are carved in an ancient script almost no one alive can read. Which Straw Hat is one of the rare people able to decipher them?",
+  "correct_answer": "Nico Robin",
+  "incorrect_answers": [
+   "Nefertari Vivi",
+   "Charlotte Pudding",
+   "Kozuki Hiyori"
+  ],
+  "options": [
+   "Nico Robin",
+   "Nefertari Vivi",
+   "Charlotte Pudding",
+   "Kozuki Hiyori"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Nico_Robin",
+  "explainer": "Raised among the scholars of Ohara, Nico Robin is one of the only people alive who can read the ancient language of the Poneglyphs.",
+  "saga": "Sky Island",
+  "sagaOrder": 3
+ },
+ {
+  "category": "Characters",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Characters who carry the initial 'D.' in their names, like Luffy, Ace, and Blackbeard, are tied to a mysterious inherited legacy. What is it commonly called?",
+  "correct_answer": "The Will of the D.",
+  "incorrect_answers": [
+   "The Sovereign's Legacy",
+   "The Oath of the Twenty Kings",
+   "The Covenant of Ohara"
+  ],
+  "options": [
+   "The Sovereign's Legacy",
+   "The Will of the D.",
+   "The Oath of the Twenty Kings",
+   "The Covenant of Ohara"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Will_of_D.",
+  "explainer": "The 'Will of the D.' is a recurring mystery surrounding those bearing the initial, whom the World Government appears to fear.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "Who leads the Revolutionary Army in its fight to topple the World Government, and is also revealed to be Luffy's father?",
+  "correct_answer": "Monkey D. Dragon",
+  "incorrect_answers": [
+   "Monkey D. Garp",
+   "Emporio Ivankov",
+   "Bartholomew Kuma"
+  ],
+  "options": [
+   "Monkey D. Dragon",
+   "Monkey D. Garp",
+   "Emporio Ivankov",
+   "Bartholomew Kuma"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Monkey_D._Dragon",
+  "explainer": "Monkey D. Dragon, the world's most wanted man, commands the Revolutionary Army and is Luffy's father, as Garp reveals.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "During the Summit War at Marineford, which of these legendary pirates was one of the reigning Four Emperors (Yonko)?",
+  "correct_answer": "Edward Newgate (Whitebeard)",
+  "incorrect_answers": [
+   "Dracule Mihawk",
+   "Sir Crocodile",
+   "Bartholomew Kuma"
+  ],
+  "options": [
+   "Edward Newgate (Whitebeard)",
+   "Dracule Mihawk",
+   "Sir Crocodile",
+   "Bartholomew Kuma"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Four_Emperors",
+  "explainer": "Whitebeard was one of the Four Emperors and died at Marineford; the others named were members of the Seven Warlords, not Yonko.",
+  "saga": "Summit War",
+  "sagaOrder": 6
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "After Sengoku stepped down following the Summit War, who took over as the new Fleet Admiral of the Marines?",
+  "correct_answer": "Sakazuki (Akainu)",
+  "incorrect_answers": [
+   "Borsalino (Kizaru)",
+   "Kuzan (Aokiji)",
+   "Issho (Fujitora)"
+  ],
+  "options": [
+   "Sakazuki (Akainu)",
+   "Borsalino (Kizaru)",
+   "Kuzan (Aokiji)",
+   "Issho (Fujitora)"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Sakazuki",
+  "explainer": "Sakazuki won the position of Fleet Admiral after a ten-day duel with Kuzan, who then resigned from the Marines.",
+  "saga": "Fish-Man Island",
+  "sagaOrder": 7
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The Seven Warlords of the Sea (Shichibukai) system was officially abolished by the World Government. At which event was that decision made?",
+  "correct_answer": "The Levely",
+  "incorrect_answers": [
+   "The Battle of Marineford",
+   "The Raid on Onigashima",
+   "The Dressrosa Incident"
+  ],
+  "options": [
+   "The Battle of Marineford",
+   "The Levely",
+   "The Raid on Onigashima",
+   "The Dressrosa Incident"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Seven_Warlords_of_the_Sea",
+  "explainer": "At the Levely (Reverie), the World Government resolved to dissolve the Warlord system, prompting the Marines to hunt down the former Warlords.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Crews & Organizations",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "In the Final Saga, which former small-time pirate and ex-Warlord was shockingly named one of the new Four Emperors?",
+  "correct_answer": "Buggy",
+  "incorrect_answers": [
+   "Sir Crocodile",
+   "Dracule Mihawk",
+   "Gecko Moria"
+  ],
+  "options": [
+   "Buggy",
+   "Sir Crocodile",
+   "Dracule Mihawk",
+   "Gecko Moria"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Buggy",
+  "explainer": "Through a string of misunderstandings and his Cross Guild organization, Buggy was designated one of the Four Emperors with an enormous bounty.",
+  "saga": "Final Saga",
+  "sagaOrder": 11
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The Wano arc showcased a rare advanced use of Conqueror's Haki. What could its masters do that ordinary Conqueror's users could not?",
+  "correct_answer": "Coat their body and attacks with it to strike enemies harder",
+  "incorrect_answers": [
+   "See several seconds into the future",
+   "Harden their skin as hard as steel",
+   "Nullify an enemy's Devil Fruit"
+  ],
+  "options": [
+   "Coat their body and attacks with it to strike enemies harder",
+   "See several seconds into the future",
+   "Harden their skin as hard as steel",
+   "Nullify an enemy's Devil Fruit"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Haki",
+  "explainer": "Advanced Conqueror's Haki lets a user infuse their strikes with it, dealing internal damage and clashing with other Conqueror's users, as shown by Luffy, Kaido, and Big Mom in Wano.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "The World Government forbids all research into the roughly 100-year 'Void Century.' What are the only reliable records that can reveal its history?",
+  "correct_answer": "The Poneglyphs",
+  "incorrect_answers": [
+   "Log Poses",
+   "Eternal Poses",
+   "Ancient sea charts"
+  ],
+  "options": [
+   "The Poneglyphs",
+   "Log Poses",
+   "Eternal Poses",
+   "Ancient sea charts"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Void_Century",
+  "explainer": "The Poneglyphs are indestructible stones inscribed during the Void Century, and studying them is the only way to uncover that forbidden era.",
+  "saga": "Alabasta",
+  "sagaOrder": 2
+ },
+ {
+  "category": "Arcs & Story",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "During the Void Century, one kingdom opposed the alliance that would become the World Government and was ultimately wiped out. How is this lost kingdom referred to?",
+  "correct_answer": "The Great Kingdom",
+  "incorrect_answers": [
+   "The Kingdom of Alabasta",
+   "Wano Country",
+   "The Lulusia Kingdom"
+  ],
+  "options": [
+   "The Great Kingdom",
+   "The Kingdom of Alabasta",
+   "Wano Country",
+   "The Lulusia Kingdom"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Void_Century",
+  "explainer": "An unnamed powerful kingdom fought the alliance of twenty kingdoms during the Void Century and was destroyed; its ideals may have been left in the Poneglyphs.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Bounties",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "What was Luffy's very first bounty, issued after he defeated Arlong in the East Blue?",
+  "correct_answer": "30,000,000 Berries",
+  "incorrect_answers": [
+   "100,000,000 Berries",
+   "50,000,000 Berries",
+   "15,000,000 Berries"
+  ],
+  "options": [
+   "30,000,000 Berries",
+   "100,000,000 Berries",
+   "50,000,000 Berries",
+   "15,000,000 Berries"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy",
+  "explainer": "Luffy's first bounty was 30,000,000 Berries, an unusually high sum for a rookie that stunned the East Blue.",
+  "saga": "East Blue",
+  "sagaOrder": 1
+ },
+ {
+  "category": "Bounties",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "After the Straw Hats declared war on the World Government at Enies Lobby, Luffy's bounty leapt to what figure?",
+  "correct_answer": "300,000,000 Berries",
+  "incorrect_answers": [
+   "400,000,000 Berries",
+   "100,000,000 Berries",
+   "500,000,000 Berries"
+  ],
+  "options": [
+   "300,000,000 Berries",
+   "400,000,000 Berries",
+   "100,000,000 Berries",
+   "500,000,000 Berries"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy",
+  "explainer": "Following the Enies Lobby incident, Luffy's bounty jumped to 300,000,000 Berries.",
+  "saga": "Water 7",
+  "sagaOrder": 4
+ },
+ {
+  "category": "Bounties",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "Gol D. Roger, the Pirate King, held the highest bounty ever recorded. As revealed during the Wano arc, what was that figure?",
+  "correct_answer": "5,564,800,000 Berries",
+  "incorrect_answers": [
+   "5,046,000,000 Berries",
+   "4,611,100,000 Berries",
+   "4,388,000,000 Berries"
+  ],
+  "options": [
+   "5,564,800,000 Berries",
+   "5,046,000,000 Berries",
+   "4,611,100,000 Berries",
+   "4,388,000,000 Berries"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Gol_D._Roger",
+  "explainer": "Roger's bounty of 5,564,800,000 Berries is the highest ever revealed, edging out Whitebeard's 5,046,000,000.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Geography",
+  "type": "multiple",
+  "difficulty": "medium",
+  "question": "When the locations marked on the four Road Poneglyphs are combined, what do they point the way to?",
+  "correct_answer": "Laugh Tale",
+  "incorrect_answers": [
+   "Mary Geoise",
+   "Zou",
+   "Skypiea"
+  ],
+  "options": [
+   "Laugh Tale",
+   "Mary Geoise",
+   "Zou",
+   "Skypiea"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Road_Poneglyph",
+  "explainer": "The four Road Poneglyphs each give a coordinate; crossing them reveals the path to Laugh Tale, the final island where Roger left the One Piece.",
+  "saga": "Wano Country",
+  "sagaOrder": 10
+ },
+ {
+  "category": "Geography",
+  "type": "multiple",
+  "difficulty": "hard",
+  "question": "On which island did the Revolutionary Army keep its headquarters before it was destroyed by Blackbeard's crew?",
+  "correct_answer": "Baltigo",
+  "incorrect_answers": [
+   "Kamabakka Kingdom",
+   "Amazon Lily",
+   "Sabaody Archipelago"
+  ],
+  "options": [
+   "Baltigo",
+   "Kamabakka Kingdom",
+   "Amazon Lily",
+   "Sabaody Archipelago"
+  ],
+  "source": "https://onepiece.fandom.com/wiki/Baltigo",
+  "explainer": "Baltigo, the windswept island that served as the Revolutionary Army's base, was attacked and destroyed by the Blackbeard Pirates.",
+  "saga": "Dressrosa",
+  "sagaOrder": 8
+ }
+]

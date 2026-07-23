@@ -116,7 +116,7 @@ const Main = ({ startQuiz }) => {
   const { activeProfile } = useProfile();
   const [category, setCategory] = useState('0');
   const [numOfQuestions, setNumOfQuestions] = useState(10);
-  const [difficulty, setDifficulty] = useState('easy');
+  const [difficulty, setDifficulty] = useState('adaptive');
   // Spoiler scope: 0 = whole series (no limit); otherwise only questions whose
   // subject debuts up to and including this saga (see sagaOrder in the bank).
   const [sagaLimit, setSagaLimit] = useState(0);
