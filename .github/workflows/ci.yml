@@ -5,6 +5,10 @@ name: CI
 #   * the committed question bank — must still satisfy the quiz-engine schema.
 # CI never regenerates the bank (that needs the multi-hundred-MB wiki dump, which
 # is gitignored); it validates whatever questions.json is checked in.
+#
+# A push to main that clears both guards is then deployed. Publishing used to be a
+# separate manual `npm run deploy`, which let the live site drift ten days behind
+# main without anything reporting it.
 
 on:
   push:
@@ -65,3 +69,46 @@ jobs:
       # pipeline/calibration/, so CI never needs the wiki dump or an API key.
       - name: Validate committed bank
         run: python pipeline/validate.py --in app/public/data/questions.json --check-only
+
+  deploy:
+    name: Deploy to GitHub Pages
+    # Only from main, and only once both guards are green — a push that breaks the
+    # bank schema or the app tests must never reach the live site. PRs build but
+    # never publish.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [app, question-bank]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          CI: true
+
+      # Publishes with the same gh-pages package `npm run deploy` uses locally, so
+      # a manual publish and an automated one behave identically — same target
+      # branch, same commit-on-top history. GITHUB_TOKEN is scoped to this repo by
+      # the `permissions` block above.
+      - name: Publish build/ to gh-pages
+        run: >-
+          npx gh-pages -d build
+          -u "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          -m "Deploy ${GITHUB_SHA} from ${GITHUB_REF_NAME}"
+          -r "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
