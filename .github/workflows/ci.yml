@@ -59,5 +59,9 @@ jobs:
           python-version: '3.11'
 
       # validate.py uses only the standard library, so no pip install is needed.
+      # As well as the schema, this runs both regression guards: golden.json (the
+      # answers are still correct) and golden_difficulty.json (the difficulty scale
+      # hasn't inverted). The difficulty overlay it applies is checked in under
+      # pipeline/calibration/, so CI never needs the wiki dump or an API key.
       - name: Validate committed bank
         run: python pipeline/validate.py --in app/public/data/questions.json --check-only

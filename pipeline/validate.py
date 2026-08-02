@@ -46,6 +46,11 @@ GOLDEN = Path(__file__).resolve().parent / "golden.json"
 # are merged ahead of the template-generated bank and validated identically, so
 # the bank stays reproducible without ever hand-editing questions.json.
 CURATED = Path(__file__).resolve().parent / "curated_questions.json"
+# Calibrated difficulty, keyed by norm_key(question). Difficulty is an overlay rather
+# than an authored field: the template generator and the curated file each carry their
+# own idea of "hard", and this is the one scale that reconciles them (see DIFFICULTY.md).
+DIFFICULTY = Path(__file__).resolve().parent / "calibration" / "difficulty.json"
+GOLDEN_DIFFICULTY = Path(__file__).resolve().parent / "golden_difficulty.json"
 
 VALID_DIFFICULTIES = {"easy", "medium", "hard"}
 # Must stay in sync with app/src/constants/categories.js.
@@ -61,7 +66,7 @@ SOURCE_RE = re.compile(r"^https://onepiece\.fandom\.com/wiki/.+")
 META_NOISE = {
     "bandai", "toei", "toeianimation", "4kids", "funimation", "shueisha",
     "viz", "vizmedia", "namco", "bandainamco", "crunchyroll", "netflix",
-    "space", "n/a", "na", "unknown", "none", "various", "other",
+    "space", "outerspace", "n/a", "na", "unknown", "none", "various", "other",
 }
 
 
@@ -159,6 +164,75 @@ def check_golden(valid: list[dict], path: Path) -> list[str]:
     return failures
 
 
+def apply_difficulty(valid: list[dict], overlay: dict) -> Counter:
+    """Overwrite each question's authored difficulty with its calibrated tier.
+
+    The overlay is the single source of truth for difficulty once it exists, so a
+    question's tier no longer depends on which half of the pipeline produced it.
+    A question with no overlay entry keeps its authored label and is counted — that
+    number should be ~0 after a full calibration run, and a large one means the
+    overlay is stale relative to the bank.
+    """
+    stats = Counter()
+    for q in valid:
+        entry = overlay.get(norm_key(q["question"]))
+        if entry is None:
+            stats["uncalibrated"] += 1
+            continue
+        # Keep the label the question was written with. It is what calibrate_signals.py
+        # reports against, and without it a second pass over an already-overlaid bank
+        # would read its own output as the authored label and demote the same question
+        # twice — the overlay has to be idempotent no matter how often it runs.
+        authored = q.setdefault("authoredDifficulty", q["difficulty"])
+        if entry["tier"] != authored:
+            stats[f"{authored} -> {entry['tier']}"] += 1
+        q["difficulty"] = entry["tier"]
+        q["difficultyScore"] = entry["score"]
+        stats[f"basis:{entry['basis']}"] += 1
+        # A hard question that a rater or a signal says is guessable isn't hard —
+        # calibrate.py already scored the penalty in, so this only reports what
+        # survived it, as a repair worklist rather than a build failure.
+        if entry["tier"] == "hard" and entry["flags"]:
+            stats["hard but flagged"] += 1
+    return stats
+
+
+def check_golden_difficulty(valid: list[dict], path: Path, overlay: dict) -> tuple[list[str], list[str]]:
+    """Assert hand-picked anchor questions land in the tier a human expects.
+
+    The golden-fact guard protects *answers*; this protects the *scale*. Difficulty
+    is derived from tunable cut points and penalty weights, so a re-tune can silently
+    invert the tiers — which is how the bank got here. These anchors span the whole
+    range and fail the build instead of shipping an inverted scale.
+
+    An anchor only becomes binding once its question has actually been rated. Before
+    that the overlay is just holding the authored label, so enforcing the anchor would
+    fail the build over work that hasn't run yet rather than over a regression. Those
+    anchors are returned as *pending* — which makes this list double as the acceptance
+    test for the rating pass.
+
+    Returns ``(failures, pending)``.
+    """
+    anchors = json.loads(path.read_text(encoding="utf-8")).get("anchors", [])
+    by_q = {norm_key(q["question"]): q for q in valid}
+    failures, pending = [], []
+    for anchor in anchors:
+        key = norm_key(anchor["question"])
+        q = by_q.get(key)
+        if q is None:
+            failures.append(f"missing: {anchor['question']!r}")
+            continue
+        if q["difficulty"] in anchor["allowed"]:
+            continue
+        message = (f"{anchor['question']!r}: got {q['difficulty']!r}, "
+                   f"expected one of {anchor['allowed']}  ({anchor.get('why', '')})")
+        if overlay.get(key, {}).get("basis") == "raters":
+            failures.append(message)
+        else:
+            pending.append(message)
+    return failures, pending
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--in", dest="inp", type=Path, default=DEFAULT_IN, help="input questions JSON array")
@@ -167,6 +241,8 @@ def main(argv=None) -> int:
     ap.add_argument("--no-curated", action="store_true", help="skip merging the curated question file")
     ap.add_argument("--check-only", action="store_true", help="validate but do not write output")
     ap.add_argument("--skip-golden", action="store_true", help="skip the hand-verified golden-fact regression check")
+    ap.add_argument("--difficulty", type=Path, default=DIFFICULTY, help="calibrated difficulty overlay")
+    ap.add_argument("--no-difficulty", action="store_true", help="ship authored difficulty, skipping the overlay")
     args = ap.parse_args(argv)
 
     if not args.inp.exists():
@@ -213,6 +289,17 @@ def main(argv=None) -> int:
     if not valid:
         raise SystemExit("no valid questions — refusing to write an empty bank")
 
+    overlay: dict = {}
+    if not args.no_difficulty and args.difficulty.exists():
+        overlay = json.loads(args.difficulty.read_text(encoding="utf-8"))
+        stats = apply_difficulty(valid, overlay)
+        print(f"applied calibrated difficulty from {args.difficulty.name}:")
+        for label, n in sorted(stats.items()):
+            print(f"  {n:5d}  {label}")
+    elif not args.no_difficulty:
+        print(f"note: no difficulty overlay at {args.difficulty} — shipping authored "
+              f"difficulty (run calibrate_signals.py then calibrate.py)")
+
     print("  by category:")
     for cat, n in Counter(q["category"] for q in valid).most_common():
         print(f"    {n:5d}  {cat}")
@@ -226,6 +313,21 @@ def main(argv=None) -> int:
                 print(f"  {fail}")
             raise SystemExit("golden-fact regression — refusing to write bank")
         print("  golden check: all verified facts present and correct")
+
+    if not args.skip_golden and GOLDEN_DIFFICULTY.exists():
+        failures, pending = check_golden_difficulty(valid, GOLDEN_DIFFICULTY, overlay)
+        if failures:
+            print(f"DIFFICULTY ANCHOR CHECK FAILED ({len(failures)}):")
+            for fail in failures:
+                print(f"  {fail}")
+            raise SystemExit("difficulty scale regression — refusing to write bank")
+        if pending:
+            print(f"  difficulty anchors: {len(pending)} still mis-tiered, awaiting the "
+                  f"rating pass (not enforced until those questions are rated):")
+            for note in pending:
+                print(f"    {note}")
+        else:
+            print("  difficulty anchors: all in their expected tiers")
 
     if args.check_only:
         print("check-only: not writing output")

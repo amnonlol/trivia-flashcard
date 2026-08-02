@@ -1,0 +1,137 @@
+{
+ "_comment": "Difficulty-scale regression guard. The golden.json guard protects ANSWERS; this protects the SCALE. Each anchor pins a question to the tiers a human considers defensible, so a re-tune of the cut points or penalty weights in calibrate.py fails the build instead of silently inverting the scale the way the authored labels did.",
+ "anchors": [
+  {
+   "question": "Which Devil Fruit did Monkey D. Luffy eat?",
+   "allowed": [
+    "easy"
+   ],
+   "why": "the single most-known fact in the series"
+  },
+  {
+   "question": "The Luffy-Law alliance formed on Punk Hazard set its sights on toppling which of the Four Emperors?",
+   "allowed": [
+    "easy",
+    "medium"
+   ],
+   "why": "a headline plot beat; shipped as hard"
+  },
+  {
+   "question": "The World Government forbids all research into the roughly 100-year 'Void Century.' What are the only reliable records that can reveal its history?",
+   "allowed": [
+    "easy",
+    "medium"
+   ],
+   "why": "Poneglyphs are core world lore; shipped as hard"
+  },
+  {
+   "question": "In the Final Saga, which former small-time pirate and ex-Warlord was shockingly named one of the new Four Emperors?",
+   "allowed": [
+    "easy",
+    "medium"
+   ],
+   "why": "Buggy as an Emperor is a famous gag; shipped as hard"
+  },
+  {
+   "question": "Which of the Seven Warlords of the Sea did Zoro challenge at the Baratie, recognized as the world's greatest swordsman?",
+   "allowed": [
+    "easy",
+    "medium"
+   ],
+   "why": "Mihawk is a headline name"
+  },
+  {
+   "question": "The World Government wiped out which island of scholars with a Buster Call for daring to study the Poneglyphs and the Void Century?",
+   "allowed": [
+    "easy",
+    "medium"
+   ],
+   "why": "Ohara is a series-defining event"
+  },
+  {
+   "question": "Zoro vowed to become the world's greatest swordsman for the sake of a childhood rival who died young at his dojo. Who was she?",
+   "allowed": [
+    "easy",
+    "medium"
+   ],
+   "why": "Kuina underpins Zoro's whole arc"
+  },
+  {
+   "question": "In which village did Usopp live and Kaya reside, where the crew received the Going Merry?",
+   "allowed": [
+    "easy",
+    "medium"
+   ],
+   "why": "a whole East Blue arc happens here"
+  },
+  {
+   "question": "During the two-year timeskip, Luffy trained on the uninhabited island of Rusukaina under the tutelage of which former pirate?",
+   "allowed": [
+    "easy",
+    "medium"
+   ],
+   "why": "Rayleigh is a major recurring figure"
+  },
+  {
+   "question": "The slave market where Camie and other captives were auctioned to nobles stood in a specific grove of Sabaody. In which grove was the Human Auctioning House?",
+   "allowed": [
+    "hard"
+   ],
+   "why": "an exact grove number; the hard tier's anchor"
+  },
+  {
+   "question": "An elderly former empress of Amazon Lily, who once traveled the seas herself, acts as an advisor and scold to Hancock. What is her name?",
+   "allowed": [
+    "hard"
+   ],
+   "why": "Gloriosa is a minor named character"
+  },
+  {
+   "question": "Masira the salvage king had a brother who was also part of the Saruyama Alliance on Jaya. What was the brother's name?",
+   "allowed": [
+    "hard"
+   ],
+   "why": "a one-off Jaya side character"
+  },
+  {
+   "question": "Which crew or organization is Wanda affiliated with?",
+   "allowed": [
+    "medium",
+    "hard"
+   ],
+   "why": "obscure subject shipped as easy off the page-length proxy"
+  },
+  {
+   "question": "By what epithet is Doc Q known?",
+   "allowed": [
+    "medium",
+    "hard"
+   ],
+   "why": "obscure subject shipped as easy off the page-length proxy"
+  },
+  {
+   "question": "Mistaken for a mere pet, Chopper was given a famously tiny bounty after Enies Lobby. How much was it?",
+   "allowed": [
+    "easy",
+    "medium"
+   ],
+   "why": "famous gag, and a numeric ladder either way"
+  },
+  {
+   "question": "Which of these is one of the six Rokushiki techniques, letting a user kick off the air itself to leap and fly?",
+   "allowed": [
+    "medium",
+    "hard"
+   ],
+   "why": "hard fact, but only once its Haki distractors are repaired"
+  },
+  {
+   "question": "The Poneglyph on Fish-Man Island records an apology from a Void Century figure who failed to keep a promise. What is he called?",
+   "allowed": [
+    "medium",
+    "hard"
+   ],
+   "why": "Joy Boy is known but the specific Poneglyph is not"
+  }
+ ]
+}

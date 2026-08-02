@@ -98,9 +98,15 @@ Templates (field → question, distractors from the same field's pool):
 | In which region is *place* located? | Geography | location `region` |
 
 Values are normalised first (lists/translation notes/`;`-history → one clean
-value); difficulty comes from `article_len` (easy ≥20k, medium ≥6k, else hard);
-per-answer (≤6) and per-entity (≤4) caps stop one value/character dominating.
-Output `../wiki-data/questions.generated.json` (gitignored, regenerable).
+value); per-answer (≤6) and per-entity (≤4) caps stop one value/character
+dominating. A field value only *one* entity in the dump claims is dropped from its
+pool (`MIN_OCCUPATION_FREQ` / `MIN_ORIGIN_FREQ` / `MIN_REGION_FREQ`) — a one-off is
+a gag or a real-world leak, not a gradeable value, and it made distractors like
+"Tibet" that any player strikes out on sight.
+
+Difficulty is still assigned here from `article_len`, but it is **no longer what
+ships** — the calibration stage below overrides it. Output
+`../wiki-data/questions.generated.json` (gitignored, regenerable).
 
 ## Phase 3 — validate → app bank (done by `validate.py`)
 
@@ -115,9 +121,45 @@ keys, `type == "multiple"`, known category (kept in sync with
 `app/src/constants/categories.js`), exactly 4 options, `correct_answer` present
 exactly once, no near-duplicate options, `onepiece.fandom.com` source URL.
 
-Latest full run: **1949 questions** written — 1059 Crews & Organizations,
-460 Devil Fruits, 220 Bounties, 139 Geography, 71 Characters
-(424 easy / 622 medium / 903 hard), across 1565 unique wiki sources.
+It also merges `curated_questions.json` (agent-authored natural-language questions,
+checked in) ahead of the generated bank, applies the calibrated difficulty overlay,
+and runs two regression guards: `golden.json` (hand-verified answers survived) and
+`golden_difficulty.json` (the difficulty scale hasn't inverted).
+
+Latest full run: **3194 questions** — 1033 Characters, 555 Crews & Organizations,
+535 Geography, 498 Devil Fruits, 297 Arcs & Story, 278 Bounties
+(812 easy / 1575 medium / 807 hard).
+
+## Difficulty calibration
+
+Difficulty used to be authored twice, on two incompatible scales: the generator
+computed it from page length, and six authoring agents each guessed their own
+threshold for the curated file. The result was inverted at the boundary — obscure
+subjects shipping as `easy`, headline plot facts shipping as `hard`. `DIFFICULTY.md`
+is now the single rubric for both paths, and difficulty ships as an **overlay** so a
+question's tier no longer depends on which half of the pipeline produced it.
+
+```powershell
+py pipeline/calibrate_signals.py --report   # mechanical signals, no LLM, no network
+py pipeline/rate_questions.py --estimate    # scope + cost of the rating pass
+py pipeline/rate_questions.py               # 3 blind raters (needs ANTHROPIC_API_KEY)
+py pipeline/calibrate.py --review           # merge -> calibration/difficulty.json
+```
+
+| File | What |
+|---|---|
+| `DIFFICULTY.md` | the rubric — tiers by expected % correct, and the "this does not count as hard" list |
+| `calibrate_signals.py` | subject prominence + guessability tells (stem leak, invented distractors, numeric ladders…) |
+| `rate_questions.py` | three blind raters (completionist / casual watcher / test-design skeptic), cached by content hash |
+| `calibrate.py` | median rater score − guessability penalty, clamped, cut into tiers |
+| `calibration/` | `signals.json`, `ratings.json` (cache), `difficulty.json` (the overlay) — **checked in**, so CI needs neither the dump nor an API key |
+| `golden_difficulty.json` | anchor questions pinned to defensible tiers; fails the build if the scale inverts again |
+
+Without ratings the overlay holds each question's authored tier and applies signal
+demotions only — deliberately *not* a prominence prior, since scoring from page
+length is the original bug. An anchor only becomes binding once its question has
+actually been rated, so `validate.py` reports the rest as pending rather than
+failing the build over work that hasn't run.
 
 ## Full regeneration (one shot)
 
@@ -125,8 +167,18 @@ Latest full run: **1949 questions** written — 1059 Crews & Organizations,
 py pipeline/parse_wiki.py; if ($?) { py pipeline/generate_questions.py }; if ($?) { py pipeline/validate.py }
 ```
 
+Re-run `calibrate_signals.py` → `calibrate.py` → `validate.py` afterwards so the
+overlay covers any newly generated questions. The chain is idempotent: `validate.py`
+stashes the original label as `authoredDifficulty`, so a second pass grades against
+what was authored rather than compounding its own demotions.
+
 ## Next
 
+- **Run the rating pass.** Five `golden_difficulty.json` anchors are still mis-tiered
+  and can't be fixed mechanically — they need semantic judgement (see `--estimate`
+  for the cost).
+- **Distractor repair worklist:** `py pipeline/calibrate_signals.py --report` lists
+  the questions whose option sets give the answer away. Most need real canon
+  replacements, which is authoring work rather than a mechanical fix.
 - **Arcs & Story** category has no source yet — arcs aren't captured as an infobox
   `kind`; needs a dedicated parse (arc/saga navboxes) before it can be generated.
-- Optional Phase 6 LLM enrichment for plot/relationship questions (`enrich_llm.py`).

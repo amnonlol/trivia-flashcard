@@ -102,6 +102,20 @@ MAX_PER_ANSWER_SAGA = 14
 # least this many characters, so both answers and distractors are recognisable roles.
 MIN_OCCUPATION_FREQ = 2
 
+# Same reasoning for origins. An "origin" only one character in the whole dump
+# claims is a gag or a real-world leak rather than a place on the world map —
+# Pandaman is from "Tibet", a joke cameo whose home is a real country, and a
+# non-canon alien is from "Space". Both were shipping as origin distractors, and
+# an option from outside One Piece collapses the question to a 1-in-3. Requiring
+# two characters to share an origin removes them without a name blocklist.
+MIN_ORIGIN_FREQ = 2
+
+# And for a location's region. "Outer space" is genuinely canon — it is where the
+# Moon is — but exactly one location claims it, so as a distractor it is an option
+# every player can strike out on sight. Same rule, same reason: a value the world
+# uses once is a curiosity, not a region you could confuse a place with.
+MIN_REGION_FREQ = 2
+
 
 # --------------------------------------------------------------------------- #
 # Value normalisation
@@ -116,10 +130,15 @@ _BOUNTY = re.compile(r"^[\d,]+$")               # a bare comma-grouped number
 # "Bandai" as a character's origin. Matched on norm_key so punctuation/casing
 # don't matter. Kept deliberately small and unambiguous — anything here is never
 # an in-world One Piece answer.
+# "outerspace" is the odd one out here: it *is* canon (it is where the Moon and the
+# Blue Planet sit), so the frequency rules above can't reach it — two locations claim
+# it, which is enough to look like a real region. It still has to go, because as an
+# option it is eliminable on sight: nobody mistakes an island's region for outer
+# space, so offering it turns a four-way question into a three-way one.
 META_NOISE = {
     "bandai", "toei", "toeianimation", "4kids", "funimation", "shueisha",
     "viz", "vizmedia", "namco", "bandainamco", "crunchyroll", "netflix",
-    "space", "n/a", "na", "unknown", "none", "various", "other",
+    "space", "outerspace", "n/a", "na", "unknown", "none", "various", "other",
 }
 
 
@@ -600,6 +619,21 @@ def generate(by_kind):
     pool_occupation = [p for p in pool_occupation
                        if occ_freq[norm_key(p["v"])] >= MIN_OCCUPATION_FREQ]
 
+    # Same treatment for origins and regions (see MIN_ORIGIN_FREQ / MIN_REGION_FREQ).
+    origin_freq = Counter(
+        norm_key(primary(c["fields"].get("origin")))
+        for c in chars if primary(c["fields"].get("origin"))
+    )
+    pool_origin = [p for p in pool_origin
+                   if origin_freq[norm_key(p["v"])] >= MIN_ORIGIN_FREQ]
+
+    region_freq = Counter(
+        norm_key(primary(l["fields"].get("region")))
+        for l in locs if primary(l["fields"].get("region"))
+    )
+    pool_region = [p for p in pool_region
+                   if region_freq[norm_key(p["v"])] >= MIN_REGION_FREQ]
+
     # Crew-membership index: norm(affiliation) -> set of member norm-names, built from
     # *every* affiliation a character lists (not just the primary) so a former member
     # is never offered as a wrong "member of crew X" distractor.
@@ -716,7 +750,7 @@ def generate(by_kind):
                 ctx_tier=prom, ctx_saga=so), "char_occupation", prom, saga)
 
         origin = primary(f.get("origin"))
-        if origin:
+        if origin and origin_freq[norm_key(origin)] >= MIN_ORIGIN_FREQ:
             emit(name, make_question(
                 name, f"Where does {name} originate from?", origin, pool_origin,
                 rng, "Characters", difficulty(prom, 1), src,
@@ -819,7 +853,7 @@ def generate(by_kind):
         so = saga["order"] if saga else None
         exp = l.get("summary")
         region = primary(f.get("region"))
-        if region:
+        if region and region_freq[norm_key(region)] >= MIN_REGION_FREQ:
             emit(title, make_question(
                 title, f"In which region of the world is {title} located?",
                 region, pool_region, rng, "Geography", difficulty(prom, 1),

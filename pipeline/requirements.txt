@@ -2,11 +2,12 @@
 #
 # download_wiki.py needs only py7zr (the download itself uses the stdlib).
 # parse_wiki.py / generate_questions.py (later phases) need lxml + mwparserfromhell.
-# anthropic is only for the optional Phase 6 LLM enrichment.
+# anthropic is only for the difficulty rating pass.
 
 py7zr>=0.20            # extract the Fandom .7z XML dump
 lxml>=4.9             # stream-parse the pages XML (Phase 3)
 mwparserfromhell>=0.6  # parse infobox templates out of wikitext (Phase 3)
 
-# Optional — only imported by enrich_llm.py (Phase 6):
-# anthropic>=0.40
+# Only imported by rate_questions.py, which is a one-off calibration step, not part
+# of the deterministic build. validate.py reads its cached output and never calls out.
+anthropic>=0.40
