@@ -100,6 +100,16 @@ jobs:
         env:
           CI: true
 
+      # Set the commit identity in git config rather than passing gh-pages `-u`:
+      # that flag is parsed as an RFC 5322 address, which rejects the square
+      # brackets in the standard bot identity (in the display name *and* the email
+      # local-part). git itself accepts them, so configuring it here works and
+      # keeps the canonical author on the deploy commits.
+      - name: Configure git identity
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       # Publishes with the same gh-pages package `npm run deploy` uses locally, so
       # a manual publish and an automated one behave identically — same target
       # branch, same commit-on-top history. GITHUB_TOKEN is scoped to this repo by
@@ -107,7 +117,6 @@ jobs:
       - name: Publish build/ to gh-pages
         run: >-
           npx gh-pages -d build
-          -u "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
           -m "Deploy ${GITHUB_SHA} from ${GITHUB_REF_NAME}"
           -r "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         env:
