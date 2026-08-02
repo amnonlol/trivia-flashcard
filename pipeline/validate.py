@@ -18,6 +18,9 @@ Checks per question (a failure drops that one question, not the whole run):
 Global passes:
 
 * drop exact-duplicate questions (same normalised question text keeps the first);
+* apply the calibrated difficulty overlay and the cached subject portraits — both
+  are overlays applied *here*, because this step rewrites the bank from scratch and
+  anything attached afterwards is lost on the next regeneration;
 * report per-category / per-difficulty counts.
 
 Exit code is non-zero only on a *fatal* problem (missing input, zero valid
@@ -35,6 +38,7 @@ import argparse
 import json
 import re
 import sys
+import urllib.parse
 from collections import Counter
 from pathlib import Path
 
@@ -51,6 +55,12 @@ CURATED = Path(__file__).resolve().parent / "curated_questions.json"
 # own idea of "hard", and this is the one scale that reconciles them (see DIFFICULTY.md).
 DIFFICULTY = Path(__file__).resolve().parent / "calibration" / "difficulty.json"
 GOLDEN_DIFFICULTY = Path(__file__).resolve().parent / "golden_difficulty.json"
+# Portrait URLs keyed by wiki page title, checked in. Images are an overlay for the
+# same reason difficulty is: this file rewrites the bank from scratch, so anything
+# bolted on afterwards is erased by the next regeneration — which is exactly how the
+# portraits vanished once already. enrich_images.py refreshes the cache (network);
+# applying it is part of the deterministic build.
+IMAGES = Path(__file__).resolve().parent / "image_urls.json"
 
 VALID_DIFFICULTIES = {"easy", "medium", "hard"}
 # Must stay in sync with app/src/constants/categories.js.
@@ -197,6 +207,56 @@ def apply_difficulty(valid: list[dict], overlay: dict) -> Counter:
     return stats
 
 
+def title_from_source(source: str) -> str | None:
+    """Recover the wiki page title from a question's ``source`` URL."""
+    marker = "/wiki/"
+    if marker not in source:
+        return None
+    slug = source.split(marker, 1)[1]
+    return urllib.parse.unquote(slug).replace("_", " ")
+
+
+def force_png(url: str) -> str:
+    """Force Fandom's thumbnailer to serve real PNG bytes.
+
+    Fandom's ``static.wikia.nocookie.net`` thumbnails are content-negotiated: the URL
+    ends in ``.png`` but the bytes are **always WebP**, regardless of the ``Accept``
+    header. Clients that can't decode WebP (notably older iOS Safari) fail to render
+    and the app's ``onError`` hides the image — so portraits silently vanish on some
+    phones. ``format=png`` makes the thumbnailer emit genuine PNG everywhere.
+    """
+    if not url or "nocookie.net" not in url:
+        return url
+    parts = urllib.parse.urlsplit(url)
+    query = urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+    if any(k == "format" for k, _ in query):
+        return url
+    query.append(("format", "png"))
+    return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
+
+
+def apply_images(valid: list[dict], cache: dict) -> Counter:
+    """Attach each question's subject portrait from the cached title -> URL map.
+
+    A question maps to its subject through the ``source`` URL it already carries, so
+    no extra data is needed. Subjects the cache has never seen, or that have no lead
+    image on the wiki, simply get no ``image`` key — the app renders fine without one.
+    """
+    stats = Counter()
+    for q in valid:
+        title = title_from_source(str(q.get("source", "")))
+        url = cache.get(title) if title else None
+        if url:
+            q["image"] = force_png(url)
+            stats["with image"] += 1
+        else:
+            # Only ever set or clear the key we own, so a stale image can't survive
+            # a cache entry going away.
+            q.pop("image", None)
+            stats["uncached subject" if title not in cache else "subject has no image"] += 1
+    return stats
+
+
 def check_golden_difficulty(valid: list[dict], path: Path, overlay: dict) -> tuple[list[str], list[str]]:
     """Assert hand-picked anchor questions land in the tier a human expects.
 
@@ -243,6 +303,8 @@ def main(argv=None) -> int:
     ap.add_argument("--skip-golden", action="store_true", help="skip the hand-verified golden-fact regression check")
     ap.add_argument("--difficulty", type=Path, default=DIFFICULTY, help="calibrated difficulty overlay")
     ap.add_argument("--no-difficulty", action="store_true", help="ship authored difficulty, skipping the overlay")
+    ap.add_argument("--images", type=Path, default=IMAGES, help="cached wiki title -> portrait URL map")
+    ap.add_argument("--no-images", action="store_true", help="ship a bank without portrait images")
     args = ap.parse_args(argv)
 
     if not args.inp.exists():
@@ -299,6 +361,19 @@ def main(argv=None) -> int:
     elif not args.no_difficulty:
         print(f"note: no difficulty overlay at {args.difficulty} — shipping authored "
               f"difficulty (run calibrate_signals.py then calibrate.py)")
+
+    if not args.no_images and args.images.exists():
+        images = json.loads(args.images.read_text(encoding="utf-8"))
+        stats = apply_images(valid, images)
+        print(f"applied portraits from {args.images.name}:")
+        for label, n in sorted(stats.items()):
+            print(f"  {n:5d}  {label}")
+        if stats["uncached subject"]:
+            print(f"  ({stats['uncached subject']} subjects never looked up — "
+                  f"run: py pipeline/enrich_images.py, then re-run this)")
+    elif not args.no_images:
+        print(f"note: no image cache at {args.images} — shipping a bank without "
+              f"portraits (run enrich_images.py)")
 
     print("  by category:")
     for cat, n in Counter(q["category"] for q in valid).most_common():

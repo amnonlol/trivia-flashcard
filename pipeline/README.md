@@ -122,13 +122,41 @@ keys, `type == "multiple"`, known category (kept in sync with
 exactly once, no near-duplicate options, `onepiece.fandom.com` source URL.
 
 It also merges `curated_questions.json` (agent-authored natural-language questions,
-checked in) ahead of the generated bank, applies the calibrated difficulty overlay,
-and runs two regression guards: `golden.json` (hand-verified answers survived) and
-`golden_difficulty.json` (the difficulty scale hasn't inverted).
+checked in) ahead of the generated bank, applies the calibrated difficulty overlay
+and the subject portraits from `image_urls.json`, and runs two regression guards:
+`golden.json` (hand-verified answers survived) and `golden_difficulty.json` (the
+difficulty scale hasn't inverted).
+
+**Everything the bank carries is applied here.** This step rewrites `questions.json`
+from scratch, so a field bolted on by a later script survives only until the next
+regeneration — that is how the portraits silently disappeared when the curated
+questions were merged. New per-question data belongs in a checked-in overlay that
+`validate.py` applies, not in a post-processing pass over the bank.
 
 Latest full run: **3194 questions** — 1033 Characters, 555 Crews & Organizations,
 535 Geography, 498 Devil Fruits, 297 Arcs & Story, 278 Bounties
 (812 easy / 1575 medium / 807 hard).
+
+## Subject portraits (`enrich_images.py`, opt-in network)
+
+```powershell
+py pipeline/enrich_images.py              # refresh pipeline/image_urls.json (Fandom API)
+py pipeline/validate.py                   # then rebuild so the bank picks them up
+```
+
+The dump's infoboxes store a gallery key, not a filename, so portrait URLs can't be
+derived offline. This is the pipeline's only network step: it looks up each subject's
+lead image (`prop=pageimages`, polite delay, batched) and caches `{title: url}` to
+`pipeline/image_urls.json` — **checked in**, so the build itself stays no-network. It
+writes only the cache; `validate.py` attaches `image` to each question, keyed off the
+`source` URL the question already carries.
+
+URLs get `format=png` appended: Fandom's thumbnails serve WebP bytes from a `.png`
+URL, which older iOS Safari can't decode. The app also requests them with
+`referrerPolicy="no-referrer"` to get past the CDN's hotlink protection.
+
+Latest run: **1188/1203 subjects** have an image → 3178/3194 questions carry one
+(the other 15 wiki pages have no lead image).
 
 ## Difficulty calibration
 
@@ -168,7 +196,9 @@ py pipeline/parse_wiki.py; if ($?) { py pipeline/generate_questions.py }; if ($?
 ```
 
 Re-run `calibrate_signals.py` → `calibrate.py` → `validate.py` afterwards so the
-overlay covers any newly generated questions. The chain is idempotent: `validate.py`
+difficulty overlay covers any newly generated questions, and `enrich_images.py` →
+`validate.py` if the run introduced subjects the image cache has never seen (the
+validate output says how many). The chain is idempotent: `validate.py`
 stashes the original label as `authoredDifficulty`, so a second pass grades against
 what was authored rather than compounding its own demotions.
 
