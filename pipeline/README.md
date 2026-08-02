@@ -135,7 +135,7 @@ questions were merged. New per-question data belongs in a checked-in overlay tha
 
 Latest full run: **3194 questions** — 1033 Characters, 555 Crews & Organizations,
 535 Geography, 498 Devil Fruits, 297 Arcs & Story, 278 Bounties
-(812 easy / 1575 medium / 807 hard).
+(1050 easy / 1830 medium / 314 hard, after the hard-tier rating pass).
 
 ## Subject portraits (`enrich_images.py`, opt-in network)
 
@@ -174,6 +174,18 @@ py pipeline/rate_questions.py               # 3 blind raters (needs ANTHROPIC_AP
 py pipeline/calibrate.py --review           # merge -> calibration/difficulty.json
 ```
 
+The panel can also be run by **subagents instead of API calls**, which is how the
+hard tier was rated:
+
+```powershell
+py pipeline/rate_questions.py --difficulty hard --export-batches DIR   # blind batches
+#   ... one subagent per (rater, batch), each writing DIR/verdicts/<rater>.<batch>.json
+py pipeline/rate_questions.py --import-verdicts DIR                    # merge to the cache
+```
+
+Both paths write byte-identical cache entries — same content hash, same blind shuffle,
+same three seats — so a run can start on one and finish on the other.
+
 | File | What |
 |---|---|
 | `DIFFICULTY.md` | the rubric — tiers by expected % correct, and the "this does not count as hard" list |
@@ -188,6 +200,19 @@ demotions only — deliberately *not* a prominence prior, since scoring from pag
 length is the original bug. An anchor only becomes binding once its question has
 actually been rated, so `validate.py` reports the rest as pending rather than
 failing the build over work that hasn't run.
+
+A verdict belongs to the **item**, not the question text: `signals.json` carries the
+same content hash `ratings.json` is keyed by, so repairing a distractor moves the hash
+and drops the stale rating. That is what makes "repair over demotion" work — fix a
+cross-domain option set and the item goes back to being judged on knowledge instead of
+keeping the `guessable` verdict earned by options it no longer has.
+
+**Hard tier rated (807 items, 3 seats each).** 640 of them left the tier: 239 to `easy`,
+401 to `medium`. The agent-authored half had been labelling ordinary main-story beats
+as hard — Pell flying the bomb over Alubarna, Corazón feeding Law the Ope Ope no Mi,
+Crocodile hunting Pluton — which the rubric puts at `medium` at most. What survives as
+hard is mostly template-generated minor-character detail (Baroque Works pairings, exact
+bounties, which island a background character resides on).
 
 ## Full regeneration (one shot)
 
@@ -204,9 +229,16 @@ what was authored rather than compounding its own demotions.
 
 ## Next
 
-- **Run the rating pass.** Five `golden_difficulty.json` anchors are still mis-tiered
-  and can't be fixed mechanically — they need semantic judgement (see `--estimate`
-  for the cost).
+- **Rate the easy/medium tiers.** The pass has covered `hard` only, so the inverse
+  error is still live: obscure subjects that shipped as `easy` off the page-length
+  proxy. Two `golden_difficulty.json` anchors (Wanda's affiliation, Doc Q's epithet)
+  are still pending on exactly that, and stay unenforced until those questions are
+  rated. ~2400 items remain (`--estimate` for the cost, or the subagent path above).
+- **Repopulate the hard tier.** It is down to 314 items, thin in
+  `Crews & Organizations` (4) and `Arcs & Story` (8) — a player picking hard plus one
+  of those categories can run out of questions. The fix is the repair worklist below,
+  not re-inflating labels: an item demoted for cross-domain distractors returns to its
+  knowledge difficulty once the option set is fixed.
 - **Distractor repair worklist:** `py pipeline/calibrate_signals.py --report` lists
   the questions whose option sets give the answer away. Most need real canon
   replacements, which is authoring work rather than a mechanical fix.

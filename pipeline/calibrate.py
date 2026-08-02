@@ -205,21 +205,26 @@ def main(argv=None) -> int:
         raise SystemExit(f"signals not found: {args.signals}\n  run: py pipeline/calibrate_signals.py")
     signals = json.loads(args.signals.read_text(encoding="utf-8"))
 
-    # Ratings are cached by content hash; the overlay is keyed by question. Re-key
-    # here so a repaired question's stale rating can't silently follow it over.
-    ratings_by_key: dict[str, dict] = {}
+    # Ratings are cached by content hash — question *plus* option set — and the signals
+    # carry the same hash, so a verdict only applies to the exact item that was rated.
+    # Matching on the question text instead would let a stale rating survive an option
+    # repair, which is the one move DIFFICULTY.md prefers over demotion: repair a
+    # cross-domain distractor and the item should go back to being judged on knowledge,
+    # not keep the guessable verdict earned by the options it no longer has.
+    ratings_by_hash: dict[str, dict] = {}
     if args.ratings.exists():
-        for entry in json.loads(args.ratings.read_text(encoding="utf-8")).values():
-            key = entry.get("key")
-            if key:
-                ratings_by_key[key] = entry
-        print(f"loaded ratings for {len(ratings_by_key)} questions from {args.ratings.name}")
+        ratings_by_hash = json.loads(args.ratings.read_text(encoding="utf-8"))
+        print(f"loaded ratings for {len(ratings_by_hash)} rated items from {args.ratings.name}")
     else:
         print(f"no ratings yet ({args.ratings.name} missing) — holding authored tiers and "
               f"applying signal demotions only; re-run after rate_questions.py to upgrade")
 
-    entries = {key: score_one(signal, ratings_by_key.get(key))
+    entries = {key: score_one(signal, ratings_by_hash.get(signal.get("hash")))
                for key, signal in signals.items()}
+    stale = len(ratings_by_hash) - sum(1 for e in entries.values() if e["basis"] == "raters")
+    if stale > 0:
+        print(f"  {stale} cached rating(s) no longer match any item — the question or its "
+              f"options changed since; re-run rate_questions.py to re-rate those")
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(entries, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -46,6 +46,7 @@ from pathlib import Path
 from urllib.parse import unquote
 
 from generate_questions import META_NOISE, is_must_know, prominence
+from rate_questions import content_hash
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PIPELINE = Path(__file__).resolve().parent
@@ -412,6 +413,11 @@ def signals_for(q: dict, canon: Canon) -> dict:
 
     return {
         "question": question,
+        # Identity of the *rateable item* — question plus option set, the same hash
+        # rate_questions.py caches verdicts under. Carried here so calibrate.py can
+        # tell a rating of this item from a rating of an earlier version of it: repair
+        # a distractor and the hash moves, which is what drops the stale verdict.
+        "hash": content_hash(question, options),
         "category": q.get("category"),
         # The label the question shipped with, never the calibrated one — a bank that
         # has already been through the overlay carries both, and reading the overlaid

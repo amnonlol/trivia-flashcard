@@ -22,10 +22,18 @@ spread is itself a signal, surfaced by ``calibrate.py`` as the review queue.
 Results are cached by content hash in ``calibration/ratings.json``, so runs are
 resumable and only genuinely new or repaired questions cost anything.
 
+**Two ways to run the panel.** ``--export-batches`` / ``--import-verdicts`` drive the
+same panel with subagents instead of API calls, for when the work should come out of
+a session rather than an API bill. Both paths write byte-identical cache entries —
+same content hash, same blind shuffle, same three seats — so a run can start on one
+and finish on the other, and ``calibrate.py`` cannot tell them apart.
+
 Usage:
     py pipeline/rate_questions.py --limit 50 --grep Buggy   # pilot first
     py pipeline/rate_questions.py                           # full bank
     py pipeline/rate_questions.py --estimate                # cost, no API calls
+    py pipeline/rate_questions.py --difficulty hard --export-batches DIR   # for subagents
+    py pipeline/rate_questions.py --import-verdicts DIR                    # merge them back
 """
 
 from __future__ import annotations
@@ -198,6 +206,90 @@ def rate_batch(client, model: str, rubric: str, rater: str, items: list[dict]) -
     return json.loads(text)["ratings"], response.usage
 
 
+def record_rating(cache: dict, item: dict, rater: str, rating: dict) -> None:
+    """Write one rater's verdict into the cache. The single writer for both paths."""
+    entry = cache.setdefault(item["hash"], {})
+    entry[rater] = {
+        "knowledge_score": max(0, min(100, int(rating["knowledge_score"]))),
+        "guessable": bool(rating["guessable"]),
+        "reason": str(rating["reason"]),
+    }
+    entry["question"] = item["question"]
+    entry["key"] = item["key"]
+
+
+def export_batches(items: list[dict], raters: list[str], out_dir: Path, batch_size: int) -> int:
+    """Write blind batch files for subagent raters, plus the manifest to import against.
+
+    The rendered ``.md`` is exactly what the API path puts in the user turn — same
+    shuffle, same numbering, no authored difficulty and no correct-answer marker — so
+    a subagent rater sits in the same blind seat as an API one. The manifest keeps the
+    n -> hash mapping on this side; verdict files only carry question numbers, so a
+    rater never sees the identity of what it is grading.
+    """
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "verdicts").mkdir(exist_ok=True)
+    batches = []
+    for start in range(0, len(items), batch_size):
+        batch = items[start:start + batch_size]
+        bid = f"b{start // batch_size:02d}"
+        (out_dir / f"{bid}.md").write_text(render_batch(batch), encoding="utf-8")
+        batches.append({
+            "id": bid,
+            "items": [{"n": n, "hash": i["hash"], "key": i["key"]}
+                      for n, i in enumerate(batch, 1)],
+        })
+    manifest = {"raters": raters, "batch_size": batch_size, "batches": batches}
+    (out_dir / "manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"exported {len(batches)} batches x {len(raters)} raters -> {out_dir}")
+    print(f"  each rater writes {out_dir / 'verdicts'}/<rater>.<batch>.json "
+          f'as {{"ratings": [{{"n", "knowledge_score", "guessable", "reason"}}]}}')
+    return len(batches)
+
+
+def import_verdicts(items: list[dict], out_dir: Path, cache: dict, cache_path: Path) -> int:
+    """Merge subagent verdict files back into the ratings cache.
+
+    Validates against the manifest rather than trusting the filenames: an unknown
+    rater, an unknown batch, or a question number outside the batch is dropped with a
+    warning instead of silently landing on the wrong question.
+    """
+    manifest = json.loads((out_dir / "manifest.json").read_text(encoding="utf-8"))
+    by_hash = {i["hash"]: i for i in items}
+    lookup = {b["id"]: {e["n"]: e["hash"] for e in b["items"]} for b in manifest["batches"]}
+    known_raters = set(manifest["raters"])
+
+    merged = skipped = 0
+    files = sorted((out_dir / "verdicts").glob("*.json"))
+    if not files:
+        raise SystemExit(f"no verdict files in {out_dir / 'verdicts'}")
+    for path in files:
+        rater, _, bid = path.stem.partition(".")
+        if rater not in known_raters or bid not in lookup:
+            print(f"  skipping {path.name}: unknown rater/batch")
+            continue
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        for rating in payload.get("ratings", []):
+            item_hash = lookup[bid].get(int(rating["n"]))
+            item = by_hash.get(item_hash) if item_hash else None
+            if item is None:
+                skipped += 1
+                continue
+            record_rating(cache, item, rater, rating)
+            merged += 1
+
+    save_cache(cache_path, cache)
+    expected = sum(len(b["items"]) for b in manifest["batches"]) * len(known_raters)
+    print(f"merged {merged} ratings ({skipped} skipped) of {expected} expected -> {cache_path}")
+    missing = [(h, r) for h, i in by_hash.items() for r in known_raters
+               if r not in cache.get(h, {})]
+    if missing:
+        print(f"  {len(missing)} rater/question pairs still unrated "
+              f"(e.g. {missing[0][1]} on {by_hash[missing[0][0]]['question'][:60]!r})")
+    return 0 if merged else 1
+
+
 def load_cache(path: Path) -> dict:
     if not path.exists():
         return {}
@@ -221,6 +313,10 @@ def main(argv=None) -> int:
     ap.add_argument("--difficulty", help="only questions with this authored difficulty")
     ap.add_argument("--estimate", action="store_true", help="report scope and cost, make no API calls")
     ap.add_argument("--force", action="store_true", help="re-rate even if cached")
+    ap.add_argument("--export-batches", type=Path, metavar="DIR",
+                    help="write blind batch files for subagent raters, make no API calls")
+    ap.add_argument("--import-verdicts", type=Path, metavar="DIR",
+                    help="merge subagent verdict files from DIR into the ratings cache")
     args = ap.parse_args(argv)
 
     if not args.bank.exists():
@@ -241,6 +337,13 @@ def main(argv=None) -> int:
         items = items[:args.limit]
 
     cache = load_cache(args.cache)
+
+    if args.export_batches:
+        export_batches(items, raters, args.export_batches, args.batch_size)
+        return 0
+    if args.import_verdicts:
+        return import_verdicts(items, args.import_verdicts, cache, args.cache)
+
     todo = {
         rater: [i for i in items if args.force or rater not in cache.get(i["hash"], {})]
         for rater in raters
@@ -294,14 +397,7 @@ def main(argv=None) -> int:
                 if rating is None:
                     failed += 1
                     continue
-                entry = cache.setdefault(item["hash"], {})
-                entry[rater] = {
-                    "knowledge_score": max(0, min(100, int(rating["knowledge_score"]))),
-                    "guessable": bool(rating["guessable"]),
-                    "reason": str(rating["reason"]),
-                }
-                entry["question"] = item["question"]
-                entry["key"] = item["key"]
+                record_rating(cache, item, rater, rating)
                 done += 1
             save_cache(args.cache, cache)     # checkpoint every batch, so a kill is cheap
             print(f"  [{rater}] {min(start + len(batch), len(queue))}/{len(queue)}", flush=True)
