@@ -311,6 +311,8 @@ def main(argv=None) -> int:
     ap.add_argument("--limit", type=int, help="rate at most N questions (pilot runs)")
     ap.add_argument("--grep", help="only questions whose text matches this (case-insensitive)")
     ap.add_argument("--difficulty", help="only questions with this authored difficulty")
+    ap.add_argument("--unrated", action="store_true",
+                    help="only questions still missing a verdict from a selected rater")
     ap.add_argument("--estimate", action="store_true", help="report scope and cost, make no API calls")
     ap.add_argument("--force", action="store_true", help="re-rate even if cached")
     ap.add_argument("--export-batches", type=Path, metavar="DIR",
@@ -328,15 +330,20 @@ def main(argv=None) -> int:
 
     bank = json.loads(args.bank.read_text(encoding="utf-8"))
     items = build_items(bank)
+    cache = load_cache(args.cache)
     if args.grep:
         pattern = re.compile(args.grep, re.I)
         items = [i for i in items if pattern.search(i["question"])]
     if args.difficulty:
         items = [i for i in items if i["authored_difficulty"] == args.difficulty]
+    # Applied before --limit so a capped run works through what's actually missing
+    # rather than re-exporting the same already-rated head every time. The API path
+    # skips cached ratings on its own; this is what lets the *export* path resume.
+    if args.unrated:
+        items = [i for i in items
+                 if any(r not in cache.get(i["hash"], {}) for r in raters)]
     if args.limit:
         items = items[:args.limit]
-
-    cache = load_cache(args.cache)
 
     if args.export_batches:
         export_batches(items, raters, args.export_batches, args.batch_size)

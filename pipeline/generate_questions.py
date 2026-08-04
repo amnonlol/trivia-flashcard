@@ -13,6 +13,8 @@ Each template is ``(question text, correct field, distractor pool)``. See the
 * normalise the raw field (lists/translations/qualifiers -> one clean value),
 * draw 3 distractors from the same-field pool, rejecting near-duplicates and any
   value that collides with the correct answer,
+* reject the question when the answer echoes a name the question already gave
+  away and no distractor does (see "Answer leaks" below),
 * tag ``category`` / ``difficulty`` (article-length proxy) / ``source`` (wiki URL),
 * pre-shuffle ``options`` deterministically (seeded per question) so runs are
   reproducible — the app reshuffles at load anyway.
@@ -265,6 +267,86 @@ def clean_epithet(v) -> str | None:
     return None
 
 
+# Connectives left dangling once a name is cut out of an epithet. A leading
+# "the" is dropped ("Buggy the Clown" -> "Clown") but a leading "of" is kept —
+# "Kaidou of the Beasts" reads as an epithet at "of the Beasts" and as a stray
+# noun at "Beasts".
+_CONNECTOR = re.compile(r"(?i)^(?:the|and)\s+|\s+(?:the|of|and)$")
+
+# What's left of "Sir Crocodile" or "Captain John" once the name goes is a form of
+# address, not an epithet — it describes nobody in particular, so those characters
+# get no epithet question rather than one answered "Sir".
+_HONORIFIC = {"sir", "don", "madam", "madame", "master", "captain", "doctor",
+              "baron", "duke", "lady", "miss", "mister", "mr"}
+
+
+def strip_own_name(value: str, name: str) -> str | None:
+    """Cut the subject's own name out of one of their values.
+
+    Half the wiki's epithets embed the character's name — "Straw Hat Luffy",
+    "Pirate Hunter Zoro", "Sengoku the Buddha". Asked as "By what epithet is Zoro
+    known?" the name is the answer key, so we ship the name-free form the epithet
+    is actually quoted by ("Straw Hat", "Pirate Hunter", "Buddha") — for the
+    distractor pool too, so no option stands out by *lacking* a name either.
+
+    Returns None when what's left says nothing about the character: an "epithet"
+    that was only their name, or only an honorific (see ``_HONORIFIC``).
+    """
+    out = str(value)
+    for token in re.findall(r"[A-Za-z]+", str(name)):
+        if len(token) >= 3:
+            out = re.sub(rf"(?i)\b{re.escape(token)}\b", " ", out)
+    out = re.sub(r"\s+", " ", out).strip(" -,")
+    out = _CONNECTOR.sub("", out).strip(" -,")
+    if not out or norm_key(out) in _HONORIFIC:
+        return None
+    return out
+
+
+def display_epithet(rec: dict) -> str | None:
+    """The epithet a question should show: cleaned, then stripped of the owner's
+    own name (see ``strip_own_name``). Used for both answers and the pool."""
+    raw = clean_epithet(rec["fields"].get("epithet"))
+    return strip_own_name(raw, rec["title"]) if raw else None
+
+
+# A residence clause the wiki marks as history rather than a current home. The
+# field is a *timeline* — Diamante's reads "Downs (former); Spider Miles (former);
+# Dressrosa (former)" — so taking the first entry answered "Where does Diamante
+# reside?" with the wasteland the Donquixote crew formed in. "noncanon" is glued
+# straight onto the place by the parser ("Nazawaka City (former)noncanon").
+_FORMER = re.compile(r"(?i)former|temporar|deceased|noncanon|non-canon")
+
+
+def residence_entries(v) -> list[tuple[str, bool]]:
+    """``(place, is_current)`` for every residence clause, in wiki order.
+
+    One list item can pack several clauses ("Upper Yard (former); Birka (former)"),
+    so we split on ``;`` before reading each qualifier — ``primary`` strips the
+    ``(former)`` marker we need to see.
+    """
+    entries = []
+    for item in as_list(v):
+        for clause in str(item).split(";"):
+            place = primary(clause)
+            if place:
+                entries.append((place, not _FORMER.search(clause)))
+    return entries
+
+
+def current_residence(v) -> str | None:
+    """Where the entity lives *now*: the first clause not marked former.
+
+    None when every entry is history — for those characters (Luffy, Zoro, Robin,
+    the whole Donquixote crew) the wiki records no current home, so the question
+    has no true answer and isn't asked.
+    """
+    for place, is_current in residence_entries(v):
+        if is_current and not is_noise(place):
+            return place
+    return None
+
+
 def is_must_know(title: str) -> bool:
     """True for the curated event-core names (see ``MUST_KNOW``)."""
     t = title.lower()
@@ -420,6 +502,38 @@ def norm_key(s: str) -> str:
 
 
 # --------------------------------------------------------------------------- #
+# Answer leaks
+# --------------------------------------------------------------------------- #
+# A question leaks when the answer echoes something the question already said:
+# "By what epithet is Buggy known?" -> "Buggy the Clown", "Which crew is Eustass
+# Kid affiliated with?" -> "Kid Pirates". Nobody has to know One Piece to pick the
+# only option carrying the subject's own name, so the question grades recall of
+# nothing. Every template passes the entity it names (``leak_ref``) to
+# make_question, which prefers distractors carrying the same cue and drops the
+# question outright when the cue still singles the answer out.
+
+def leak_tokens(s) -> set[str]:
+    """Distinctive lowercase word tokens (>= 3 chars) of a name or value."""
+    return {t.lower() for t in re.findall(r"[A-Za-z0-9]+", str(s or "")) if len(t) >= 3}
+
+
+def _token_hit(token: str, tokens: set[str]) -> bool:
+    """True if ``token`` surfaces in ``tokens``, whole or embedded.
+
+    The embedded case ("Attach" -> "Attachan") only applies from 4 characters up,
+    so short tokens can't false-positive on an unrelated longer word ("Ace" inside
+    "Palace").
+    """
+    return token in tokens or (len(token) >= 4 and any(token in t for t in tokens))
+
+
+def leaked(ref, value) -> set[str]:
+    """Tokens of ``ref`` (an entity the question names) that resurface in ``value``."""
+    tokens = leak_tokens(value)
+    return {t for t in leak_tokens(ref) if _token_hit(t, tokens)}
+
+
+# --------------------------------------------------------------------------- #
 # Distractor sampling
 # --------------------------------------------------------------------------- #
 
@@ -431,7 +545,7 @@ def near_dupe(a: str, b: str) -> bool:
 
 
 def sample_distractors(correct: str, pool, rng: random.Random, n: int = 3,
-                       ctx_tier=None, ctx_saga=None):
+                       ctx_tier=None, ctx_saga=None, leaks=frozenset()):
     """Pick ``n`` distinct distractors from ``pool``, skipping near-dupes.
 
     ``pool`` is the deduped list of ``{"v", "tier", "saga"}`` entries for this
@@ -442,11 +556,18 @@ def sample_distractors(correct: str, pool, rng: random.Random, n: int = 3,
     Ordering is only a preference: the whole pool is still traversed, so volume is
     unchanged. Returns None if fewer than ``n`` plausible distinct distractors
     survive.
+
+    ``leaks`` are tokens the correct answer echoes back from the question (see
+    ``leaked``); a distractor carrying the same token covers the leak, so those
+    outrank tier/saga closeness — a wrong answer that isn't era-appropriate still
+    beats a question that gives itself away.
     """
     candidates = [p for p in pool if not near_dupe(p["v"], correct)]
     rng.shuffle(candidates)
 
     def closeness(p):
+        # Prefer distractors that carry the leaked cue, most covered first.
+        covered = -sum(1 for t in leaks if _token_hit(t, leak_tokens(p["v"])))
         # Prefer same prominence tier (smaller gap first). Unknown tiers are neutral.
         if ctx_tier is not None and p["tier"] is not None:
             tier_gap = abs(p["tier"] - ctx_tier)
@@ -458,7 +579,7 @@ def sample_distractors(correct: str, pool, rng: random.Random, n: int = 3,
             saga_gap = 0 if p["saga"] <= ctx_saga else (p["saga"] - ctx_saga)
         else:
             saga_gap = 0
-        return (tier_gap, saga_gap)
+        return (covered, tier_gap, saga_gap)
 
     candidates.sort(key=closeness)  # stable: keeps the shuffle order within a tie
     chosen: list[str] = []
@@ -490,15 +611,23 @@ def lead(fact: str, summary) -> str:
 
 def make_question(subject_seed, question, correct, pool, rng_master,
                   category, diff, source, explainer=None, image=None,
-                  ctx_tier=None, ctx_saga=None):
+                  ctx_tier=None, ctx_saga=None, leak_ref=None):
     # Never build a question around a meta/real-world value (e.g. a card-game
     # mascot whose "origin" parsed to "Bandai").
     if is_noise(correct):
         return None
     rng = random.Random(f"{SEED}:{subject_seed}:{question}")
-    distractors = sample_distractors(correct, pool, rng,
-                                     ctx_tier=ctx_tier, ctx_saga=ctx_saga)
+    # ``leak_ref`` is the entity the question names (the subject, or the crew /
+    # epithet / fruit it asks about when the *answer* is the subject).
+    leaks = leaked(leak_ref, correct) if leak_ref else set()
+    distractors = sample_distractors(correct, pool, rng, ctx_tier=ctx_tier,
+                                     ctx_saga=ctx_saga, leaks=leaks)
     if not distractors:
+        return None
+    # A cue the answer carries and no distractor does hands the question over to
+    # anyone who can read. Sampling already tried to cover it; if it couldn't, the
+    # question isn't worth asking.
+    if any(not any(_token_hit(t, leak_tokens(d)) for d in distractors) for t in leaks):
         return None
     options = distractors + [correct]
     rng.shuffle(options)
@@ -601,8 +730,8 @@ def generate(by_kind):
     pool_origin = build_pool(chars, lambda c: primary(c["fields"].get("origin")))
     pool_df_user = build_pool(fruits, lambda fr: clean_name(fr["fields"].get("user")))
     pool_region = build_pool(locs, lambda l: primary(l["fields"].get("region")))
-    pool_residence = build_pool(chars, lambda c: primary(c["fields"].get("residence")))
-    pool_epithet = build_pool(chars, lambda c: clean_epithet(c["fields"].get("epithet")))
+    pool_residence = build_pool(chars, lambda c: current_residence(c["fields"].get("residence")))
+    pool_epithet = build_pool(chars, display_epithet)
 
     # Character-name pool: the distractor source for the reverse/relational templates
     # whose *answer is a character* (reverse-epithet, crew membership, bounty ranking).
@@ -626,6 +755,16 @@ def generate(by_kind):
     )
     pool_origin = [p for p in pool_origin
                    if origin_freq[norm_key(p["v"])] >= MIN_ORIGIN_FREQ]
+
+    # Stripping the owner's name off an epithet (see strip_own_name) leaves a few
+    # characters sharing one generic remainder — "Captain" is both Kid's and John's,
+    # "Don" belongs to four. The forward question is still fine (each of them really
+    # does carry it), but asking it in reverse would have several right answers, one
+    # of which can be sitting in the options as a "wrong" one. Only ask the reverse
+    # for an epithet exactly one character carries.
+    epithet_owners = Counter(
+        norm_key(display_epithet(c)) for c in chars if display_epithet(c)
+    )
 
     region_freq = Counter(
         norm_key(primary(l["fields"].get("region")))
@@ -718,7 +857,7 @@ def generate(by_kind):
                 name, f"Which Devil Fruit did {name} eat?", df, pool_df_name,
                 rng, "Devil Fruits", difficulty(prom, 0), src,
                 lead(f"{name}'s Devil Fruit is the {df}", exp),
-                ctx_tier=prom, ctx_saga=so), "char_df", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=name), "char_df", prom, saga)
 
         aff = primary(f.get("affiliation"))
         if aff:
@@ -727,7 +866,8 @@ def generate(by_kind):
                 aff, pool_affiliation, rng, "Crews & Organizations",
                 difficulty(prom, 0), src,
                 lead(f"{name} is affiliated with the {aff}", exp),
-                ctx_tier=prom, ctx_saga=so), "char_affiliation", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=name),
+                "char_affiliation", prom, saga)
 
         bounty = clean_bounty(f.get("bounty"))
         if bounty:
@@ -735,7 +875,7 @@ def generate(by_kind):
                 name, f"What is {name}'s known bounty?", bounty, pool_bounty,
                 rng, "Bounties", difficulty(prom, 0), src,
                 lead(f"{name}'s known bounty is {bounty}", exp),
-                ctx_tier=prom, ctx_saga=so), "char_bounty", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=name), "char_bounty", prom, saga)
 
         # Occupation self-selects for informative answers: the per-answer cap limits
         # generic values ("Pirate" covers ~400 characters), and the pool is already
@@ -747,7 +887,8 @@ def generate(by_kind):
                 name, f"What is {name}'s occupation?", occupation, pool_occupation,
                 rng, "Characters", difficulty(prom, 0), src,
                 lead(f"{name}'s occupation is {occupation}", exp),
-                ctx_tier=prom, ctx_saga=so), "char_occupation", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=name),
+                "char_occupation", prom, saga)
 
         origin = primary(f.get("origin"))
         if origin and origin_freq[norm_key(origin)] >= MIN_ORIGIN_FREQ:
@@ -755,40 +896,47 @@ def generate(by_kind):
                 name, f"Where does {name} originate from?", origin, pool_origin,
                 rng, "Characters", difficulty(prom, 1), src,
                 lead(f"{name} originates from {origin}", exp),
-                ctx_tier=prom, ctx_saga=so), "char_origin", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=name), "char_origin", prom, saga)
 
-        residence = primary(f.get("residence"))
+        # Residence: the *current* home only (see current_residence). Distractors
+        # exclude every other place this character has lived, and their origin, so
+        # no wrong answer is somewhere they demonstrably did reside.
+        residence = current_residence(f.get("residence"))
         if residence:
+            own = {norm_key(p) for p, _ in residence_entries(f.get("residence"))}
+            own.add(norm_key(origin or ""))
             emit(name, make_question(
-                name, f"Where does {name} reside?", residence, pool_residence,
+                name, f"Where does {name} reside?", residence,
+                [p for p in pool_residence if norm_key(p["v"]) not in own],
                 rng, "Geography", difficulty(prom, 1), src,
                 lead(f"{name} resides in {residence}", exp),
-                ctx_tier=prom, ctx_saga=so), "char_residence", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=name),
+                "char_residence", prom, saga)
 
-        epithet = clean_epithet(f.get("epithet"))
+        # Epithets are asked in their name-free form (see strip_own_name); the
+        # explainer keeps the full canonical version for context.
+        raw_epithet = clean_epithet(f.get("epithet"))
+        epithet = strip_own_name(raw_epithet, name) if raw_epithet else None
         if epithet:
             emit(name, make_question(
                 name, f"By what epithet is {name} known?", epithet, pool_epithet,
                 rng, "Characters", difficulty(prom, 0), src,
-                lead(f'{name} is known as "{epithet}"', exp),
-                ctx_tier=prom, ctx_saga=so), "char_epithet", prom, saga)
+                lead(f'{name} is known as "{raw_epithet}"', exp),
+                ctx_tier=prom, ctx_saga=so, leak_ref=name), "char_epithet", prom, saga)
 
         # Reverse-epithet: the same fact asked the other way. Iconic and only worth
         # asking for recognisable subjects, so gate on prominence. Distractors are
         # other characters, bounded to the subject's debut saga so a later-arc name
-        # can't leak as a wrong answer. Skip epithets that embed the character's own
-        # name ("Pirate Hunter Zoro", "Kaidou of the Beasts") — they'd give the
-        # answer away in this direction (the forward question still asks them).
-        name_tokens = {t for t in re.findall(r"[A-Za-z]+", name) if len(t) >= 3}
-        epithet_gives_name = bool(epithet) and any(
-            t.lower() in epithet.lower() for t in name_tokens)
-        if epithet and prom >= 1 and not epithet_gives_name:
+        # can't leak as a wrong answer. Epithets more than one character carries are
+        # skipped in this direction (see epithet_owners).
+        if epithet and prom >= 1 and epithet_owners[norm_key(epithet)] == 1:
             emit(name, make_question(
                 name, f"Which character is known by the epithet \"{epithet}\"?",
                 name, within_saga(pool_name, so), rng, "Characters",
                 difficulty(prom, 0), src,
-                lead(f'"{epithet}" is the epithet of {name}', exp),
-                ctx_tier=prom, ctx_saga=so), "epithet_reverse", prom, saga)
+                lead(f'"{raw_epithet}" is the epithet of {name}', exp),
+                ctx_tier=prom, ctx_saga=so, leak_ref=epithet),
+                "epithet_reverse", prom, saga)
 
         # Crew membership (relational): "which of these is a member of X?". Answer is
         # the subject; distractors are characters who are *not* in that crew (checked
@@ -801,7 +949,7 @@ def generate(by_kind):
                 name, non_members, rng, "Crews & Organizations",
                 difficulty(prom, 1), src,
                 lead(f"{name} is a member of the {aff}", exp),
-                ctx_tier=prom, ctx_saga=so), "crew_member", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=aff), "crew_member", prom, saga)
 
         # Reverse-bounty (bounty -> character): the amount is the prompt, other
         # bounty-carrying pirates are the distractors (saga-bounded). Unlike a
@@ -813,7 +961,8 @@ def generate(by_kind):
                 within_saga(pool_bounty_names, so), rng, "Bounties",
                 difficulty(prom, 1), src,
                 lead(f"{name} has a known bounty of {bounty}", exp),
-                ctx_tier=prom, ctx_saga=so), "bounty_reverse", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=bounty),
+                "bounty_reverse", prom, saga)
 
         # Arc debut (Arcs & Story): when a recognisable character first appears. The
         # answer is a saga name; the saga distractor pool covers every saga.
@@ -821,7 +970,8 @@ def generate(by_kind):
             emit(name, make_question(
                 name, f"In which saga does {name} first appear?", saga["name"],
                 pool_saga, rng, "Arcs & Story", difficulty(prom, 1), src,
-                lead(f"{name} first appears in the {saga['name']} Saga", exp)),
+                lead(f"{name} first appears in the {saga['name']} Saga", exp),
+                leak_ref=name),
                 "char_saga", prom, saga, max_answer=MAX_PER_ANSWER_SAGA)
 
     # --- Devil Fruit templates ----------------------------------------------
@@ -841,7 +991,8 @@ def generate(by_kind):
                 fr["title"], f"Who is the user of the {fruit_name}?", user,
                 pool_df_user, rng, "Devil Fruits", difficulty(prom, 0), src,
                 lead(f"The {fruit_name} is eaten by {user}", exp),
-                ctx_tier=prom, ctx_saga=so), "fruit_user", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=fruit_name),
+                "fruit_user", prom, saga)
 
 
     # --- Location templates --------------------------------------------------
@@ -858,7 +1009,7 @@ def generate(by_kind):
                 title, f"In which region of the world is {title} located?",
                 region, pool_region, rng, "Geography", difficulty(prom, 1),
                 l["source"], lead(f"{title} is located in {region}", exp),
-                ctx_tier=prom, ctx_saga=so), "loc_region", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=title), "loc_region", prom, saga)
 
         # Repurposed from the old vague "Which faction is X affiliated with?"
         # (answers ranged over kingdoms, crews, families and even characters). We
@@ -872,14 +1023,15 @@ def generate(by_kind):
                 affil, pool_kingdom, rng, "Geography",
                 difficulty(prom, 1), l["source"],
                 lead(f"{title} belongs to the {affil}", exp),
-                ctx_tier=prom, ctx_saga=so), "loc_kingdom", prom, saga)
+                ctx_tier=prom, ctx_saga=so, leak_ref=title), "loc_kingdom", prom, saga)
 
         # Arc debut of a recognisable location (Arcs & Story).
         if saga and prom >= 1:
             emit(title, make_question(
                 title, f"In which saga does {title} first appear?", saga["name"],
                 pool_saga, rng, "Arcs & Story", difficulty(prom, 1), l["source"],
-                lead(f"{title} first appears in the {saga['name']} Saga", exp)),
+                lead(f"{title} first appears in the {saga['name']} Saga", exp),
+                leak_ref=title),
                 "loc_saga", prom, saga, max_answer=MAX_PER_ANSWER_SAGA)
 
     return out

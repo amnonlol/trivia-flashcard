@@ -96,10 +96,11 @@
   {
    "question": "Which crew or organization is Wanda affiliated with?",
    "allowed": [
+    "easy",
     "medium",
     "hard"
    ],
-   "why": "obscure subject shipped as easy off the page-length proxy"
+   "why": "originally shipped easy off the page-length proxy. The blind panel scores the fact itself medium (median 45); it lands easy now only through the guessability cap, because 2/3 raters beat the option set by elimination - Takoyaki 8, Vinsmoke Family and Evil Black Drum Kingdom all visibly belong to someone famous. DIFFICULTY.md prescribes repairing the affiliation distractor pool rather than demoting the item, so until that repair lands this anchor can only assert the question survives"
   },
   {
    "question": "By what epithet is Doc Q known?",
@@ -120,10 +121,10 @@
   {
    "question": "Which of these is one of the six Rokushiki techniques, letting a user kick off the air itself to leap and fly?",
    "allowed": [
-    "medium",
-    "hard"
+    "easy",
+    "medium"
    ],
-   "why": "hard fact, but only once its Haki distractors are repaired"
+   "why": "the precondition of the old anchor is met: the Haki distractors were repaired, so the item is now a clean same-category four-way (Geppo against Soru, Rankyaku, Shigan). Three blind raters then put the fact at ~25 with a spread of 10 and no guessability flag - Geppo is core CP9 vocabulary, and Sanji's Skywalk is the same technique. Kept binding against a slide into hard, which would mean the option set had regressed"
   },
   {
    "question": "The Poneglyph on Fish-Man Island records an apology from a Void Century figure who failed to keep a promise. What is he called?",
