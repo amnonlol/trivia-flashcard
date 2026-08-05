@@ -14366,7 +14366,7 @@
  },
  "whichcrewororganizationisvegapunkaffiliatedwith": {
   "question": "Which crew or organization is Vegapunk affiliated with?",
-  "hash": "eec9ddf16d01be39",
+  "hash": "782adac214d0fd3d",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Vegapunk",
@@ -14376,7 +14376,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.231
+  "option_similarity": 0.259
  },
  "whatisvegapunksoccupation": {
   "question": "What is Vegapunk's occupation?",
@@ -14492,7 +14492,7 @@
  },
  "whichcrewororganizationiskaidouaffiliatedwith": {
   "question": "Which crew or organization is Kaidou affiliated with?",
-  "hash": "5294ccf3d7e53626",
+  "hash": "36421dc0012dda70",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Kaidou",
@@ -14502,7 +14502,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.341
+  "option_similarity": 0.353
  },
  "whatiskaidousknownbounty": {
   "question": "What is Kaidou's known bounty?",
@@ -14638,20 +14638,6 @@
   "unattested_options": [],
   "option_similarity": 0.482
  },
- "whichcrewororganizationiskouzukimomonosukeaffiliatedwith": {
-  "question": "Which crew or organization is Kouzuki Momonosuke affiliated with?",
-  "hash": "2e9b6e497fc5e77d",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Kouzuki Momonosuke",
-  "article_len": 92551,
-  "prominence": 2,
-  "must_know": true,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.368
- },
  "wheredoeskouzukimomonosukeoriginatefrom": {
   "question": "Where does Kouzuki Momonosuke originate from?",
   "hash": "9b260f9bf0fd28f6",
@@ -14710,7 +14696,7 @@
  },
  "whichcrewororganizationissaboaffiliatedwith": {
   "question": "Which crew or organization is Sabo affiliated with?",
-  "hash": "a1190c2bf1f83785",
+  "hash": "d3bad2d3d939d4ff",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Sabo",
@@ -14720,7 +14706,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.25
+  "option_similarity": 0.267
  },
  "whatissabosknownbounty": {
   "question": "What is Sabo's known bounty?",
@@ -14942,7 +14928,7 @@
  },
  "whichcrewororganizationisborsalinoaffiliatedwith": {
   "question": "Which crew or organization is Borsalino affiliated with?",
-  "hash": "e83ef1f959dc964a",
+  "hash": "b9e5d49040d655ad",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Borsalino",
@@ -14952,7 +14938,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.376
+  "option_similarity": 0.349
  },
  "whatisborsalinosoccupation": {
   "question": "What is Borsalino's occupation?",
@@ -15126,20 +15112,6 @@
   "unattested_options": [],
   "option_similarity": 0.239
  },
- "whichcrewororganizationiskouzukiodenaffiliatedwith": {
-  "question": "Which crew or organization is Kouzuki Oden affiliated with?",
-  "hash": "6a4e215d79c474a6",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Kouzuki Oden",
-  "article_len": 87738,
-  "prominence": 2,
-  "must_know": true,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.263
- },
  "whatiskouzukiodensoccupation": {
   "question": "What is Kouzuki Oden's occupation?",
   "hash": "016bebde8532b0f7",
@@ -15240,7 +15212,7 @@
  },
  "whichcrewororganizationiskuzanaffiliatedwith": {
   "question": "Which crew or organization is Kuzan affiliated with?",
-  "hash": "c36b2d593fab1380",
+  "hash": "24d9c8878fa208a0",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Kuzan",
@@ -15250,7 +15222,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.332
+  "option_similarity": 0.36
  },
  "whatiskuzansoccupation": {
   "question": "What is Kuzan's occupation?",
@@ -15338,7 +15310,7 @@
  },
  "whichcrewororganizationisedwardnewgateaffiliatedwith": {
   "question": "Which crew or organization is Edward Newgate affiliated with?",
-  "hash": "21ac0023de5d7868",
+  "hash": "f429314ff9f93e6b",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Edward Newgate",
@@ -15348,7 +15320,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.384
+  "option_similarity": 0.415
  },
  "whatisedwardnewgatesknownbounty": {
   "question": "What is Edward Newgate's known bounty?",
@@ -15482,7 +15454,7 @@
  },
  "whichcrewororganizationismarshalldteachaffiliatedwith": {
   "question": "Which crew or organization is Marshall D. Teach affiliated with?",
-  "hash": "05fc9719dc52199c",
+  "hash": "3e410ae5fdff3d37",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Marshall D. Teach",
@@ -15492,7 +15464,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.3
+  "option_similarity": 0.416
  },
  "whatismarshalldteachsknownbounty": {
   "question": "What is Marshall D. Teach's known bounty?",
@@ -15612,7 +15584,7 @@
  },
  "whichcrewororganizationissakazukiaffiliatedwith": {
   "question": "Which crew or organization is Sakazuki affiliated with?",
-  "hash": "e8bf680dead800a8",
+  "hash": "a3186cf67dd5c656",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Sakazuki",
@@ -15686,7 +15658,7 @@
  },
  "whichcrewororganizationisqueenaffiliatedwith": {
   "question": "Which crew or organization is Queen affiliated with?",
-  "hash": "5e5f46793c280fa3",
+  "hash": "4f9f0de725498423",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Queen",
@@ -15696,7 +15668,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.277
+  "option_similarity": 0.274
  },
  "whatisqueensknownbounty": {
   "question": "What is Queen's known bounty?",
@@ -15816,7 +15788,7 @@
  },
  "whichcrewororganizationisboahancockaffiliatedwith": {
   "question": "Which crew or organization is Boa Hancock affiliated with?",
-  "hash": "3165607b51a80434",
+  "hash": "d42940bae3f89f28",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Boa Hancock",
@@ -15826,7 +15798,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.3
+  "option_similarity": 0.169
  },
  "whatisboahancocksknownbounty": {
   "question": "What is Boa Hancock's known bounty?",
@@ -16060,20 +16032,6 @@
   "unattested_options": [],
   "option_similarity": 0.215
  },
- "whichcrewororganizationisgoldrogeraffiliatedwith": {
-  "question": "Which crew or organization is Gol D. Roger affiliated with?",
-  "hash": "26118b9d9461efeb",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Gol D. Roger",
-  "article_len": 81201,
-  "prominence": 2,
-  "must_know": true,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.336
- },
  "whatisgoldrogersknownbounty": {
   "question": "What is Gol D. Roger's known bounty?",
   "hash": "d7d01999542c4699",
@@ -16192,7 +16150,7 @@
  },
  "whichcrewororganizationisbartholomewkumaaffiliatedwith": {
   "question": "Which crew or organization is Bartholomew Kuma affiliated with?",
-  "hash": "668b72d768c0b78d",
+  "hash": "06450ca94195ad12",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Bartholomew Kuma",
@@ -16202,7 +16160,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.225
+  "option_similarity": 0.232
  },
  "whatisbartholomewkumasknownbounty": {
   "question": "What is Bartholomew Kuma's known bounty?",
@@ -16308,7 +16266,7 @@
  },
  "whichcrewororganizationisjaygarciasaturnaffiliatedwith": {
   "question": "Which crew or organization is Jaygarcia Saturn affiliated with?",
-  "hash": "eb09a1680cd54653",
+  "hash": "87dffea5bc1f95b3",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Jaygarcia Saturn",
@@ -16318,7 +16276,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.31
+  "option_similarity": 0.424
  },
  "whatisjaygarciasaturnsoccupation": {
   "question": "What is Jaygarcia Saturn's occupation?",
@@ -16392,7 +16350,7 @@
  },
  "whichcrewororganizationisgeckomoriaaffiliatedwith": {
   "question": "Which crew or organization is Gecko Moria affiliated with?",
-  "hash": "e04f560bd7ff28a8",
+  "hash": "fbc8fb3948b809e6",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Gecko Moria",
@@ -16402,7 +16360,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.256
+  "option_similarity": 0.248
  },
  "whatisgeckomoriasknownbounty": {
   "question": "What is Gecko Moria's known bounty?",
@@ -16508,7 +16466,7 @@
  },
  "whichcrewororganizationisbuggyaffiliatedwith": {
   "question": "Which crew or organization is Buggy affiliated with?",
-  "hash": "79a49c2511f00a2d",
+  "hash": "f8497e6f24f23863",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Buggy",
@@ -16518,7 +16476,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.291
+  "option_similarity": 0.283
  },
  "whatisbuggysknownbounty": {
   "question": "What is Buggy's known bounty?",
@@ -16638,7 +16596,7 @@
  },
  "whichcrewororganizationiscarrotaffiliatedwith": {
   "question": "Which crew or organization is Carrot affiliated with?",
-  "hash": "c4d1f4c4e25a4f85",
+  "hash": "12cfc44607300c8b",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Carrot",
@@ -16648,7 +16606,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.256
+  "option_similarity": 0.254
  },
  "whatiscarrotsoccupation": {
   "question": "What is Carrot's occupation?",
@@ -16730,7 +16688,7 @@
  },
  "whichcrewororganizationisyamatoaffiliatedwith": {
   "question": "Which crew or organization is Yamato affiliated with?",
-  "hash": "de3ba6d771556177",
+  "hash": "0614a9017958f84d",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Yamato",
@@ -16740,7 +16698,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.249
+  "option_similarity": 0.269
  },
  "wheredoesyamatoreside": {
   "question": "Where does Yamato reside?",
@@ -16828,7 +16786,7 @@
  },
  "whichcrewororganizationisportgasdaceaffiliatedwith": {
   "question": "Which crew or organization is Portgas D. Ace affiliated with?",
-  "hash": "1d4e419f6abbbd44",
+  "hash": "d2e445921f8514e4",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Portgas D. Ace",
@@ -16838,7 +16796,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.285
+  "option_similarity": 0.31
  },
  "whatisportgasdacesknownbounty": {
   "question": "What is Portgas D. Ace's known bounty?",
@@ -16944,7 +16902,7 @@
  },
  "whichcrewororganizationiskingaffiliatedwith": {
   "question": "Which crew or organization is King affiliated with?",
-  "hash": "6780b1a8dac88147",
+  "hash": "fd19ab70e2e82e13",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "King",
@@ -16954,7 +16912,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.26
+  "option_similarity": 0.239
  },
  "whatiskingsknownbounty": {
   "question": "What is King's known bounty?",
@@ -17074,7 +17032,7 @@
  },
  "whichcrewororganizationiscrocodileaffiliatedwith": {
   "question": "Which crew or organization is Crocodile affiliated with?",
-  "hash": "8ad95b68bacf3eae",
+  "hash": "6bd98b834f8e8989",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Crocodile",
@@ -17084,7 +17042,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.208
+  "option_similarity": 0.384
  },
  "whatiscrocodilesknownbounty": {
   "question": "What is Crocodile's known bounty?",
@@ -17338,7 +17296,7 @@
  },
  "whichcrewororganizationissengokuaffiliatedwith": {
   "question": "Which crew or organization is Sengoku affiliated with?",
-  "hash": "63728dd9c242c0bb",
+  "hash": "2f27c0d2e23d065d",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Sengoku",
@@ -17348,7 +17306,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.378
+  "option_similarity": 0.415
  },
  "wheredoessengokuoriginatefrom": {
   "question": "Where does Sengoku originate from?",
@@ -17408,7 +17366,7 @@
  },
  "whichcrewororganizationiskurozumiorochiaffiliatedwith": {
   "question": "Which crew or organization is Kurozumi Orochi affiliated with?",
-  "hash": "2613200b549f4287",
+  "hash": "578cf6d721ecc515",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Kurozumi Orochi",
@@ -17418,7 +17376,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.287
+  "option_similarity": 0.203
  },
  "whichofthesecharactersisamemberofthewanocountry": {
   "question": "Which of these characters is a member of the Wano Country?",
@@ -17464,7 +17422,7 @@
  },
  "whichcrewororganizationiscaponebegeaffiliatedwith": {
   "question": "Which crew or organization is Capone Bege affiliated with?",
-  "hash": "0348ede282c27889",
+  "hash": "82ce63bbf904c879",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Capone Bege",
@@ -17594,7 +17552,7 @@
  },
  "whichcrewororganizationisisshoaffiliatedwith": {
   "question": "Which crew or organization is Issho affiliated with?",
-  "hash": "7d80feb50d2dcafe",
+  "hash": "e3c9e793c9a0fde4",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Issho",
@@ -17604,7 +17562,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.284
+  "option_similarity": 0.384
  },
  "whatisisshosoccupation": {
   "question": "What is Issho's occupation?",
@@ -17636,7 +17594,7 @@
  },
  "whichcrewororganizationishodyjonesaffiliatedwith": {
   "question": "Which crew or organization is Hody Jones affiliated with?",
-  "hash": "137cea6ab22ed778",
+  "hash": "a60aa90d61f82fd0",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Hody Jones",
@@ -17646,7 +17604,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.262
+  "option_similarity": 0.284
  },
  "whatishodyjonessoccupation": {
   "question": "What is Hody Jones's occupation?",
@@ -17706,7 +17664,7 @@
  },
  "whichcrewororganizationisemporioivankovaffiliatedwith": {
   "question": "Which crew or organization is Emporio Ivankov affiliated with?",
-  "hash": "953feca7de1aa0d7",
+  "hash": "d2ea8e477137906e",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Emporio Ivankov",
@@ -17716,7 +17674,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.225
+  "option_similarity": 0.217
  },
  "wheredoesemporioivankovreside": {
   "question": "Where does Emporio Ivankov reside?",
@@ -17860,7 +17818,7 @@
  },
  "whichcrewororganizationismarcoaffiliatedwith": {
   "question": "Which crew or organization is Marco affiliated with?",
-  "hash": "4768ceb04f32b6c9",
+  "hash": "a5f2eef06bc242a5",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Marco",
@@ -17870,7 +17828,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.37
+  "option_similarity": 0.401
  },
  "whatismarcosknownbounty": {
   "question": "What is Marco's known bounty?",
@@ -18018,7 +17976,7 @@
  },
  "whichcrewororganizationiskikunojoaffiliatedwith": {
   "question": "Which crew or organization is Kikunojo affiliated with?",
-  "hash": "3477a33944a46b42",
+  "hash": "c04c76d1250c0460",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Kikunojo",
@@ -18028,7 +17986,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.249
+  "option_similarity": 0.262
  },
  "whatiskikunojosoccupation": {
   "question": "What is Kikunojo's occupation?",
@@ -18102,7 +18060,7 @@
  },
  "whichcrewororganizationisdraculemihawkaffiliatedwith": {
   "question": "Which crew or organization is Dracule Mihawk affiliated with?",
-  "hash": "41a37e2274edb442",
+  "hash": "1af854e07a01d34d",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Dracule Mihawk",
@@ -18112,7 +18070,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.239
+  "option_similarity": 0.274
  },
  "whatisdraculemihawksknownbounty": {
   "question": "What is Dracule Mihawk's known bounty?",
@@ -18204,7 +18162,7 @@
  },
  "whichcrewororganizationissilversrayleighaffiliatedwith": {
   "question": "Which crew or organization is Silvers Rayleigh affiliated with?",
-  "hash": "64a88626106ddef1",
+  "hash": "2e63fbaa96d9f684",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Silvers Rayleigh",
@@ -18214,7 +18172,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.557
+  "option_similarity": 0.52
  },
  "wheredoessilversrayleighreside": {
   "question": "Where does Silvers Rayleigh reside?",
@@ -18298,7 +18256,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.279
+  "option_similarity": 0.245
  },
  "whatistashigisoccupation": {
   "question": "What is Tashigi's occupation?",
@@ -18358,7 +18316,7 @@
  },
  "whichcrewororganizationislokiaffiliatedwith": {
   "question": "Which crew or organization is Loki affiliated with?",
-  "hash": "0c6844621ddde1d4",
+  "hash": "4a6e61b536c6f993",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Loki",
@@ -18368,7 +18326,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.176
+  "option_similarity": 0.319
  },
  "whatislokisknownbounty": {
   "question": "What is Loki's known bounty?",
@@ -18488,7 +18446,7 @@
  },
  "whichcrewororganizationisbartolomeoaffiliatedwith": {
   "question": "Which crew or organization is Bartolomeo affiliated with?",
-  "hash": "c0bdc3b60ff144b9",
+  "hash": "da0e86eac1428969",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Bartolomeo",
@@ -18498,7 +18456,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.219
+  "option_similarity": 0.259
  },
  "whatisbartolomeosknownbounty": {
   "question": "What is Bartolomeo's known bounty?",
@@ -18590,7 +18548,7 @@
  },
  "whichcrewororganizationismonkeyddragonaffiliatedwith": {
   "question": "Which crew or organization is Monkey D. Dragon affiliated with?",
-  "hash": "c94e8b98be43031a",
+  "hash": "a6177956b81299dc",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Monkey D. Dragon",
@@ -18600,7 +18558,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.255
+  "option_similarity": 0.241
  },
  "wheredoesmonkeyddragonoriginatefrom": {
   "question": "Where does Monkey D. Dragon originate from?",
@@ -18688,7 +18646,7 @@
  },
  "whichcrewororganizationisroblucciaffiliatedwith": {
   "question": "Which crew or organization is Rob Lucci affiliated with?",
-  "hash": "becb9410e5f46a0b",
+  "hash": "d9c72b977dfc1b45",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Rob Lucci",
@@ -18698,7 +18656,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.204
+  "option_similarity": 0.183
  },
  "whatisrobluccisoccupation": {
   "question": "What is Rob Lucci's occupation?",
@@ -18842,7 +18800,7 @@
  },
  "whichcrewororganizationisbenthamaffiliatedwith": {
   "question": "Which crew or organization is Bentham affiliated with?",
-  "hash": "0b9c63703cea74ec",
+  "hash": "8b64aa71d3682819",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Bentham",
@@ -18852,7 +18810,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.196
+  "option_similarity": 0.264
  },
  "whatisbenthamsknownbounty": {
   "question": "What is Bentham's known bounty?",
@@ -19060,7 +19018,7 @@
  },
  "whichcrewororganizationiskakuaffiliatedwith": {
   "question": "Which crew or organization is Kaku affiliated with?",
-  "hash": "89675177ac324ef4",
+  "hash": "ae0bb52cdd15d423",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Kaku",
@@ -19070,7 +19028,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.104
+  "option_similarity": 0.209
  },
  "whatiskakusoccupation": {
   "question": "What is Kaku's occupation?",
@@ -19130,7 +19088,7 @@
  },
  "whichcrewororganizationisharaldaffiliatedwith": {
   "question": "Which crew or organization is Harald affiliated with?",
-  "hash": "b20b8eda936324de",
+  "hash": "f1f9625045e8716d",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Harald",
@@ -19140,7 +19098,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.306
+  "option_similarity": 0.271
  },
  "wheredoesharaldreside": {
   "question": "Where does Harald reside?",
@@ -19182,7 +19140,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.316
+  "option_similarity": 0.296
  },
  "wheredoesnefertarivivireside": {
   "question": "Where does Nefertari Vivi reside?",
@@ -19242,7 +19200,7 @@
  },
  "whichcrewororganizationisenelaffiliatedwith": {
   "question": "Which crew or organization is Enel affiliated with?",
-  "hash": "110dc254ff30e5cb",
+  "hash": "625e5d4f1a06d02e",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Enel",
@@ -19252,7 +19210,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.276
+  "option_similarity": 0.282
  },
  "whatisenelsoccupation": {
   "question": "What is Enel's occupation?",
@@ -19428,7 +19386,7 @@
  },
  "whichcrewororganizationiskyrosaffiliatedwith": {
   "question": "Which crew or organization is Kyros affiliated with?",
-  "hash": "988cb1d64f1d970a",
+  "hash": "afd5437ee9aa5187",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Kyros",
@@ -19438,7 +19396,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.225
+  "option_similarity": 0.299
  },
  "whatiskyrossoccupation": {
   "question": "What is Kyros's occupation?",
@@ -19498,17 +19456,21 @@
  },
  "whichcrewororganizationiswapolaffiliatedwith": {
   "question": "Which crew or organization is Wapol affiliated with?",
-  "hash": "6cdb509b0fafa80d",
+  "hash": "2354ba8dac5e46fa",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Wapol",
   "article_len": 56070,
   "prominence": 2,
   "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
+  "flags": [
+   "answer_len_outlier"
+  ],
+  "guessability_flags": [
+   "answer_len_outlier"
+  ],
   "unattested_options": [],
-  "option_similarity": 0.259
+  "option_similarity": 0.288
  },
  "wheredoeswapolreside": {
   "question": "Where does Wapol reside?",
@@ -19670,7 +19632,7 @@
  },
  "whichcrewororganizationishatchanaffiliatedwith": {
   "question": "Which crew or organization is Hatchan affiliated with?",
-  "hash": "79546cca41723e53",
+  "hash": "34f26d0d04df3c45",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Hatchan",
@@ -19680,7 +19642,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.303
+  "option_similarity": 0.246
  },
  "whatishatchansknownbounty": {
   "question": "What is Hatchan's known bounty?",
@@ -19786,7 +19748,7 @@
  },
  "whichcrewororganizationiskinemonaffiliatedwith": {
   "question": "Which crew or organization is Kin'emon affiliated with?",
-  "hash": "b23d2143408e458e",
+  "hash": "4840d15fc4d72558",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Kin'emon",
@@ -19796,7 +19758,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.232
+  "option_similarity": 0.231
  },
  "whatiskinemonsoccupation": {
   "question": "What is Kin'emon's occupation?",
@@ -19856,7 +19818,7 @@
  },
  "whichcrewororganizationisinuarashiaffiliatedwith": {
   "question": "Which crew or organization is Inuarashi affiliated with?",
-  "hash": "537b19ea23497326",
+  "hash": "80dd3680b8e09400",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Inuarashi",
@@ -19866,7 +19828,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.224
+  "option_similarity": 0.184
  },
  "whatisinuarashisoccupation": {
   "question": "What is Inuarashi's occupation?",
@@ -19912,7 +19874,7 @@
  },
  "whichcrewororganizationisgaldinoaffiliatedwith": {
   "question": "Which crew or organization is Galdino affiliated with?",
-  "hash": "98dcb572d8fe673e",
+  "hash": "19f037561e9cbceb",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Galdino",
@@ -19922,7 +19884,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.282
+  "option_similarity": 0.301
  },
  "whatisgaldinosknownbounty": {
   "question": "What is Galdino's known bounty?",
@@ -20042,7 +20004,7 @@
  },
  "whichcrewororganizationisraizoaffiliatedwith": {
   "question": "Which crew or organization is Raizo affiliated with?",
-  "hash": "9caa08dbfe3e3bc0",
+  "hash": "b689ead34bf9d735",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Raizo",
@@ -20052,7 +20014,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.238
+  "option_similarity": 0.278
  },
  "whatisraizosoccupation": {
   "question": "What is Raizo's occupation?",
@@ -20112,7 +20074,7 @@
  },
  "whichcrewororganizationispedroaffiliatedwith": {
   "question": "Which crew or organization is Pedro affiliated with?",
-  "hash": "23de3e4c05f49bbc",
+  "hash": "7b266a40bac8c3e9",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Pedro",
@@ -20122,7 +20084,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.245
+  "option_similarity": 0.213
  },
  "whatispedrosknownbounty": {
   "question": "What is Pedro's known bounty?",
@@ -20228,7 +20190,7 @@
  },
  "whichcrewororganizationiscaesarclownaffiliatedwith": {
   "question": "Which crew or organization is Caesar Clown affiliated with?",
-  "hash": "ed44c3cc4377db22",
+  "hash": "975e754796a6da66",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Caesar Clown",
@@ -20238,7 +20200,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.267
+  "option_similarity": 0.285
  },
  "whatiscaesarclownsknownbounty": {
   "question": "What is Caesar Clown's known bounty?",
@@ -20327,20 +20289,6 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.438
- },
- "whichcrewororganizationiskurozumikanjuroaffiliatedwith": {
-  "question": "Which crew or organization is Kurozumi Kanjuro affiliated with?",
-  "hash": "f1712ef19b4bf1b8",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Kurozumi Kanjuro",
-  "article_len": 53589,
-  "prominence": 2,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.29
  },
  "bywhatepithetiskurozumikanjuroknown": {
   "question": "By what epithet is Kurozumi Kanjuro known?",
@@ -20558,7 +20506,7 @@
  },
  "whichcrewororganizationisbellamyaffiliatedwith": {
   "question": "Which crew or organization is Bellamy affiliated with?",
-  "hash": "e7c02658e26ddc72",
+  "hash": "12c2713a5f886d54",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Bellamy",
@@ -20568,7 +20516,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.212
+  "option_similarity": 0.386
  },
  "whatisbellamysknownbounty": {
   "question": "What is Bellamy's known bounty?",
@@ -20674,7 +20622,7 @@
  },
  "whichcrewororganizationisrebeccaaffiliatedwith": {
   "question": "Which crew or organization is Rebecca affiliated with?",
-  "hash": "f9315f8c744223e1",
+  "hash": "1d9771869331c93f",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Rebecca",
@@ -20684,7 +20632,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.221
+  "option_similarity": 0.286
  },
  "wheredoesrebeccareside": {
   "question": "Where does Rebecca reside?",
@@ -20916,7 +20864,7 @@
  },
  "whichcrewororganizationisnekomamushiaffiliatedwith": {
   "question": "Which crew or organization is Nekomamushi affiliated with?",
-  "hash": "9cb86d535ea1b537",
+  "hash": "74056672600019f7",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Nekomamushi",
@@ -20926,7 +20874,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.374
+  "option_similarity": 0.302
  },
  "whatisnekomamushisoccupation": {
   "question": "What is Nekomamushi's occupation?",
@@ -20958,7 +20906,7 @@
  },
  "whichcrewororganizationisshirahoshiaffiliatedwith": {
   "question": "Which crew or organization is Shirahoshi affiliated with?",
-  "hash": "c6082369d95624bc",
+  "hash": "2a2896c221fe5fc5",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Shirahoshi",
@@ -20968,7 +20916,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.25
+  "option_similarity": 0.306
  },
  "wheredoesshirahoshireside": {
   "question": "Where does Shirahoshi reside?",
@@ -21042,7 +20990,7 @@
  },
  "whichcrewororganizationiscavendishaffiliatedwith": {
   "question": "Which crew or organization is Cavendish affiliated with?",
-  "hash": "5ac3c0600acd6952",
+  "hash": "0bde326d96ee56e7",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Cavendish",
@@ -21052,7 +21000,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.49
+  "option_similarity": 0.301
  },
  "whatiscavendishsknownbounty": {
   "question": "What is Cavendish's known bounty?",
@@ -21204,7 +21152,7 @@
  },
  "whichcrewororganizationisimuaffiliatedwith": {
   "question": "Which crew or organization is Imu affiliated with?",
-  "hash": "dee559f7ac86c380",
+  "hash": "064a532b76c47ece",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Imu",
@@ -21214,7 +21162,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.286
+  "option_similarity": 0.208
  },
  "wheredoesimureside": {
   "question": "Where does Imu reside?",
@@ -21274,7 +21222,7 @@
  },
  "whichcrewororganizationisshikiaffiliatedwith": {
   "question": "Which crew or organization is Shiki affiliated with?",
-  "hash": "eb1072fcc6d422b9",
+  "hash": "a0a3b7ab4fead9df",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Shiki",
@@ -21284,7 +21232,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.394
+  "option_similarity": 0.345
  },
  "whatisshikisoccupation": {
   "question": "What is Shiki's occupation?",
@@ -21370,20 +21318,6 @@
   "unattested_options": [],
   "option_similarity": 0.216
  },
- "whichcrewororganizationiskouzukihiyoriaffiliatedwith": {
-  "question": "Which crew or organization is Kouzuki Hiyori affiliated with?",
-  "hash": "bdade8af1dfca0de",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Kouzuki Hiyori",
-  "article_len": 47703,
-  "prominence": 2,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.286
- },
  "inwhichsagadoeskouzukihiyorifirstappear": {
   "question": "In which saga does Kouzuki Hiyori first appear?",
   "hash": "c4258732b97aa0e1",
@@ -21397,6 +21331,20 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.215
+ },
+ "whichcrewororganizationisdenjiroaffiliatedwith": {
+  "question": "Which crew or organization is Denjiro affiliated with?",
+  "hash": "e28232fedb92849b",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "easy",
+  "subject": "Denjiro",
+  "article_len": 47544,
+  "prominence": 2,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.306
  },
  "whatisdenjirosoccupation": {
   "question": "What is Denjiro's occupation?",
@@ -21456,7 +21404,7 @@
  },
  "whichcrewororganizationiskilleraffiliatedwith": {
   "question": "Which crew or organization is Killer affiliated with?",
-  "hash": "5a946d6d3352feae",
+  "hash": "6bdb21f6e36b404c",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Killer",
@@ -21466,7 +21414,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.425
+  "option_similarity": 0.271
  },
  "whatiskillersknownbounty": {
   "question": "What is Killer's known bounty?",
@@ -21688,7 +21636,7 @@
  },
  "whichcrewororganizationisperonaaffiliatedwith": {
   "question": "Which crew or organization is Perona affiliated with?",
-  "hash": "df4f25bdcbaf48fd",
+  "hash": "91ae8e22a647a465",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Perona",
@@ -21698,7 +21646,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.337
+  "option_similarity": 0.268
  },
  "wheredoesperonaoriginatefrom": {
   "question": "Where does Perona originate from?",
@@ -21832,7 +21780,7 @@
  },
  "whichcrewororganizationisscratchmenapooaffiliatedwith": {
   "question": "Which crew or organization is Scratchmen Apoo affiliated with?",
-  "hash": "e37ae1c485ebdfbf",
+  "hash": "6dc14e8ce4aba57c",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Scratchmen Apoo",
@@ -21842,7 +21790,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.229
+  "option_similarity": 0.291
  },
  "whatisscratchmenapoosknownbounty": {
   "question": "What is Scratchmen Apoo's known bounty?",
@@ -21920,7 +21868,7 @@
  },
  "whichcrewororganizationiszeusaffiliatedwith": {
   "question": "Which crew or organization is Zeus affiliated with?",
-  "hash": "4e5f5b87dd111f37",
+  "hash": "6398f5bf846810c4",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Zeus",
@@ -21930,7 +21878,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.172
+  "option_similarity": 0.207
  },
  "wheredoeszeusreside": {
   "question": "Where does Zeus reside?",
@@ -21990,7 +21938,7 @@
  },
  "whichcrewororganizationiscamieaffiliatedwith": {
   "question": "Which crew or organization is Camie affiliated with?",
-  "hash": "112cef8ea80c1927",
+  "hash": "2caa46ad4c9fb015",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Camie",
@@ -22000,7 +21948,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.233
+  "option_similarity": 0.275
  },
  "wheredoescamiereside": {
   "question": "Where does Camie reside?",
@@ -22032,7 +21980,7 @@
  },
  "whichcrewororganizationiskuroaffiliatedwith": {
   "question": "Which crew or organization is Kuro affiliated with?",
-  "hash": "f34b407b79c5e8dc",
+  "hash": "1eb4270a18cf750a",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Kuro",
@@ -22042,7 +21990,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.418
+  "option_similarity": 0.569
  },
  "whatiskurosknownbounty": {
   "question": "What is Kuro's known bounty?",
@@ -22124,7 +22072,7 @@
  },
  "whichcrewororganizationisneptuneaffiliatedwith": {
   "question": "Which crew or organization is Neptune affiliated with?",
-  "hash": "2792224e56f7a726",
+  "hash": "39476d8eba3dec22",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Neptune",
@@ -22134,7 +22082,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.275
+  "option_similarity": 0.308
  },
  "bywhatepithetisneptuneknown": {
   "question": "By what epithet is Neptune known?",
@@ -22194,7 +22142,7 @@
  },
  "whichcrewororganizationisultiaffiliatedwith": {
   "question": "Which crew or organization is Ulti affiliated with?",
-  "hash": "3608b7da8a35cf23",
+  "hash": "a23d8e3901f45555",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Ulti",
@@ -22204,7 +22152,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.212
+  "option_similarity": 0.272
  },
  "whatisultisknownbounty": {
   "question": "What is Ulti's known bounty?",
@@ -22238,20 +22186,6 @@
   "unattested_options": [],
   "option_similarity": 0.306
  },
- "whichofthesecharactersisamemberoftheyamato": {
-  "question": "Which of these characters is a member of the Yamato?",
-  "hash": "eb872c7f3e383fbb",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "medium",
-  "subject": "Ulti",
-  "article_len": 42941,
-  "prominence": 2,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.235
- },
  "whichcharacterhasaknownbountyof400000000berries": {
   "question": "Which character has a known bounty of 400,000,000 Berries?",
   "hash": "f8d9f909338fcf85",
@@ -22282,7 +22216,7 @@
  },
  "whichcrewororganizationisscoppergabanaffiliatedwith": {
   "question": "Which crew or organization is Scopper Gaban affiliated with?",
-  "hash": "c9b26e4c8e197362",
+  "hash": "c68597b1ebb51c76",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Scopper Gaban",
@@ -22292,7 +22226,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.38
+  "option_similarity": 0.399
  },
  "wheredoesscoppergabanreside": {
   "question": "Where does Scopper Gaban reside?",
@@ -22352,7 +22286,7 @@
  },
  "whichcrewororganizationismagellanaffiliatedwith": {
   "question": "Which crew or organization is Magellan affiliated with?",
-  "hash": "788f64ca04e8f124",
+  "hash": "e2bc03071711de06",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Magellan",
@@ -22362,7 +22296,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.343
+  "option_similarity": 0.228
  },
  "whichofthesecharactersisamemberoftheimpeldown": {
   "question": "Which of these characters is a member of the Impel Down?",
@@ -22514,7 +22448,7 @@
  },
  "whichcrewororganizationisjackaffiliatedwith": {
   "question": "Which crew or organization is Jack affiliated with?",
-  "hash": "dfa1ee469ade8cb6",
+  "hash": "e111a45b680d27fc",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Jack",
@@ -22524,7 +22458,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.323
+  "option_similarity": 0.27
  },
  "whatisjacksknownbounty": {
   "question": "What is Jack's known bounty?",
@@ -22672,17 +22606,21 @@
  },
  "whichcrewororganizationishajrudinaffiliatedwith": {
   "question": "Which crew or organization is Hajrudin affiliated with?",
-  "hash": "919507f1390bb154",
+  "hash": "8aacb21f9147e402",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Hajrudin",
   "article_len": 39699,
   "prominence": 2,
   "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
+  "flags": [
+   "answer_len_outlier"
+  ],
+  "guessability_flags": [
+   "answer_len_outlier"
+  ],
   "unattested_options": [],
-  "option_similarity": 0.288
+  "option_similarity": 0.307
  },
  "wheredoeshajrudinreside": {
   "question": "Where does Hajrudin reside?",
@@ -22784,7 +22722,7 @@
  },
  "whichcrewororganizationisvergoaffiliatedwith": {
   "question": "Which crew or organization is Vergo affiliated with?",
-  "hash": "1a3c895d6bafedc8",
+  "hash": "7c03192531b19652",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Vergo",
@@ -22794,7 +22732,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.262
+  "option_similarity": 0.273
  },
  "wheredoesvergoreside": {
   "question": "Where does Vergo reside?",
@@ -22837,6 +22775,20 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.268
+ },
+ "whichcrewororganizationiskawamatsuaffiliatedwith": {
+  "question": "Which crew or organization is Kawamatsu affiliated with?",
+  "hash": "6c2d72b5e38e202f",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "easy",
+  "subject": "Kawamatsu",
+  "article_len": 39067,
+  "prominence": 2,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.286
  },
  "whatiskawamatsusoccupation": {
   "question": "What is Kawamatsu's occupation?",
@@ -22910,7 +22862,7 @@
  },
  "whichcrewororganizationisjabraaffiliatedwith": {
   "question": "Which crew or organization is Jabra affiliated with?",
-  "hash": "3320bce606c76b88",
+  "hash": "a74245e0d49ec2f7",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Jabra",
@@ -22920,7 +22872,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.156
+  "option_similarity": 0.143
  },
  "whatisjabrasoccupation": {
   "question": "What is Jabra's occupation?",
@@ -23026,7 +22978,7 @@
  },
  "whichcrewororganizationistrebolaffiliatedwith": {
   "question": "Which crew or organization is Trebol affiliated with?",
-  "hash": "71f32c2efb68c008",
+  "hash": "3b95463031daa1b7",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Trebol",
@@ -23036,7 +22988,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.303
+  "option_similarity": 0.325
  },
  "whatistrebolsknownbounty": {
   "question": "What is Trebol's known bounty?",
@@ -23114,7 +23066,7 @@
  },
  "whichcrewororganizationishogbackaffiliatedwith": {
   "question": "Which crew or organization is Hogback affiliated with?",
-  "hash": "050696a4cfabcf90",
+  "hash": "539a25af4a321742",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Hogback",
@@ -23124,7 +23076,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.272
+  "option_similarity": 0.433
  },
  "whatishogbacksoccupation": {
   "question": "What is Hogback's occupation?",
@@ -23156,7 +23108,7 @@
  },
  "whichcrewororganizationisbrogyaffiliatedwith": {
   "question": "Which crew or organization is Brogy affiliated with?",
-  "hash": "8eaec0cb3abdfda4",
+  "hash": "765087a3106cfcb2",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Brogy",
@@ -23166,7 +23118,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.247
+  "option_similarity": 0.326
  },
  "whatisbrogysknownbounty": {
   "question": "What is Brogy's known bounty?",
@@ -23286,7 +23238,7 @@
  },
  "whichcrewororganizationiswhoswhoaffiliatedwith": {
   "question": "Which crew or organization is Who's-Who affiliated with?",
-  "hash": "711bb2ec8d524cd8",
+  "hash": "e01df1555d9d2070",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Who's-Who",
@@ -23296,7 +23248,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.443
+  "option_similarity": 0.209
  },
  "whatiswhoswhosknownbounty": {
   "question": "What is Who's-Who's known bounty?",
@@ -23490,7 +23442,7 @@
  },
  "whichcrewororganizationisoarsaffiliatedwith": {
   "question": "Which crew or organization is Oars affiliated with?",
-  "hash": "f432fc9dcbc9056a",
+  "hash": "de86d00ef511c8fd",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Oars",
@@ -23500,7 +23452,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.214
+  "option_similarity": 0.437
  },
  "bywhatepithetisoarsknown": {
   "question": "By what epithet is Oars known?",
@@ -23560,7 +23512,7 @@
  },
  "whichcrewororganizationisbaby5affiliatedwith": {
   "question": "Which crew or organization is Baby 5 affiliated with?",
-  "hash": "db8dccee53297fe1",
+  "hash": "ad9bd32b47d3f66f",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Baby 5",
@@ -23570,7 +23522,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.208
+  "option_similarity": 0.236
  },
  "wheredoesbaby5reside": {
   "question": "Where does Baby 5 reside?",
@@ -23616,7 +23568,7 @@
  },
  "whichcrewororganizationisjesusburgessaffiliatedwith": {
   "question": "Which crew or organization is Jesus Burgess affiliated with?",
-  "hash": "3c06261269b2f6d8",
+  "hash": "274e68d160670378",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Jesus Burgess",
@@ -23626,7 +23578,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.359
+  "option_similarity": 0.256
  },
  "whatisjesusburgesssoccupation": {
   "question": "What is Jesus Burgess's occupation?",
@@ -23714,7 +23666,7 @@
  },
  "whichcrewororganizationisstussyaffiliatedwith": {
   "question": "Which crew or organization is Stussy affiliated with?",
-  "hash": "452fa3205816a950",
+  "hash": "4f73e06e27546ac0",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Stussy",
@@ -23724,7 +23676,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.189
+  "option_similarity": 0.249
  },
  "bywhatepithetisstussyknown": {
   "question": "By what epithet is Stussy known?",
@@ -23757,20 +23709,6 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.142
- },
- "whichofthesecharactersisamemberofthevegapunk": {
-  "question": "Which of these characters is a member of the Vegapunk?",
-  "hash": "06a344534bb89ce6",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "medium",
-  "subject": "Stussy",
-  "article_len": 37031,
-  "prominence": 2,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.178
  },
  "whatisrikudoldoiiisoccupation": {
   "question": "What is Riku Doldo III's occupation?",
@@ -23830,7 +23768,7 @@
  },
  "whichcrewororganizationisashuradojiaffiliatedwith": {
   "question": "Which crew or organization is Ashura Doji affiliated with?",
-  "hash": "918479749b0956dc",
+  "hash": "5d5cdeff325b638d",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Ashura Doji",
@@ -23840,7 +23778,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.244
+  "option_similarity": 0.214
  },
  "whatisashuradojisoccupation": {
   "question": "What is Ashura Doji's occupation?",
@@ -23928,7 +23866,7 @@
  },
  "whichcrewororganizationisdiamanteaffiliatedwith": {
   "question": "Which crew or organization is Diamante affiliated with?",
-  "hash": "ac4239269e59180d",
+  "hash": "2cab53c065d024f6",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Diamante",
@@ -23938,7 +23876,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.345
+  "option_similarity": 0.294
  },
  "whatisdiamantesknownbounty": {
   "question": "What is Diamante's known bounty?",
@@ -23988,7 +23926,7 @@
  },
  "whichcrewororganizationispekomsaffiliatedwith": {
   "question": "Which crew or organization is Pekoms affiliated with?",
-  "hash": "453a4ce102856687",
+  "hash": "1f6dc81ff397c3bf",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Pekoms",
@@ -23998,7 +23936,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.279
+  "option_similarity": 0.297
  },
  "whatispekomssknownbounty": {
   "question": "What is Pekoms's known bounty?",
@@ -24062,7 +24000,7 @@
  },
  "whichcrewororganizationisspandamaffiliatedwith": {
   "question": "Which crew or organization is Spandam affiliated with?",
-  "hash": "048ed4c9553dea78",
+  "hash": "c1f468ad9edc79e4",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Spandam",
@@ -24072,7 +24010,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.124
+  "option_similarity": 0.117
  },
  "inwhichsagadoesspandamfirstappear": {
   "question": "In which saga does Spandam first appear?",
@@ -24104,7 +24042,7 @@
  },
  "whichcrewororganizationisviolaaffiliatedwith": {
   "question": "Which crew or organization is Viola affiliated with?",
-  "hash": "cf2e6c2fe9631b0b",
+  "hash": "ba0f54f238fe8127",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Viola",
@@ -24114,7 +24052,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.277
+  "option_similarity": 0.252
  },
  "whichofthesecharactersisamemberoftherikufamily": {
   "question": "Which of these characters is a member of the Riku Family?",
@@ -24132,7 +24070,7 @@
  },
  "whichcrewororganizationisdorryaffiliatedwith": {
   "question": "Which crew or organization is Dorry affiliated with?",
-  "hash": "81bb9ec45a8a059d",
+  "hash": "f2911908c0a16e5b",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Dorry",
@@ -24142,7 +24080,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.261
+  "option_similarity": 0.366
  },
  "whatisdorrysknownbounty": {
   "question": "What is Dorry's known bounty?",
@@ -24232,20 +24170,6 @@
   "unattested_options": [],
   "option_similarity": 0.405
  },
- "whichcrewororganizationiskurozumitamaaffiliatedwith": {
-  "question": "Which crew or organization is Kurozumi Tama affiliated with?",
-  "hash": "f65567369d5caac3",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Kurozumi Tama",
-  "article_len": 34556,
-  "prominence": 2,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.287
- },
  "wheredoeskurozumitamareside": {
   "question": "Where does Kurozumi Tama reside?",
   "hash": "89d700223a2d9a8a",
@@ -24276,7 +24200,7 @@
  },
  "whichcrewororganizationistightropewalkingfunanbrosaffiliatedwith": {
   "question": "Which crew or organization is Tightrope Walking Funan Bros affiliated with?",
-  "hash": "fc207fbaf943d5ec",
+  "hash": "339f8a9501a624cb",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Tightrope Walking Funan Bros",
@@ -24286,7 +24210,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.53
+  "option_similarity": 0.384
  },
  "whatistightropewalkingfunanbrossoccupation": {
   "question": "What is Tightrope Walking Funan Bros's occupation?",
@@ -24336,7 +24260,7 @@
  },
  "whichcrewororganizationisleoaffiliatedwith": {
   "question": "Which crew or organization is Leo affiliated with?",
-  "hash": "cb2cc799cb81ef70",
+  "hash": "38781939fd8fa31b",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Leo",
@@ -24346,7 +24270,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.372
+  "option_similarity": 0.24
  },
  "bywhatepithetisleoknown": {
   "question": "By what epithet is Leo known?",
@@ -24392,7 +24316,7 @@
  },
  "whichcrewororganizationisethanbaronvnusjuroaffiliatedwith": {
   "question": "Which crew or organization is Ethanbaron V. Nusjuro affiliated with?",
-  "hash": "6756bb9ee5d036d0",
+  "hash": "4cebc691853c8897",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Ethanbaron V. Nusjuro",
@@ -24402,7 +24326,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.203
+  "option_similarity": 0.284
  },
  "whatisethanbaronvnusjurosoccupation": {
   "question": "What is Ethanbaron V. Nusjuro's occupation?",
@@ -24508,7 +24432,7 @@
  },
  "whichcrewororganizationisizouaffiliatedwith": {
   "question": "Which crew or organization is Izou affiliated with?",
-  "hash": "7b792399ea1154b6",
+  "hash": "b12b5e067e88c7c6",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Izou",
@@ -24518,7 +24442,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.336
+  "option_similarity": 0.158
  },
  "whatisizousknownbounty": {
   "question": "What is Izou's known bounty?",
@@ -24568,7 +24492,7 @@
  },
  "whichcrewororganizationistopmanwarcuryaffiliatedwith": {
   "question": "Which crew or organization is Topman Warcury affiliated with?",
-  "hash": "70c7612b270bf6f3",
+  "hash": "4d57a222839a1ac1",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Topman Warcury",
@@ -24578,7 +24502,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.2
+  "option_similarity": 0.205
  },
  "whatistopmanwarcurysoccupation": {
   "question": "What is Topman Warcury's occupation?",
@@ -24628,7 +24552,7 @@
  },
  "whichcrewororganizationisshepherdjupeteraffiliatedwith": {
   "question": "Which crew or organization is Shepherd Ju Peter affiliated with?",
-  "hash": "fdc45ca262b05b74",
+  "hash": "5589be0d834389c1",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Shepherd Ju Peter",
@@ -24638,7 +24562,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.46
+  "option_similarity": 0.332
  },
  "whatisshepherdjupetersoccupation": {
   "question": "What is Shepherd Ju Peter's occupation?",
@@ -24688,7 +24612,7 @@
  },
  "whichcrewororganizationischarlottechiffonaffiliatedwith": {
   "question": "Which crew or organization is Charlotte Chiffon affiliated with?",
-  "hash": "45431ae4399e732d",
+  "hash": "506ec15258bbeb23",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Charlotte Chiffon",
@@ -24698,7 +24622,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.335
+  "option_similarity": 0.224
  },
  "whatischarlottechiffonsoccupation": {
   "question": "What is Charlotte Chiffon's occupation?",
@@ -24727,6 +24651,20 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.377
+ },
+ "whichcrewororganizationisshinobuaffiliatedwith": {
+  "question": "Which crew or organization is Shinobu affiliated with?",
+  "hash": "b4343ac6f45e8e15",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "easy",
+  "subject": "Shinobu",
+  "article_len": 32578,
+  "prominence": 2,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.295
  },
  "bywhatepithetisshinobuknown": {
   "question": "By what epithet is Shinobu known?",
@@ -24832,7 +24770,7 @@
  },
  "whichcrewororganizationiswyperaffiliatedwith": {
   "question": "Which crew or organization is Wyper affiliated with?",
-  "hash": "eae77832cf98c65a",
+  "hash": "0f9b5b69d4725315",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Wyper",
@@ -24842,7 +24780,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.229
+  "option_similarity": 0.228
  },
  "whatiswypersoccupation": {
   "question": "What is Wyper's occupation?",
@@ -24930,7 +24868,7 @@
  },
  "whichcrewororganizationismarcusmarsaffiliatedwith": {
   "question": "Which crew or organization is Marcus Mars affiliated with?",
-  "hash": "9c5fc293ad039010",
+  "hash": "36daf77f8180d46a",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Marcus Mars",
@@ -24940,7 +24878,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.286
+  "option_similarity": 0.266
  },
  "whatismarcusmarssoccupation": {
   "question": "What is Marcus Mars's occupation?",
@@ -25000,7 +24938,7 @@
  },
  "whichcrewororganizationismonkeydluffyaffiliatedwith": {
   "question": "Which crew or organization is Monkey D. Luffy affiliated with?",
-  "hash": "6d4c60e5977eb11e",
+  "hash": "7aa8670f5203c446",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Monkey D. Luffy",
@@ -25010,7 +24948,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.336
+  "option_similarity": 0.308
  },
  "whatismonkeydluffysknownbounty": {
   "question": "What is Monkey D. Luffy's known bounty?",
@@ -25060,7 +24998,7 @@
  },
  "whichcrewororganizationissaiaffiliatedwith": {
   "question": "Which crew or organization is Sai affiliated with?",
-  "hash": "c17bf81be6386bed",
+  "hash": "0857d5147178accc",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Sai",
@@ -25070,7 +25008,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.312
+  "option_similarity": 0.303
  },
  "whatissaisknownbounty": {
   "question": "What is Sai's known bounty?",
@@ -25106,7 +25044,7 @@
  },
  "whichcrewororganizationiszeffaffiliatedwith": {
   "question": "Which crew or organization is Zeff affiliated with?",
-  "hash": "d104f5bd008388c6",
+  "hash": "fa102ffa5e855653",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Zeff",
@@ -25116,7 +25054,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.342
+  "option_similarity": 0.368
  },
  "wheredoeszeffreside": {
   "question": "Where does Zeff reside?",
@@ -25190,7 +25128,7 @@
  },
  "whichcrewororganizationismonetaffiliatedwith": {
   "question": "Which crew or organization is Monet affiliated with?",
-  "hash": "0368d2816d9d0a58",
+  "hash": "ba021af2c870d5c2",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Monet",
@@ -25200,25 +25138,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.265
- },
- "whichofthesecharactersisamemberofthecaesarclown": {
-  "question": "Which of these characters is a member of the Caesar Clown?",
-  "hash": "ac0f4cd8a13df62a",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "medium",
-  "subject": "Monet",
-  "article_len": 32213,
-  "prominence": 2,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.221
+  "option_similarity": 0.25
  },
  "whichcrewororganizationismontblancnolandaffiliatedwith": {
   "question": "Which crew or organization is Mont Blanc Noland affiliated with?",
-  "hash": "98631c895803ca39",
+  "hash": "7473707758ef6005",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Mont Blanc Noland",
@@ -25228,7 +25152,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.368
+  "option_similarity": 0.324
  },
  "whatismontblancnolandsoccupation": {
   "question": "What is Mont Blanc Noland's occupation?",
@@ -25376,7 +25300,7 @@
  },
  "whichcrewororganizationisshiryuaffiliatedwith": {
   "question": "Which crew or organization is Shiryu affiliated with?",
-  "hash": "1d141744e0202d8b",
+  "hash": "0a4ad9ee6c850d4b",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Shiryu",
@@ -25386,7 +25310,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.227
+  "option_similarity": 0.274
  },
  "whatisshiryusoccupation": {
   "question": "What is Shiryu's occupation?",
@@ -25446,7 +25370,7 @@
  },
  "whichcrewororganizationisfishertigeraffiliatedwith": {
   "question": "Which crew or organization is Fisher Tiger affiliated with?",
-  "hash": "34db5633a0289792",
+  "hash": "19c1c646f27c7989",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Fisher Tiger",
@@ -25456,7 +25380,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.529
+  "option_similarity": 0.19
  },
  "whatisfishertigersknownbounty": {
   "question": "What is Fisher Tiger's known bounty?",
@@ -25636,7 +25560,7 @@
  },
  "whichcrewororganizationischarlottelolaaffiliatedwith": {
   "question": "Which crew or organization is Charlotte Lola affiliated with?",
-  "hash": "50af83d877f98d04",
+  "hash": "441fd661877b92fe",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Charlotte Lola",
@@ -25646,7 +25570,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.22
+  "option_similarity": 0.25
  },
  "whatischarlottelolasknownbounty": {
   "question": "What is Charlotte Lola's known bounty?",
@@ -25738,7 +25662,7 @@
  },
  "whichcrewororganizationisabsalomaffiliatedwith": {
   "question": "Which crew or organization is Absalom affiliated with?",
-  "hash": "0e225d6166f9524f",
+  "hash": "88e82ff8644da826",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Absalom",
@@ -25748,7 +25672,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.474
+  "option_similarity": 0.225
  },
  "whatisabsalomsoccupation": {
   "question": "What is Absalom's occupation?",
@@ -25808,7 +25732,7 @@
  },
  "whichcrewororganizationiswandaaffiliatedwith": {
   "question": "Which crew or organization is Wanda affiliated with?",
-  "hash": "ffaae761d36aac3a",
+  "hash": "ee3b8a0aada7a525",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Wanda",
@@ -25818,7 +25742,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.26
+  "option_similarity": 0.221
  },
  "whatiswandasoccupation": {
   "question": "What is Wanda's occupation?",
@@ -25966,7 +25890,7 @@
  },
  "whichcrewororganizationisvanderdeckenixaffiliatedwith": {
   "question": "Which crew or organization is Vander Decken IX affiliated with?",
-  "hash": "c2224318cb1234e2",
+  "hash": "027f27ad90b290cd",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Vander Decken IX",
@@ -25976,7 +25900,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.346
+  "option_similarity": 0.186
  },
  "whichofthesecharactersisamemberoftheflyingpirates": {
   "question": "Which of these characters is a member of the Flying Pirates?",
@@ -26022,7 +25946,7 @@
  },
  "whichcrewororganizationisdazbonezaffiliatedwith": {
   "question": "Which crew or organization is Daz Bonez affiliated with?",
-  "hash": "59f2de8f1116d6f8",
+  "hash": "eb4f2f9cac5d3d82",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Daz Bonez",
@@ -26032,7 +25956,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.212
+  "option_similarity": 0.243
  },
  "whatisdazbonezsknownbounty": {
   "question": "What is Daz Bonez's known bounty?",
@@ -26124,7 +26048,7 @@
  },
  "whichcrewororganizationispicaaffiliatedwith": {
   "question": "Which crew or organization is Pica affiliated with?",
-  "hash": "41540e58fda72f52",
+  "hash": "a390055ec2086651",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Pica",
@@ -26134,7 +26058,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.208
+  "option_similarity": 0.595
  },
  "whatispicasknownbounty": {
   "question": "What is Pica's known bounty?",
@@ -26170,7 +26094,7 @@
  },
  "whichcrewororganizationisiceburgaffiliatedwith": {
   "question": "Which crew or organization is Iceburg affiliated with?",
-  "hash": "e427c4134b8b68c5",
+  "hash": "33c1de6e42f36859",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Iceburg",
@@ -26180,7 +26104,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.298
+  "option_similarity": 0.28
  },
  "wheredoesiceburgreside": {
   "question": "Where does Iceburg reside?",
@@ -26226,7 +26150,7 @@
  },
  "whichcrewororganizationiskarooaffiliatedwith": {
   "question": "Which crew or organization is Karoo affiliated with?",
-  "hash": "b499627a86eeccb2",
+  "hash": "248e46f6c24349a5",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Karoo",
@@ -26236,7 +26160,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.154
+  "option_similarity": 0.122
  },
  "whatiskaroosoccupation": {
   "question": "What is Karoo's occupation?",
@@ -26296,7 +26220,7 @@
  },
  "whichcrewororganizationisfukaboshiaffiliatedwith": {
   "question": "Which crew or organization is Fukaboshi affiliated with?",
-  "hash": "3dfd67e08093be63",
+  "hash": "7ba52cb0b065f076",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Fukaboshi",
@@ -26306,7 +26230,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.216
+  "option_similarity": 0.252
  },
  "whatisfukaboshisoccupation": {
   "question": "What is Fukaboshi's occupation?",
@@ -26352,7 +26276,7 @@
  },
  "whichcrewororganizationisnamiaffiliatedwith": {
   "question": "Which crew or organization is Nami affiliated with?",
-  "hash": "cce508c43c3ea5e0",
+  "hash": "132abba4c41443e6",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Nami",
@@ -26362,7 +26286,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.47
+  "option_similarity": 0.564
  },
  "whatisnamisknownbounty": {
   "question": "What is Nami's known bounty?",
@@ -26494,20 +26418,6 @@
   "unattested_options": [],
   "option_similarity": 0.296
  },
- "whichcrewororganizationissasakiaffiliatedwith": {
-  "question": "Which crew or organization is Sasaki affiliated with?",
-  "hash": "e428d221c47e8d2b",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Sasaki",
-  "article_len": 29015,
-  "prominence": 2,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.26
- },
  "whatissasakisknownbounty": {
   "question": "What is Sasaki's known bounty?",
   "hash": "01f29dd8612bbecc",
@@ -26584,7 +26494,7 @@
  },
  "whichcrewororganizationiskoalaaffiliatedwith": {
   "question": "Which crew or organization is Koala affiliated with?",
-  "hash": "63fb7f16fb68d281",
+  "hash": "98482d4e1526988a",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Koala",
@@ -26594,7 +26504,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.208
+  "option_similarity": 0.123
  },
  "wheredoeskoalareside": {
   "question": "Where does Koala reside?",
@@ -26640,7 +26550,7 @@
  },
  "whichcrewororganizationistamagoaffiliatedwith": {
   "question": "Which crew or organization is Tamago affiliated with?",
-  "hash": "8801b5fa8c686ba9",
+  "hash": "5ce96872dbd1fce6",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Tamago",
@@ -26650,7 +26560,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.356
+  "option_similarity": 0.176
  },
  "whatistamagosknownbounty": {
   "question": "What is Tamago's known bounty?",
@@ -26830,7 +26740,7 @@
  },
  "whichcrewororganizationisshakuyakuaffiliatedwith": {
   "question": "Which crew or organization is Shakuyaku affiliated with?",
-  "hash": "fe26a5b0d361f3f0",
+  "hash": "bb8b9f29c0f1df53",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Shakuyaku",
@@ -26840,7 +26750,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.256
+  "option_similarity": 0.229
  },
  "whatisshakuyakusoccupation": {
   "question": "What is Shakuyaku's occupation?",
@@ -26932,7 +26842,7 @@
  },
  "whichcrewororganizationisboasandersoniaaffiliatedwith": {
   "question": "Which crew or organization is Boa Sandersonia affiliated with?",
-  "hash": "fcfd33515e4f0d26",
+  "hash": "32f35bd11861eb84",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Boa Sandersonia",
@@ -26942,7 +26852,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.428
+  "option_similarity": 0.395
  },
  "whatisboasandersoniasknownbounty": {
   "question": "What is Boa Sandersonia's known bounty?",
@@ -27024,7 +26934,7 @@
  },
  "whichcrewororganizationisjaguardsaulaffiliatedwith": {
   "question": "Which crew or organization is Jaguar D. Saul affiliated with?",
-  "hash": "24be9c6148162399",
+  "hash": "883b169533042279",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Jaguar D. Saul",
@@ -27034,7 +26944,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.216
+  "option_similarity": 0.318
  },
  "wheredoesjaguardsaulreside": {
   "question": "Where does Jaguar D. Saul reside?",
@@ -27080,7 +26990,7 @@
  },
  "whichcrewororganizationisbepoaffiliatedwith": {
   "question": "Which crew or organization is Bepo affiliated with?",
-  "hash": "c1cff1b7d79a5ddb",
+  "hash": "15f477dcc320bd24",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Bepo",
@@ -27090,7 +27000,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.171
+  "option_similarity": 0.256
  },
  "whatisbeposknownbounty": {
   "question": "What is Bepo's known bounty?",
@@ -27140,7 +27050,7 @@
  },
  "whichcrewororganizationisgloriosaaffiliatedwith": {
   "question": "Which crew or organization is Gloriosa affiliated with?",
-  "hash": "8fc66a8d380f5f35",
+  "hash": "9cff5a50faa2425f",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Gloriosa",
@@ -27150,7 +27060,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.318
+  "option_similarity": 0.121
  },
  "whatisgloriosasoccupation": {
   "question": "What is Gloriosa's occupation?",
@@ -27224,7 +27134,7 @@
  },
  "whichcrewororganizationisbluenoaffiliatedwith": {
   "question": "Which crew or organization is Blueno affiliated with?",
-  "hash": "0f40b5f4b080a2af",
+  "hash": "10d8e3b68c97a4dd",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Blueno",
@@ -27234,7 +27144,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.165
+  "option_similarity": 0.156
  },
  "whatisbluenosoccupation": {
   "question": "What is Blueno's occupation?",
@@ -27294,7 +27204,7 @@
  },
  "whichcrewororganizationisprometheusaffiliatedwith": {
   "question": "Which crew or organization is Prometheus affiliated with?",
-  "hash": "7d94ee892f205bb2",
+  "hash": "f049345f7502372d",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Prometheus",
@@ -27304,7 +27214,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.422
+  "option_similarity": 0.302
  },
  "wheredoesprometheusreside": {
   "question": "Where does Prometheus reside?",
@@ -27362,20 +27272,6 @@
   "unattested_options": [],
   "option_similarity": 0.461
  },
- "whichcrewororganizationiskalifaaffiliatedwith": {
-  "question": "Which crew or organization is Kalifa affiliated with?",
-  "hash": "57ddc089e189db05",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Kalifa",
-  "article_len": 26558,
-  "prominence": 2,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.159
- },
  "whatiskalifasoccupation": {
   "question": "What is Kalifa's occupation?",
   "hash": "d30ab5edb08761f0",
@@ -27420,7 +27316,7 @@
  },
  "whichcrewororganizationisshepherdsommersaffiliatedwith": {
   "question": "Which crew or organization is Shepherd Sommers affiliated with?",
-  "hash": "01ce3e16edcdb9c4",
+  "hash": "9bf42babb65ac74e",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Shepherd Sommers",
@@ -27430,7 +27326,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.296
+  "option_similarity": 0.176
  },
  "whichofthesecharactersisamemberoftheknightsofgod": {
   "question": "Which of these characters is a member of the Knights of God?",
@@ -27462,7 +27358,7 @@
  },
  "whichcrewororganizationiskurehaaffiliatedwith": {
   "question": "Which crew or organization is Kureha affiliated with?",
-  "hash": "8854acc81d519434",
+  "hash": "e16cd1508e88b71d",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Kureha",
@@ -27472,7 +27368,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.223
+  "option_similarity": 0.282
  },
  "wheredoeskurehareside": {
   "question": "Where does Kureha reside?",
@@ -27648,7 +27544,7 @@
  },
  "whichcrewororganizationismanmayergunkoaffiliatedwith": {
   "question": "Which crew or organization is Manmayer Gunko affiliated with?",
-  "hash": "43393ae1dea2a9db",
+  "hash": "11bda67660de0f06",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Manmayer Gunko",
@@ -27658,7 +27554,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.196
+  "option_similarity": 0.203
  },
  "inwhichsagadoesmanmayergunkofirstappear": {
   "question": "In which saga does Manmayer Gunko first appear?",
@@ -27676,7 +27572,7 @@
  },
  "whichcrewororganizationisnapoleonaffiliatedwith": {
   "question": "Which crew or organization is Napoleon affiliated with?",
-  "hash": "f34dc6d0217bf546",
+  "hash": "01518284b1fe0e50",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Napoleon",
@@ -27686,7 +27582,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.36
+  "option_similarity": 0.471
  },
  "wheredoesnapoleonreside": {
   "question": "Where does Napoleon reside?",
@@ -27800,20 +27696,6 @@
   "unattested_options": [],
   "option_similarity": 0.422
  },
- "whichcrewororganizationissenorpinkaffiliatedwith": {
-  "question": "Which crew or organization is Senor Pink affiliated with?",
-  "hash": "22446bd31ecbdd60",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Senor Pink",
-  "article_len": 25615,
-  "prominence": 2,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.261
- },
  "whatissenorpinksknownbounty": {
   "question": "What is Senor Pink's known bounty?",
   "hash": "cdd866b2396a926a",
@@ -27873,20 +27755,6 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.42
- },
- "whichcrewororganizationispageoneaffiliatedwith": {
-  "question": "Which crew or organization is Page One affiliated with?",
-  "hash": "b98d867e910c4374",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Page One",
-  "article_len": 25434,
-  "prominence": 2,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.227
  },
  "whatispageonesknownbounty": {
   "question": "What is Page One's known bounty?",
@@ -28038,7 +27906,7 @@
  },
  "whichcrewororganizationisvanauguraffiliatedwith": {
   "question": "Which crew or organization is Van Augur affiliated with?",
-  "hash": "de43358681ee413c",
+  "hash": "35bd45090bfef1d2",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Van Augur",
@@ -28048,7 +27916,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.264
+  "option_similarity": 0.337
  },
  "whatisvanaugursoccupation": {
   "question": "What is Van Augur's occupation?",
@@ -28122,7 +27990,7 @@
  },
  "whichcrewororganizationisoimoaffiliatedwith": {
   "question": "Which crew or organization is Oimo affiliated with?",
-  "hash": "b602797c02b33654",
+  "hash": "0bffb210011613e5",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Oimo",
@@ -28132,7 +28000,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.286
+  "option_similarity": 0.316
  },
  "inwhichsagadoesoimofirstappear": {
   "question": "In which saga does Oimo first appear?",
@@ -28150,7 +28018,7 @@
  },
  "whichcrewororganizationishannyabalaffiliatedwith": {
   "question": "Which crew or organization is Hannyabal affiliated with?",
-  "hash": "8948d8634641d247",
+  "hash": "96d9cae5b939da25",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Hannyabal",
@@ -28160,11 +28028,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.185
+  "option_similarity": 0.269
  },
  "whichcrewororganizationisigaramaffiliatedwith": {
   "question": "Which crew or organization is Igaram affiliated with?",
-  "hash": "fe30937d891986ab",
+  "hash": "7ebd4d9466e6a591",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Igaram",
@@ -28174,7 +28042,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.458
+  "option_similarity": 0.226
  },
  "whichofthesecharactersisamemberofthearabasta": {
   "question": "Which of these characters is a member of the Arabasta?",
@@ -28230,7 +28098,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.175
+  "option_similarity": 0.183
  },
  "whatiszalasknownbounty": {
   "question": "What is Zala's known bounty?",
@@ -28308,7 +28176,7 @@
  },
  "whichcrewororganizationiskashiiaffiliatedwith": {
   "question": "Which crew or organization is Kashii affiliated with?",
-  "hash": "a2bc9a9e27661d82",
+  "hash": "0e9f5d96535fb1e3",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Kashii",
@@ -28318,7 +28186,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.258
+  "option_similarity": 0.218
  },
  "inwhichsagadoeskashiifirstappear": {
   "question": "In which saga does Kashii first appear?",
@@ -28354,7 +28222,7 @@
  },
  "whichcrewororganizationisboamarigoldaffiliatedwith": {
   "question": "Which crew or organization is Boa Marigold affiliated with?",
-  "hash": "01c4de4e41cab04a",
+  "hash": "f7fa6e1bafefaf8f",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Boa Marigold",
@@ -28364,7 +28232,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.361
+  "option_similarity": 0.358
  },
  "whatisboamarigoldsknownbounty": {
   "question": "What is Boa Marigold's known bounty?",
@@ -28474,7 +28342,7 @@
  },
  "whichcrewororganizationisfigarlandgarlingaffiliatedwith": {
   "question": "Which crew or organization is Figarland Garling affiliated with?",
-  "hash": "645d204332164ba4",
+  "hash": "a2acb3f502813a23",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Figarland Garling",
@@ -28484,7 +28352,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.169
+  "option_similarity": 0.222
  },
  "whatisfigarlandgarlingsoccupation": {
   "question": "What is Figarland Garling's occupation?",
@@ -28534,21 +28402,17 @@
  },
  "whichcrewororganizationismorgansaffiliatedwith": {
   "question": "Which crew or organization is Morgans affiliated with?",
-  "hash": "88461ac995b95548",
+  "hash": "1fe6d049c41d3ea0",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Morgans",
   "article_len": 24218,
   "prominence": 2,
   "must_know": false,
-  "flags": [
-   "answer_len_outlier"
-  ],
-  "guessability_flags": [
-   "answer_len_outlier"
-  ],
+  "flags": [],
+  "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.496
+  "option_similarity": 0.214
  },
  "bywhatepithetismorgansknown": {
   "question": "By what epithet is Morgans known?",
@@ -28594,7 +28458,7 @@
  },
  "whichcrewororganizationischadroshigelygesaffiliatedwith": {
   "question": "Which crew or organization is Chadros Higelyges affiliated with?",
-  "hash": "a9f8d863e4d6ee1e",
+  "hash": "0512f179db264ac2",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Chadros Higelyges",
@@ -28604,7 +28468,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.261
+  "option_similarity": 0.502
  },
  "whatischadroshigelygessknownbounty": {
   "question": "What is Chadros Higelyges's known bounty?",
@@ -28654,6 +28518,20 @@
   "unattested_options": [],
   "option_similarity": 0.25
  },
+ "whichofthesecharactersisamemberofthecentaurpatrolunit": {
+  "question": "Which of these characters is a member of the Centaur Patrol Unit?",
+  "hash": "b597bf1e0149595e",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Chadros Higelyges",
+  "article_len": 24111,
+  "prominence": 2,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.296
+ },
  "whichcharacterhasaknownbountyof80060000berries": {
   "question": "Which character has a known bounty of 80,060,000 Berries?",
   "hash": "18213990c35b83f1",
@@ -28698,7 +28576,7 @@
  },
  "whichcrewororganizationislaffitteaffiliatedwith": {
   "question": "Which crew or organization is Laffitte affiliated with?",
-  "hash": "b934d63741694faf",
+  "hash": "0c3dfbef22f212ac",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Laffitte",
@@ -28708,7 +28586,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.37
+  "option_similarity": 0.309
  },
  "whatislaffittesoccupation": {
   "question": "What is Laffitte's occupation?",
@@ -28772,7 +28650,7 @@
  },
  "whichcrewororganizationisdaltonaffiliatedwith": {
   "question": "Which crew or organization is Dalton affiliated with?",
-  "hash": "c5bfefa04c8ed1f1",
+  "hash": "82c05c9fbc0ca9c4",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Dalton",
@@ -28782,7 +28660,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.29
+  "option_similarity": 0.27
  },
  "wheredoesdaltonreside": {
   "question": "Where does Dalton reside?",
@@ -28800,7 +28678,7 @@
  },
  "whichcrewororganizationisroadaffiliatedwith": {
   "question": "Which crew or organization is Road affiliated with?",
-  "hash": "12fa6ad03d116998",
+  "hash": "4f174bfcbd6cd199",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Road",
@@ -28810,7 +28688,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.356
+  "option_similarity": 0.188
  },
  "whatisroadsoccupation": {
   "question": "What is Road's occupation?",
@@ -28842,7 +28720,7 @@
  },
  "whichcrewororganizationisconisaffiliatedwith": {
   "question": "Which crew or organization is Conis affiliated with?",
-  "hash": "b454266b9ff00182",
+  "hash": "daba8bd3433e08a4",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Conis",
@@ -28852,7 +28730,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.254
+  "option_similarity": 0.233
  },
  "whatisconissoccupation": {
   "question": "What is Conis's occupation?",
@@ -28912,7 +28790,7 @@
  },
  "whichcrewororganizationisnefertaricobraaffiliatedwith": {
   "question": "Which crew or organization is Nefertari Cobra affiliated with?",
-  "hash": "8dd455760ab1d6e4",
+  "hash": "4b8842c8f50db91f",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Nefertari Cobra",
@@ -28922,7 +28800,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.261
+  "option_similarity": 0.346
  },
  "wheredoesnefertaricobrareside": {
   "question": "Where does Nefertari Cobra reside?",
@@ -28940,7 +28818,7 @@
  },
  "whichcrewororganizationisotohimeaffiliatedwith": {
   "question": "Which crew or organization is Otohime affiliated with?",
-  "hash": "0ab11dcbea6e3edd",
+  "hash": "72a302de101ead4f",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Otohime",
@@ -28950,7 +28828,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.394
+  "option_similarity": 0.206
  },
  "bywhatepithetisotohimeknown": {
   "question": "By what epithet is Otohime known?",
@@ -29094,7 +28972,7 @@
  },
  "whichcrewororganizationismozuandkiwiaffiliatedwith": {
   "question": "Which crew or organization is Mozu and Kiwi affiliated with?",
-  "hash": "19afa7af0a1e2cec",
+  "hash": "40689bf1ed59da8b",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Mozu and Kiwi",
@@ -29104,7 +28982,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.313
+  "option_similarity": 0.204
  },
  "wheredoesmozuandkiwireside": {
   "question": "Where does Mozu and Kiwi reside?",
@@ -29210,7 +29088,7 @@
  },
  "whichcrewororganizationiskozaaffiliatedwith": {
   "question": "Which crew or organization is Koza affiliated with?",
-  "hash": "e643d8157844a8d3",
+  "hash": "238820c80e476ea9",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Koza",
@@ -29220,7 +29098,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.26
+  "option_similarity": 0.37
  },
  "wheredoeskozareside": {
   "question": "Where does Koza reside?",
@@ -29238,7 +29116,7 @@
  },
  "whichcrewororganizationismontblanccricketaffiliatedwith": {
   "question": "Which crew or organization is Mont Blanc Cricket affiliated with?",
-  "hash": "989c2e743484e330",
+  "hash": "cc3c845486b7df59",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Mont Blanc Cricket",
@@ -29248,7 +29126,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.286
+  "option_similarity": 0.253
  },
  "whatismontblanccricketsknownbounty": {
   "question": "What is Mont Blanc Cricket's known bounty?",
@@ -29298,7 +29176,7 @@
  },
  "whichcrewororganizationispappagaffiliatedwith": {
   "question": "Which crew or organization is Pappag affiliated with?",
-  "hash": "d61cd45b588cd99f",
+  "hash": "4ec829d379ddc932",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Pappag",
@@ -29308,7 +29186,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.396
+  "option_similarity": 0.272
  },
  "wheredoespappagreside": {
   "question": "Where does Pappag reside?",
@@ -29340,7 +29218,7 @@
  },
  "whichcrewororganizationisbennbeckmanaffiliatedwith": {
   "question": "Which crew or organization is Benn Beckman affiliated with?",
-  "hash": "c232e0262036e9de",
+  "hash": "f878447d52cfe502",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Benn Beckman",
@@ -29350,7 +29228,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.457
+  "option_similarity": 0.418
  },
  "whichdevilfruitdidjozueat": {
   "question": "Which Devil Fruit did Jozu eat?",
@@ -29368,7 +29246,7 @@
  },
  "whichcrewororganizationisjozuaffiliatedwith": {
   "question": "Which crew or organization is Jozu affiliated with?",
-  "hash": "378d8933a78261bf",
+  "hash": "9d012f62958c2f3d",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Jozu",
@@ -29378,7 +29256,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.318
+  "option_similarity": 0.342
  },
  "bywhatepithetisjozuknown": {
   "question": "By what epithet is Jozu known?",
@@ -29410,7 +29288,7 @@
  },
  "whichcrewororganizationiselizabelloiiaffiliatedwith": {
   "question": "Which crew or organization is Elizabello II affiliated with?",
-  "hash": "3996aec3216a0e8d",
+  "hash": "aef0eff821580d97",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Elizabello II",
@@ -29420,7 +29298,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.241
+  "option_similarity": 0.186
  },
  "whatiselizabelloiisoccupation": {
   "question": "What is Elizabello II's occupation?",
@@ -29536,7 +29414,7 @@
  },
  "whichcrewororganizationisvitoaffiliatedwith": {
   "question": "Which crew or organization is Vito affiliated with?",
-  "hash": "e7a730858add4de2",
+  "hash": "f44dd0be57b2cba9",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Vito",
@@ -29546,7 +29424,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.211
+  "option_similarity": 0.403
  },
  "whatisvitosknownbounty": {
   "question": "What is Vito's known bounty?",
@@ -29698,7 +29576,7 @@
  },
  "whichcrewororganizationisyasoppaffiliatedwith": {
   "question": "Which crew or organization is Yasopp affiliated with?",
-  "hash": "a78944fd2109d7db",
+  "hash": "402389c3d272b30f",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Yasopp",
@@ -29708,7 +29586,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.417
+  "option_similarity": 0.396
  },
  "bywhatepithetisyasoppknown": {
   "question": "By what epithet is Yasopp known?",
@@ -29786,7 +29664,7 @@
  },
  "whichcrewororganizationisdemaloblackaffiliatedwith": {
   "question": "Which crew or organization is Demalo Black affiliated with?",
-  "hash": "a59aad16c0a9aa0a",
+  "hash": "70d6c3aef79a9495",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Demalo Black",
@@ -29796,7 +29674,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.223
+  "option_similarity": 0.283
  },
  "whatisdemaloblacksknownbounty": {
   "question": "What is Demalo Black's known bounty?",
@@ -29920,7 +29798,7 @@
  },
  "whichcrewororganizationiszeoaffiliatedwith": {
   "question": "Which crew or organization is Zeo affiliated with?",
-  "hash": "37a127d08698751b",
+  "hash": "b2c424225502c97b",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Zeo",
@@ -29930,7 +29808,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.405
+  "option_similarity": 0.298
  },
  "bywhatepithetiszeoknown": {
   "question": "By what epithet is Zeo known?",
@@ -29980,7 +29858,7 @@
  },
  "whichcrewororganizationisurougeaffiliatedwith": {
   "question": "Which crew or organization is Urouge affiliated with?",
-  "hash": "b80bf0b8477f8ee8",
+  "hash": "7aca6fc79d121b7b",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Urouge",
@@ -29990,7 +29868,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.216
+  "option_similarity": 0.284
  },
  "whatisurougesknownbounty": {
   "question": "What is Urouge's known bounty?",
@@ -30082,7 +29960,7 @@
  },
  "whichcrewororganizationispoundaffiliatedwith": {
   "question": "Which crew or organization is Pound affiliated with?",
-  "hash": "86d7898a744e8e96",
+  "hash": "72d59866dd3bcb53",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Pound",
@@ -30092,7 +29970,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.372
+  "option_similarity": 0.342
  },
  "whichofthesecharactersisamemberofthecharlottefamilyformer": {
   "question": "Which of these characters is a member of the Charlotte Familyformer?",
@@ -30138,7 +30016,7 @@
  },
  "whichcrewororganizationismomongaaffiliatedwith": {
   "question": "Which crew or organization is Momonga affiliated with?",
-  "hash": "2d3f3a764ca1c175",
+  "hash": "2bfe98e9ab084efc",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Momonga",
@@ -30148,7 +30026,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.224
+  "option_similarity": 0.344
  },
  "whatismomongasoccupation": {
   "question": "What is Momonga's occupation?",
@@ -30236,7 +30114,7 @@
  },
  "whichcrewororganizationisvictoriacindryaffiliatedwith": {
   "question": "Which crew or organization is Victoria Cindry affiliated with?",
-  "hash": "5be087ba93cd8863",
+  "hash": "7960e699435416fe",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Victoria Cindry",
@@ -30246,7 +30124,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.25
+  "option_similarity": 0.611
  },
  "inwhichsagadoesvictoriacindryfirstappear": {
   "question": "In which saga does Victoria Cindry first appear?",
@@ -30348,7 +30226,7 @@
  },
  "whichcrewororganizationisroronoazoroaffiliatedwith": {
   "question": "Which crew or organization is Roronoa Zoro affiliated with?",
-  "hash": "c54a190738af4b8f",
+  "hash": "a0c2e90e521a4ef8",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Roronoa Zoro",
@@ -30358,7 +30236,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.314
+  "option_similarity": 0.253
  },
  "whatisroronoazorosknownbounty": {
   "question": "What is Roronoa Zoro's known bounty?",
@@ -30436,7 +30314,7 @@
  },
  "whichcrewororganizationistrafalgardwaterlawaffiliatedwith": {
   "question": "Which crew or organization is Trafalgar D. Water Law affiliated with?",
-  "hash": "01e506797c92bc3f",
+  "hash": "a86652187e4b194b",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Trafalgar D. Water Law",
@@ -30446,7 +30324,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.235
+  "option_similarity": 0.386
  },
  "whatistrafalgardwaterlawsknownbounty": {
   "question": "What is Trafalgar D. Water Law's known bounty?",
@@ -30514,7 +30392,7 @@
  },
  "whichcrewororganizationischarlottelinlinaffiliatedwith": {
   "question": "Which crew or organization is Charlotte Linlin affiliated with?",
-  "hash": "7a7d98cd7513d846",
+  "hash": "3361333edfb99305",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Charlotte Linlin",
@@ -30524,7 +30402,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.333
+  "option_similarity": 0.384
  },
  "whatischarlottelinlinsknownbounty": {
   "question": "What is Charlotte Linlin's known bounty?",
@@ -30616,7 +30494,7 @@
  },
  "whichcrewororganizationisnicorobinaffiliatedwith": {
   "question": "Which crew or organization is Nico Robin affiliated with?",
-  "hash": "3d0fcc5a31bd2e15",
+  "hash": "8b9e3ada51b755de",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Nico Robin",
@@ -30626,7 +30504,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.348
+  "option_similarity": 0.228
  },
  "whatisnicorobinsknownbounty": {
   "question": "What is Nico Robin's known bounty?",
@@ -30806,7 +30684,7 @@
  },
  "whichcrewororganizationissanjiaffiliatedwith": {
   "question": "Which crew or organization is Sanji affiliated with?",
-  "hash": "471c7d12effb108e",
+  "hash": "c417e91d04915c54",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Sanji",
@@ -30816,7 +30694,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.389
+  "option_similarity": 0.443
  },
  "whatissanjisknownbounty": {
   "question": "What is Sanji's known bounty?",
@@ -31348,7 +31226,7 @@
  },
  "whichcrewororganizationisportgasdrougeaffiliatedwith": {
   "question": "Which crew or organization is Portgas D. Rouge affiliated with?",
-  "hash": "5bd62ee7979004a1",
+  "hash": "ab35ff95e545229d",
   "category": "Crews & Organizations",
   "authored_difficulty": "easy",
   "subject": "Portgas D. Rouge",
@@ -31358,11 +31236,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.281
+  "option_similarity": 0.156
  },
- "whichofthesecharactersisamemberofthegoldroger": {
-  "question": "Which of these characters is a member of the Gol D. Roger?",
-  "hash": "7feaee13b8ec5e30",
+ "whichofthesecharactersisamemberoftheclanofd": {
+  "question": "Which of these characters is a member of the Clan of D?",
+  "hash": "ff400bdba606e800",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Portgas D. Rouge",
@@ -31372,21 +31250,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.252
- },
- "whichcrewororganizationisdragonnumbertwentyoneaffiliatedwith": {
-  "question": "Which crew or organization is Dragon Number Twenty-One affiliated with?",
-  "hash": "7c3c0307930cfc70",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "easy",
-  "subject": "Dragon Number Twenty-One",
-  "article_len": 5239,
-  "prominence": 2,
-  "must_know": true,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.238
+  "option_similarity": 0.249
  },
  "wheredoesdragonnumbertwentyonereside": {
   "question": "Where does Dragon Number Twenty-One reside?",
@@ -31432,7 +31296,7 @@
  },
  "whichcrewororganizationisginaffiliatedwith": {
   "question": "Which crew or organization is Gin affiliated with?",
-  "hash": "8e9b7850fcf45ee4",
+  "hash": "33e8bec9d971877f",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Gin",
@@ -31442,7 +31306,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.191
+  "option_similarity": 0.283
  },
  "whatisginsknownbounty": {
   "question": "What is Gin's known bounty?",
@@ -31506,7 +31370,7 @@
  },
  "whichcrewororganizationisdonquixotehomingaffiliatedwith": {
   "question": "Which crew or organization is Donquixote Homing affiliated with?",
-  "hash": "e16cfb4137fdb207",
+  "hash": "d05ba4001ff2abc1",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Donquixote Homing",
@@ -31516,7 +31380,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.264
+  "option_similarity": 0.259
  },
  "whatisdonquixotehomingsoccupation": {
   "question": "What is Donquixote Homing's occupation?",
@@ -31548,7 +31412,7 @@
  },
  "whichcrewororganizationispaulieaffiliatedwith": {
   "question": "Which crew or organization is Paulie affiliated with?",
-  "hash": "03433a1c70b18dfe",
+  "hash": "00908e25e411d5ed",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Paulie",
@@ -31558,7 +31422,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.253
+  "option_similarity": 0.202
  },
  "wheredoespauliereside": {
   "question": "Where does Paulie reside?",
@@ -31576,7 +31440,7 @@
  },
  "whichcrewororganizationisjarulaffiliatedwith": {
   "question": "Which crew or organization is Jarul affiliated with?",
-  "hash": "1c72fb4b00f8ae65",
+  "hash": "904e7577a8ee63c9",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Jarul",
@@ -31586,7 +31450,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.285
+  "option_similarity": 0.229
  },
  "bywhatepithetisjarulknown": {
   "question": "By what epithet is Jarul known?",
@@ -31646,7 +31510,7 @@
  },
  "whichcrewororganizationisbuckinghamstussyaffiliatedwith": {
   "question": "Which crew or organization is Buckingham Stussy affiliated with?",
-  "hash": "3bef61558a60f027",
+  "hash": "eb3a2ed2d4ed3cde",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Buckingham Stussy",
@@ -31656,11 +31520,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.308
+  "option_similarity": 0.335
  },
  "whichcrewororganizationisduvalaffiliatedwith": {
   "question": "Which crew or organization is Duval affiliated with?",
-  "hash": "40429989bf090f2f",
+  "hash": "92a4845d7397a0d6",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Duval",
@@ -31670,7 +31534,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.223
+  "option_similarity": 0.097
  },
  "bywhatepithetisduvalknown": {
   "question": "By what epithet is Duval known?",
@@ -31716,7 +31580,7 @@
  },
  "whichcrewororganizationisganfallaffiliatedwith": {
   "question": "Which crew or organization is Gan Fall affiliated with?",
-  "hash": "05769872eb3cb802",
+  "hash": "3e858f93a4c32db3",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Gan Fall",
@@ -31726,7 +31590,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.276
+  "option_similarity": 0.322
  },
  "whatisganfallsoccupation": {
   "question": "What is Gan Fall's occupation?",
@@ -31786,7 +31650,7 @@
  },
  "whichcrewororganizationisshimotsukiryumaaffiliatedwith": {
   "question": "Which crew or organization is Shimotsuki Ryuma affiliated with?",
-  "hash": "fa9758b6fabf3208",
+  "hash": "4b0fe055119e7a38",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Shimotsuki Ryuma",
@@ -31796,7 +31660,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.209
+  "option_similarity": 0.145
  },
  "whatisshimotsukiryumasoccupation": {
   "question": "What is Shimotsuki Ryuma's occupation?",
@@ -31926,7 +31790,7 @@
  },
  "whichcrewororganizationispicklesaffiliatedwith": {
   "question": "Which crew or organization is Pickles affiliated with?",
-  "hash": "88fe0c72973d03a0",
+  "hash": "d2aec408d9ff5c99",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Pickles",
@@ -31936,7 +31800,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.276
+  "option_similarity": 0.235
  },
  "bywhatepithetispicklesknown": {
   "question": "By what epithet is Pickles known?",
@@ -31982,7 +31846,7 @@
  },
  "whichcrewororganizationiscrocusaffiliatedwith": {
   "question": "Which crew or organization is Crocus affiliated with?",
-  "hash": "6d0315d84020e318",
+  "hash": "f98dd34f23a8c785",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Crocus",
@@ -31992,7 +31856,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.187
+  "option_similarity": 0.307
  },
  "whatiscrocussoccupation": {
   "question": "What is Crocus's occupation?",
@@ -32066,7 +31930,7 @@
  },
  "whichcrewororganizationispattyaffiliatedwith": {
   "question": "Which crew or organization is Patty affiliated with?",
-  "hash": "97f6e1c8274b2984",
+  "hash": "b5d494b23a183be7",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Patty",
@@ -32076,11 +31940,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.176
+  "option_similarity": 0.221
  },
  "whichcrewororganizationisikarosmuchaffiliatedwith": {
   "question": "Which crew or organization is Ikaros Much affiliated with?",
-  "hash": "967b319bca860ec4",
+  "hash": "4c15e0f78b9a0fb6",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Ikaros Much",
@@ -32090,11 +31954,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.252
+  "option_similarity": 0.339
  },
  "whichcrewororganizationispenguinaffiliatedwith": {
   "question": "Which crew or organization is Penguin affiliated with?",
-  "hash": "52c4886f4460d659",
+  "hash": "fd511743db561092",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Penguin",
@@ -32104,7 +31968,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.162
+  "option_similarity": 0.24
  },
  "whichdevilfruitdidinazumaeat": {
   "question": "Which Devil Fruit did Inazuma eat?",
@@ -32122,7 +31986,7 @@
  },
  "whichcrewororganizationisinazumaaffiliatedwith": {
   "question": "Which crew or organization is Inazuma affiliated with?",
-  "hash": "e435d95287d25878",
+  "hash": "ff3a1bffb6c79c90",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Inazuma",
@@ -32132,7 +31996,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.162
+  "option_similarity": 0.255
  },
  "whatisinazumasoccupation": {
   "question": "What is Inazuma's occupation?",
@@ -32178,7 +32042,7 @@
  },
  "whichcrewororganizationisorlumbusaffiliatedwith": {
   "question": "Which crew or organization is Orlumbus affiliated with?",
-  "hash": "eec605aa6aa6c258",
+  "hash": "91541780707a490a",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Orlumbus",
@@ -32188,7 +32052,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.327
+  "option_similarity": 0.181
  },
  "whatisorlumbussknownbounty": {
   "question": "What is Orlumbus's known bounty?",
@@ -32252,7 +32116,7 @@
  },
  "whichcrewororganizationisshachiaffiliatedwith": {
   "question": "Which crew or organization is Shachi affiliated with?",
-  "hash": "8f22c40713ec8200",
+  "hash": "42c1fef417b1ad35",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Shachi",
@@ -32262,7 +32126,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.304
+  "option_similarity": 0.484
  },
  "wheredoeskayareside": {
   "question": "Where does Kaya reside?",
@@ -32280,7 +32144,7 @@
  },
  "whichcrewororganizationisshyarlyaffiliatedwith": {
   "question": "Which crew or organization is Shyarly affiliated with?",
-  "hash": "c8a9a9727580a2b3",
+  "hash": "df5e085f392eddc6",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Shyarly",
@@ -32290,7 +32154,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.258
+  "option_similarity": 0.23
  },
  "wheredoesshyarlyreside": {
   "question": "Where does Shyarly reside?",
@@ -32322,7 +32186,7 @@
  },
  "whichcrewororganizationishyouzouaffiliatedwith": {
   "question": "Which crew or organization is Hyouzou affiliated with?",
-  "hash": "ac65592dffd06963",
+  "hash": "2f4d08a98a25bcec",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Hyouzou",
@@ -32332,7 +32196,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.191
+  "option_similarity": 0.415
  },
  "whichdevilfruitdidgiollaeat": {
   "question": "Which Devil Fruit did Giolla eat?",
@@ -32350,7 +32214,7 @@
  },
  "whichcrewororganizationisroswardcharlosaffiliatedwith": {
   "question": "Which crew or organization is Rosward Charlos affiliated with?",
-  "hash": "d31a854ce08d92bf",
+  "hash": "adab4e165d9d5c1b",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Rosward Charlos",
@@ -32360,7 +32224,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.23
+  "option_similarity": 0.338
  },
  "whatisroswardcharlossoccupation": {
   "question": "What is Rosward Charlos's occupation?",
@@ -32420,7 +32284,7 @@
  },
  "whichcrewororganizationisdonquixotemjosgardaffiliatedwith": {
   "question": "Which crew or organization is Donquixote Mjosgard affiliated with?",
-  "hash": "5511850afa4a74d3",
+  "hash": "55b54e584ac9ad7f",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Donquixote Mjosgard",
@@ -32430,7 +32294,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.187
+  "option_similarity": 0.3
  },
  "whatisdonquixotemjosgardsoccupation": {
   "question": "What is Donquixote Mjosgard's occupation?",
@@ -32446,20 +32310,6 @@
   "unattested_options": [],
   "option_similarity": 0.228
  },
- "whichcrewororganizationistotoaffiliatedwith": {
-  "question": "Which crew or organization is Toto affiliated with?",
-  "hash": "82ccd4991d0e716b",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "medium",
-  "subject": "Toto",
-  "article_len": 17753,
-  "prominence": 1,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.272
- },
  "wheredoestotoreside": {
   "question": "Where does Toto reside?",
   "hash": "c0987660ef89bcae",
@@ -32473,20 +32323,6 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.235
- },
- "whichofthesecharactersisamemberofthekoza": {
-  "question": "Which of these characters is a member of the Koza?",
-  "hash": "4837f19c10e69a98",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "hard",
-  "subject": "Toto",
-  "article_len": 17753,
-  "prominence": 1,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.133
  },
  "bywhatepithetistboneknown": {
   "question": "By what epithet is T Bone known?",
@@ -32518,7 +32354,7 @@
  },
  "whichcrewororganizationiscloudcloveraffiliatedwith": {
   "question": "Which crew or organization is Clou D. Clover affiliated with?",
-  "hash": "ee00acc900106553",
+  "hash": "e09b0b36d32e2f5f",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Clou D. Clover",
@@ -32528,7 +32364,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.219
+  "option_similarity": 0.341
  },
  "whichofthesecharactersisamemberoftheoharaarchaeologists": {
   "question": "Which of these characters is a member of the Ohara Archaeologists?",
@@ -32602,7 +32438,7 @@
  },
  "whichcrewororganizationishackaffiliatedwith": {
   "question": "Which crew or organization is Hack affiliated with?",
-  "hash": "e14d19f00685f146",
+  "hash": "20086702264de41e",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Hack",
@@ -32612,7 +32448,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.227
+  "option_similarity": 0.192
  },
  "wheredoeshackreside": {
   "question": "Where does Hack reside?",
@@ -32658,7 +32494,7 @@
  },
  "whichcrewororganizationisgottiaffiliatedwith": {
   "question": "Which crew or organization is Gotti affiliated with?",
-  "hash": "ead7a334a5c9b9b5",
+  "hash": "3a957f25f6eb20ac",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Gotti",
@@ -32668,7 +32504,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.306
+  "option_similarity": 0.316
  },
  "whatisgottisknownbounty": {
   "question": "What is Gotti's known bounty?",
@@ -32732,7 +32568,7 @@
  },
  "whichcrewororganizationisjohnnyaffiliatedwith": {
   "question": "Which crew or organization is Johnny affiliated with?",
-  "hash": "9c9f0d7da5b7ced7",
+  "hash": "9d0cc0ccd32a4c62",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Johnny",
@@ -32742,7 +32578,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.206
+  "option_similarity": 0.342
  },
  "whatisjohnnysoccupation": {
   "question": "What is Johnny's occupation?",
@@ -32758,9 +32594,9 @@
   "unattested_options": [],
   "option_similarity": 0.267
  },
- "whichofthesecharactersisamemberoftheyosaku": {
-  "question": "Which of these characters is a member of the Yosaku?",
-  "hash": "aa7feea79986dd2f",
+ "whichofthesecharactersisamemberoftheroronoazorosband": {
+  "question": "Which of these characters is a member of the Roronoa Zoro's band?",
+  "hash": "95962bc7c62722e9",
   "category": "Crews & Organizations",
   "authored_difficulty": "hard",
   "subject": "Johnny",
@@ -32770,7 +32606,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.225
+  "option_similarity": 0.297
  },
  "wheredoesmohjireside": {
   "question": "Where does Mohji reside?",
@@ -32816,7 +32652,7 @@
  },
  "whichcrewororganizationisaladineaffiliatedwith": {
   "question": "Which crew or organization is Aladine affiliated with?",
-  "hash": "b93bcdb717b3baf4",
+  "hash": "4984ea851a87037b",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Aladine",
@@ -32826,11 +32662,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.433
+  "option_similarity": 0.335
  },
  "whichcrewororganizationisjeanbartaffiliatedwith": {
   "question": "Which crew or organization is Jean Bart affiliated with?",
-  "hash": "9ebda378b22c9480",
+  "hash": "7dba0a6e31851335",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Jean Bart",
@@ -32840,11 +32676,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.43
+  "option_similarity": 0.591
  },
  "whichcrewororganizationiswadatsumiaffiliatedwith": {
   "question": "Which crew or organization is Wadatsumi affiliated with?",
-  "hash": "ea2db410a2ee1d98",
+  "hash": "00052cc4c4d09e4f",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Wadatsumi",
@@ -32854,7 +32690,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.377
+  "option_similarity": 0.237
  },
  "bywhatepithetiswadatsumiknown": {
   "question": "By what epithet is Wadatsumi known?",
@@ -32886,7 +32722,7 @@
  },
  "whichcrewororganizationisgedatsuaffiliatedwith": {
   "question": "Which crew or organization is Gedatsu affiliated with?",
-  "hash": "b62942b389a06685",
+  "hash": "8f43eaf2d616224b",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Gedatsu",
@@ -32896,7 +32732,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.251
+  "option_similarity": 0.265
  },
  "whatisgedatsusoccupation": {
   "question": "What is Gedatsu's occupation?",
@@ -32970,7 +32806,7 @@
  },
  "whichcrewororganizationiscarmelaffiliatedwith": {
   "question": "Which crew or organization is Carmel affiliated with?",
-  "hash": "a587b4c3a6e44b5a",
+  "hash": "2c02ab37101699a5",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Carmel",
@@ -32980,7 +32816,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.235
+  "option_similarity": 0.263
  },
  "wheredoescarmelreside": {
   "question": "Where does Carmel reside?",
@@ -33026,7 +32862,7 @@
  },
  "whichcrewororganizationistokoaffiliatedwith": {
   "question": "Which crew or organization is Toko affiliated with?",
-  "hash": "1b5f4276d2e308ee",
+  "hash": "8d389a2bacef6e90",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Toko",
@@ -33036,7 +32872,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.239
+  "option_similarity": 0.192
  },
  "whatistokosoccupation": {
   "question": "What is Toko's occupation?",
@@ -33066,9 +32902,9 @@
   "unattested_options": [],
   "option_similarity": 0.182
  },
- "whichofthesecharactersisamemberofthekouzukihiyori": {
-  "question": "Which of these characters is a member of the Kouzuki Hiyori?",
-  "hash": "892624bc0397eb1e",
+ "whichofthesecharactersisamemberoftheshimotsukifamily": {
+  "question": "Which of these characters is a member of the Shimotsuki Family?",
+  "hash": "98e9fbd30fdf8ffc",
   "category": "Crews & Organizations",
   "authored_difficulty": "hard",
   "subject": "Toko",
@@ -33078,7 +32914,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.15
+  "option_similarity": 0.109
  },
  "whichdevilfruitdidjoyboyeat": {
   "question": "Which Devil Fruit did Joy Boy eat?",
@@ -33100,7 +32936,7 @@
  },
  "whichcrewororganizationisryuboshiaffiliatedwith": {
   "question": "Which crew or organization is Ryuboshi affiliated with?",
-  "hash": "a9d4815e46874cee",
+  "hash": "20ae1e7d2a867986",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Ryuboshi",
@@ -33110,7 +32946,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.272
+  "option_similarity": 0.29
  },
  "whatisryuboshisoccupation": {
   "question": "What is Ryuboshi's occupation?",
@@ -33146,7 +32982,7 @@
  },
  "whichcrewororganizationisyosakuaffiliatedwith": {
   "question": "Which crew or organization is Yosaku affiliated with?",
-  "hash": "8020ebdac1498a36",
+  "hash": "33b5dd8f311dc83d",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Yosaku",
@@ -33156,7 +32992,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.19
+  "option_similarity": 0.284
  },
  "whatisyosakusoccupation": {
   "question": "What is Yosaku's occupation?",
@@ -33172,37 +33008,27 @@
   "unattested_options": [],
   "option_similarity": 0.222
  },
- "whichofthesecharactersisamemberofthejohnny": {
-  "question": "Which of these characters is a member of the Johnny?",
-  "hash": "733f19093e26fcde",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "hard",
-  "subject": "Yosaku",
-  "article_len": 16171,
-  "prominence": 1,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.183
- },
  "whichcrewororganizationisgerdaffiliatedwith": {
   "question": "Which crew or organization is Gerd affiliated with?",
-  "hash": "33b2fb28992a3ee4",
+  "hash": "0a1bde1d413faa20",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Gerd",
   "article_len": 16139,
   "prominence": 1,
   "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
+  "flags": [
+   "answer_len_outlier"
+  ],
+  "guessability_flags": [
+   "answer_len_outlier"
+  ],
   "unattested_options": [],
-  "option_similarity": 0.264
+  "option_similarity": 0.307
  },
  "whichcrewororganizationisohmaffiliatedwith": {
   "question": "Which crew or organization is Ohm affiliated with?",
-  "hash": "7c3104c05f445f08",
+  "hash": "71c669187d40a1e6",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Ohm",
@@ -33212,7 +33038,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.301
+  "option_similarity": 0.273
  },
  "whatisohmsoccupation": {
   "question": "What is Ohm's occupation?",
@@ -33314,7 +33140,7 @@
  },
  "whichcrewororganizationisstreusenaffiliatedwith": {
   "question": "Which crew or organization is Streusen affiliated with?",
-  "hash": "80cfca736409b747",
+  "hash": "dd361e863223248d",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Streusen",
@@ -33324,7 +33150,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.339
+  "option_similarity": 0.282
  },
  "bywhatepithetisstreusenknown": {
   "question": "By what epithet is Streusen known?",
@@ -33356,7 +33182,7 @@
  },
  "whichcrewororganizationisbluegillyaffiliatedwith": {
   "question": "Which crew or organization is Blue Gilly affiliated with?",
-  "hash": "af47891b1034827b",
+  "hash": "23c2646d39174398",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Blue Gilly",
@@ -33366,7 +33192,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.482
+  "option_similarity": 0.45
  },
  "whichofthesecharactersisamemberoftheideopirates": {
   "question": "Which of these characters is a member of the Ideo Pirates?",
@@ -33384,7 +33210,7 @@
  },
  "whichcrewororganizationisgenzoaffiliatedwith": {
   "question": "Which crew or organization is Genzo affiliated with?",
-  "hash": "78611c067fcfb05a",
+  "hash": "554079667f07fe0e",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Genzo",
@@ -33394,7 +33220,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.249
+  "option_similarity": 0.278
  },
  "wheredoesgenzoreside": {
   "question": "Where does Genzo reside?",
@@ -33426,7 +33252,7 @@
  },
  "whichcrewororganizationisvistaaffiliatedwith": {
   "question": "Which crew or organization is Vista affiliated with?",
-  "hash": "6c05a530ae3bb6e2",
+  "hash": "661b315ed91e5b78",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Vista",
@@ -33436,7 +33262,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.196
+  "option_similarity": 0.433
  },
  "bywhatepithetisvistaknown": {
   "question": "By what epithet is Vista known?",
@@ -33472,7 +33298,7 @@
  },
  "whichcrewororganizationisluckyrouxaffiliatedwith": {
   "question": "Which crew or organization is Lucky Roux affiliated with?",
-  "hash": "b19ea25965f19446",
+  "hash": "4f42dc8731f8c203",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Lucky Roux",
@@ -33482,11 +33308,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.376
+  "option_similarity": 0.269
  },
  "whichcrewororganizationishamburgaffiliatedwith": {
   "question": "Which crew or organization is Hamburg affiliated with?",
-  "hash": "84c333226e228db9",
+  "hash": "9c0e5be0a63e77d2",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Hamburg",
@@ -33496,7 +33322,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.368
+  "option_similarity": 0.316
  },
  "bywhatepithetishamburgknown": {
   "question": "By what epithet is Hamburg known?",
@@ -33528,7 +33354,7 @@
  },
  "whichcrewororganizationisministeroftherightaffiliatedwith": {
   "question": "Which crew or organization is Minister of the Right affiliated with?",
-  "hash": "774fb10988989809",
+  "hash": "9815fce25c27a9ce",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Minister of the Right",
@@ -33538,7 +33364,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.187
+  "option_similarity": 0.201
  },
  "whichofthesecharactersisamemberoftheryugukingdom": {
   "question": "Which of these characters is a member of the Ryugu Kingdom?",
@@ -33648,7 +33474,7 @@
  },
  "whichcrewororganizationisrimoshifukillinghamaffiliatedwith": {
   "question": "Which crew or organization is Rimoshifu Killingham affiliated with?",
-  "hash": "33f7df55a309c842",
+  "hash": "d76e3af91a8eda1b",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Rimoshifu Killingham",
@@ -33658,7 +33484,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.278
+  "option_similarity": 0.25
  },
  "inwhichsagadoesrimoshifukillinghamfirstappear": {
   "question": "In which saga does Rimoshifu Killingham first appear?",
@@ -33676,7 +33502,7 @@
  },
  "whichcrewororganizationismargueriteaffiliatedwith": {
   "question": "Which crew or organization is Marguerite affiliated with?",
-  "hash": "6a6efcc9afac92fa",
+  "hash": "428690608e494dd9",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Marguerite",
@@ -33686,7 +33512,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.482
+  "option_similarity": 0.521
  },
  "wheredoesmargueriteoriginatefrom": {
   "question": "Where does Marguerite originate from?",
@@ -33718,7 +33544,7 @@
  },
  "whichcrewororganizationisbabeaffiliatedwith": {
   "question": "Which crew or organization is Babe affiliated with?",
-  "hash": "f8f0b9ee275f6162",
+  "hash": "110a10c663fead71",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Babe",
@@ -33728,7 +33554,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.192
+  "option_similarity": 0.215
  },
  "whatisbabesknownbounty": {
   "question": "What is Babe's known bounty?",
@@ -33806,7 +33632,7 @@
  },
  "whichcrewororganizationisfigarlandshamrockaffiliatedwith": {
   "question": "Which crew or organization is Figarland Shamrock affiliated with?",
-  "hash": "9507e459463049c3",
+  "hash": "db36393ebe5e14be",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Figarland Shamrock",
@@ -33816,11 +33642,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.184
+  "option_similarity": 0.176
  },
  "whichcrewororganizationiskokoroaffiliatedwith": {
   "question": "Which crew or organization is Kokoro affiliated with?",
-  "hash": "6c0fe1a0edf68456",
+  "hash": "5c04f8bc9e707505",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Kokoro",
@@ -33830,7 +33656,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.222
+  "option_similarity": 0.282
  },
  "wheredoeskokororeside": {
   "question": "Where does Kokoro reside?",
@@ -33862,7 +33688,7 @@
  },
  "whichcrewororganizationismanboshiaffiliatedwith": {
   "question": "Which crew or organization is Manboshi affiliated with?",
-  "hash": "0163658299cb6020",
+  "hash": "9346fb5ff2a14d2d",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Manboshi",
@@ -33872,7 +33698,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.17
+  "option_similarity": 0.216
  },
  "whatismanboshisoccupation": {
   "question": "What is Manboshi's occupation?",
@@ -33922,7 +33748,7 @@
  },
  "whichcrewororganizationispellaffiliatedwith": {
   "question": "Which crew or organization is Pell affiliated with?",
-  "hash": "adc12b7a4972f4dc",
+  "hash": "387f37b4cf7c096c",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Pell",
@@ -33932,7 +33758,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.21
+  "option_similarity": 0.247
  },
  "whatispellsoccupation": {
   "question": "What is Pell's occupation?",
@@ -34056,7 +33882,7 @@
  },
  "whichcrewororganizationischewaffiliatedwith": {
   "question": "Which crew or organization is Chew affiliated with?",
-  "hash": "f6bdd8585ca8cc8a",
+  "hash": "913c9a6a525b02dc",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Chew",
@@ -34066,7 +33892,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.265
+  "option_similarity": 0.302
  },
  "whatischewsknownbounty": {
   "question": "What is Chew's known bounty?",
@@ -34116,7 +33942,7 @@
  },
  "whichcrewororganizationiszambaiaffiliatedwith": {
   "question": "Which crew or organization is Zambai affiliated with?",
-  "hash": "c5c1ff86376e85c8",
+  "hash": "5c3ce6dbf34ac7fe",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Zambai",
@@ -34126,7 +33952,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.136
+  "option_similarity": 0.319
  },
  "whatiszambaisoccupation": {
   "question": "What is Zambai's occupation?",
@@ -34172,7 +33998,7 @@
  },
  "whichcrewororganizationiskalgaraaffiliatedwith": {
   "question": "Which crew or organization is Kalgara affiliated with?",
-  "hash": "a334cca22ed86ae3",
+  "hash": "5f6a0119a9508663",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Kalgara",
@@ -34182,7 +34008,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.329
+  "option_similarity": 0.238
  },
  "whatiskalgarasoccupation": {
   "question": "What is Kalgara's occupation?",
@@ -34270,7 +34096,7 @@
  },
  "whichcrewororganizationisshishilianaffiliatedwith": {
   "question": "Which crew or organization is Shishilian affiliated with?",
-  "hash": "59ba61bc501f2826",
+  "hash": "56f193dcc90e946b",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Shishilian",
@@ -34280,7 +34106,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.259
+  "option_similarity": 0.167
  },
  "wheredoesshishilianreside": {
   "question": "Where does Shishilian reside?",
@@ -34340,7 +34166,7 @@
  },
  "whichcrewororganizationisbooaffiliatedwith": {
   "question": "Which crew or organization is Boo affiliated with?",
-  "hash": "a95990dd595f4958",
+  "hash": "a1efa0e6ec4fc321",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Boo",
@@ -34350,7 +34176,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.15
+  "option_similarity": 0.217
  },
  "wheredoesbooreside": {
   "question": "Where does Boo reside?",
@@ -34410,7 +34236,7 @@
  },
  "whichcrewororganizationislaboonaffiliatedwith": {
   "question": "Which crew or organization is Laboon affiliated with?",
-  "hash": "fb6e11d46c63f3d3",
+  "hash": "74e832333b4d71a0",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Laboon",
@@ -34420,7 +34246,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.322
+  "option_similarity": 0.551
  },
  "wheredoeslaboonreside": {
   "question": "Where does Laboon reside?",
@@ -34494,7 +34320,7 @@
  },
  "whichcrewororganizationisdosunaffiliatedwith": {
   "question": "Which crew or organization is Dosun affiliated with?",
-  "hash": "782504f79c75107f",
+  "hash": "db0db5a35eec6e3e",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Dosun",
@@ -34504,7 +34330,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.17
+  "option_similarity": 0.234
  },
  "wheredoeszuneshareside": {
   "question": "Where does Zunesha reside?",
@@ -34522,21 +34348,17 @@
  },
  "whichcrewororganizationisedwardweevilaffiliatedwith": {
   "question": "Which crew or organization is Edward Weevil affiliated with?",
-  "hash": "c0ecaa329df66c83",
+  "hash": "c08434b67464c777",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Edward Weevil",
   "article_len": 14583,
   "prominence": 1,
   "must_know": false,
-  "flags": [
-   "answer_len_outlier"
-  ],
-  "guessability_flags": [
-   "answer_len_outlier"
-  ],
+  "flags": [],
+  "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.284
+  "option_similarity": 0.472
  },
  "whatisedwardweevilsknownbounty": {
   "question": "What is Edward Weevil's known bounty?",
@@ -34586,7 +34408,7 @@
  },
  "whichcrewororganizationisgemaffiliatedwith": {
   "question": "Which crew or organization is Gem affiliated with?",
-  "hash": "866e2c880a07c5e6",
+  "hash": "0e48590b954df170",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Gem",
@@ -34596,7 +34418,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.252
+  "option_similarity": 0.247
  },
  "whatisgemsknownbounty": {
   "question": "What is Gem's known bounty?",
@@ -34646,7 +34468,7 @@
  },
  "whichcrewororganizationisnolaaffiliatedwith": {
   "question": "Which crew or organization is Nola affiliated with?",
-  "hash": "08229097bacf55db",
+  "hash": "41fe0bda872a2eb4",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Nola",
@@ -34656,7 +34478,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.303
+  "option_similarity": 0.202
  },
  "bywhatepithetisnolaknown": {
   "question": "By what epithet is Nola known?",
@@ -34744,7 +34566,7 @@
  },
  "whichcrewororganizationisabdullahaffiliatedwith": {
   "question": "Which crew or organization is Abdullah affiliated with?",
-  "hash": "a563e5657af8bf04",
+  "hash": "d40184241c7a9e84",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Abdullah",
@@ -34754,11 +34576,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.246
+  "option_similarity": 0.294
  },
  "whichcrewororganizationisgatzaffiliatedwith": {
   "question": "Which crew or organization is Gatz affiliated with?",
-  "hash": "5466aa5158af66c6",
+  "hash": "cd9620c25b7a6650",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Gatz",
@@ -34768,7 +34590,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.168
+  "option_similarity": 0.283
  },
  "whatisgatzsoccupation": {
   "question": "What is Gatz's occupation?",
@@ -34814,7 +34636,7 @@
  },
  "whichcrewororganizationissuleimanaffiliatedwith": {
   "question": "Which crew or organization is Suleiman affiliated with?",
-  "hash": "aef95bf1e9d91ca5",
+  "hash": "c15099f563a4c683",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Suleiman",
@@ -34824,7 +34646,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.196
+  "option_similarity": 0.404
  },
  "whatissuleimansknownbounty": {
   "question": "What is Suleiman's known bounty?",
@@ -34874,7 +34696,7 @@
  },
  "whichcrewororganizationisaisaaffiliatedwith": {
   "question": "Which crew or organization is Aisa affiliated with?",
-  "hash": "7c7bf75f1b240c8c",
+  "hash": "26b4c20da26149e2",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Aisa",
@@ -34884,7 +34706,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.286
+  "option_similarity": 0.324
  },
  "wheredoesaisaoriginatefrom": {
   "question": "Where does Aisa originate from?",
@@ -34902,7 +34724,7 @@
  },
  "whichcrewororganizationissurumeaffiliatedwith": {
   "question": "Which crew or organization is Surume affiliated with?",
-  "hash": "9bfb4021cac7a5ec",
+  "hash": "e118bdc2fb22baca",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Surume",
@@ -34912,7 +34734,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.408
+  "option_similarity": 0.432
  },
  "whatissurumesoccupation": {
   "question": "What is Surume's occupation?",
@@ -34944,7 +34766,7 @@
  },
  "whichcrewororganizationisjohnaffiliatedwith": {
   "question": "Which crew or organization is John affiliated with?",
-  "hash": "9e50c4e27db52b58",
+  "hash": "754eb0bfbaf5cf0c",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "John",
@@ -34954,7 +34776,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.249
+  "option_similarity": 0.262
  },
  "whatisjohnsoccupation": {
   "question": "What is John's occupation?",
@@ -34986,7 +34808,7 @@
  },
  "whichcrewororganizationisginnyaffiliatedwith": {
   "question": "Which crew or organization is Ginny affiliated with?",
-  "hash": "c95fdd965f3fa0bc",
+  "hash": "1d3a64701fc9a2de",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Ginny",
@@ -34996,7 +34818,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.243
+  "option_similarity": 0.158
  },
  "whatisginnysknownbounty": {
   "question": "What is Ginny's known bounty?",
@@ -35086,20 +34908,6 @@
   "unattested_options": [],
   "option_similarity": 0.29
  },
- "whichcrewororganizationismerryaffiliatedwith": {
-  "question": "Which crew or organization is Merry affiliated with?",
-  "hash": "d6924741ea79dfb5",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "medium",
-  "subject": "Merry",
-  "article_len": 13813,
-  "prominence": 1,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.188
- },
  "wheredoesmerryreside": {
   "question": "Where does Merry reside?",
   "hash": "4498625aa93a2ce2",
@@ -35114,23 +34922,9 @@
   "unattested_options": [],
   "option_similarity": 0.328
  },
- "whichofthesecharactersisamemberofthekaya": {
-  "question": "Which of these characters is a member of the Kaya?",
-  "hash": "8cc8170f9879d109",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "hard",
-  "subject": "Merry",
-  "article_len": 13813,
-  "prominence": 1,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.226
- },
  "whichcrewororganizationisfukurokujuaffiliatedwith": {
   "question": "Which crew or organization is Fukurokuju affiliated with?",
-  "hash": "6238ed3ea1201598",
+  "hash": "c10be7612bff1d9b",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Fukurokuju",
@@ -35140,7 +34934,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.267
+  "option_similarity": 0.27
  },
  "whatisfukurokujusoccupation": {
   "question": "What is Fukurokuju's occupation?",
@@ -35169,20 +34963,6 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.3
- },
- "whichcrewororganizationisyeticoolbrothersaffiliatedwith": {
-  "question": "Which crew or organization is Yeti Cool Brothers affiliated with?",
-  "hash": "b7b24febf490c251",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "medium",
-  "subject": "Yeti Cool Brothers",
-  "article_len": 13761,
-  "prominence": 1,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.255
  },
  "bywhatepithetisyeticoolbrothersknown": {
   "question": "By what epithet is Yeti Cool Brothers known?",
@@ -35232,7 +35012,7 @@
  },
  "whichcrewororganizationisonimaruaffiliatedwith": {
   "question": "Which crew or organization is Onimaru affiliated with?",
-  "hash": "7dbc87c157fddc5b",
+  "hash": "96610f3b778ce895",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Onimaru",
@@ -35242,7 +35022,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.347
+  "option_similarity": 0.268
  },
  "bywhatepithetisonimaruknown": {
   "question": "By what epithet is Onimaru known?",
@@ -35275,20 +35055,6 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.295
- },
- "whichofthesecharactersisamemberoftheshimotsukifamily": {
-  "question": "Which of these characters is a member of the Shimotsuki Family?",
-  "hash": "3ce15561f246da04",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "hard",
-  "subject": "Onimaru",
-  "article_len": 13709,
-  "prominence": 1,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.187
  },
  "whichcrewororganizationispearlaffiliatedwith": {
   "question": "Which crew or organization is Pearl affiliated with?",
@@ -35334,7 +35100,7 @@
  },
  "whichcrewororganizationisjeetaffiliatedwith": {
   "question": "Which crew or organization is Jeet affiliated with?",
-  "hash": "9c50b2ecd6aa7148",
+  "hash": "3de8668bce4f591a",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Jeet",
@@ -35344,11 +35110,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.458
+  "option_similarity": 0.488
  },
  "whichcrewororganizationismarianneaffiliatedwith": {
   "question": "Which crew or organization is Marianne affiliated with?",
-  "hash": "f9151e51db590768",
+  "hash": "c84a1387aaf835bd",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Marianne",
@@ -35358,7 +35124,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.276
+  "option_similarity": 0.247
  },
  "whatismariannesknownbounty": {
   "question": "What is Marianne's known bounty?",
@@ -35478,7 +35244,7 @@
  },
  "whichcrewororganizationiskellyfunkaffiliatedwith": {
   "question": "Which crew or organization is Kelly Funk affiliated with?",
-  "hash": "e9283a1da01c1e41",
+  "hash": "8ca4187f37b162bf",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Kelly Funk",
@@ -35488,7 +35254,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.26
+  "option_similarity": 0.324
  },
  "whatiskellyfunksknownbounty": {
   "question": "What is Kelly Funk's known bounty?",
@@ -35538,7 +35304,7 @@
  },
  "whichcrewororganizationiscoribouaffiliatedwith": {
   "question": "Which crew or organization is Coribou affiliated with?",
-  "hash": "0065aceb2cc2072a",
+  "hash": "caf903f78a96a54e",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Coribou",
@@ -35548,7 +35314,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.46
+  "option_similarity": 0.362
  },
  "whatiscoribousknownbounty": {
   "question": "What is Coribou's known bounty?",
@@ -35612,7 +35378,7 @@
  },
  "whichcrewororganizationisbigpanaffiliatedwith": {
   "question": "Which crew or organization is Big Pan affiliated with?",
-  "hash": "5483ec466aef425c",
+  "hash": "880151e32267911c",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Big Pan",
@@ -35622,7 +35388,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.254
+  "option_similarity": 0.269
  },
  "bywhatepithetisbigpanknown": {
   "question": "By what epithet is Big Pan known?",
@@ -35668,7 +35434,7 @@
  },
  "whichcrewororganizationismikitaaffiliatedwith": {
   "question": "Which crew or organization is Mikita affiliated with?",
-  "hash": "5d684ba1544a8761",
+  "hash": "5237f7625bc48f3c",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Mikita",
@@ -35678,7 +35444,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.189
+  "option_similarity": 0.355
  },
  "whatismikitasknownbounty": {
   "question": "What is Mikita's known bounty?",
@@ -35756,7 +35522,7 @@
  },
  "whichcrewororganizationissatoriaffiliatedwith": {
   "question": "Which crew or organization is Satori affiliated with?",
-  "hash": "c9fefa962c92e0f6",
+  "hash": "9cf2e0e135a5353b",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Satori",
@@ -35766,7 +35532,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.306
+  "option_similarity": 0.261
  },
  "whatissatorisoccupation": {
   "question": "What is Satori's occupation?",
@@ -35854,7 +35620,7 @@
  },
  "whichcrewororganizationismaskeddeuceaffiliatedwith": {
   "question": "Which crew or organization is Masked Deuce affiliated with?",
-  "hash": "fe619008514cedc8",
+  "hash": "163d18e9247a9572",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Masked Deuce",
@@ -35864,7 +35630,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.228
+  "option_similarity": 0.191
  },
  "whichofthesecharactersisamemberofthespadepirates": {
   "question": "Which of these characters is a member of the Spade Pirates?",
@@ -35882,7 +35648,7 @@
  },
  "whichcrewororganizationissquardaffiliatedwith": {
   "question": "Which crew or organization is Squard affiliated with?",
-  "hash": "a893ee610589e971",
+  "hash": "3688271f13db0209",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Squard",
@@ -35892,7 +35658,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.315
+  "option_similarity": 0.195
  },
  "whatissquardsknownbounty": {
   "question": "What is Squard's known bounty?",
@@ -35956,7 +35722,7 @@
  },
  "whichcrewororganizationismakinoaffiliatedwith": {
   "question": "Which crew or organization is Makino affiliated with?",
-  "hash": "2413d07e9dda7fc9",
+  "hash": "41e484d4359d9d39",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Makino",
@@ -35966,7 +35732,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.207
+  "option_similarity": 0.204
  },
  "wheredoesmakinoreside": {
   "question": "Where does Makino reside?",
@@ -36016,7 +35782,7 @@
  },
  "whichcrewororganizationiskabuaffiliatedwith": {
   "question": "Which crew or organization is Kabu affiliated with?",
-  "hash": "c1aca92a515a04b0",
+  "hash": "5d5592d78a027e88",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Kabu",
@@ -36026,7 +35792,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.211
+  "option_similarity": 0.228
  },
  "whichdevilfruitdidcharlotteoperaeat": {
   "question": "Which Devil Fruit did Charlotte Opera eat?",
@@ -36072,7 +35838,7 @@
  },
  "whichcrewororganizationisssnakeaffiliatedwith": {
   "question": "Which crew or organization is S-Snake affiliated with?",
-  "hash": "79de172081ec19c8",
+  "hash": "5b77adb8eb677ee5",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "S-Snake",
@@ -36082,7 +35848,21 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.437
+  "option_similarity": 0.167
+ },
+ "whichofthesecharactersisamemberoftheseraphim": {
+  "question": "Which of these characters is a member of the Seraphim?",
+  "hash": "b8ea3890a31b60d4",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "hard",
+  "subject": "S-Snake",
+  "article_len": 12971,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.178
  },
  "inwhichsagadoeskumashifirstappear": {
   "question": "In which saga does Kumashi first appear?",
@@ -36114,7 +35894,7 @@
  },
  "whichcrewororganizationisganzuiaffiliatedwith": {
   "question": "Which crew or organization is Ganzui affiliated with?",
-  "hash": "260421dc6606dbed",
+  "hash": "80d9755688a8c6d1",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Ganzui",
@@ -36124,7 +35904,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.353
+  "option_similarity": 0.275
  },
  "whatisganzuisoccupation": {
   "question": "What is Ganzui's occupation?",
@@ -36156,7 +35936,7 @@
  },
  "whichcrewororganizationisinuppeaffiliatedwith": {
   "question": "Which crew or organization is Inuppe affiliated with?",
-  "hash": "c21c91a04733bf68",
+  "hash": "52acf4da371ae80c",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Inuppe",
@@ -36166,7 +35946,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.226
+  "option_similarity": 0.34
  },
  "whatisinuppesoccupation": {
   "question": "What is Inuppe's occupation?",
@@ -36240,7 +36020,7 @@
  },
  "whichcrewororganizationistanklepantoaffiliatedwith": {
   "question": "Which crew or organization is Tank Lepanto affiliated with?",
-  "hash": "f9960f784bddbabd",
+  "hash": "06dbd058103312c5",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Tank Lepanto",
@@ -36250,7 +36030,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.245
+  "option_similarity": 0.198
  },
  "whatistanklepantosoccupation": {
   "question": "What is Tank Lepanto's occupation?",
@@ -36296,7 +36076,7 @@
  },
  "whichcrewororganizationisnicoolviaaffiliatedwith": {
   "question": "Which crew or organization is Nico Olvia affiliated with?",
-  "hash": "9ce27d11a685c415",
+  "hash": "559ac81a0115049c",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Nico Olvia",
@@ -36306,7 +36086,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.308
+  "option_similarity": 0.221
  },
  "whatisnicoolviasknownbounty": {
   "question": "What is Nico Olvia's known bounty?",
@@ -36356,7 +36136,7 @@
  },
  "whichcrewororganizationismr9affiliatedwith": {
   "question": "Which crew or organization is Mr. 9 affiliated with?",
-  "hash": "ff9509636f56051f",
+  "hash": "e25a9b6e15d46d25",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Mr. 9",
@@ -36366,7 +36146,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.279
+  "option_similarity": 0.47
  },
  "whatismr9soccupation": {
   "question": "What is Mr. 9's occupation?",
@@ -36384,7 +36164,7 @@
  },
  "whichcrewororganizationisshamaffiliatedwith": {
   "question": "Which crew or organization is Sham affiliated with?",
-  "hash": "e289063c59d04db6",
+  "hash": "27c4a7621072f2f6",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Sham",
@@ -36394,7 +36174,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.186
+  "option_similarity": 0.269
  },
  "bywhatepithetisshamknown": {
   "question": "By what epithet is Sham known?",
@@ -36454,7 +36234,7 @@
  },
  "whichcrewororganizationissarquissaffiliatedwith": {
   "question": "Which crew or organization is Sarquiss affiliated with?",
-  "hash": "3797d1083f0b4772",
+  "hash": "3e2310aa02c3c9ac",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Sarquiss",
@@ -36464,7 +36244,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.313
+  "option_similarity": 0.251
  },
  "whatissarquisssknownbounty": {
   "question": "What is Sarquiss's known bounty?",
@@ -36528,7 +36308,7 @@
  },
  "whichcrewororganizationisbuchiaffiliatedwith": {
   "question": "Which crew or organization is Buchi affiliated with?",
-  "hash": "f21ed2eea442f7eb",
+  "hash": "dd65e78ae63bfc8a",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Buchi",
@@ -36538,7 +36318,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.228
+  "option_similarity": 0.314
  },
  "bywhatepithetisbuchiknown": {
   "question": "By what epithet is Buchi known?",
@@ -36584,7 +36364,7 @@
  },
  "whichcrewororganizationiskuroobiaffiliatedwith": {
   "question": "Which crew or organization is Kuroobi affiliated with?",
-  "hash": "f64be27754cc8656",
+  "hash": "71ebe9f5b46fa673",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Kuroobi",
@@ -36594,7 +36374,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.395
+  "option_similarity": 0.232
  },
  "whatiskuroobisknownbounty": {
   "question": "What is Kuroobi's known bounty?",
@@ -36630,7 +36410,7 @@
  },
  "whichcrewororganizationiswoopslapaffiliatedwith": {
   "question": "Which crew or organization is Woop Slap affiliated with?",
-  "hash": "55ee4fe1fb559290",
+  "hash": "9f90dae79a5f4b25",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Woop Slap",
@@ -36640,7 +36420,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.294
+  "option_similarity": 0.338
  },
  "whatiswoopslapsoccupation": {
   "question": "What is Woop Slap's occupation?",
@@ -36672,7 +36452,7 @@
  },
  "whichcrewororganizationisporcheaffiliatedwith": {
   "question": "Which crew or organization is Porche affiliated with?",
-  "hash": "c4543ef61e9d818e",
+  "hash": "e3b474e87d080083",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Porche",
@@ -36682,7 +36462,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.32
+  "option_similarity": 0.412
  },
  "whatisbobbinsknownbounty": {
   "question": "What is Bobbin's known bounty?",
@@ -36760,7 +36540,7 @@
  },
  "whichcrewororganizationishakuganaffiliatedwith": {
   "question": "Which crew or organization is Hakugan affiliated with?",
-  "hash": "f106a4b5d1bb6e7e",
+  "hash": "ad40dba340ce44d2",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Hakugan",
@@ -36770,7 +36550,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.314
+  "option_similarity": 0.209
  },
  "whatisurashimasoccupation": {
   "question": "What is Urashima's occupation?",
@@ -36816,7 +36596,7 @@
  },
  "whichcrewororganizationiskurozumihigurashiaffiliatedwith": {
   "question": "Which crew or organization is Kurozumi Higurashi affiliated with?",
-  "hash": "0344a373bfc464cd",
+  "hash": "7ab9f4c196092237",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Kurozumi Higurashi",
@@ -36826,7 +36606,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.208
+  "option_similarity": 0.226
  },
  "whatisrichiesoccupation": {
   "question": "What is Richie's occupation?",
@@ -36844,7 +36624,7 @@
  },
  "whichcrewororganizationistilestoneaffiliatedwith": {
   "question": "Which crew or organization is Tilestone affiliated with?",
-  "hash": "d5fd07712cebb7fb",
+  "hash": "188582a6a4a7b75c",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Tilestone",
@@ -36854,11 +36634,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.126
+  "option_similarity": 0.247
  },
  "whichcrewororganizationisdagamaaffiliatedwith": {
   "question": "Which crew or organization is Dagama affiliated with?",
-  "hash": "0c3e2447c2706378",
+  "hash": "38550a4e49eaa014",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Dagama",
@@ -36868,11 +36648,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.207
+  "option_similarity": 0.341
  },
  "whichcrewororganizationisministeroftheleftaffiliatedwith": {
   "question": "Which crew or organization is Minister of the Left affiliated with?",
-  "hash": "2bd638e90c66d413",
+  "hash": "2b3a5f36c0c20a40",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Minister of the Left",
@@ -36882,7 +36662,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.224
+  "option_similarity": 0.215
  },
  "whichdevilfruitdidmansherryeat": {
   "question": "Which Devil Fruit did Mansherry eat?",
@@ -36900,7 +36680,7 @@
  },
  "whichcrewororganizationismansherryaffiliatedwith": {
   "question": "Which crew or organization is Mansherry affiliated with?",
-  "hash": "8b0765f2b2f907d0",
+  "hash": "6567c68fbfd9b170",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Mansherry",
@@ -36910,7 +36690,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.313
+  "option_similarity": 0.323
  },
  "whatismansherrysoccupation": {
   "question": "What is Mansherry's occupation?",
@@ -36956,17 +36736,21 @@
  },
  "whichcrewororganizationisgoldbergaffiliatedwith": {
   "question": "Which crew or organization is Goldberg affiliated with?",
-  "hash": "5855bf3969735af8",
+  "hash": "2f48e4d02f64dd9e",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Goldberg",
   "article_len": 11649,
   "prominence": 1,
   "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
+  "flags": [
+   "answer_len_outlier"
+  ],
+  "guessability_flags": [
+   "answer_len_outlier"
+  ],
   "unattested_options": [],
-  "option_similarity": 0.252
+  "option_similarity": 0.209
  },
  "whatisgoldbergsoccupation": {
   "question": "What is Goldberg's occupation?",
@@ -36984,7 +36768,7 @@
  },
  "whichcrewororganizationispeepleyluluaffiliatedwith": {
   "question": "Which crew or organization is Peepley Lulu affiliated with?",
-  "hash": "72b8793c8a53e3e9",
+  "hash": "3c15ca9accb82e76",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Peepley Lulu",
@@ -36994,7 +36778,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.258
+  "option_similarity": 0.213
  },
  "whichdevilfruitdidbelobettyeat": {
   "question": "Which Devil Fruit did Belo Betty eat?",
@@ -37072,7 +36856,7 @@
  },
  "whichcrewororganizationisragniraffiliatedwith": {
   "question": "Which crew or organization is Ragnir affiliated with?",
-  "hash": "01b0f47aa747cd00",
+  "hash": "0813cdb1661dbe2b",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Ragnir",
@@ -37082,11 +36866,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.174
+  "option_similarity": 0.144
  },
  "whichcrewororganizationisstansenaffiliatedwith": {
   "question": "Which crew or organization is Stansen affiliated with?",
-  "hash": "944c8c782fd83d24",
+  "hash": "bd992fd2a06d12e0",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Stansen",
@@ -37096,7 +36880,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.411
+  "option_similarity": 0.234
  },
  "whichdevilfruitdidbabanukieat": {
   "question": "Which Devil Fruit did Babanuki eat?",
@@ -37114,7 +36898,7 @@
  },
  "whichcrewororganizationiswanzeaffiliatedwith": {
   "question": "Which crew or organization is Wanze affiliated with?",
-  "hash": "56ebd639bf350cff",
+  "hash": "61bbe1bb88dce06f",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Wanze",
@@ -37124,7 +36908,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.121
+  "option_similarity": 0.122
  },
  "bywhatepithetiswanzeknown": {
   "question": "By what epithet is Wanze known?",
@@ -37156,7 +36940,7 @@
  },
  "whichcrewororganizationisinhelaffiliatedwith": {
   "question": "Which crew or organization is Inhel affiliated with?",
-  "hash": "b74c0cdd7fed12e9",
+  "hash": "d35b2848f854ee3c",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Inhel",
@@ -37170,7 +36954,7 @@
    "answer_len_outlier"
   ],
   "unattested_options": [],
-  "option_similarity": 0.271
+  "option_similarity": 0.306
  },
  "whatisinhelsoccupation": {
   "question": "What is Inhel's occupation?",
@@ -37188,7 +36972,7 @@
  },
  "whichcrewororganizationiscarneaffiliatedwith": {
   "question": "Which crew or organization is Carne affiliated with?",
-  "hash": "84b1d5018a956f2d",
+  "hash": "1aee1cb50fe487b1",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Carne",
@@ -37198,11 +36982,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.167
+  "option_similarity": 0.262
  },
  "whichcrewororganizationischarlottepralineaffiliatedwith": {
   "question": "Which crew or organization is Charlotte Praline affiliated with?",
-  "hash": "d1c57046a8328cc6",
+  "hash": "f3afd9d882e45781",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Charlotte Praline",
@@ -37212,11 +36996,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.222
+  "option_similarity": 0.407
  },
  "whichcrewororganizationiskuromarimoaffiliatedwith": {
   "question": "Which crew or organization is Kuromarimo affiliated with?",
-  "hash": "e1ca491b3150cf3e",
+  "hash": "9c2ada7385966277",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Kuromarimo",
@@ -37226,7 +37010,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.435
+  "option_similarity": 0.262
  },
  "whatiskuromarimosoccupation": {
   "question": "What is Kuromarimo's occupation?",
@@ -37318,7 +37102,7 @@
  },
  "whichcrewororganizationisestridaffiliatedwith": {
   "question": "Which crew or organization is Estrid affiliated with?",
-  "hash": "3a970a78ab2e3771",
+  "hash": "1825fd326691f940",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Estrid",
@@ -37328,11 +37112,11 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.196
+  "option_similarity": 0.197
  },
  "whichcrewororganizationisbombaaffiliatedwith": {
   "question": "Which crew or organization is Bomba affiliated with?",
-  "hash": "e3b1bdbc5a0dad11",
+  "hash": "c34b82d905dcbcad",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Bomba",
@@ -37342,7 +37126,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.135
+  "option_similarity": 0.358
  },
  "whatisbombasoccupation": {
   "question": "What is Bomba's occupation?",
@@ -37375,20 +37159,6 @@
   ],
   "unattested_options": [],
   "option_similarity": 0.308
- },
- "whichcrewororganizationissmileyaffiliatedwith": {
-  "question": "Which crew or organization is Smiley affiliated with?",
-  "hash": "5f2fb028d7b9b7c2",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "medium",
-  "subject": "Smiley",
-  "article_len": 11059,
-  "prominence": 1,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.267
  },
  "whatissmileysoccupation": {
   "question": "What is Smiley's occupation?",
@@ -37498,7 +37268,7 @@
  },
  "whichcrewororganizationisshoujouaffiliatedwith": {
   "question": "Which crew or organization is Shoujou affiliated with?",
-  "hash": "a2e6815d00801a89",
+  "hash": "e9265f6cd339334c",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Shoujou",
@@ -37508,7 +37278,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.175
+  "option_similarity": 0.362
  },
  "whatisshoujousknownbounty": {
   "question": "What is Shoujou's known bounty?",
@@ -37572,7 +37342,7 @@
  },
  "whichcrewororganizationiscaponepezaffiliatedwith": {
   "question": "Which crew or organization is Capone Pez affiliated with?",
-  "hash": "c7e9864ed4f587a5",
+  "hash": "bf65208587e6def6",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Capone Pez",
@@ -37582,7 +37352,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.256
+  "option_similarity": 0.359
  },
  "bywhatepithetiscaponepezknown": {
   "question": "By what epithet is Capone Pez known?",
@@ -37684,7 +37454,7 @@
  },
  "whichcrewororganizationisdrophyaffiliatedwith": {
   "question": "Which crew or organization is Drophy affiliated with?",
-  "hash": "128c175084a3608d",
+  "hash": "9d92edd7f4975c4d",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Drophy",
@@ -37694,7 +37464,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.235
+  "option_similarity": 0.334
  },
  "whatisdrophysknownbounty": {
   "question": "What is Drophy's known bounty?",
@@ -37744,7 +37514,7 @@
  },
  "whichcrewororganizationismomooaffiliatedwith": {
   "question": "Which crew or organization is Momoo affiliated with?",
-  "hash": "7dfb8e549e03d149",
+  "hash": "b0e312c69a9ab332",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Momoo",
@@ -37754,7 +37524,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.328
+  "option_similarity": 0.338
  },
  "bywhatepithetismomooknown": {
   "question": "By what epithet is Momoo known?",
@@ -37814,7 +37584,7 @@
  },
  "whichcrewororganizationisshuraaffiliatedwith": {
   "question": "Which crew or organization is Shura affiliated with?",
-  "hash": "9118bcc4c56d9877",
+  "hash": "30c558540c280d1d",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Shura",
@@ -37824,7 +37594,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.261
+  "option_similarity": 0.326
  },
  "whatisshurasoccupation": {
   "question": "What is Shura's occupation?",
@@ -37870,21 +37640,17 @@
  },
  "whichcrewororganizationiscottonaffiliatedwith": {
   "question": "Which crew or organization is Cotton affiliated with?",
-  "hash": "d9e0e32e4010d8df",
+  "hash": "3fcb6f34e3d64b55",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Cotton",
   "article_len": 10586,
   "prominence": 1,
   "must_know": false,
-  "flags": [
-   "answer_len_outlier"
-  ],
-  "guessability_flags": [
-   "answer_len_outlier"
-  ],
+  "flags": [],
+  "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.271
+  "option_similarity": 0.182
  },
  "whatiscottonsoccupation": {
   "question": "What is Cotton's occupation?",
@@ -37920,7 +37686,7 @@
  },
  "whichcrewororganizationischakaaffiliatedwith": {
   "question": "Which crew or organization is Chaka affiliated with?",
-  "hash": "e02c27221ffa2b50",
+  "hash": "7e6f75ff3de8f2a2",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Chaka",
@@ -37930,7 +37696,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.238
+  "option_similarity": 0.234
  },
  "whatischakasoccupation": {
   "question": "What is Chaka's occupation?",
@@ -37980,7 +37746,7 @@
  },
  "whichcrewororganizationisindigoaffiliatedwith": {
   "question": "Which crew or organization is Indigo affiliated with?",
-  "hash": "1858f6f90f45144b",
+  "hash": "140c8dec2de2cdfb",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Indigo",
@@ -37990,7 +37756,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.208
+  "option_similarity": 0.313
  },
  "wheredoesindigoreside": {
   "question": "Where does Indigo reside?",
@@ -38036,7 +37802,7 @@
  },
  "whichcrewororganizationisusakkovaffiliatedwith": {
   "question": "Which crew or organization is Usakkov affiliated with?",
-  "hash": "8f7be3acc752de07",
+  "hash": "dc5d740bcfbb5583",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Usakkov",
@@ -38046,7 +37812,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.139
+  "option_similarity": 0.151
  },
  "whatisusakkovsoccupation": {
   "question": "What is Usakkov's occupation?",
@@ -38106,7 +37872,7 @@
  },
  "whichcrewororganizationisbobbyfunkaffiliatedwith": {
   "question": "Which crew or organization is Bobby Funk affiliated with?",
-  "hash": "239030a97884fbd3",
+  "hash": "238bf4de51b52d87",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Bobby Funk",
@@ -38116,7 +37882,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.236
+  "option_similarity": 0.282
  },
  "whatisbobbyfunksknownbounty": {
   "question": "What is Bobby Funk's known bounty?",
@@ -38177,20 +37943,6 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.146
- },
- "whichcrewororganizationischouchouaffiliatedwith": {
-  "question": "Which crew or organization is Chouchou affiliated with?",
-  "hash": "3a926093765cabb7",
-  "category": "Crews & Organizations",
-  "authored_difficulty": "medium",
-  "subject": "Chouchou",
-  "article_len": 10149,
-  "prominence": 1,
-  "must_know": false,
-  "flags": [],
-  "guessability_flags": [],
-  "unattested_options": [],
-  "option_similarity": 0.187
  },
  "whatischouchousoccupation": {
   "question": "What is Chouchou's occupation?",
@@ -38264,7 +38016,7 @@
  },
  "whichcrewororganizationisshawkaffiliatedwith": {
   "question": "Which crew or organization is S-Hawk affiliated with?",
-  "hash": "131df206f6d91569",
+  "hash": "edba81d1b27e49df",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "S-Hawk",
@@ -38274,7 +38026,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.258
+  "option_similarity": 0.237
  },
  "wheredoessterryreside": {
   "question": "Where does Sterry reside?",
@@ -38334,21 +38086,17 @@
  },
  "whichcrewororganizationiswiccaaffiliatedwith": {
   "question": "Which crew or organization is Wicca affiliated with?",
-  "hash": "b653828c75dc999e",
+  "hash": "8cf7a49a1e0d3ab5",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Wicca",
   "article_len": 9775,
   "prominence": 1,
   "must_know": false,
-  "flags": [
-   "answer_len_outlier"
-  ],
-  "guessability_flags": [
-   "answer_len_outlier"
-  ],
+  "flags": [],
+  "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.209
+  "option_similarity": 0.233
  },
  "whatiswiccasoccupation": {
   "question": "What is Wicca's occupation?",
@@ -38366,7 +38114,7 @@
  },
  "whichcrewororganizationissadiaffiliatedwith": {
   "question": "Which crew or organization is Sadi affiliated with?",
-  "hash": "b17a3cfc6ee9cdbd",
+  "hash": "2b7a9c14cf443efe",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Sadi",
@@ -38376,7 +38124,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.24
+  "option_similarity": 0.331
  },
  "whatissadisoccupation": {
   "question": "What is Sadi's occupation?",
@@ -38440,7 +38188,7 @@
  },
  "whichcrewororganizationisbianaffiliatedwith": {
   "question": "Which crew or organization is Bian affiliated with?",
-  "hash": "addc41f76b14a587",
+  "hash": "fb5f8f83e9a32966",
   "category": "Crews & Organizations",
   "authored_difficulty": "medium",
   "subject": "Bian",
@@ -38450,7 +38198,7 @@
   "flags": [],
   "guessability_flags": [],
   "unattested_options": [],
-  "option_similarity": 0.206
+  "option_similarity": 0.302
  },
  "whatischarlottesnacksknownbounty": {
   "question": "What is Charlotte Snack's known bounty?",
@@ -38554,6 +38302,20 @@
   "unattested_options": [],
   "option_similarity": 0.315
  },
+ "whichcrewororganizationisripleyaffiliatedwith": {
+  "question": "Which crew or organization is Ripley affiliated with?",
+  "hash": "c01945746db0a51d",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Ripley",
+  "article_len": 9515,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.269
+ },
  "whatisripleysoccupation": {
   "question": "What is Ripley's occupation?",
   "hash": "d9dc8bf2081f15fc",
@@ -38582,6 +38344,48 @@
   "unattested_options": [],
   "option_similarity": 0.403
  },
+ "whichcrewororganizationissbearaffiliatedwith": {
+  "question": "Which crew or organization is S-Bear affiliated with?",
+  "hash": "7e02eca26e650e55",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "S-Bear",
+  "article_len": 9442,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.152
+ },
+ "whichcrewororganizationisbobombaaffiliatedwith": {
+  "question": "Which crew or organization is Bobomba affiliated with?",
+  "hash": "0dd12c2830198f7c",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Bobomba",
+  "article_len": 9440,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.175
+ },
+ "whichcrewororganizationismissmondayaffiliatedwith": {
+  "question": "Which crew or organization is Miss Monday affiliated with?",
+  "hash": "8633db4ec3a94e40",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Miss Monday",
+  "article_len": 9426,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.205
+ },
  "whatismissmondaysoccupation": {
   "question": "What is Miss Monday's occupation?",
   "hash": "bfa8aae07030b939",
@@ -38595,6 +38399,34 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.332
+ },
+ "whichcrewororganizationisspandineaffiliatedwith": {
+  "question": "Which crew or organization is Spandine affiliated with?",
+  "hash": "0c7eb5e99308b29a",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Spandine",
+  "article_len": 9424,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.152
+ },
+ "whichcrewororganizationismegaloaffiliatedwith": {
+  "question": "Which crew or organization is Megalo affiliated with?",
+  "hash": "e5b5d3f0de416f2f",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Megalo",
+  "article_len": 9338,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.31
  },
  "whichdevilfruitdidssharkeat": {
   "question": "Which Devil Fruit did S-Shark eat?",
@@ -38610,6 +38442,34 @@
   "unattested_options": [],
   "option_similarity": 0.4
  },
+ "whichcrewororganizationisssharkaffiliatedwith": {
+  "question": "Which crew or organization is S-Shark affiliated with?",
+  "hash": "8d930bdcb7c8e154",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "S-Shark",
+  "article_len": 9305,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.343
+ },
+ "whichcrewororganizationiskomachiyoaffiliatedwith": {
+  "question": "Which crew or organization is Komachiyo affiliated with?",
+  "hash": "fde4fd88ca0b2110",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Komachiyo",
+  "article_len": 9282,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.181
+ },
  "wheredoeskomachiyoreside": {
   "question": "Where does Komachiyo reside?",
   "hash": "3cf5442d849f123e",
@@ -38623,6 +38483,20 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.373
+ },
+ "whichcrewororganizationisrakiaffiliatedwith": {
+  "question": "Which crew or organization is Raki affiliated with?",
+  "hash": "bdcfe42313978b24",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Raki",
+  "article_len": 9238,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.267
  },
  "whatisrakisoccupation": {
   "question": "What is Raki's occupation?",
@@ -38684,6 +38558,20 @@
   "unattested_options": [],
   "option_similarity": 0.431
  },
+ "whichcrewororganizationissetoaffiliatedwith": {
+  "question": "Which crew or organization is Seto affiliated with?",
+  "hash": "24f4f9e714db1d9d",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Seto",
+  "article_len": 9042,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.345
+ },
  "wheredoescharlottekatoreside": {
   "question": "Where does Charlotte Kato reside?",
   "hash": "bc6f0b572d49072d",
@@ -38697,6 +38585,20 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.587
+ },
+ "whichcrewororganizationisneroaffiliatedwith": {
+  "question": "Which crew or organization is Nero affiliated with?",
+  "hash": "50ca29af69d487dd",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Nero",
+  "article_len": 8974,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.169
  },
  "bywhatepithetisneroknown": {
   "question": "By what epithet is Nero known?",
@@ -38725,6 +38627,34 @@
   "guessability_flags": [],
   "unattested_options": [],
   "option_similarity": 0.246
+ },
+ "whichcrewororganizationischessaffiliatedwith": {
+  "question": "Which crew or organization is Chess affiliated with?",
+  "hash": "1a3db43eb9dab73f",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Chess",
+  "article_len": 8907,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.374
+ },
+ "whichcrewororganizationisgambiaaffiliatedwith": {
+  "question": "Which crew or organization is Gambia affiliated with?",
+  "hash": "e8b462ebede9939c",
+  "category": "Crews & Organizations",
+  "authored_difficulty": "medium",
+  "subject": "Gambia",
+  "article_len": 8900,
+  "prominence": 1,
+  "must_know": false,
+  "flags": [],
+  "guessability_flags": [],
+  "unattested_options": [],
+  "option_similarity": 0.294
  },
  "whatisgambiasknownbounty": {
   "question": "What is Gambia's known bounty?",

@@ -181,9 +181,45 @@ def primary(v) -> str | None:
     return None
 
 
+# The wiki marks a non-canon appearance with a superscript the parser glues onto
+# the value itself — "Auntnoncanon", "Sabaody Archipelagononcanon", "Nazawaka City
+# (former)noncanon". Such a value is both malformed and non-canon, and it shipped as
+# an occupation distractor: an option a player can strike out on sight, which is the
+# same defect META_NOISE exists to prevent.
+_NONCANON_VALUE = re.compile(r"(?i)non-?canon")
+
+
 def is_noise(value) -> bool:
     """True for real-world/meta values that are never a valid in-world answer."""
-    return not value or norm_key(value) in META_NOISE
+    if not value:
+        return True
+    return (norm_key(value) in META_NOISE
+            or bool(_NONCANON_VALUE.search(str(value))))
+
+
+def organization(v, char_names) -> str | None:
+    """First affiliation clause naming an organization rather than a person.
+
+    The ``affiliation`` field records who a pet or a sidekick *belongs to* as
+    readily as it records a crew: Gonbe's affiliation is "Chimney", Pierre's is
+    "Gan Fall", Johnny's is "Yosaku". Asked as "Which crew or organization is
+    Johnny affiliated with?" the answer is a person — and the same value lands in
+    the distractor pool, where a bare character name sitting among three
+    organizations is an option every player can strike out on sight.
+
+    So we skip clauses that name a canon character and take the first that
+    doesn't (Johnny keeps "Roronoa Zoro's band"), and return None when a subject
+    has no organization at all, so no question is built from one.
+    """
+    for item in as_list(v):
+        for clause in re.split(r"[;,]", strip_quals(item)):
+            clause = clause.strip()
+            if not clause or clause.lower() == "none":
+                continue
+            if norm_key(clause) in char_names:
+                continue
+            return clause
+    return None
 
 
 def clean_name(v) -> str | None:
@@ -724,7 +760,12 @@ def generate(by_kind):
         chars,
         lambda c: combined_df_name(c["fields"].get("dfename"), c["fields"].get("dfname")),
     )
-    pool_affiliation = build_pool(chars, lambda c: primary(c["fields"].get("affiliation")))
+    # Every canon character's name, so an affiliation that is really a *person*
+    # can be told apart from one that names a crew (see organization()).
+    char_names = {norm_key(c["title"]) for c in chars}
+
+    pool_affiliation = build_pool(
+        chars, lambda c: organization(c["fields"].get("affiliation"), char_names))
     pool_occupation = build_pool(chars, lambda c: primary(c["fields"].get("occupation")))
     pool_bounty = build_pool(chars, lambda c: clean_bounty(c["fields"].get("bounty")))
     pool_origin = build_pool(chars, lambda c: primary(c["fields"].get("origin")))
@@ -859,7 +900,7 @@ def generate(by_kind):
                 lead(f"{name}'s Devil Fruit is the {df}", exp),
                 ctx_tier=prom, ctx_saga=so, leak_ref=name), "char_df", prom, saga)
 
-        aff = primary(f.get("affiliation"))
+        aff = organization(f.get("affiliation"), char_names)
         if aff:
             emit(name, make_question(
                 name, f"Which crew or organization is {name} affiliated with?",

@@ -11660,10 +11660,10 @@
   "question": "Which Devil Fruit did Vegapunk eat?"
  },
  "whichcrewororganizationisvegapunkaffiliatedwith": {
-  "score": 55,
+  "score": 60,
   "tier": "medium",
   "basis": "raters",
-  "spread": 40,
+  "spread": 25,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -11771,14 +11771,12 @@
   "question": "Which Devil Fruit did Kaidou eat?"
  },
  "whichcrewororganizationiskaidouaffiliatedwith": {
-  "score": 0,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
-  "spread": 8,
+  "spread": 2,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Kaidou affiliated with?"
@@ -11901,19 +11899,6 @@
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did Kouzuki Momonosuke eat?"
  },
- "whichcrewororganizationiskouzukimomonosukeaffiliatedwith": {
-  "score": 5,
-  "tier": "easy",
-  "basis": "raters",
-  "spread": 20,
-  "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Kouzuki Momonosuke affiliated with?"
- },
  "wheredoeskouzukimomonosukeoriginatefrom": {
   "score": 15,
   "tier": "easy",
@@ -11967,14 +11952,12 @@
   "question": "Which Devil Fruit did Sabo eat?"
  },
  "whichcrewororganizationissaboaffiliatedwith": {
-  "score": 0,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
-  "spread": 8,
+  "spread": 7,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Sabo affiliated with?"
@@ -12176,7 +12159,7 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 3,
+  "spread": 5,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -12334,19 +12317,6 @@
   "category": "Arcs & Story",
   "question": "In which saga does Jewelry Bonney first appear?"
  },
- "whichcrewororganizationiskouzukiodenaffiliatedwith": {
-  "score": 0,
-  "tier": "easy",
-  "basis": "raters",
-  "spread": 13,
-  "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Kouzuki Oden affiliated with?"
- },
  "whatiskouzukiodensoccupation": {
   "score": 20,
   "tier": "easy",
@@ -12439,14 +12409,12 @@
   "question": "Which Devil Fruit did Kuzan eat?"
  },
  "whichcrewororganizationiskuzanaffiliatedwith": {
-  "score": 30,
-  "tier": "easy",
+  "score": 45,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 15,
+  "spread": 10,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Kuzan affiliated with?"
@@ -12527,10 +12495,10 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 4,
+  "spread": 3,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -12656,10 +12624,10 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 4,
+  "spread": 6,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -12774,10 +12742,10 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 4,
+  "spread": 5,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -12837,14 +12805,12 @@
   "question": "Which Devil Fruit did Queen eat?"
  },
  "whichcrewororganizationisqueenaffiliatedwith": {
-  "score": 0,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 13,
+  "spread": 20,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Queen affiliated with?"
@@ -12958,10 +12924,10 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 2,
   "flags": [],
   "reasons": [
-   "1/3 raters called it guessable"
+   "2/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -13179,19 +13145,6 @@
   "category": "Arcs & Story",
   "question": "In which saga does Shanks first appear?"
  },
- "whichcrewororganizationisgoldrogeraffiliatedwith": {
-  "score": 0,
-  "tier": "easy",
-  "basis": "raters",
-  "spread": 1,
-  "flags": [],
-  "reasons": [
-   "3/3 raters called it guessable"
-  ],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Gol D. Roger affiliated with?"
- },
  "whatisgoldrogersknownbounty": {
   "score": 0,
   "tier": "easy",
@@ -13298,10 +13251,10 @@
   "question": "Which Devil Fruit did Bartholomew Kuma eat?"
  },
  "whichcrewororganizationisbartholomewkumaaffiliatedwith": {
-  "score": 50,
+  "score": 60,
   "tier": "medium",
   "basis": "raters",
-  "spread": 20,
+  "spread": 10,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -13399,13 +13352,13 @@
   "question": "In which saga does Bartholomew Kuma first appear?"
  },
  "whichcrewororganizationisjaygarciasaturnaffiliatedwith": {
-  "score": 35,
-  "tier": "medium",
+  "score": 25,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 20,
   "flags": [],
   "reasons": [
-   "1/3 raters called it guessable"
+   "2/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -13477,7 +13430,7 @@
   "question": "Which Devil Fruit did Gecko Moria eat?"
  },
  "whichcrewororganizationisgeckomoriaaffiliatedwith": {
-  "score": 5,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
   "spread": 20,
@@ -13580,12 +13533,14 @@
   "question": "Which Devil Fruit did Buggy eat?"
  },
  "whichcrewororganizationisbuggyaffiliatedwith": {
-  "score": 45,
-  "tier": "medium",
+  "score": 0,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 28,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Buggy affiliated with?"
@@ -13690,10 +13645,10 @@
   "question": "In which saga does Buggy first appear?"
  },
  "whichcrewororganizationiscarrotaffiliatedwith": {
-  "score": 30,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 0,
+  "spread": 5,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -13772,13 +13727,13 @@
   "question": "Which Devil Fruit did Yamato eat?"
  },
  "whichcrewororganizationisyamatoaffiliatedwith": {
-  "score": 0,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
   "spread": 10,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -13859,12 +13814,14 @@
   "question": "Which Devil Fruit did Portgas D. Ace eat?"
  },
  "whichcrewororganizationisportgasdaceaffiliatedwith": {
-  "score": 5,
+  "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 2,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Portgas D. Ace affiliated with?"
@@ -13956,13 +13913,13 @@
   "question": "Which Devil Fruit did King eat?"
  },
  "whichcrewororganizationiskingaffiliatedwith": {
-  "score": 0,
+  "score": 15,
   "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -14072,13 +14029,13 @@
   "question": "Which Devil Fruit did Crocodile eat?"
  },
  "whichcrewororganizationiscrocodileaffiliatedwith": {
-  "score": 25,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
   "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -14312,10 +14269,10 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 6,
+  "spread": 5,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -14370,14 +14327,12 @@
   "question": "In which saga does Sengoku first appear?"
  },
  "whichcrewororganizationiskurozumiorochiaffiliatedwith": {
-  "score": 0,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 50,
   "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Kurozumi Orochi affiliated with?"
@@ -14422,10 +14377,10 @@
   "question": "Which Devil Fruit did Capone Bege eat?"
  },
  "whichcrewororganizationiscaponebegeaffiliatedwith": {
-  "score": 15,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 5,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -14534,13 +14489,13 @@
   "question": "Which Devil Fruit did Issho eat?"
  },
  "whichcrewororganizationisisshoaffiliatedwith": {
-  "score": 0,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
-  "spread": 13,
+  "spread": 7,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -14573,13 +14528,13 @@
   "question": "In which saga does Issho first appear?"
  },
  "whichcrewororganizationishodyjonesaffiliatedwith": {
-  "score": 0,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -14636,10 +14591,10 @@
   "question": "Which Devil Fruit did Emporio Ivankov eat?"
  },
  "whichcrewororganizationisemporioivankovaffiliatedwith": {
-  "score": 5,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
-  "spread": 35,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -14773,13 +14728,13 @@
   "question": "Which Devil Fruit did Marco eat?"
  },
  "whichcrewororganizationismarcoaffiliatedwith": {
-  "score": 0,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
   "spread": 7,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -14915,13 +14870,13 @@
   "question": "In which saga does Charlotte Pudding first appear?"
  },
  "whichcrewororganizationiskikunojoaffiliatedwith": {
-  "score": 10,
+  "score": 30,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -14989,13 +14944,13 @@
   "question": "In which saga does Kikunojo first appear?"
  },
  "whichcrewororganizationisdraculemihawkaffiliatedwith": {
-  "score": 10,
+  "score": 15,
   "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 5,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -15084,10 +15039,10 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 7,
+  "spread": 4,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -15220,14 +15175,12 @@
   "question": "In which saga does Tashigi first appear?"
  },
  "whichcrewororganizationislokiaffiliatedwith": {
-  "score": 35,
-  "tier": "medium",
+  "score": 75,
+  "tier": "hard",
   "basis": "raters",
-  "spread": 40,
+  "spread": 5,
   "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Loki affiliated with?"
@@ -15338,10 +15291,10 @@
   "question": "Which Devil Fruit did Bartolomeo eat?"
  },
  "whichcrewororganizationisbartolomeoaffiliatedwith": {
-  "score": 0,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "2/3 raters called it guessable"
@@ -15431,10 +15384,10 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 6,
+  "spread": 3,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -15517,10 +15470,10 @@
   "question": "Which Devil Fruit did Rob Lucci eat?"
  },
  "whichcrewororganizationisroblucciaffiliatedwith": {
-  "score": 0,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 5,
   "flags": [],
   "reasons": [
    "2/3 raters called it guessable"
@@ -15658,10 +15611,10 @@
   "question": "Which Devil Fruit did Bentham eat?"
  },
  "whichcrewororganizationisbenthamaffiliatedwith": {
-  "score": 20,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 15,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -15855,10 +15808,10 @@
   "question": "Which Devil Fruit did Kaku eat?"
  },
  "whichcrewororganizationiskakuaffiliatedwith": {
-  "score": 0,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 0,
   "flags": [],
   "reasons": [
    "2/3 raters called it guessable"
@@ -15920,13 +15873,13 @@
   "question": "In which saga does Kaku first appear?"
  },
  "whichcrewororganizationisharaldaffiliatedwith": {
-  "score": 55,
-  "tier": "medium",
+  "score": 70,
+  "tier": "hard",
   "basis": "raters",
-  "spread": 30,
+  "spread": 5,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -16024,13 +15977,13 @@
   "question": "Which Devil Fruit did Enel eat?"
  },
  "whichcrewororganizationisenelaffiliatedwith": {
-  "score": 0,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 5,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -16194,10 +16147,10 @@
   "question": "In which saga does Arlong first appear?"
  },
  "whichcrewororganizationiskyrosaffiliatedwith": {
-  "score": 45,
-  "tier": "medium",
+  "score": 20,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 15,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -16259,13 +16212,16 @@
   "question": "Which Devil Fruit did Wapol eat?"
  },
  "whichcrewororganizationiswapolaffiliatedwith": {
-  "score": 0,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
   "spread": 15,
-  "flags": [],
+  "flags": [
+   "answer_len_outlier"
+  ],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable",
+   "signals: answer_len_outlier (-10)"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -16416,13 +16372,13 @@
   "question": "In which saga does Smoker first appear?"
  },
  "whichcrewororganizationishatchanaffiliatedwith": {
-  "score": 10,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 5,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -16521,13 +16477,13 @@
   "question": "Which Devil Fruit did Kin'emon eat?"
  },
  "whichcrewororganizationiskinemonaffiliatedwith": {
-  "score": 5,
+  "score": 15,
   "tier": "easy",
   "basis": "raters",
   "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -16587,10 +16543,10 @@
   "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -16632,14 +16588,12 @@
   "question": "Which Devil Fruit did Galdino eat?"
  },
  "whichcrewororganizationisgaldinoaffiliatedwith": {
-  "score": 55,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
-  "spread": 10,
+  "spread": 0,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Galdino affiliated with?"
@@ -16740,13 +16694,13 @@
   "question": "Which Devil Fruit did Raizo eat?"
  },
  "whichcrewororganizationisraizoaffiliatedwith": {
-  "score": 20,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -16801,14 +16755,12 @@
   "question": "In which saga does Raizo first appear?"
  },
  "whichcrewororganizationispedroaffiliatedwith": {
-  "score": 25,
-  "tier": "easy",
+  "score": 45,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 5,
   "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Pedro affiliated with?"
@@ -16898,10 +16850,10 @@
   "question": "Which Devil Fruit did Caesar Clown eat?"
  },
  "whichcrewororganizationiscaesarclownaffiliatedwith": {
-  "score": 50,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 35,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -16984,19 +16936,6 @@
   "authored_difficulty": "easy",
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did Kurozumi Kanjuro eat?"
- },
- "whichcrewororganizationiskurozumikanjuroaffiliatedwith": {
-  "score": 15,
-  "tier": "easy",
-  "basis": "raters",
-  "spread": 20,
-  "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Kurozumi Kanjuro affiliated with?"
  },
  "bywhatepithetiskurozumikanjuroknown": {
   "score": 50,
@@ -17189,13 +17128,13 @@
   "question": "Which Devil Fruit did Bellamy eat?"
  },
  "whichcrewororganizationisbellamyaffiliatedwith": {
-  "score": 15,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -17290,13 +17229,13 @@
   "question": "In which saga does Bellamy first appear?"
  },
  "whichcrewororganizationisrebeccaaffiliatedwith": {
-  "score": 0,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -17502,10 +17441,10 @@
   "question": "In which saga does Rocks D. Xebec first appear?"
  },
  "whichcrewororganizationisnekomamushiaffiliatedwith": {
-  "score": 30,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 35,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -17539,13 +17478,13 @@
   "question": "In which saga does Nekomamushi first appear?"
  },
  "whichcrewororganizationisshirahoshiaffiliatedwith": {
-  "score": 0,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -17617,13 +17556,13 @@
   "question": "In which saga does Shirahoshi first appear?"
  },
  "whichcrewororganizationiscavendishaffiliatedwith": {
-  "score": 15,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
   "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -17756,13 +17695,13 @@
   "question": "In which saga does Donquixote Rosinante first appear?"
  },
  "whichcrewororganizationisimuaffiliatedwith": {
-  "score": 0,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 30,
+  "spread": 45,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -17819,13 +17758,13 @@
   "question": "Which Devil Fruit did Shiki eat?"
  },
  "whichcrewororganizationisshikiaffiliatedwith": {
-  "score": 20,
-  "tier": "easy",
+  "score": 45,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 35,
+  "spread": 20,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -17905,19 +17844,6 @@
   "category": "Arcs & Story",
   "question": "In which saga does Shiki first appear?"
  },
- "whichcrewororganizationiskouzukihiyoriaffiliatedwith": {
-  "score": 0,
-  "tier": "easy",
-  "basis": "raters",
-  "spread": 15,
-  "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Kouzuki Hiyori affiliated with?"
- },
  "inwhichsagadoeskouzukihiyorifirstappear": {
   "score": 0,
   "tier": "easy",
@@ -17930,6 +17856,19 @@
   "authored_difficulty": "medium",
   "category": "Arcs & Story",
   "question": "In which saga does Kouzuki Hiyori first appear?"
+ },
+ "whichcrewororganizationisdenjiroaffiliatedwith": {
+  "score": 25,
+  "tier": "easy",
+  "basis": "raters",
+  "spread": 5,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
+  "authored_difficulty": "easy",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Denjiro affiliated with?"
  },
  "whatisdenjirosoccupation": {
   "score": 45,
@@ -17984,13 +17923,13 @@
   "question": "In which saga does Denjiro first appear?"
  },
  "whichcrewororganizationiskilleraffiliatedwith": {
-  "score": 0,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 5,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -18190,13 +18129,13 @@
   "question": "Which Devil Fruit did Perona eat?"
  },
  "whichcrewororganizationisperonaaffiliatedwith": {
-  "score": 10,
+  "score": 15,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -18319,13 +18258,13 @@
   "question": "Which Devil Fruit did Scratchmen Apoo eat?"
  },
  "whichcrewororganizationisscratchmenapooaffiliatedwith": {
-  "score": 15,
+  "score": 30,
   "tier": "easy",
   "basis": "raters",
   "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -18398,14 +18337,12 @@
   "question": "In which saga does Scratchmen Apoo first appear?"
  },
  "whichcrewororganizationiszeusaffiliatedwith": {
-  "score": 15,
-  "tier": "easy",
+  "score": 40,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 10,
+  "spread": 5,
   "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Zeus affiliated with?"
@@ -18464,7 +18401,7 @@
   "score": 40,
   "tier": "medium",
   "basis": "raters",
-  "spread": 35,
+  "spread": 20,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -18501,7 +18438,7 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "2/3 raters called it guessable"
@@ -18583,10 +18520,10 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 17,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -18643,12 +18580,14 @@
   "question": "Which Devil Fruit did Ulti eat?"
  },
  "whichcrewororganizationisultiaffiliatedwith": {
-  "score": 65,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Ulti affiliated with?"
@@ -18682,17 +18621,6 @@
   "category": "Characters",
   "question": "What is Ulti's occupation?"
  },
- "whichofthesecharactersisamemberoftheyamato": {
-  "score": 60,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 10,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "medium",
-  "category": "Crews & Organizations",
-  "question": "Which of these characters is a member of the Yamato?"
- },
  "whichcharacterhasaknownbountyof400000000berries": {
   "score": 65,
   "tier": "medium",
@@ -18718,7 +18646,7 @@
   "question": "In which saga does Ulti first appear?"
  },
  "whichcrewororganizationisscoppergabanaffiliatedwith": {
-  "score": 35,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
   "spread": 10,
@@ -18777,13 +18705,13 @@
   "question": "Which Devil Fruit did Magellan eat?"
  },
  "whichcrewororganizationismagellanaffiliatedwith": {
-  "score": 0,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
   "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -18924,13 +18852,13 @@
   "question": "Which Devil Fruit did Jack eat?"
  },
  "whichcrewororganizationisjackaffiliatedwith": {
-  "score": 0,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 8,
+  "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -19070,13 +18998,16 @@
   "question": "In which saga does Vinsmoke Ichiji first appear?"
  },
  "whichcrewororganizationishajrudinaffiliatedwith": {
-  "score": 20,
-  "tier": "easy",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 35,
-  "flags": [],
+  "spread": 10,
+  "flags": [
+   "answer_len_outlier"
+  ],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable",
+   "signals: answer_len_outlier (-10)"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -19172,13 +19103,13 @@
   "question": "In which saga does Vinsmoke Yonji first appear?"
  },
  "whichcrewororganizationisvergoaffiliatedwith": {
-  "score": 15,
+  "score": 30,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -19222,6 +19153,19 @@
   "authored_difficulty": "easy",
   "category": "Characters",
   "question": "Which character is known by the epithet \"Demon Bamboo\"?"
+ },
+ "whichcrewororganizationiskawamatsuaffiliatedwith": {
+  "score": 30,
+  "tier": "easy",
+  "basis": "raters",
+  "spread": 10,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
+  "authored_difficulty": "easy",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Kawamatsu affiliated with?"
  },
  "whatiskawamatsusoccupation": {
   "score": 20,
@@ -19289,10 +19233,10 @@
   "question": "Which Devil Fruit did Jabra eat?"
  },
  "whichcrewororganizationisjabraaffiliatedwith": {
-  "score": 55,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
-  "spread": 15,
+  "spread": 10,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -19392,14 +19336,12 @@
   "question": "Which Devil Fruit did Trebol eat?"
  },
  "whichcrewororganizationistrebolaffiliatedwith": {
-  "score": 0,
-  "tier": "easy",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 15,
+  "spread": 5,
   "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Trebol affiliated with?"
@@ -19469,13 +19411,13 @@
   "question": "In which saga does Sentomaru first appear?"
  },
  "whichcrewororganizationishogbackaffiliatedwith": {
-  "score": 5,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 18,
+  "spread": 0,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -19508,13 +19450,13 @@
   "question": "In which saga does Hogback first appear?"
  },
  "whichcrewororganizationisbrogyaffiliatedwith": {
-  "score": 10,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
   "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -19626,12 +19568,14 @@
   "question": "Which Devil Fruit did Who's-Who eat?"
  },
  "whichcrewororganizationiswhoswhoaffiliatedwith": {
-  "score": 30,
-  "tier": "easy",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 20,
+  "spread": 10,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Who's-Who affiliated with?"
@@ -19792,10 +19736,10 @@
   "question": "In which saga does Caribou first appear?"
  },
  "whichcrewororganizationisoarsaffiliatedwith": {
-  "score": 20,
+  "score": 15,
   "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 15,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -19851,14 +19795,12 @@
   "question": "Which Devil Fruit did Baby 5 eat?"
  },
  "whichcrewororganizationisbaby5affiliatedwith": {
-  "score": 45,
+  "score": 55,
   "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 15,
   "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Baby 5 affiliated with?"
@@ -19899,12 +19841,14 @@
   "question": "Which Devil Fruit did Jesus Burgess eat?"
  },
  "whichcrewororganizationisjesusburgessaffiliatedwith": {
-  "score": 25,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Jesus Burgess affiliated with?"
@@ -19980,12 +19924,14 @@
   "question": "Which Devil Fruit did Stussy eat?"
  },
  "whichcrewororganizationisstussyaffiliatedwith": {
-  "score": 55,
+  "score": 40,
   "tier": "medium",
   "basis": "raters",
-  "spread": 40,
+  "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Stussy affiliated with?"
@@ -20018,19 +19964,6 @@
   "authored_difficulty": "easy",
   "category": "Characters",
   "question": "Which character is known by the epithet \"Queen of the Pleasure District\"?"
- },
- "whichofthesecharactersisamemberofthevegapunk": {
-  "score": 50,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 10,
-  "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
-  "authored_difficulty": "medium",
-  "category": "Crews & Organizations",
-  "question": "Which of these characters is a member of the Vegapunk?"
  },
  "whatisrikudoldoiiisoccupation": {
   "score": 5,
@@ -20085,12 +20018,14 @@
   "question": "Which character is known by the epithet \"King of Miracles\"?"
  },
  "whichcrewororganizationisashuradojiaffiliatedwith": {
-  "score": 65,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
-  "spread": 50,
+  "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "2/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Ashura Doji affiliated with?"
@@ -20227,13 +20162,13 @@
   "question": "Which Devil Fruit did Pekoms eat?"
  },
  "whichcrewororganizationispekomsaffiliatedwith": {
-  "score": 10,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -20293,10 +20228,10 @@
   "question": "In which saga does Pekoms first appear?"
  },
  "whichcrewororganizationisspandamaffiliatedwith": {
-  "score": 40,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 60,
+  "spread": 15,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -20326,14 +20261,12 @@
   "question": "Which Devil Fruit did Viola eat?"
  },
  "whichcrewororganizationisviolaaffiliatedwith": {
-  "score": 30,
-  "tier": "easy",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
   "spread": 20,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Viola affiliated with?"
@@ -20352,13 +20285,13 @@
   "question": "Which of these characters is a member of the Riku Family?"
  },
  "whichcrewororganizationisdorryaffiliatedwith": {
-  "score": 5,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 15,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -20441,19 +20374,6 @@
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did Kurozumi Tama eat?"
  },
- "whichcrewororganizationiskurozumitamaaffiliatedwith": {
-  "score": 0,
-  "tier": "easy",
-  "basis": "raters",
-  "spread": 25,
-  "flags": [],
-  "reasons": [
-   "3/3 raters called it guessable"
-  ],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Kurozumi Tama affiliated with?"
- },
  "wheredoeskurozumitamareside": {
   "score": 50,
   "tier": "medium",
@@ -20477,14 +20397,12 @@
   "question": "Which of these characters is a member of the Kurozumi Family?"
  },
  "whichcrewororganizationistightropewalkingfunanbrosaffiliatedwith": {
-  "score": 75,
+  "score": 85,
   "tier": "hard",
   "basis": "raters",
-  "spread": 15,
+  "spread": 10,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Tightrope Walking Funan Bros affiliated with?"
@@ -20532,13 +20450,13 @@
   "question": "Which Devil Fruit did Leo eat?"
  },
  "whichcrewororganizationisleoaffiliatedwith": {
-  "score": 20,
-  "tier": "easy",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
   "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -20582,14 +20500,12 @@
   "question": "Which of these characters is a member of the Tontatta Kingdom?"
  },
  "whichcrewororganizationisethanbaronvnusjuroaffiliatedwith": {
-  "score": 70,
+  "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 15,
+  "spread": 30,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Ethanbaron V. Nusjuro affiliated with?"
@@ -20686,7 +20602,7 @@
   "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 15,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -20736,14 +20652,12 @@
   "question": "In which saga does Izou first appear?"
  },
  "whichcrewororganizationistopmanwarcuryaffiliatedwith": {
-  "score": 70,
+  "score": 85,
   "tier": "hard",
   "basis": "raters",
-  "spread": 10,
+  "spread": 25,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Topman Warcury affiliated with?"
@@ -20789,14 +20703,12 @@
   "question": "In which saga does Topman Warcury first appear?"
  },
  "whichcrewororganizationisshepherdjupeteraffiliatedwith": {
-  "score": 70,
+  "score": 85,
   "tier": "hard",
   "basis": "raters",
-  "spread": 10,
+  "spread": 25,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Shepherd Ju Peter affiliated with?"
@@ -20842,13 +20754,13 @@
   "question": "In which saga does Shepherd Ju Peter first appear?"
  },
  "whichcrewororganizationischarlottechiffonaffiliatedwith": {
-  "score": 25,
-  "tier": "easy",
+  "score": 45,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 20,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -20879,6 +20791,19 @@
   "authored_difficulty": "easy",
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did Shinobu eat?"
+ },
+ "whichcrewororganizationisshinobuaffiliatedwith": {
+  "score": 35,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 15,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
+  "authored_difficulty": "easy",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Shinobu affiliated with?"
  },
  "bywhatepithetisshinobuknown": {
   "score": 20,
@@ -20973,10 +20898,10 @@
   "question": "Which character has a known bounty of 932,000,000 Berries?"
  },
  "whichcrewororganizationiswyperaffiliatedwith": {
-  "score": 30,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -21064,14 +20989,12 @@
   "question": "In which saga does Wyper first appear?"
  },
  "whichcrewororganizationismarcusmarsaffiliatedwith": {
-  "score": 70,
+  "score": 85,
   "tier": "hard",
   "basis": "raters",
-  "spread": 10,
+  "spread": 25,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Marcus Mars affiliated with?"
@@ -21127,12 +21050,14 @@
   "question": "Which Devil Fruit did Monkey D. Luffy eat?"
  },
  "whichcrewororganizationismonkeydluffyaffiliatedwith": {
-  "score": 2,
+  "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 3,
+  "spread": 1,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Monkey D. Luffy affiliated with?"
@@ -21180,10 +21105,10 @@
   "question": "Which character is known by the epithet \"Straw Hat\"?"
  },
  "whichcrewororganizationissaiaffiliatedwith": {
-  "score": 40,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 10,
+  "spread": 15,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -21222,13 +21147,13 @@
   "question": "Where does Sai reside?"
  },
  "whichcrewororganizationiszeffaffiliatedwith": {
-  "score": 0,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -21298,36 +21223,23 @@
   "question": "Which Devil Fruit did Monet eat?"
  },
  "whichcrewororganizationismonetaffiliatedwith": {
-  "score": 0,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Monet affiliated with?"
  },
- "whichofthesecharactersisamemberofthecaesarclown": {
-  "score": 40,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 20,
-  "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
-  "authored_difficulty": "medium",
-  "category": "Crews & Organizations",
-  "question": "Which of these characters is a member of the Caesar Clown?"
- },
  "whichcrewororganizationismontblancnolandaffiliatedwith": {
   "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 10,
+  "spread": 20,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -21470,10 +21382,10 @@
   "question": "Which Devil Fruit did Shiryu eat?"
  },
  "whichcrewororganizationisshiryuaffiliatedwith": {
-  "score": 30,
-  "tier": "easy",
+  "score": 40,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 5,
+  "spread": 25,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -21536,10 +21448,10 @@
   "score": 15,
   "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -21704,14 +21616,12 @@
   "question": "Which character has a known bounty of 5,000,000 Berries?"
  },
  "whichcrewororganizationischarlottelolaaffiliatedwith": {
-  "score": 10,
-  "tier": "easy",
+  "score": 55,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 20,
+  "spread": 15,
   "flags": [],
-  "reasons": [
-   "3/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Charlotte Lola affiliated with?"
@@ -21796,13 +21706,13 @@
   "question": "Which Devil Fruit did Absalom eat?"
  },
  "whichcrewororganizationisabsalomaffiliatedwith": {
-  "score": 0,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 0,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -21864,10 +21774,10 @@
   "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 35,
+  "spread": 25,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -22005,13 +21915,13 @@
   "question": "Which Devil Fruit did Vander Decken IX eat?"
  },
  "whichcrewororganizationisvanderdeckenixaffiliatedwith": {
-  "score": 10,
+  "score": 30,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -22055,14 +21965,12 @@
   "question": "Which Devil Fruit did Daz Bonez eat?"
  },
  "whichcrewororganizationisdazbonezaffiliatedwith": {
-  "score": 10,
-  "tier": "easy",
+  "score": 45,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 53,
+  "spread": 20,
   "flags": [],
-  "reasons": [
-   "3/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Daz Bonez affiliated with?"
@@ -22147,13 +22055,13 @@
   "question": "Which Devil Fruit did Pica eat?"
  },
  "whichcrewororganizationispicaaffiliatedwith": {
-  "score": 0,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -22189,13 +22097,13 @@
   "question": "What is Pica's occupation?"
  },
  "whichcrewororganizationisiceburgaffiliatedwith": {
-  "score": 0,
+  "score": 15,
   "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -22241,13 +22149,13 @@
   "question": "In which saga does Iceburg first appear?"
  },
  "whichcrewororganizationiskarooaffiliatedwith": {
-  "score": 0,
+  "score": 30,
   "tier": "easy",
   "basis": "raters",
-  "spread": 30,
+  "spread": 20,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -22306,13 +22214,13 @@
   "question": "In which saga does Karoo first appear?"
  },
  "whichcrewororganizationisfukaboshiaffiliatedwith": {
-  "score": 0,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 20,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -22361,7 +22269,7 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 3,
+  "spread": 2,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -22488,19 +22396,6 @@
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did Sasaki eat?"
  },
- "whichcrewororganizationissasakiaffiliatedwith": {
-  "score": 0,
-  "tier": "easy",
-  "basis": "raters",
-  "spread": 5,
-  "flags": [],
-  "reasons": [
-   "3/3 raters called it guessable"
-  ],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Sasaki affiliated with?"
- },
  "whatissasakisknownbounty": {
   "score": 15,
   "tier": "easy",
@@ -22568,13 +22463,13 @@
   "question": "Which character has a known bounty of 472,000,000 Berries?"
  },
  "whichcrewororganizationiskoalaaffiliatedwith": {
-  "score": 5,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
   "spread": 15,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -22616,13 +22511,13 @@
   "question": "Which Devil Fruit did Tamago eat?"
  },
  "whichcrewororganizationistamagoaffiliatedwith": {
-  "score": 0,
-  "tier": "easy",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 10,
+  "spread": 15,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -22781,13 +22676,13 @@
   "question": "Which character has a known bounty of 860,000,000 Berries?"
  },
  "whichcrewororganizationisshakuyakuaffiliatedwith": {
-  "score": 15,
+  "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 30,
+  "spread": 20,
   "flags": [],
   "reasons": [
-   "3/3 raters called it guessable"
+   "2/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -22956,7 +22851,7 @@
   "score": 55,
   "tier": "medium",
   "basis": "raters",
-  "spread": 0,
+  "spread": 20,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -23001,12 +22896,14 @@
   "question": "In which saga does Jaguar D. Saul first appear?"
  },
  "whichcrewororganizationisbepoaffiliatedwith": {
-  "score": 20,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 30,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Bepo affiliated with?"
@@ -23054,12 +22951,14 @@
   "question": "Which character has a known bounty of 1,500 Berries?"
  },
  "whichcrewororganizationisgloriosaaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 65,
+  "tier": "medium",
   "basis": "raters",
   "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Gloriosa affiliated with?"
@@ -23124,12 +23023,14 @@
   "question": "Which Devil Fruit did Blueno eat?"
  },
  "whichcrewororganizationisbluenoaffiliatedwith": {
-  "score": 40,
-  "tier": "medium",
+  "score": 25,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 8,
+  "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Blueno affiliated with?"
@@ -23183,12 +23084,14 @@
   "question": "By what epithet is Shimotsuki Yasuie known?"
  },
  "whichcrewororganizationisprometheusaffiliatedwith": {
-  "score": 45,
-  "tier": "medium",
+  "score": 20,
+  "tier": "easy",
   "basis": "raters",
   "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Prometheus affiliated with?"
@@ -23241,17 +23144,6 @@
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did Kalifa eat?"
  },
- "whichcrewororganizationiskalifaaffiliatedwith": {
-  "score": 42,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 15,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Kalifa affiliated with?"
- },
  "whatiskalifasoccupation": {
   "score": 35,
   "tier": "medium",
@@ -23288,10 +23180,10 @@
   "question": "Which Devil Fruit did Shepherd Sommers eat?"
  },
  "whichcrewororganizationisshepherdsommersaffiliatedwith": {
-  "score": 80,
+  "score": 85,
   "tier": "hard",
   "basis": "raters",
-  "spread": 5,
+  "spread": 10,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -23328,7 +23220,7 @@
   "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 10,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -23480,7 +23372,7 @@
   "score": 85,
   "tier": "hard",
   "basis": "raters",
-  "spread": 3,
+  "spread": 5,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -23499,12 +23391,14 @@
   "question": "In which saga does Manmayer Gunko first appear?"
  },
  "whichcrewororganizationisnapoleonaffiliatedwith": {
-  "score": 55,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 0,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Napoleon affiliated with?"
@@ -23605,17 +23499,6 @@
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did Senor Pink eat?"
  },
- "whichcrewororganizationissenorpinkaffiliatedwith": {
-  "score": 40,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 10,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Senor Pink affiliated with?"
- },
  "whatissenorpinksknownbounty": {
   "score": 15,
   "tier": "easy",
@@ -23664,17 +23547,6 @@
   "authored_difficulty": "easy",
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did Page One eat?"
- },
- "whichcrewororganizationispageoneaffiliatedwith": {
-  "score": 60,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 30,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Page One affiliated with?"
  },
  "whatispageonesknownbounty": {
   "score": 10,
@@ -23806,9 +23678,11 @@
   "score": 30,
   "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 10,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Van Augur affiliated with?"
@@ -23879,7 +23753,7 @@
   "question": "In which saga does Van Augur first appear?"
  },
  "whichcrewororganizationisoimoaffiliatedwith": {
-  "score": 65,
+  "score": 55,
   "tier": "medium",
   "basis": "raters",
   "spread": 10,
@@ -23903,23 +23777,27 @@
   "question": "In which saga does Oimo first appear?"
  },
  "whichcrewororganizationishannyabalaffiliatedwith": {
-  "score": 35,
-  "tier": "medium",
+  "score": 20,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 0,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Hannyabal affiliated with?"
  },
  "whichcrewororganizationisigaramaffiliatedwith": {
-  "score": 40,
-  "tier": "medium",
+  "score": 20,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 10,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Igaram affiliated with?"
@@ -24041,14 +23919,12 @@
   "question": "Which character has a known bounty of 35,000,000 Berries?"
  },
  "whichcrewororganizationiskashiiaffiliatedwith": {
-  "score": 70,
+  "score": 80,
   "tier": "hard",
   "basis": "raters",
-  "spread": 15,
+  "spread": 30,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Kashii affiliated with?"
@@ -24081,12 +23957,14 @@
   "question": "Which Devil Fruit did Boa Marigold eat?"
  },
  "whichcrewororganizationisboamarigoldaffiliatedwith": {
-  "score": 30,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
   "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "2/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Boa Marigold affiliated with?"
@@ -24185,10 +24063,10 @@
   "question": "Where does Charlotte Daifuku reside?"
  },
  "whichcrewororganizationisfigarlandgarlingaffiliatedwith": {
-  "score": 90,
+  "score": 80,
   "tier": "hard",
   "basis": "raters",
-  "spread": 22,
+  "spread": 10,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -24241,13 +24119,10 @@
   "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 20,
-  "flags": [
-   "answer_len_outlier"
-  ],
+  "spread": 5,
+  "flags": [],
   "reasons": [
-   "1/3 raters called it guessable",
-   "signals: answer_len_outlier (-10)"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -24289,12 +24164,14 @@
   "question": "Which of these characters is a member of the World Economy News Paper?"
  },
  "whichcrewororganizationischadroshigelygesaffiliatedwith": {
-  "score": 88,
+  "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 10,
+  "spread": 5,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Chadros Higelyges affiliated with?"
@@ -24339,6 +24216,19 @@
   "category": "Characters",
   "question": "Which character is known by the epithet \"Brownbeard\"?"
  },
+ "whichofthesecharactersisamemberofthecentaurpatrolunit": {
+  "score": 40,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 30,
+  "flags": [],
+  "reasons": [
+   "3/3 raters called it guessable"
+  ],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which of these characters is a member of the Centaur Patrol Unit?"
+ },
  "whichcharacterhasaknownbountyof80060000berries": {
   "score": 80,
   "tier": "hard",
@@ -24377,12 +24267,14 @@
   "question": "In which saga does Vegapunk/Lilith first appear?"
  },
  "whichcrewororganizationislaffitteaffiliatedwith": {
-  "score": 40,
-  "tier": "medium",
+  "score": 25,
+  "tier": "easy",
   "basis": "raters",
   "spread": 10,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Laffitte affiliated with?"
@@ -24443,13 +24335,13 @@
   "question": "Which Devil Fruit did Dalton eat?"
  },
  "whichcrewororganizationisdaltonaffiliatedwith": {
-  "score": 25,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 0,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
@@ -24467,10 +24359,10 @@
   "question": "Where does Dalton reside?"
  },
  "whichcrewororganizationisroadaffiliatedwith": {
-  "score": 85,
+  "score": 80,
   "tier": "hard",
   "basis": "raters",
-  "spread": 20,
+  "spread": 5,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -24507,11 +24399,9 @@
   "score": 45,
   "tier": "medium",
   "basis": "raters",
-  "spread": 0,
+  "spread": 40,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Conis affiliated with?"
@@ -24567,12 +24457,14 @@
   "question": "In which saga does Kumadori first appear?"
  },
  "whichcrewororganizationisnefertaricobraaffiliatedwith": {
-  "score": 15,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
-  "spread": 0,
+  "spread": 10,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Nefertari Cobra affiliated with?"
@@ -24591,7 +24483,7 @@
   "question": "Where does Nefertari Cobra reside?"
  },
  "whichcrewororganizationisotohimeaffiliatedwith": {
-  "score": 15,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
   "spread": 15,
@@ -24732,12 +24624,14 @@
   "question": "Which Devil Fruit did Sugar eat?"
  },
  "whichcrewororganizationismozuandkiwiaffiliatedwith": {
-  "score": 45,
-  "tier": "medium",
+  "score": 25,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Mozu and Kiwi affiliated with?"
@@ -24835,12 +24729,14 @@
   "question": "Which character has a known bounty of 31,000,000 Berries?"
  },
  "whichcrewororganizationiskozaaffiliatedwith": {
-  "score": 30,
+  "score": 15,
   "tier": "easy",
   "basis": "raters",
-  "spread": 0,
+  "spread": 10,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Koza affiliated with?"
@@ -24859,10 +24755,10 @@
   "question": "Where does Koza reside?"
  },
  "whichcrewororganizationismontblanccricketaffiliatedwith": {
-  "score": 45,
+  "score": 65,
   "tier": "medium",
   "basis": "raters",
-  "spread": 35,
+  "spread": 25,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -24914,12 +24810,14 @@
   "question": "Which character has a known bounty of 25,000,000 Berries?"
  },
  "whichcrewororganizationispappagaffiliatedwith": {
-  "score": 55,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 20,
+  "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Pappag affiliated with?"
@@ -24949,12 +24847,14 @@
   "question": "Which of these characters is a member of the Criminal brand?"
  },
  "whichcrewororganizationisbennbeckmanaffiliatedwith": {
-  "score": 20,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 10,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Benn Beckman affiliated with?"
@@ -24973,12 +24873,14 @@
   "question": "Which Devil Fruit did Jozu eat?"
  },
  "whichcrewororganizationisjozuaffiliatedwith": {
-  "score": 15,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
   "spread": 5,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Jozu affiliated with?"
@@ -25010,12 +24912,14 @@
   "question": "Which character is known by the epithet \"Diamond\"?"
  },
  "whichcrewororganizationiselizabelloiiaffiliatedwith": {
-  "score": 45,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
   "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "2/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Elizabello II affiliated with?"
@@ -25125,12 +25029,14 @@
   "question": "Which character is known by the epithet \"Great Staff Officer\"?"
  },
  "whichcrewororganizationisvitoaffiliatedwith": {
-  "score": 70,
-  "tier": "hard",
+  "score": 45,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 0,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Vito affiliated with?"
@@ -25272,12 +25178,14 @@
   "question": "Which character is known by the epithet \"Black Cage\"?"
  },
  "whichcrewororganizationisyasoppaffiliatedwith": {
-  "score": 30,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Yasopp affiliated with?"
@@ -25354,7 +25262,9 @@
   "basis": "raters",
   "spread": 5,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Demalo Black affiliated with?"
@@ -25462,10 +25372,10 @@
   "question": "Which character has a known bounty of 61,000,000 Berries?"
  },
  "whichcrewororganizationiszeoaffiliatedwith": {
-  "score": 50,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
-  "spread": 10,
+  "spread": 20,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -25515,10 +25425,10 @@
   "question": "In which saga does Zeo first appear?"
  },
  "whichcrewororganizationisurougeaffiliatedwith": {
-  "score": 35,
-  "tier": "medium",
+  "score": 25,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -25609,10 +25519,10 @@
   "question": "Which character has a known bounty of 108,000,000 Berries?"
  },
  "whichcrewororganizationispoundaffiliatedwith": {
-  "score": 78,
-  "tier": "hard",
+  "score": 55,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 23,
+  "spread": 10,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "easy",
@@ -25655,10 +25565,10 @@
   "question": "Where does Bell-mère reside?"
  },
  "whichcrewororganizationismomongaaffiliatedwith": {
-  "score": 45,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 37,
+  "spread": 20,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -25740,12 +25650,14 @@
   "question": "Which character is known by the epithet \"Corrupt King\"?"
  },
  "whichcrewororganizationisvictoriacindryaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 40,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 3,
+  "spread": 25,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "easy",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Victoria Cindry affiliated with?"
@@ -25845,7 +25757,7 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 3,
+  "spread": 1,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -25924,7 +25836,7 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 2,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -25993,7 +25905,7 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 3,
+  "spread": 2,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -26246,7 +26158,7 @@
   "score": 0,
   "tier": "easy",
   "basis": "raters",
-  "spread": 1,
+  "spread": 2,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -26720,10 +26632,10 @@
   "question": "Where does Dragon Number Thirteen reside?"
  },
  "whichcrewororganizationisportgasdrougeaffiliatedwith": {
-  "score": 55,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
-  "spread": 30,
+  "spread": 35,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -26732,29 +26644,18 @@
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Portgas D. Rouge affiliated with?"
  },
- "whichofthesecharactersisamemberofthegoldroger": {
-  "score": 50,
-  "tier": "medium",
+ "whichofthesecharactersisamemberoftheclanofd": {
+  "score": 0,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 25,
   "flags": [],
   "reasons": [
-   "1/3 raters called it guessable"
+   "3/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
-  "question": "Which of these characters is a member of the Gol D. Roger?"
- },
- "whichcrewororganizationisdragonnumbertwentyoneaffiliatedwith": {
-  "score": 95,
-  "tier": "hard",
-  "basis": "raters",
-  "spread": 10,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "easy",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Dragon Number Twenty-One affiliated with?"
+  "question": "Which of these characters is a member of the Clan of D?"
  },
  "wheredoesdragonnumbertwentyonereside": {
   "score": 95,
@@ -26792,13 +26693,13 @@
   "question": "In which saga does Kouzuki Moria first appear?"
  },
  "whichcrewororganizationisginaffiliatedwith": {
-  "score": 25,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 30,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -26856,10 +26757,10 @@
   "question": "Which of these characters is a member of the Krieg Pirates?"
  },
  "whichcrewororganizationisdonquixotehomingaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 65,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 33,
+  "spread": 15,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -26889,13 +26790,13 @@
   "question": "Which Devil Fruit did Buffalo eat?"
  },
  "whichcrewororganizationispaulieaffiliatedwith": {
-  "score": 30,
+  "score": 15,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -26918,7 +26819,7 @@
   "score": 85,
   "tier": "hard",
   "basis": "raters",
-  "spread": 7,
+  "spread": 20,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -26970,23 +26871,27 @@
   "question": "Which character is known by the epithet \"Destruction Cannon\"?"
  },
  "whichcrewororganizationisbuckinghamstussyaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 50,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 20,
+  "spread": 30,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Buckingham Stussy affiliated with?"
  },
  "whichcrewororganizationisduvalaffiliatedwith": {
-  "score": 55,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 5,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Duval affiliated with?"
@@ -27027,13 +26932,13 @@
   "question": "Which of these characters is a member of the Rosy Life Riders?"
  },
  "whichcrewororganizationisganfallaffiliatedwith": {
-  "score": 10,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
   "spread": 15,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -27088,13 +26993,13 @@
   "question": "Which of these characters is a member of the Skypiea?"
  },
  "whichcrewororganizationisshimotsukiryumaaffiliatedwith": {
-  "score": 35,
-  "tier": "medium",
+  "score": 15,
+  "tier": "easy",
   "basis": "raters",
   "spread": 30,
   "flags": [],
   "reasons": [
-   "1/3 raters called it guessable"
+   "2/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -27204,12 +27109,14 @@
   "question": "Which character is known by the epithet \"Crescent Moon Hunter\"?"
  },
  "whichcrewororganizationispicklesaffiliatedwith": {
-  "score": 75,
+  "score": 70,
   "tier": "hard",
   "basis": "raters",
-  "spread": 30,
+  "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Pickles affiliated with?"
@@ -27248,13 +27155,13 @@
   "question": "Which of these characters is a member of the Foxy Pirates?"
  },
  "whichcrewororganizationiscrocusaffiliatedwith": {
-  "score": 35,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 5,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -27320,10 +27227,10 @@
   "question": "Which character is known by the epithet \"Heavy Drinker\"?"
  },
  "whichcrewororganizationispattyaffiliatedwith": {
-  "score": 30,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 35,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -27333,7 +27240,7 @@
   "question": "Which crew or organization is Patty affiliated with?"
  },
  "whichcrewororganizationisikarosmuchaffiliatedwith": {
-  "score": 75,
+  "score": 70,
   "tier": "hard",
   "basis": "raters",
   "spread": 20,
@@ -27344,10 +27251,10 @@
   "question": "Which crew or organization is Ikaros Much affiliated with?"
  },
  "whichcrewororganizationispenguinaffiliatedwith": {
-  "score": 35,
-  "tier": "medium",
+  "score": 10,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 30,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -27368,12 +27275,14 @@
   "question": "Which Devil Fruit did Inazuma eat?"
  },
  "whichcrewororganizationisinazumaaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 37,
+  "spread": 35,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Inazuma affiliated with?"
@@ -27414,12 +27323,14 @@
   "question": "Which of these characters is a member of the Kamabakka Kingdom?"
  },
  "whichcrewororganizationisorlumbusaffiliatedwith": {
-  "score": 65,
+  "score": 40,
   "tier": "medium",
   "basis": "raters",
-  "spread": 30,
+  "spread": 25,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Orlumbus affiliated with?"
@@ -27474,13 +27385,13 @@
   "question": "Which of these characters is a member of the Yonta Maria Grand Fleet?"
  },
  "whichcrewororganizationisshachiaffiliatedwith": {
-  "score": 25,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
-  "spread": 35,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -27500,12 +27411,14 @@
   "question": "Where does Kaya reside?"
  },
  "whichcrewororganizationisshyarlyaffiliatedwith": {
-  "score": 55,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
   "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Shyarly affiliated with?"
@@ -27537,10 +27450,10 @@
   "question": "Which of these characters is a member of the Mermaid Cafe?"
  },
  "whichcrewororganizationishyouzouaffiliatedwith": {
-  "score": 45,
-  "tier": "medium",
+  "score": 25,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -27561,10 +27474,10 @@
   "question": "Which Devil Fruit did Giolla eat?"
  },
  "whichcrewororganizationisroswardcharlosaffiliatedwith": {
-  "score": 25,
+  "score": 10,
   "tier": "easy",
   "basis": "raters",
-  "spread": 40,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -27622,10 +27535,10 @@
   "question": "Where does Bomba (Marine) reside?"
  },
  "whichcrewororganizationisdonquixotemjosgardaffiliatedwith": {
-  "score": 45,
+  "score": 40,
   "tier": "medium",
   "basis": "raters",
-  "spread": 45,
+  "spread": 15,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -27647,19 +27560,6 @@
   "category": "Characters",
   "question": "What is Donquixote Mjosgard's occupation?"
  },
- "whichcrewororganizationistotoaffiliatedwith": {
-  "score": 60,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 15,
-  "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
-  "authored_difficulty": "medium",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Toto affiliated with?"
- },
  "wheredoestotoreside": {
   "score": 70,
   "tier": "hard",
@@ -27670,17 +27570,6 @@
   "authored_difficulty": "hard",
   "category": "Geography",
   "question": "Where does Toto reside?"
- },
- "whichofthesecharactersisamemberofthekoza": {
-  "score": 55,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 30,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "hard",
-  "category": "Crews & Organizations",
-  "question": "Which of these characters is a member of the Koza?"
  },
  "bywhatepithetistboneknown": {
   "score": 75,
@@ -27705,10 +27594,10 @@
   "question": "Which character is known by the epithet \"Ship Cutter\"?"
  },
  "whichcrewororganizationiscloudcloveraffiliatedwith": {
-  "score": 45,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 45,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -27778,7 +27667,7 @@
   "score": 55,
   "tier": "medium",
   "basis": "raters",
-  "spread": 20,
+  "spread": 27,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -27822,11 +27711,9 @@
   "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 15,
+  "spread": 25,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Gotti affiliated with?"
@@ -27885,14 +27772,12 @@
   "question": "In which saga does Lola (Zombie) first appear?"
  },
  "whichcrewororganizationisjohnnyaffiliatedwith": {
-  "score": 50,
+  "score": 40,
   "tier": "medium",
   "basis": "raters",
   "spread": 15,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Johnny affiliated with?"
@@ -27910,18 +27795,18 @@
   "category": "Characters",
   "question": "What is Johnny's occupation?"
  },
- "whichofthesecharactersisamemberoftheyosaku": {
-  "score": 5,
+ "whichofthesecharactersisamemberoftheroronoazorosband": {
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 25,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
   ],
   "authored_difficulty": "hard",
   "category": "Crews & Organizations",
-  "question": "Which of these characters is a member of the Yosaku?"
+  "question": "Which of these characters is a member of the Roronoa Zoro's band?"
  },
  "wheredoesmohjireside": {
   "score": 55,
@@ -27961,10 +27846,10 @@
   "question": "Which character is known by the epithet \"Beast Tamer\"?"
  },
  "whichcrewororganizationisaladineaffiliatedwith": {
-  "score": 75,
+  "score": 70,
   "tier": "hard",
   "basis": "raters",
-  "spread": 20,
+  "spread": 18,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -27972,25 +27857,25 @@
   "question": "Which crew or organization is Aladine affiliated with?"
  },
  "whichcrewororganizationisjeanbartaffiliatedwith": {
-  "score": 45,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 30,
-  "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
-  "authored_difficulty": "medium",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Jean Bart affiliated with?"
- },
- "whichcrewororganizationiswadatsumiaffiliatedwith": {
-  "score": 60,
+  "score": 40,
   "tier": "medium",
   "basis": "raters",
   "spread": 10,
   "flags": [],
   "reasons": [],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Jean Bart affiliated with?"
+ },
+ "whichcrewororganizationiswadatsumiaffiliatedwith": {
+  "score": 35,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 10,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Wadatsumi affiliated with?"
@@ -28018,10 +27903,10 @@
   "question": "Which character is known by the epithet \"Large Monk\"?"
  },
  "whichcrewororganizationisgedatsuaffiliatedwith": {
-  "score": 55,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 5,
+  "spread": 20,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -28088,10 +27973,10 @@
   "question": "Which Devil Fruit did Carmel eat?"
  },
  "whichcrewororganizationiscarmelaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 65,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 33,
+  "spread": 15,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -28134,10 +28019,10 @@
   "question": "Which character is known by the epithet \"Holy Mother\"?"
  },
  "whichcrewororganizationistokoaffiliatedwith": {
-  "score": 55,
+  "score": 50,
   "tier": "medium",
   "basis": "raters",
-  "spread": 10,
+  "spread": 15,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -28170,16 +28055,18 @@
   "category": "Geography",
   "question": "Where does Toko reside?"
  },
- "whichofthesecharactersisamemberofthekouzukihiyori": {
-  "score": 70,
-  "tier": "hard",
+ "whichofthesecharactersisamemberoftheshimotsukifamily": {
+  "score": 40,
+  "tier": "medium",
   "basis": "raters",
   "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "2/3 raters called it guessable"
+  ],
   "authored_difficulty": "hard",
   "category": "Crews & Organizations",
-  "question": "Which of these characters is a member of the Kouzuki Hiyori?"
+  "question": "Which of these characters is a member of the Shimotsuki Family?"
  },
  "whichdevilfruitdidjoyboyeat": {
   "score": 5,
@@ -28198,13 +28085,13 @@
   "question": "Which Devil Fruit did Joy Boy eat?"
  },
  "whichcrewororganizationisryuboshiaffiliatedwith": {
-  "score": 40,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
   "spread": 35,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -28240,12 +28127,14 @@
   "question": "Where does Ryuboshi reside?"
  },
  "whichcrewororganizationisyosakuaffiliatedwith": {
-  "score": 55,
-  "tier": "medium",
+  "score": 20,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Yosaku affiliated with?"
@@ -28263,32 +28152,24 @@
   "category": "Characters",
   "question": "What is Yosaku's occupation?"
  },
- "whichofthesecharactersisamemberofthejohnny": {
-  "score": 5,
-  "tier": "easy",
-  "basis": "raters",
-  "spread": 10,
-  "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
-  "authored_difficulty": "hard",
-  "category": "Crews & Organizations",
-  "question": "Which of these characters is a member of the Johnny?"
- },
  "whichcrewororganizationisgerdaffiliatedwith": {
-  "score": 85,
-  "tier": "hard",
+  "score": 52,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 8,
-  "flags": [],
-  "reasons": [],
+  "spread": 15,
+  "flags": [
+   "answer_len_outlier"
+  ],
+  "reasons": [
+   "1/3 raters called it guessable",
+   "signals: answer_len_outlier (-10)"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Gerd affiliated with?"
  },
  "whichcrewororganizationisohmaffiliatedwith": {
-  "score": 45,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
   "spread": 15,
@@ -28380,10 +28261,10 @@
   "question": "Which Devil Fruit did Streusen eat?"
  },
  "whichcrewororganizationisstreusenaffiliatedwith": {
-  "score": 15,
-  "tier": "easy",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 45,
+  "spread": 5,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -28415,10 +28296,10 @@
   "question": "Which character is known by the epithet \"Gourmet Knight\"?"
  },
  "whichcrewororganizationisbluegillyaffiliatedwith": {
-  "score": 80,
+  "score": 78,
   "tier": "hard",
   "basis": "raters",
-  "spread": 8,
+  "spread": 15,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -28440,10 +28321,10 @@
   "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 35,
+  "spread": 13,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -28476,14 +28357,12 @@
   "question": "Which of these characters is a member of the Cocoyasi Village?"
  },
  "whichcrewororganizationisvistaaffiliatedwith": {
-  "score": 20,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 15,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Vista affiliated with?"
@@ -28515,23 +28394,21 @@
   "question": "Which character is known by the epithet \"of the Flower Swords\"?"
  },
  "whichcrewororganizationisluckyrouxaffiliatedwith": {
-  "score": 20,
+  "score": 28,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 15,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Lucky Roux affiliated with?"
  },
  "whichcrewororganizationishamburgaffiliatedwith": {
-  "score": 80,
+  "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 33,
+  "spread": 10,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -28561,10 +28438,10 @@
   "question": "Which character is known by the epithet \"Four-Footed Dash Freak\"?"
  },
  "whichcrewororganizationisministeroftherightaffiliatedwith": {
-  "score": 45,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 40,
+  "spread": 20,
   "flags": [],
   "reasons": [
    "2/3 raters called it guessable"
@@ -28665,10 +28542,10 @@
   "question": "Which Devil Fruit did Rimoshifu Killingham eat?"
  },
  "whichcrewororganizationisrimoshifukillinghamaffiliatedwith": {
-  "score": 90,
+  "score": 88,
   "tier": "hard",
   "basis": "raters",
-  "spread": 5,
+  "spread": 3,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -28687,10 +28564,10 @@
   "question": "In which saga does Rimoshifu Killingham first appear?"
  },
  "whichcrewororganizationismargueriteaffiliatedwith": {
-  "score": 40,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 10,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -28724,14 +28601,12 @@
   "question": "Where does Marguerite reside?"
  },
  "whichcrewororganizationisbabeaffiliatedwith": {
-  "score": 75,
+  "score": 72,
   "tier": "hard",
   "basis": "raters",
-  "spread": 13,
+  "spread": 30,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Babe affiliated with?"
@@ -28797,25 +28672,25 @@
   "question": "Where does Gal reside?"
  },
  "whichcrewororganizationisfigarlandshamrockaffiliatedwith": {
-  "score": 80,
-  "tier": "hard",
+  "score": 60,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 30,
+  "spread": 10,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Figarland Shamrock affiliated with?"
  },
  "whichcrewororganizationiskokoroaffiliatedwith": {
-  "score": 35,
+  "score": 40,
   "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 10,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Kokoro affiliated with?"
@@ -28847,10 +28722,10 @@
   "question": "Which of these characters is a member of the Tom's Workers?"
  },
  "whichcrewororganizationismanboshiaffiliatedwith": {
-  "score": 55,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 35,
+  "spread": 40,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -28900,14 +28775,12 @@
   "question": "Which Devil Fruit did Pell eat?"
  },
  "whichcrewororganizationispellaffiliatedwith": {
-  "score": 10,
+  "score": 25,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 12,
   "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Pell affiliated with?"
@@ -29011,10 +28884,10 @@
   "question": "Which character is known by the epithet \"Sun God\"?"
  },
  "whichcrewororganizationischewaffiliatedwith": {
-  "score": 55,
-  "tier": "medium",
+  "score": 32,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 37,
+  "spread": 25,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -29060,10 +28933,10 @@
   "question": "Which character has a known bounty of 5,500,000 Berries?"
  },
  "whichcrewororganizationiszambaiaffiliatedwith": {
-  "score": 85,
-  "tier": "hard",
+  "score": 65,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 8,
+  "spread": 33,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -29104,12 +28977,14 @@
   "question": "What is Doberman's occupation?"
  },
  "whichcrewororganizationiskalgaraaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 23,
+  "spread": 30,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Kalgara affiliated with?"
@@ -29181,12 +29056,14 @@
   "question": "What is Jero's occupation?"
  },
  "whichcrewororganizationisshishilianaffiliatedwith": {
-  "score": 80,
-  "tier": "hard",
+  "score": 55,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 7,
+  "spread": 17,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Shishilian affiliated with?"
@@ -29236,10 +29113,10 @@
   "question": "What is Charlotte Decuplets's occupation?"
  },
  "whichcrewororganizationisbooaffiliatedwith": {
-  "score": 55,
-  "tier": "medium",
+  "score": 78,
+  "tier": "hard",
   "basis": "raters",
-  "spread": 35,
+  "spread": 25,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -29291,10 +29168,10 @@
   "question": "Which character is known by the epithet \"Shark Cutter\"?"
  },
  "whichcrewororganizationislaboonaffiliatedwith": {
-  "score": 40,
-  "tier": "medium",
+  "score": 28,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 15,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -29363,12 +29240,14 @@
   "question": "Which character is known by the epithet \"Colossal Battleship\"?"
  },
  "whichcrewororganizationisdosunaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 40,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 30,
+  "spread": 17,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Dosun affiliated with?"
@@ -29387,17 +29266,12 @@
   "question": "Where does Zunesha reside?"
  },
  "whichcrewororganizationisedwardweevilaffiliatedwith": {
-  "score": 35,
+  "score": 50,
   "tier": "medium",
   "basis": "raters",
-  "spread": 25,
-  "flags": [
-   "answer_len_outlier"
-  ],
-  "reasons": [
-   "1/3 raters called it guessable",
-   "signals: answer_len_outlier (-10)"
-  ],
+  "spread": 10,
+  "flags": [],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Edward Weevil affiliated with?"
@@ -29443,10 +29317,10 @@
   "question": "Which Devil Fruit did Gem eat?"
  },
  "whichcrewororganizationisgemaffiliatedwith": {
-  "score": 80,
+  "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 5,
+  "spread": 10,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -29492,12 +29366,14 @@
   "question": "By what epithet is Gem known?"
  },
  "whichcrewororganizationisnolaaffiliatedwith": {
-  "score": 60,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
-  "spread": 20,
+  "spread": 0,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Nola affiliated with?"
@@ -29575,10 +29451,10 @@
   "question": "In which saga does Ryuma (Zombie) first appear?"
  },
  "whichcrewororganizationisabdullahaffiliatedwith": {
-  "score": 85,
+  "score": 70,
   "tier": "hard",
   "basis": "raters",
-  "spread": 8,
+  "spread": 15,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -29586,12 +29462,14 @@
   "question": "Which crew or organization is Abdullah affiliated with?"
  },
  "whichcrewororganizationisgatzaffiliatedwith": {
-  "score": 55,
+  "score": 40,
   "tier": "medium",
   "basis": "raters",
-  "spread": 15,
+  "spread": 30,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Gatz affiliated with?"
@@ -29630,10 +29508,10 @@
   "question": "Where does Tom reside?"
  },
  "whichcrewororganizationissuleimanaffiliatedwith": {
-  "score": 80,
+  "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 30,
+  "spread": 25,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -29679,12 +29557,14 @@
   "question": "Which character is known by the epithet \"Beheader\"?"
  },
  "whichcrewororganizationisaisaaffiliatedwith": {
-  "score": 55,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 20,
+  "spread": 10,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Aisa affiliated with?"
@@ -29701,10 +29581,10 @@
   "question": "Where does Aisa originate from?"
  },
  "whichcrewororganizationissurumeaffiliatedwith": {
-  "score": 65,
-  "tier": "medium",
+  "score": 70,
+  "tier": "hard",
   "basis": "raters",
-  "spread": 43,
+  "spread": 27,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -29736,13 +29616,13 @@
   "question": "Which Devil Fruit did John eat?"
  },
  "whichcrewororganizationisjohnaffiliatedwith": {
-  "score": 62,
+  "score": 55,
   "tier": "medium",
   "basis": "raters",
-  "spread": 2,
+  "spread": 13,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -29771,10 +29651,10 @@
   "question": "In which saga does John first appear?"
  },
  "whichcrewororganizationisginnyaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 55,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 17,
+  "spread": 40,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -29852,17 +29732,6 @@
   "category": "Characters",
   "question": "Which character is known by the epithet \"Demon Lady\"?"
  },
- "whichcrewororganizationismerryaffiliatedwith": {
-  "score": 55,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 10,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "medium",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Merry affiliated with?"
- },
  "wheredoesmerryreside": {
   "score": 50,
   "tier": "medium",
@@ -29874,24 +29743,15 @@
   "category": "Geography",
   "question": "Where does Merry reside?"
  },
- "whichofthesecharactersisamemberofthekaya": {
-  "score": 68,
-  "tier": "hard",
-  "basis": "raters",
-  "spread": 5,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "hard",
-  "category": "Crews & Organizations",
-  "question": "Which of these characters is a member of the Kaya?"
- },
  "whichcrewororganizationisfukurokujuaffiliatedwith": {
-  "score": 85,
-  "tier": "hard",
+  "score": 45,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 3,
+  "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Fukurokuju affiliated with?"
@@ -29917,17 +29777,6 @@
   "authored_difficulty": "hard",
   "category": "Geography",
   "question": "Where does Fukurokuju reside?"
- },
- "whichcrewororganizationisyeticoolbrothersaffiliatedwith": {
-  "score": 68,
-  "tier": "hard",
-  "basis": "raters",
-  "spread": 15,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "medium",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Yeti Cool Brothers affiliated with?"
  },
  "bywhatepithetisyeticoolbrothersknown": {
   "score": 12,
@@ -29970,10 +29819,10 @@
   "question": "Which Devil Fruit did Onimaru eat?"
  },
  "whichcrewororganizationisonimaruaffiliatedwith": {
-  "score": 82,
+  "score": 70,
   "tier": "hard",
   "basis": "raters",
-  "spread": 27,
+  "spread": 23,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -30005,17 +29854,6 @@
   "authored_difficulty": "medium",
   "category": "Characters",
   "question": "Which character is known by the epithet \"Gyukimaru on Oihagi Bridge\"?"
- },
- "whichofthesecharactersisamemberoftheshimotsukifamily": {
-  "score": 78,
-  "tier": "hard",
-  "basis": "raters",
-  "spread": 12,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "hard",
-  "category": "Crews & Organizations",
-  "question": "Which of these characters is a member of the Shimotsuki Family?"
  },
  "whichcrewororganizationispearlaffiliatedwith": {
   "score": 55,
@@ -30055,10 +29893,10 @@
   "question": "Which character is known by the epithet \"Iron Wall\"?"
  },
  "whichcrewororganizationisjeetaffiliatedwith": {
-  "score": 88,
+  "score": 70,
   "tier": "hard",
   "basis": "raters",
-  "spread": 8,
+  "spread": 15,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -30066,10 +29904,10 @@
   "question": "Which crew or organization is Jeet affiliated with?"
  },
  "whichcrewororganizationismarianneaffiliatedwith": {
-  "score": 85,
+  "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 5,
+  "spread": 20,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -30170,12 +30008,14 @@
   "question": "Which Devil Fruit did Kelly Funk eat?"
  },
  "whichcrewororganizationiskellyfunkaffiliatedwith": {
-  "score": 80,
-  "tier": "hard",
+  "score": 50,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 18,
+  "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Kelly Funk affiliated with?"
@@ -30219,13 +30059,13 @@
   "question": "Which of these characters is a member of the Mogaro Kingdom?"
  },
  "whichcrewororganizationiscoribouaffiliatedwith": {
-  "score": 45,
-  "tier": "medium",
+  "score": 20,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 35,
+  "spread": 42,
   "flags": [],
   "reasons": [
-   "1/3 raters called it guessable"
+   "2/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -30286,7 +30126,7 @@
   "score": 80,
   "tier": "hard",
   "basis": "raters",
-  "spread": 10,
+  "spread": 27,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -30327,10 +30167,10 @@
   "question": "Which Devil Fruit did Mikita eat?"
  },
  "whichcrewororganizationismikitaaffiliatedwith": {
-  "score": 85,
+  "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 3,
+  "spread": 10,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -30398,10 +30238,10 @@
   "question": "Where does Holed'em reside?"
  },
  "whichcrewororganizationissatoriaffiliatedwith": {
-  "score": 40,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 5,
+  "spread": 17,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -30481,12 +30321,14 @@
   "question": "Which character is known by the epithet \"Three-Headed\"?"
  },
  "whichcrewororganizationismaskeddeuceaffiliatedwith": {
-  "score": 55,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 10,
+  "spread": 25,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Masked Deuce affiliated with?"
@@ -30505,10 +30347,10 @@
   "question": "Which of these characters is a member of the Spade Pirates?"
  },
  "whichcrewororganizationissquardaffiliatedwith": {
-  "score": 55,
-  "tier": "medium",
+  "score": 70,
+  "tier": "hard",
   "basis": "raters",
-  "spread": 36,
+  "spread": 28,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -30567,12 +30409,14 @@
   "question": "Which of these characters is a member of the Maelstrom Spider Pirates?"
  },
  "whichcrewororganizationismakinoaffiliatedwith": {
-  "score": 20,
+  "score": 5,
   "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 7,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Makino affiliated with?"
@@ -30616,12 +30460,14 @@
   "question": "What is Little Oars Jr.'s known bounty?"
  },
  "whichcrewororganizationiskabuaffiliatedwith": {
-  "score": 70,
-  "tier": "hard",
+  "score": 40,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 30,
+  "spread": 33,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Kabu affiliated with?"
@@ -30660,17 +30506,30 @@
   "question": "Which Devil Fruit did S-Snake eat?"
  },
  "whichcrewororganizationisssnakeaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
   "spread": 45,
   "flags": [],
   "reasons": [
-   "1/3 raters called it guessable"
+   "3/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is S-Snake affiliated with?"
+ },
+ "whichofthesecharactersisamemberoftheseraphim": {
+  "score": 5,
+  "tier": "easy",
+  "basis": "raters",
+  "spread": 45,
+  "flags": [],
+  "reasons": [
+   "3/3 raters called it guessable"
+  ],
+  "authored_difficulty": "hard",
+  "category": "Crews & Organizations",
+  "question": "Which of these characters is a member of the Seraphim?"
  },
  "inwhichsagadoeskumashifirstappear": {
   "score": 88,
@@ -30695,10 +30554,10 @@
   "question": "Which Devil Fruit did Ganzui eat?"
  },
  "whichcrewororganizationisganzuiaffiliatedwith": {
-  "score": 85,
+  "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 0,
+  "spread": 10,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -30728,14 +30587,12 @@
   "question": "In which saga does Ganzui first appear?"
  },
  "whichcrewororganizationisinuppeaffiliatedwith": {
-  "score": 65,
-  "tier": "medium",
+  "score": 80,
+  "tier": "hard",
   "basis": "raters",
-  "spread": 8,
+  "spread": 4,
   "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Inuppe affiliated with?"
@@ -30798,12 +30655,14 @@
   "question": "Where does Prince Grus reside?"
  },
  "whichcrewororganizationistanklepantoaffiliatedwith": {
-  "score": 85,
-  "tier": "hard",
+  "score": 45,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 30,
+  "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Tank Lepanto affiliated with?"
@@ -30842,12 +30701,14 @@
   "question": "Where does Nako reside?"
  },
  "whichcrewororganizationisnicoolviaaffiliatedwith": {
-  "score": 30,
+  "score": 20,
   "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 23,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Nico Olvia affiliated with?"
@@ -30891,10 +30752,10 @@
   "question": "Which character has a known bounty of 79,000,000 Berries?"
  },
  "whichcrewororganizationismr9affiliatedwith": {
-  "score": 35,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 10,
+  "spread": 17,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -30913,10 +30774,10 @@
   "question": "What is Mr. 9's occupation?"
  },
  "whichcrewororganizationisshamaffiliatedwith": {
-  "score": 50,
+  "score": 40,
   "tier": "medium",
   "basis": "raters",
-  "spread": 15,
+  "spread": 20,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -30968,10 +30829,10 @@
   "question": "Where does Charlotte Galette reside?"
  },
  "whichcrewororganizationissarquissaffiliatedwith": {
-  "score": 50,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 18,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -31028,10 +30889,10 @@
   "question": "Which character has a known bounty of 38,000,000 Berries?"
  },
  "whichcrewororganizationisbuchiaffiliatedwith": {
-  "score": 50,
+  "score": 40,
   "tier": "medium",
   "basis": "raters",
-  "spread": 15,
+  "spread": 23,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -31077,7 +30938,7 @@
   "score": 30,
   "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 22,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -31112,12 +30973,14 @@
   "question": "What is Shimotsuki Ushimaru's occupation?"
  },
  "whichcrewororganizationiswoopslapaffiliatedwith": {
-  "score": 35,
-  "tier": "medium",
+  "score": 25,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Woop Slap affiliated with?"
@@ -31145,12 +31008,14 @@
   "question": "Where does Woop Slap reside?"
  },
  "whichcrewororganizationisporcheaffiliatedwith": {
-  "score": 55,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
   "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Porche affiliated with?"
@@ -31218,12 +31083,14 @@
   "question": "Which character has a known bounty of 105,500,000 Berries?"
  },
  "whichcrewororganizationishakuganaffiliatedwith": {
-  "score": 82,
-  "tier": "hard",
+  "score": 48,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 30,
+  "spread": 17,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Hakugan affiliated with?"
@@ -31262,13 +31129,13 @@
   "question": "Which Devil Fruit did Kurozumi Higurashi eat?"
  },
  "whichcrewororganizationiskurozumihigurashiaffiliatedwith": {
-  "score": 52,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 10,
   "flags": [],
   "reasons": [
-   "1/3 raters called it guessable"
+   "2/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -31288,37 +31155,37 @@
   "question": "What is Richie's occupation?"
  },
  "whichcrewororganizationistilestoneaffiliatedwith": {
-  "score": 35,
+  "score": 48,
   "tier": "medium",
   "basis": "raters",
-  "spread": 13,
+  "spread": 5,
   "flags": [],
-  "reasons": [
-   "2/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Tilestone affiliated with?"
  },
  "whichcrewororganizationisdagamaaffiliatedwith": {
-  "score": 88,
-  "tier": "hard",
+  "score": 45,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 3,
+  "spread": 32,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Dagama affiliated with?"
  },
  "whichcrewororganizationisministeroftheleftaffiliatedwith": {
-  "score": 50,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 15,
+  "spread": 22,
   "flags": [],
   "reasons": [
-   "1/3 raters called it guessable"
+   "2/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -31336,12 +31203,14 @@
   "question": "Which Devil Fruit did Mansherry eat?"
  },
  "whichcrewororganizationismansherryaffiliatedwith": {
-  "score": 40,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 20,
+  "spread": 13,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Mansherry affiliated with?"
@@ -31382,12 +31251,17 @@
   "question": "Which Devil Fruit did Sheepshead eat?"
  },
  "whichcrewororganizationisgoldbergaffiliatedwith": {
-  "score": 50,
+  "score": 48,
   "tier": "medium",
   "basis": "raters",
-  "spread": 10,
-  "flags": [],
-  "reasons": [],
+  "spread": 7,
+  "flags": [
+   "answer_len_outlier"
+  ],
+  "reasons": [
+   "1/3 raters called it guessable",
+   "signals: answer_len_outlier (-10)"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Goldberg affiliated with?"
@@ -31406,12 +31280,14 @@
   "question": "What is Goldberg's occupation?"
  },
  "whichcrewororganizationispeepleyluluaffiliatedwith": {
-  "score": 55,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
   "spread": 15,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Peepley Lulu affiliated with?"
@@ -31479,23 +31355,27 @@
   "question": "By what epithet is Hera known?"
  },
  "whichcrewororganizationisragniraffiliatedwith": {
-  "score": 80,
-  "tier": "hard",
+  "score": 55,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 33,
+  "spread": 22,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Ragnir affiliated with?"
  },
  "whichcrewororganizationisstansenaffiliatedwith": {
-  "score": 85,
-  "tier": "hard",
+  "score": 65,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 6,
+  "spread": 10,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Stansen affiliated with?"
@@ -31512,14 +31392,12 @@
   "question": "Which Devil Fruit did Babanuki eat?"
  },
  "whichcrewororganizationiswanzeaffiliatedwith": {
-  "score": 50,
+  "score": 65,
   "tier": "medium",
   "basis": "raters",
   "spread": 10,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Wanze affiliated with?"
@@ -31547,14 +31425,15 @@
   "question": "Which character is known by the epithet \"Mad\"?"
  },
  "whichcrewororganizationisinhelaffiliatedwith": {
-  "score": 72,
-  "tier": "hard",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 20,
   "flags": [
    "answer_len_outlier"
   ],
   "reasons": [
+   "1/3 raters called it guessable",
    "signals: answer_len_outlier (-10)"
   ],
   "authored_difficulty": "medium",
@@ -31573,32 +31452,36 @@
   "question": "What is Inhel's occupation?"
  },
  "whichcrewororganizationiscarneaffiliatedwith": {
-  "score": 55,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 15,
+  "spread": 23,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Carne affiliated with?"
  },
  "whichcrewororganizationischarlottepralineaffiliatedwith": {
-  "score": 65,
+  "score": 50,
   "tier": "medium",
   "basis": "raters",
-  "spread": 25,
+  "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Charlotte Praline affiliated with?"
  },
  "whichcrewororganizationiskuromarimoaffiliatedwith": {
-  "score": 55,
-  "tier": "medium",
+  "score": 70,
+  "tier": "hard",
   "basis": "raters",
-  "spread": 15,
+  "spread": 20,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -31677,23 +31560,27 @@
   "question": "Which character has a known bounty of 293,000,000 Berries?"
  },
  "whichcrewororganizationisestridaffiliatedwith": {
-  "score": 65,
+  "score": 52,
   "tier": "medium",
   "basis": "raters",
-  "spread": 43,
+  "spread": 18,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Estrid affiliated with?"
  },
  "whichcrewororganizationisbombaaffiliatedwith": {
-  "score": 70,
-  "tier": "hard",
+  "score": 50,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 30,
+  "spread": 28,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Bomba affiliated with?"
@@ -31724,17 +31611,6 @@
   "authored_difficulty": "medium",
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did Smiley eat?"
- },
- "whichcrewororganizationissmileyaffiliatedwith": {
-  "score": 55,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 10,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "medium",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Smiley affiliated with?"
  },
  "whatissmileysoccupation": {
   "score": 35,
@@ -31831,7 +31707,7 @@
   "score": 85,
   "tier": "hard",
   "basis": "raters",
-  "spread": 8,
+  "spread": 27,
   "flags": [],
   "reasons": [],
   "authored_difficulty": "medium",
@@ -31888,12 +31764,14 @@
   "question": "Which character is known by the epithet \"Sonar King\"?"
  },
  "whichcrewororganizationiscaponepezaffiliatedwith": {
-  "score": 55,
+  "score": 45,
   "tier": "medium",
   "basis": "raters",
-  "spread": 28,
+  "spread": 26,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Capone Pez affiliated with?"
@@ -31982,14 +31860,12 @@
   "question": "Which Devil Fruit did Drophy eat?"
  },
  "whichcrewororganizationisdrophyaffiliatedwith": {
-  "score": 80,
+  "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 4,
+  "spread": 17,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Drophy affiliated with?"
@@ -32033,12 +31909,14 @@
   "question": "Which character is known by the epithet \"Town-Collapser\"?"
  },
  "whichcrewororganizationismomooaffiliatedwith": {
-  "score": 62,
+  "score": 35,
   "tier": "medium",
   "basis": "raters",
-  "spread": 35,
+  "spread": 18,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Momoo affiliated with?"
@@ -32092,10 +31970,10 @@
   "question": "Where does Charlotte Nusstorte reside?"
  },
  "whichcrewororganizationisshuraaffiliatedwith": {
-  "score": 80,
-  "tier": "hard",
+  "score": 35,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 32,
+  "spread": 20,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -32140,15 +32018,13 @@
   "question": "Which character is known by the epithet \"Sky Rider\"?"
  },
  "whichcrewororganizationiscottonaffiliatedwith": {
-  "score": 80,
-  "tier": "hard",
+  "score": 50,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 5,
-  "flags": [
-   "answer_len_outlier"
-  ],
+  "spread": 23,
+  "flags": [],
   "reasons": [
-   "signals: answer_len_outlier (-10)"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -32181,13 +32057,13 @@
   "question": "Which Devil Fruit did Chaka eat?"
  },
  "whichcrewororganizationischakaaffiliatedwith": {
-  "score": 35,
-  "tier": "medium",
+  "score": 15,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 5,
+  "spread": 25,
   "flags": [],
   "reasons": [
-   "2/3 raters called it guessable"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -32236,14 +32112,12 @@
   "question": "Which character is known by the epithet \"Jackal\"?"
  },
  "whichcrewororganizationisindigoaffiliatedwith": {
-  "score": 80,
+  "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 2,
+  "spread": 8,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Indigo affiliated with?"
@@ -32286,12 +32160,14 @@
   "question": "Which character is known by the epithet \"Ice Witch\"?"
  },
  "whichcrewororganizationisusakkovaffiliatedwith": {
-  "score": 90,
-  "tier": "hard",
+  "score": 52,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 0,
+  "spread": 17,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Usakkov affiliated with?"
@@ -32344,11 +32220,9 @@
   "score": 75,
   "tier": "hard",
   "basis": "raters",
-  "spread": 5,
+  "spread": 15,
   "flags": [],
-  "reasons": [
-   "1/3 raters called it guessable"
-  ],
+  "reasons": [],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Bobby Funk affiliated with?"
@@ -32401,17 +32275,6 @@
   "authored_difficulty": "hard",
   "category": "Geography",
   "question": "Where does Doll reside?"
- },
- "whichcrewororganizationischouchouaffiliatedwith": {
-  "score": 50,
-  "tier": "medium",
-  "basis": "raters",
-  "spread": 40,
-  "flags": [],
-  "reasons": [],
-  "authored_difficulty": "medium",
-  "category": "Crews & Organizations",
-  "question": "Which crew or organization is Chouchou affiliated with?"
  },
  "whatischouchousoccupation": {
   "score": 20,
@@ -32473,13 +32336,13 @@
   "question": "Which Devil Fruit did S-Hawk eat?"
  },
  "whichcrewororganizationisshawkaffiliatedwith": {
-  "score": 75,
-  "tier": "hard",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 25,
+  "spread": 45,
   "flags": [],
   "reasons": [
-   "1/3 raters called it guessable"
+   "3/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -32534,15 +32397,13 @@
   "question": "Which Devil Fruit did Daifugo eat?"
  },
  "whichcrewororganizationiswiccaaffiliatedwith": {
-  "score": 82,
-  "tier": "hard",
+  "score": 45,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 11,
-  "flags": [
-   "answer_len_outlier"
-  ],
+  "spread": 18,
+  "flags": [],
   "reasons": [
-   "signals: answer_len_outlier (-10)"
+   "1/3 raters called it guessable"
   ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
@@ -32560,10 +32421,10 @@
   "question": "What is Wicca's occupation?"
  },
  "whichcrewororganizationissadiaffiliatedwith": {
-  "score": 40,
-  "tier": "medium",
+  "score": 30,
+  "tier": "easy",
   "basis": "raters",
-  "spread": 15,
+  "spread": 20,
   "flags": [],
   "reasons": [
    "1/3 raters called it guessable"
@@ -32625,12 +32486,14 @@
   "question": "Which Devil Fruit did Bian eat?"
  },
  "whichcrewororganizationisbianaffiliatedwith": {
-  "score": 90,
-  "tier": "hard",
+  "score": 55,
+  "tier": "medium",
   "basis": "raters",
-  "spread": 4,
+  "spread": 20,
   "flags": [],
-  "reasons": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
   "authored_difficulty": "medium",
   "category": "Crews & Organizations",
   "question": "Which crew or organization is Bian affiliated with?"
@@ -32721,6 +32584,19 @@
   "category": "Geography",
   "question": "Where does Haredas reside?"
  },
+ "whichcrewororganizationisripleyaffiliatedwith": {
+  "score": 58,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 30,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Ripley affiliated with?"
+ },
  "whatisripleysoccupation": {
   "score": 90,
   "tier": "hard",
@@ -32745,6 +32621,45 @@
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did S-Bear eat?"
  },
+ "whichcrewororganizationissbearaffiliatedwith": {
+  "score": 30,
+  "tier": "easy",
+  "basis": "raters",
+  "spread": 45,
+  "flags": [],
+  "reasons": [
+   "3/3 raters called it guessable"
+  ],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is S-Bear affiliated with?"
+ },
+ "whichcrewororganizationisbobombaaffiliatedwith": {
+  "score": 45,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 18,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Bobomba affiliated with?"
+ },
+ "whichcrewororganizationismissmondayaffiliatedwith": {
+  "score": 30,
+  "tier": "easy",
+  "basis": "raters",
+  "spread": 15,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Miss Monday affiliated with?"
+ },
  "whatismissmondaysoccupation": {
   "score": 45,
   "tier": "medium",
@@ -32755,6 +32670,32 @@
   "authored_difficulty": "medium",
   "category": "Characters",
   "question": "What is Miss Monday's occupation?"
+ },
+ "whichcrewororganizationisspandineaffiliatedwith": {
+  "score": 45,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 22,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Spandine affiliated with?"
+ },
+ "whichcrewororganizationismegaloaffiliatedwith": {
+  "score": 20,
+  "tier": "easy",
+  "basis": "raters",
+  "spread": 15,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Megalo affiliated with?"
  },
  "whichdevilfruitdidssharkeat": {
   "score": 55,
@@ -32769,6 +32710,32 @@
   "category": "Devil Fruits",
   "question": "Which Devil Fruit did S-Shark eat?"
  },
+ "whichcrewororganizationisssharkaffiliatedwith": {
+  "score": 30,
+  "tier": "easy",
+  "basis": "raters",
+  "spread": 45,
+  "flags": [],
+  "reasons": [
+   "3/3 raters called it guessable"
+  ],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is S-Shark affiliated with?"
+ },
+ "whichcrewororganizationiskomachiyoaffiliatedwith": {
+  "score": 45,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 12,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Komachiyo affiliated with?"
+ },
  "wheredoeskomachiyoreside": {
   "score": 90,
   "tier": "hard",
@@ -32779,6 +32746,17 @@
   "authored_difficulty": "hard",
   "category": "Geography",
   "question": "Where does Komachiyo reside?"
+ },
+ "whichcrewororganizationisrakiaffiliatedwith": {
+  "score": 65,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 22,
+  "flags": [],
+  "reasons": [],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Raki affiliated with?"
  },
  "whatisrakisoccupation": {
   "score": 92,
@@ -32831,6 +32809,17 @@
   "category": "Geography",
   "question": "Where does Mashikaku reside?"
  },
+ "whichcrewororganizationissetoaffiliatedwith": {
+  "score": 75,
+  "tier": "hard",
+  "basis": "raters",
+  "spread": 22,
+  "flags": [],
+  "reasons": [],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Seto affiliated with?"
+ },
  "wheredoescharlottekatoreside": {
   "score": 92,
   "tier": "hard",
@@ -32841,6 +32830,17 @@
   "authored_difficulty": "hard",
   "category": "Geography",
   "question": "Where does Charlotte Kato reside?"
+ },
+ "whichcrewororganizationisneroaffiliatedwith": {
+  "score": 65,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 16,
+  "flags": [],
+  "reasons": [],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Nero affiliated with?"
  },
  "bywhatepithetisneroknown": {
   "score": 90,
@@ -32863,6 +32863,30 @@
   "authored_difficulty": "medium",
   "category": "Characters",
   "question": "Which character is known by the epithet \"Sea Weasel\"?"
+ },
+ "whichcrewororganizationischessaffiliatedwith": {
+  "score": 60,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 23,
+  "flags": [],
+  "reasons": [],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Chess affiliated with?"
+ },
+ "whichcrewororganizationisgambiaaffiliatedwith": {
+  "score": 45,
+  "tier": "medium",
+  "basis": "raters",
+  "spread": 22,
+  "flags": [],
+  "reasons": [
+   "1/3 raters called it guessable"
+  ],
+  "authored_difficulty": "medium",
+  "category": "Crews & Organizations",
+  "question": "Which crew or organization is Gambia affiliated with?"
  },
  "whatisgambiasknownbounty": {
   "score": 35,

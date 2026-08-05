@@ -65282,5 +65282,5667 @@
    "guessable": false,
    "reason": "Baterilla is known mainly to those who recall a specific captain's backstory."
   }
+ },
+ "782adac214d0fd3d": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Vegapunk's specific Egghead-arc org is niche trivia most lapsed fans wouldn't recall."
+  },
+  "question": "Which crew or organization is Vegapunk affiliated with?",
+  "key": "whichcrewororganizationisvegapunkaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Vegapunk's specific org name MADS is niche even though the character is famous."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Vegapunk is well-known but the specific MADS label takes inside knowledge."
+  }
+ },
+ "36421dc0012dda70": {
+  "casual": {
+   "knowledge_score": 5,
+   "guessable": false,
+   "reason": "Kaido's crew is iconic Emperor-tier knowledge."
+  },
+  "question": "Which crew or organization is Kaidou affiliated with?",
+  "key": "whichcrewororganizationiskaidouaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 3,
+   "guessable": false,
+   "reason": "Kaidou leading the Beasts Pirates is headline knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 5,
+   "guessable": false,
+   "reason": "Kaidou is one of the most famous Emperors."
+  }
+ },
+ "d3bad2d3d939d4ff": {
+  "casual": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Sabo's Revolutionary Army reveal is a memorable major plot beat."
+  },
+  "question": "Which crew or organization is Sabo affiliated with?",
+  "key": "whichcrewororganizationissaboaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 8,
+   "guessable": false,
+   "reason": "Sabo joining the Revolutionary Army is a major, well-remembered plot beat."
+  },
+  "skeptic": {
+   "knowledge_score": 10,
+   "guessable": false,
+   "reason": "Sabo's Revolutionary Army role is widely known."
+  }
+ },
+ "b9e5d49040d655ad": {
+  "casual": {
+   "knowledge_score": 8,
+   "guessable": true,
+   "reason": "Only Marines plausibly fits an Admiral; the rest are unrelated domains."
+  },
+  "question": "Which crew or organization is Borsalino affiliated with?",
+  "key": "whichcrewororganizationisborsalinoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 3,
+   "guessable": false,
+   "reason": "Kizaru as a Marine admiral is iconic."
+  },
+  "skeptic": {
+   "knowledge_score": 8,
+   "guessable": false,
+   "reason": "Kizaru is a famous admiral."
+  }
+ },
+ "24d9c8878fa208a0": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "His Admiral status is known but the post-timeskip defection twist trips up casual fans, and no clean 'Marines' option exists."
+  },
+  "question": "Which crew or organization is Kuzan affiliated with?",
+  "key": "whichcrewororganizationiskuzanaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Aokiji's post-Marine crew switch is a subtler, later reveal many viewers forget."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Requires knowing Aokiji's post-war defection to Blackbeard, not universal knowledge."
+  }
+ },
+ "f429314ff9f93e6b": {
+  "casual": {
+   "knowledge_score": 4,
+   "guessable": true,
+   "reason": "Whitebeard's name directly matches Whitebeard Pirates."
+  },
+  "question": "Which crew or organization is Edward Newgate affiliated with?",
+  "key": "whichcrewororganizationisedwardnewgateaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 2,
+   "guessable": false,
+   "reason": "Whitebeard leading the Whitebeard Pirates is trivial."
+  },
+  "skeptic": {
+   "knowledge_score": 5,
+   "guessable": false,
+   "reason": "Whitebeard is one of the most famous characters in the series."
+  }
+ },
+ "3e410ae5fdff3d37": {
+  "casual": {
+   "knowledge_score": 4,
+   "guessable": true,
+   "reason": "Blackbeard's name directly matches Blackbeard Pirates."
+  },
+  "question": "Which crew or organization is Marshall D. Teach affiliated with?",
+  "key": "whichcrewororganizationismarshalldteachaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 2,
+   "guessable": false,
+   "reason": "Blackbeard leading the Blackbeard Pirates is trivial."
+  },
+  "skeptic": {
+   "knowledge_score": 8,
+   "guessable": false,
+   "reason": "Blackbeard is a top-tier famous villain."
+  }
+ },
+ "a3186cf67dd5c656": {
+  "casual": {
+   "knowledge_score": 6,
+   "guessable": true,
+   "reason": "Only Marines plausibly fits an Admiral."
+  },
+  "question": "Which crew or organization is Sakazuki affiliated with?",
+  "key": "whichcrewororganizationissakazukiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 3,
+   "guessable": false,
+   "reason": "Akainu as a Marine is iconic."
+  },
+  "skeptic": {
+   "knowledge_score": 8,
+   "guessable": false,
+   "reason": "Akainu is a famous admiral/fleet admiral."
+  }
+ },
+ "4f9f0de725498423": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Wano All-Star Queen is fairly known but several options sound plausibly Wano-adjacent."
+  },
+  "question": "Which crew or organization is Queen affiliated with?",
+  "key": "whichcrewororganizationisqueenaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Queen as a Beasts Pirates All-Star is well known to Wano viewers."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Queen is a known Wano All-Star but not headline-tier."
+  }
+ },
+ "d42940bae3f89f28": {
+  "casual": {
+   "knowledge_score": 12,
+   "guessable": true,
+   "reason": "Kuja Pirates clearly fits her Amazon Lily identity; others are absurd."
+  },
+  "question": "Which crew or organization is Boa Hancock affiliated with?",
+  "key": "whichcrewororganizationisboahancockaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 10,
+   "guessable": true,
+   "reason": "Hancock's crew is famous, and the other options are non-pirate orgs, easy to eliminate."
+  },
+  "skeptic": {
+   "knowledge_score": 10,
+   "guessable": false,
+   "reason": "Hancock is an extremely famous character."
+  }
+ },
+ "06450ca94195ad12": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Kuma's true origin/kingdom is deep lore casual viewers rarely retain."
+  },
+  "question": "Which crew or organization is Bartholomew Kuma affiliated with?",
+  "key": "whichcrewororganizationisbartholomewkumaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Kuma's Freedom Fighters backstory is deep-cut, recent flashback lore."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Kuma's kingship over the Sorbet/Lvneel Kingdom is a deep-cut backstory detail."
+  }
+ },
+ "87dffea5bc1f95b3": {
+  "casual": {
+   "knowledge_score": 50,
+   "guessable": true,
+   "reason": "Five Elders is the only plausible fit for a shadowy Gorosei figure; others are absurd."
+  },
+  "question": "Which crew or organization is Jaygarcia Saturn affiliated with?",
+  "key": "whichcrewororganizationisjaygarciasaturnaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Saturn as a Five Elder is a major recent reveal, and the other options are all pirate crews he clearly isn't."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "A recently introduced named Gorosei member, moderate recognition only."
+  }
+ },
+ "fbc8fb3948b809e6": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Only Thriller Bark Pirates matches Moria's known domain."
+  },
+  "question": "Which crew or organization is Gecko Moria affiliated with?",
+  "key": "whichcrewororganizationisgeckomoriaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 5,
+   "guessable": false,
+   "reason": "Moria's crew name matches his own Thriller Bark, near-universal knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Moria is a well-known former Warlord."
+  }
+ },
+ "f8497e6f24f23863": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Buggy Pirates is the obvious guess but the Cross Guild twist is a real recent-arc trap."
+  },
+  "question": "Which crew or organization is Buggy affiliated with?",
+  "key": "whichcrewororganizationisbuggyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 2,
+   "guessable": false,
+   "reason": "Buggy leading the Buggy Pirates is trivial."
+  },
+  "skeptic": {
+   "knowledge_score": 5,
+   "guessable": true,
+   "reason": "One option, 'Buggy Pirates', literally repeats the character's own name."
+  }
+ },
+ "12cfc44607300c8b": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Mokomo Dukedom clearly fits a mink character; others are unrelated."
+  },
+  "question": "Which crew or organization is Carrot affiliated with?",
+  "key": "whichcrewororganizationiscarrotaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Carrot's home Mokomo Dukedom requires having watched the Zou/Wano arcs."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Carrot is a recognizable Wano-arc supporting character."
+  }
+ },
+ "0614a9017958f84d": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "The Ninja-Pirate-Mink-Samurai Alliance is Yamato's well-known Wano allegiance."
+  },
+  "question": "Which crew or organization is Yamato affiliated with?",
+  "key": "whichcrewororganizationisyamatoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Yamato's role in the Wano alliance is a well-remembered finale beat."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Yamato is a prominent Wano-arc character."
+  }
+ },
+ "d2e445921f8514e4": {
+  "casual": {
+   "knowledge_score": 5,
+   "guessable": true,
+   "reason": "Ace's Whitebeard Pirates membership is iconic and widely known."
+  },
+  "question": "Which crew or organization is Portgas D. Ace affiliated with?",
+  "key": "whichcrewororganizationisportgasdaceaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 3,
+   "guessable": false,
+   "reason": "Ace and the Whitebeard Pirates is core knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 5,
+   "guessable": false,
+   "reason": "Ace is one of the most famous characters."
+  }
+ },
+ "fd19ab70e2e82e13": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "King is a well-known Wano All-Star; other crews are clearly unrelated."
+  },
+  "question": "Which crew or organization is King affiliated with?",
+  "key": "whichcrewororganizationiskingaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "King as a Beasts Pirates commander is well known to Wano viewers."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "King is a known Wano All-Star."
+  }
+ },
+ "6bd98b834f8e8989": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Cross Guild is a genuine recent-arc trap against his classic Baroque Works image, which isn't even offered."
+  },
+  "question": "Which crew or organization is Crocodile affiliated with?",
+  "key": "whichcrewororganizationiscrocodileaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Crocodile's post-Wano Cross Guild membership is a later development, though he's clearly not the other listed pirate crews."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Requires knowing Crocodile's post-war Cross Guild affiliation."
+  }
+ },
+ "2f27c0d2e23d065d": {
+  "casual": {
+   "knowledge_score": 8,
+   "guessable": true,
+   "reason": "Only Marines fits a Fleet Admiral."
+  },
+  "question": "Which crew or organization is Sengoku affiliated with?",
+  "key": "whichcrewororganizationissengokuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 5,
+   "guessable": false,
+   "reason": "Sengoku as a Marine is basic knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 10,
+   "guessable": false,
+   "reason": "Sengoku is a famous former Fleet Admiral."
+  }
+ },
+ "578cf6d721ecc515": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Both Wano Country and Kouzuki Family are plausible Wano-linked options requiring real precision."
+  },
+  "question": "Which crew or organization is Kurozumi Orochi affiliated with?",
+  "key": "whichcrewororganizationiskurozumiorochiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Orochi as Wano's shogun is central to the Wano arc."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Requires knowing Orochi's pre-shogun gang; the Kouzuki Family option is a deliberate trap."
+  }
+ },
+ "82ce63bbf904c879": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Fire Tank Pirates is his own distinctly named crew."
+  },
+  "question": "Which crew or organization is Capone Bege affiliated with?",
+  "key": "whichcrewororganizationiscaponebegeaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Bege's own Fire Tank Pirates requires remembering a mid-tier supernova's crew name."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Bege is a known Worst Generation captain."
+  }
+ },
+ "e3c9e793c9a0fde4": {
+  "casual": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "Only Marines fits an Admiral."
+  },
+  "question": "Which crew or organization is Issho affiliated with?",
+  "key": "whichcrewororganizationisisshoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 8,
+   "guessable": false,
+   "reason": "Fujitora as a Marine admiral is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Fujitora is a famous admiral."
+  }
+ },
+ "a60aa90d61f82fd0": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "New Fish-Man Pirates directly matches his Fishman Island arc crew."
+  },
+  "question": "Which crew or organization is Hody Jones affiliated with?",
+  "key": "whichcrewororganizationishodyjonesaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Hody Jones led the Fishman Island arc's main villain group, a memorable antagonist."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Hody is the well-known Fish-Man Island arc villain."
+  }
+ },
+ "d2ea8e477137906e": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Ivankov's Revolutionary Army role is well known from the Impel Down arc."
+  },
+  "question": "Which crew or organization is Emporio Ivankov affiliated with?",
+  "key": "whichcrewororganizationisemporioivankovaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 10,
+   "guessable": false,
+   "reason": "Ivankov's Revolutionary Army membership is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Ivankov is a widely recognized character."
+  }
+ },
+ "a5f2eef06bc242a5": {
+  "casual": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "Only Whitebeard Pirates plausibly matches Marco's famous role."
+  },
+  "question": "Which crew or organization is Marco affiliated with?",
+  "key": "whichcrewororganizationismarcoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 8,
+   "guessable": false,
+   "reason": "Marco the Phoenix and the Whitebeard Pirates is well-known knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Marco is a famous Whitebeard commander."
+  }
+ },
+ "c04c76d1250c0460": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Kouzuki Family clearly fits a Wano loyalist samurai versus unrelated options."
+  },
+  "question": "Which crew or organization is Kikunojo affiliated with?",
+  "key": "whichcrewororganizationiskikunojoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Kikunojo's Wano retainer status requires attentive Wano viewing."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Kiku is a recognizable Scabbard but the exact affiliation label is a finer detail."
+  }
+ },
+ "1af854e07a01d34d": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Cross Guild and Baratie are both genuinely plausible for a wandering swordsman like Mihawk."
+  },
+  "question": "Which crew or organization is Dracule Mihawk affiliated with?",
+  "key": "whichcrewororganizationisdraculemihawkaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Mihawk's post-Wano Cross Guild tie is a later development, but he's clearly not any of the other listed crews."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Mihawk is extremely famous, though his newest crew is a recent development."
+  }
+ },
+ "2e63fbaa96d9f684": {
+  "casual": {
+   "knowledge_score": 12,
+   "guessable": true,
+   "reason": "Rayleigh's Roger Pirates association is iconic and widely known."
+  },
+  "question": "Which crew or organization is Silvers Rayleigh affiliated with?",
+  "key": "whichcrewororganizationissilversrayleighaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 8,
+   "guessable": false,
+   "reason": "Rayleigh as Roger's first mate is iconic."
+  },
+  "skeptic": {
+   "knowledge_score": 10,
+   "guessable": false,
+   "reason": "Rayleigh is a very famous character."
+  }
+ },
+ "4a6e61b536c6f993": {
+  "casual": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Loki is an Elbaph-arc character from very recent content lapsed fans likely haven't seen."
+  },
+  "question": "Which crew or organization is Loki affiliated with?",
+  "key": "whichcrewororganizationislokiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Loki is an obscure figure from the very recent Elbaph content."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "An obscure recent-arc character; Baratie is clearly wrong but the remaining options don't single out one answer."
+  }
+ },
+ "da0e86eac1428969": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Barto Club is his own named crew, a clear match."
+  },
+  "question": "Which crew or organization is Bartolomeo affiliated with?",
+  "key": "whichcrewororganizationisbartolomeoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Bartolomeo's Barto Club is a memorable Dressrosa-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "'Barto Club' is a direct nickname derivative of 'Bartolomeo'."
+  }
+ },
+ "a6177956b81299dc": {
+  "casual": {
+   "knowledge_score": 6,
+   "guessable": true,
+   "reason": "Dragon leading the Revolutionary Army is extremely well known."
+  },
+  "question": "Which crew or organization is Monkey D. Dragon affiliated with?",
+  "key": "whichcrewororganizationismonkeyddragonaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 5,
+   "guessable": false,
+   "reason": "Dragon leading the Revolutionary Army is core knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 8,
+   "guessable": false,
+   "reason": "Dragon's leadership of the Revolutionaries is famous."
+  }
+ },
+ "d9c72b977dfc1b45": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Lucci's CP agent role is widely known from the Water 7 arc."
+  },
+  "question": "Which crew or organization is Rob Lucci affiliated with?",
+  "key": "whichcrewororganizationisroblucciaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Lucci as a government agent is well known, and the other options (restaurant, school, guild) obviously don't fit him."
+  },
+  "skeptic": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Lucci is a well-known CP9/CP0 assassin."
+  }
+ },
+ "8b64aa71d3682819": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Newkama Land fits his known Ivankov-allied role."
+  },
+  "question": "Which crew or organization is Bentham affiliated with?",
+  "key": "whichcrewororganizationisbenthamaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Bentham's post-Impel Down affiliation is a finer detail some viewers won't retain."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Requires knowing Bon Kurei's ties to Impel Down's Newkama Land."
+  }
+ },
+ "ae0bb52cdd15d423": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Kaku's CP agent role is known from the Water 7 arc."
+  },
+  "question": "Which crew or organization is Kaku affiliated with?",
+  "key": "whichcrewororganizationiskakuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Kaku as a government agent is well known, and the other options clearly don't fit him."
+  },
+  "skeptic": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Kaku is a recognizable CP9 member."
+  }
+ },
+ "f1f9625045e8716d": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Harald is an obscure very-recent Elbaph-arc figure unfamiliar to lapsed fans."
+  },
+  "question": "Which crew or organization is Harald affiliated with?",
+  "key": "whichcrewororganizationisharaldaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Harald is an obscure figure from the very recent Elbaph content."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": true,
+   "reason": "The Norse-royal-sounding name 'Harald' pairs naturally with the only royal-family option among otherwise generic pirate crews and a bar."
+  }
+ },
+ "625e5d4f1a06d02e": {
+  "casual": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "God's Army is Enel's own famous title for his followers."
+  },
+  "question": "Which crew or organization is Enel affiliated with?",
+  "key": "whichcrewororganizationisenelaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Enel is a memorable Skypiea arc villain."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Enel is a famous Skypiea villain, though the God's Army label itself needs specific knowledge."
+  }
+ },
+ "afd5437ee9aa5187": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Corrida Colosseum directly fits his Dressrosa arc role."
+  },
+  "question": "Which crew or organization is Kyros affiliated with?",
+  "key": "whichcrewororganizationiskyrosaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Kyros's Dressrosa gladiator background requires remembering arc-level detail."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Requires Dressrosa-arc specific knowledge of Kyros's gladiator history."
+  }
+ },
+ "2354ba8dac5e46fa": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Evil Black Drum Kingdom matches his own arc directly."
+  },
+  "question": "Which crew or organization is Wapol affiliated with?",
+  "key": "whichcrewororganizationiswapolaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Wapol as the Drum Kingdom's king is a memorable early-arc villain."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Wapol is a well-known Drum Island arc antagonist."
+  }
+ },
+ "34f26d0d04df3c45": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Takoyaki 8 is his own named group from Fishman Island."
+  },
+  "question": "Which crew or organization is Hatchan affiliated with?",
+  "key": "whichcrewororganizationishatchanaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Hatchan's later Takoyaki 8 affiliation is a finer post-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Hatchan's takoyaki stand is a known but secondary detail."
+  }
+ },
+ "4840d15fc4d72558": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Kouzuki Family clearly fits a Wano samurai loyalist."
+  },
+  "question": "Which crew or organization is Kin'emon affiliated with?",
+  "key": "whichcrewororganizationiskinemonaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Kin'emon as a Kouzuki loyalist is central Wano knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Kin'emon is a prominent Wano-arc character."
+  }
+ },
+ "80dd3680b8e09400": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Mokomo Dukedom obviously fits a mink homeland."
+  },
+  "question": "Which crew or organization is Inuarashi affiliated with?",
+  "key": "whichcrewororganizationisinuarashiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Inuarashi leading the Mokomo Dukedom Minks is well-remembered Zou/Wano detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Inuarashi is a well-known mink leader."
+  }
+ },
+ "19f037561e9cbceb": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Mr. 3's Baroque Works past isn't offered, leaving genuine ambiguity among vague options."
+  },
+  "question": "Which crew or organization is Galdino affiliated with?",
+  "key": "whichcrewororganizationisgaldinoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Mr. 3's later affiliation is a finer post-canon detail few retain precisely."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Requires knowing Mr. 3's post-war Cross Guild tie."
+  }
+ },
+ "b689ead34bf9d735": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Kouzuki Family fits a Wano ninja loyalist versus unrelated options."
+  },
+  "question": "Which crew or organization is Raizo affiliated with?",
+  "key": "whichcrewororganizationisraizoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Raizo as a Kouzuki retainer is solid Wano-arc knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Raizo is a recognizable but secondary Wano character."
+  }
+ },
+ "7b266a40bac8c3e9": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Pedro is a minor mink character and precise homeland recall isn't guaranteed."
+  },
+  "question": "Which crew or organization is Pedro affiliated with?",
+  "key": "whichcrewororganizationispedroaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Pedro is a minor Zou/Whole Cake character whose exact affiliation many viewers won't recall."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Pedro is a memorable but supporting Zou-arc character."
+  }
+ },
+ "975e754796a6da66": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Donquixote Pirates alliance is well known from Punk Hazard/Dressrosa."
+  },
+  "question": "Which crew or organization is Caesar Clown affiliated with?",
+  "key": "whichcrewororganizationiscaesarclownaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Caesar Clown's Donquixote ties are a memorable Punk Hazard arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Requires up-to-date knowledge of Caesar's post-Egghead affiliation."
+  }
+ },
+ "12c2713a5f886d54": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Donquixote Pirates fits his known post-Jaya allegiance."
+  },
+  "question": "Which crew or organization is Bellamy affiliated with?",
+  "key": "whichcrewororganizationisbellamyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Bellamy's later Donquixote Pirates membership is a remembered Dressrosa detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Bellamy is a recognizable Jaya-arc antagonist."
+  }
+ },
+ "1d9771869331c93f": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Dressrosa directly matches her home and arc."
+  },
+  "question": "Which crew or organization is Rebecca affiliated with?",
+  "key": "whichcrewororganizationisrebeccaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Rebecca as the Dressrosa princess is a memorable arc-level fact."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Rebecca is a well-known Dressrosa-arc character."
+  }
+ },
+ "74056672600019f7": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "A mink homeland option clearly fits Nekomamushi."
+  },
+  "question": "Which crew or organization is Nekomamushi affiliated with?",
+  "key": "whichcrewororganizationisnekomamushiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Nekomamushi's Mink leadership is well-remembered Zou/Wano detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Nekomamushi is a well-known mink leader."
+  }
+ },
+ "2a2896c221fe5fc5": {
+  "casual": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "Neptune Family is her own royal family, a clear match."
+  },
+  "question": "Which crew or organization is Shirahoshi affiliated with?",
+  "key": "whichcrewororganizationisshirahoshiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 10,
+   "guessable": false,
+   "reason": "Shirahoshi as a mermaid princess of the Neptune Family is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Shirahoshi is a very famous character."
+  }
+ },
+ "0bde326d96ee56e7": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Beautiful Pirates is his own distinctively named crew."
+  },
+  "question": "Which crew or organization is Cavendish affiliated with?",
+  "key": "whichcrewororganizationiscavendishaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Cavendish's Beautiful Pirates crew name is a finer Dressrosa-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Requires knowing Cavendish's own crew name specifically."
+  }
+ },
+ "064a532b76c47ece": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "World Government fits the mysterious ruler reveal; others are absurd."
+  },
+  "question": "Which crew or organization is Imu affiliated with?",
+  "key": "whichcrewororganizationisimuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Imu's tie to the World Government is a major, well-followed mystery reveal."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Imu is a mysterious, only lightly-explored figure; nothing in the stem hints at the answer."
+  }
+ },
+ "a0a3b7ab4fead9df": {
+  "casual": {
+   "knowledge_score": 50,
+   "guessable": true,
+   "reason": "His 'Golden Lion' nickname directly matches the Golden Lion Pirates option."
+  },
+  "question": "Which crew or organization is Shiki affiliated with?",
+  "key": "whichcrewororganizationisshikiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Shiki is a movie-canon villain many series-only viewers won't place precisely."
+  },
+  "skeptic": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Shiki is a movie-origin character, less known to manga/anime-only viewers."
+  }
+ },
+ "e28232fedb92849b": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Kouzuki Family fits a Wano loyalist versus unrelated options."
+  },
+  "question": "Which crew or organization is Denjiro affiliated with?",
+  "key": "whichcrewororganizationisdenjiroaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Denjiro's Kouzuki ties require attentive Wano-arc viewing."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Denjiro is a recognizable Scabbard character."
+  }
+ },
+ "6bdb21f6e36b404c": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Kid Pirates is a well-known pairing (Killer as Kid's right hand)."
+  },
+  "question": "Which crew or organization is Killer affiliated with?",
+  "key": "whichcrewororganizationiskilleraffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Killer as Kid's first mate is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Killer is a well-known Worst Generation character."
+  }
+ },
+ "91ae8e22a647a465": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Thriller Bark Pirates directly matches her arc."
+  },
+  "question": "Which crew or organization is Perona affiliated with?",
+  "key": "whichcrewororganizationisperonaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Perona's Thriller Bark Pirates membership is well remembered."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Perona is a well-known Thriller Bark arc character."
+  }
+ },
+ "6dc14e8ce4aba57c": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "On Air Pirates is his own distinctly themed crew name."
+  },
+  "question": "Which crew or organization is Scratchmen Apoo affiliated with?",
+  "key": "whichcrewororganizationisscratchmenapooaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Apoo's On Air Pirates crew name is a finer supernova-era detail."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Apoo is a recognizable but secondary Worst Generation captain."
+  }
+ },
+ "6398f5bf846810c4": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Zeus's affiliation is genuinely ambiguous among these options for a casual viewer."
+  },
+  "question": "Which crew or organization is Zeus affiliated with?",
+  "key": "whichcrewororganizationiszeusaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Zeus's later switch to the Straw Hats is a finer post-Wano detail."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Requires knowing Zeus's post-Whole Cake defection to the Straw Hats."
+  }
+ },
+ "2caa46ad4c9fb015": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Takoyaki 8 fits her Fishman Island mermaid cafe group."
+  },
+  "question": "Which crew or organization is Camie affiliated with?",
+  "key": "whichcrewororganizationiscamieaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Camie's specific affiliation is a minor, easily forgotten detail."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "An obscure background detail about Camie's slave branding."
+  }
+ },
+ "1eb4270a18cf750a": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Black Cat Pirates is his own iconic crew from the very first arc."
+  },
+  "question": "Which crew or organization is Kuro affiliated with?",
+  "key": "whichcrewororganizationiskuroaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Kuro's Black Cat Pirates is a memorable early East Blue arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "'Kuro' is Japanese for 'black,' directly matching the answer 'Black Cat Pirates'."
+  }
+ },
+ "39476d8eba3dec22": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "King Neptune is a near-synonym decoy of Neptune Family, adding real confusion."
+  },
+  "question": "Which crew or organization is Neptune affiliated with?",
+  "key": "whichcrewororganizationisneptuneaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 3,
+   "guessable": false,
+   "reason": "King Neptune and the Neptune Family match by name, trivial."
+  },
+  "skeptic": {
+   "knowledge_score": 5,
+   "guessable": true,
+   "reason": "The option 'Neptune Family' repeats the character's own name."
+  }
+ },
+ "a23d8e3901f45555": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Beasts Pirates directly fits a Wano antagonist versus unrelated options."
+  },
+  "question": "Which crew or organization is Ulti affiliated with?",
+  "key": "whichcrewororganizationisultiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Ulti is a recognizable Wano Numbers member but a supporting one."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Ulti is a known but secondary Wano Tobiroppo member."
+  }
+ },
+ "c68597b1ebb51c76": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Roger Pirates fits his known role as Roger's crewmate; others are unrelated domains."
+  },
+  "question": "Which crew or organization is Scopper Gaban affiliated with?",
+  "key": "whichcrewororganizationisscoppergabanaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Scopper Gaban is an obscure old Roger crewmate only briefly mentioned."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Gaban is a recently revealed, lesser-known Roger crew member."
+  }
+ },
+ "e2bc03071711de06": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Impel Down is Magellan's own domain as warden, a clear fit."
+  },
+  "question": "Which crew or organization is Magellan affiliated with?",
+  "key": "whichcrewororganizationismagellanaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 10,
+   "guessable": false,
+   "reason": "Magellan as Impel Down's chief warden is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Magellan is a well-known Impel Down warden."
+  }
+ },
+ "e111a45b680d27fc": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Beasts Pirates directly fits a Wano antagonist."
+  },
+  "question": "Which crew or organization is Jack affiliated with?",
+  "key": "whichcrewororganizationisjackaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Jack as a Beasts Pirates All-Star is well known to Wano viewers."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Jack is a known Wano All-Star."
+  }
+ },
+ "8aacb21f9147e402": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "A giant-warrior-named crew fits a giant character like Hajrudin."
+  },
+  "question": "Which crew or organization is Hajrudin affiliated with?",
+  "key": "whichcrewororganizationishajrudinaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Hajrudin is a minor Dressrosa-arc giant few will place precisely."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Hajrudin is an obscure Dressrosa-arc giant."
+  }
+ },
+ "7c03192531b19652": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Donquixote Pirates fits his secret double-agent role reasonably well."
+  },
+  "question": "Which crew or organization is Vergo affiliated with?",
+  "key": "whichcrewororganizationisvergoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Vergo's secret Donquixote loyalty is a memorable but arc-specific twist."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Vergo is a known but mid-tier Punk Hazard arc character."
+  }
+ },
+ "6c2d72b5e38e202f": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Kouzuki Family clearly fits a Wano loyalist."
+  },
+  "question": "Which crew or organization is Kawamatsu affiliated with?",
+  "key": "whichcrewororganizationiskawamatsuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Kawamatsu's Kouzuki loyalty requires attentive Wano viewing."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Kawamatsu is a recognizable but secondary Wano character."
+  }
+ },
+ "a74245e0d49ec2f7": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "CP0 vs his actual CP9 role is a subtle wrong-branch trap."
+  },
+  "question": "Which crew or organization is Jabra affiliated with?",
+  "key": "whichcrewororganizationisjabraaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Jabra is a secondary CP9 agent many viewers won't place exactly."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Jabra is a recognizable CP9 member."
+  }
+ },
+ "3b95463031daa1b7": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Donquixote Pirates and Dressrosa are both plausible for a Doflamingo executive."
+  },
+  "question": "Which crew or organization is Trebol affiliated with?",
+  "key": "whichcrewororganizationistrebolaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Trebol as a Donquixote executive is solid Dressrosa-arc knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Trebol is a known Doflamingo officer."
+  }
+ },
+ "539a25af4a321742": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Thriller Bark Pirates directly fits his arc."
+  },
+  "question": "Which crew or organization is Hogback affiliated with?",
+  "key": "whichcrewororganizationishogbackaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Hogback's Thriller Bark ties are a remembered but arc-specific detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Hogback is a well-known Thriller Bark arc doctor."
+  }
+ },
+ "765087a3106cfcb2": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Giant Warrior Pirates fits the iconic giant duo Dorry and Brogy."
+  },
+  "question": "Which crew or organization is Brogy affiliated with?",
+  "key": "whichcrewororganizationisbrogyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Brogy's Giant Warrior Pirates crew name is a finer Little Garden detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Brogy is a well-known Little Garden giant."
+  }
+ },
+ "e01df1555d9d2070": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Beasts Pirates fits a Wano antagonist versus unrelated options."
+  },
+  "question": "Which crew or organization is Who's-Who affiliated with?",
+  "key": "whichcrewororganizationiswhoswhoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Who's-Who as a Beasts Pirates Number is a mid-tier Wano detail."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Who's-Who is a known but secondary Wano Tobiroppo member."
+  }
+ },
+ "de86d00ef511c8fd": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Thriller Bark Pirates directly matches the iconic arc antagonist."
+  },
+  "question": "Which crew or organization is Oars affiliated with?",
+  "key": "whichcrewororganizationisoarsaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Oars's Thriller Bark tie requires recalling a specific plot device."
+  },
+  "skeptic": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Oars is a well-known Thriller Bark arc giant."
+  }
+ },
+ "ad9bd32b47d3f66f": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Baby 5's actual Donquixote Family affiliation isn't offered, leaving genuine ambiguity."
+  },
+  "question": "Which crew or organization is Baby 5 affiliated with?",
+  "key": "whichcrewororganizationisbaby5affiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Baby 5's exact affiliation is a finer, easily confused detail."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Baby 5's current-day affiliation is an obscure, hard-to-pin-down detail."
+  }
+ },
+ "274e68d160670378": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Blackbeard Pirates is a well-known pairing (Burgess as BB's strongman)."
+  },
+  "question": "Which crew or organization is Jesus Burgess affiliated with?",
+  "key": "whichcrewororganizationisjesusburgessaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Burgess as Blackbeard's strongman is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Burgess is a recognizable Blackbeard crew member."
+  }
+ },
+ "4f73e06e27546ac0": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "CP0 fits her recent Egghead-arc role, somewhat known to those who kept up."
+  },
+  "question": "Which crew or organization is Stussy affiliated with?",
+  "key": "whichcrewororganizationisstussyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Stussy's true CP0 nature is a later, complex reveal."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Stussy's true affiliation is a recent, plot-twist-level reveal."
+  }
+ },
+ "5d5cdeff325b638d": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "Mt. Atama Thieves fits Wano flashback bandit context, though obscure otherwise."
+  },
+  "question": "Which crew or organization is Ashura Doji affiliated with?",
+  "key": "whichcrewororganizationisashuradojiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Ashura Doji is an obscure Wano-flashback figure."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": true,
+   "reason": "The Japanese-sounding name points toward the only Japanese/Wano-flavored option among Western-sounding alternatives."
+  }
+ },
+ "2cab53c065d024f6": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Donquixote Pirates directly fits a Dressrosa executive."
+  },
+  "question": "Which crew or organization is Diamante affiliated with?",
+  "key": "whichcrewororganizationisdiamanteaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Diamante as a Donquixote executive is solid Dressrosa-arc knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Diamante is a known Dressrosa officer."
+  }
+ },
+ "1f6dc81ff397c3bf": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Big Mom Pirates fits his Whole Cake arc role directly."
+  },
+  "question": "Which crew or organization is Pekoms affiliated with?",
+  "key": "whichcrewororganizationispekomsaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Pekoms as a Big Mom Pirates member is a memorable Sanji-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Pekoms is a recognizable Whole Cake arc character."
+  }
+ },
+ "c1f468ad9edc79e4": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "CP0 is close enough to his actual CP9 chief role to be a plausible trap."
+  },
+  "question": "Which crew or organization is Spandam affiliated with?",
+  "key": "whichcrewororganizationisspandamaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Spandam as the CP9 government villain is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Spandam is a well-known CP9-arc villain."
+  }
+ },
+ "ba0f54f238fe8127": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Riku Family and Dressrosa are both plausible fits for a Dressrosa princess."
+  },
+  "question": "Which crew or organization is Viola affiliated with?",
+  "key": "whichcrewororganizationisviolaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Viola's Dressrosa royal tie is a solid arc-level detail."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Requires specific knowledge of Viola's royal lineage versus general Dressrosa residency."
+  }
+ },
+ "f2911908c0a16e5b": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Giant Warrior Pirates matches the iconic giant duo."
+  },
+  "question": "Which crew or organization is Dorry affiliated with?",
+  "key": "whichcrewororganizationisdorryaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Dorry's Giant Warrior Pirates crew name is a finer Little Garden detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Dorry is a well-known Little Garden giant."
+  }
+ },
+ "339f8a9501a624cb": {
+  "casual": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Extremely obscure minor circus characters unfamiliar to casual fans."
+  },
+  "question": "Which crew or organization is Tightrope Walking Funan Bros affiliated with?",
+  "key": "whichcrewororganizationistightropewalkingfunanbrosaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "The Tightrope Walking Funan Bros are an obscure one-off Buggy crew detail."
+  },
+  "skeptic": {
+   "knowledge_score": 90,
+   "guessable": false,
+   "reason": "Extremely obscure circus/filler-adjacent characters."
+  }
+ },
+ "38781939fd8fa31b": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Tontatta Kingdom fits the dwarf character directly."
+  },
+  "question": "Which crew or organization is Leo affiliated with?",
+  "key": "whichcrewororganizationisleoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Leo's Tontatta Kingdom tie requires recalling a supporting Dressrosa-arc race."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Leo is an obscure Dressrosa-arc dwarf character."
+  }
+ },
+ "4cebc691853c8897": {
+  "casual": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure Gorosei-tier name most casual fans won't recognize to eliminate options."
+  },
+  "question": "Which crew or organization is Ethanbaron V. Nusjuro affiliated with?",
+  "key": "whichcrewororganizationisethanbaronvnusjuroaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "The Five Elders' individual names are deep-cut lore for most viewers."
+  },
+  "skeptic": {
+   "knowledge_score": 90,
+   "guessable": false,
+   "reason": "An extremely obscure named Marine officer."
+  }
+ },
+ "b12b5e067e88c7c6": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Whitebeard Pirates fits his known role among Ace's brothers."
+  },
+  "question": "Which crew or organization is Izou affiliated with?",
+  "key": "whichcrewororganizationisizouaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Izou as a Whitebeard commander is solid but not headline knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Izou is known, but his current Revolutionary tie versus historic Whitebeard tie is a fine distinction."
+  }
+ },
+ "4d57a222839a1ac1": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Obscure Gorosei-tier name unfamiliar to casual fans, no strong elimination cue."
+  },
+  "question": "Which crew or organization is Topman Warcury affiliated with?",
+  "key": "whichcrewororganizationistopmanwarcuryaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "The Five Elders' individual names are deep-cut lore for most viewers."
+  },
+  "skeptic": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "An extremely obscure named Marine officer."
+  }
+ },
+ "5589be0d834389c1": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Extremely obscure recent-arc character name unfamiliar to casual fans."
+  },
+  "question": "Which crew or organization is Shepherd Ju Peter affiliated with?",
+  "key": "whichcrewororganizationisshepherdjupeteraffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "The Five Elders' individual names are deep-cut lore for most viewers."
+  },
+  "skeptic": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Obscure recent-arc name with no wider recognition."
+  }
+ },
+ "506ec15258bbeb23": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Fire Tank Pirates fits her marriage into Bege's crew, a moderately recallable plot point."
+  },
+  "question": "Which crew or organization is Charlotte Chiffon affiliated with?",
+  "key": "whichcrewororganizationischarlottechiffonaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Chiffon's post-arc marriage into the Fire Tank Pirates is a fine detail."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Requires knowing Chiffon's marriage into Bege's crew over her birth family."
+  }
+ },
+ "b4343ac6f45e8e15": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Kouzuki Family fits a Wano kunoichi loyalist."
+  },
+  "question": "Which crew or organization is Shinobu affiliated with?",
+  "key": "whichcrewororganizationisshinobuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Shinobu's Kouzuki loyalty requires attentive Wano viewing."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Shinobu is a recognizable but secondary Wano kunoichi."
+  }
+ },
+ "0f9b5b69d4725315": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Shandia matches her own tribe directly from the Skypiea arc."
+  },
+  "question": "Which crew or organization is Wyper affiliated with?",
+  "key": "whichcrewororganizationiswyperaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Wyper as a Shandia warrior is a memorable Skypiea-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Wyper is a well-known Skypiea-arc warrior."
+  }
+ },
+ "36daf77f8180d46a": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Obscure Gorosei-tier name unfamiliar to casual fans."
+  },
+  "question": "Which crew or organization is Marcus Mars affiliated with?",
+  "key": "whichcrewororganizationismarcusmarsaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "The Five Elders' individual names are deep-cut lore for most viewers."
+  },
+  "skeptic": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "An extremely obscure named Marine/Egghead-arc figure."
+  }
+ },
+ "7aa8670f5203c446": {
+  "casual": {
+   "knowledge_score": 2,
+   "guessable": true,
+   "reason": "Protagonist, trivially known."
+  },
+  "question": "Which crew or organization is Monkey D. Luffy affiliated with?",
+  "key": "whichcrewororganizationismonkeydluffyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 1,
+   "guessable": false,
+   "reason": "Luffy leading the Straw Hat Pirates is the most basic fact in the series."
+  },
+  "skeptic": {
+   "knowledge_score": 2,
+   "guessable": false,
+   "reason": "This is the single most universally known fact in the entire series."
+  }
+ },
+ "0857d5147178accc": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Happo Navy fits his Dressrosa colosseum team directly."
+  },
+  "question": "Which crew or organization is Sai affiliated with?",
+  "key": "whichcrewororganizationissaiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Sai's exact affiliation is a finer Dressrosa-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Sai is a secondary Dressrosa-arc ally with a specific martial-arts affiliation."
+  }
+ },
+ "fa102ffa5e855653": {
+  "casual": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "Baratie directly matches, well known as Sanji's mentor's restaurant."
+  },
+  "question": "Which crew or organization is Zeff affiliated with?",
+  "key": "whichcrewororganizationiszeffaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 10,
+   "guessable": false,
+   "reason": "Zeff and the Baratie are core Sanji-backstory knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Zeff is a well-known character, Sanji's mentor."
+  }
+ },
+ "ba021af2c870d5c2": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Donquixote Pirates fits her Punk Hazard role directly."
+  },
+  "question": "Which crew or organization is Monet affiliated with?",
+  "key": "whichcrewororganizationismonetaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Monet's Donquixote ties are a memorable Punk Hazard-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Monet is a recognizable Punk Hazard arc antagonist."
+  }
+ },
+ "7473707758ef6005": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Lvneel Kingdom is his home kingdom from the gold-legend arc."
+  },
+  "question": "Which crew or organization is Mont Blanc Noland affiliated with?",
+  "key": "whichcrewororganizationismontblancnolandaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Noland's kingdom is a remembered but backstory-level detail."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Noland's home kingdom is a specific historical-backstory detail."
+  }
+ },
+ "0a4ad9ee6c850d4b": {
+  "casual": {
+   "knowledge_score": 50,
+   "guessable": true,
+   "reason": "Blackbeard Pirates fits his known post-Impel Down allegiance."
+  },
+  "question": "Which crew or organization is Shiryu affiliated with?",
+  "key": "whichcrewororganizationisshiryuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Shiryu's later Blackbeard Pirates membership is a solid post-Impel Down detail."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Requires knowing Shiryu's post-Impel Down defection to Blackbeard."
+  }
+ },
+ "19c1c646f27c7989": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Sun Pirates is his own founded crew, well known from Fishman Island backstory."
+  },
+  "question": "Which crew or organization is Fisher Tiger affiliated with?",
+  "key": "whichcrewororganizationisfishertigeraffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Fisher Tiger and the Sun Pirates are memorable Fishman Island backstory."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Fisher Tiger is a well-known Fish-Man Island backstory character."
+  }
+ },
+ "441fd661877b92fe": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "A minor Big Mom daughter with no obviously fitting option among these."
+  },
+  "question": "Which crew or organization is Charlotte Lola affiliated with?",
+  "key": "whichcrewororganizationischarlottelolaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Lola's Rolling Pirates leadership is a finer Whole Cake-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Lola is an obscure Whole Cake arc supporting character."
+  }
+ },
+ "88e82ff8644da826": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Thriller Bark Pirates directly fits his arc."
+  },
+  "question": "Which crew or organization is Absalom affiliated with?",
+  "key": "whichcrewororganizationisabsalomaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Absalom's Thriller Bark Pirates membership is solid but arc-specific."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Absalom is a well-known Thriller Bark arc character."
+  }
+ },
+ "ee3b8a0aada7a525": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Mokomo Dukedom fits a mink character; this item is not genuinely hard despite Wanda's minor profile."
+  },
+  "question": "Which crew or organization is Wanda affiliated with?",
+  "key": "whichcrewororganizationiswandaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Wanda is a minor supporting Mink character despite her long wiki page."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Wanda is a recognizable mink supporting character, not an obscure fact despite her minor role."
+  }
+ },
+ "027f27ad90b290cd": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Flying Pirates is his own named crew, fitting the Fishman Island arc villain."
+  },
+  "question": "Which crew or organization is Vander Decken IX affiliated with?",
+  "key": "whichcrewororganizationisvanderdeckenixaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Vander Decken's crew name is a finer Fishman Island-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Decken is a recognizable Fish-Man Island arc antagonist."
+  }
+ },
+ "eb4f2f9cac5d3d82": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "A minor Baroque Works-adjacent character with no clearly fitting option offered."
+  },
+  "question": "Which crew or organization is Daz Bonez affiliated with?",
+  "key": "whichcrewororganizationisdazbonezaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Daz Bones's post-canon Cross Guild tie is a later development."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Requires knowing Crocodile's subordinate's post-war affiliation."
+  }
+ },
+ "a390055ec2086651": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Donquixote Pirates directly fits, a Dressrosa executive."
+  },
+  "question": "Which crew or organization is Pica affiliated with?",
+  "key": "whichcrewororganizationispicaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Pica as a Donquixote officer is solid Dressrosa-arc knowledge."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Pica is a known Dressrosa officer."
+  }
+ },
+ "33c1de6e42f36859": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Galley-La Company is his own company, well known from Water 7."
+  },
+  "question": "Which crew or organization is Iceburg affiliated with?",
+  "key": "whichcrewororganizationisiceburgaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Iceburg as Water 7's mayor is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Iceburg is a well-known Water 7 arc character."
+  }
+ },
+ "248e46f6c24349a5": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Karoo the duck doesn't clearly map to any listed option for casual fans."
+  },
+  "question": "Which crew or organization is Karoo affiliated with?",
+  "key": "whichcrewororganizationiskarooaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Karoo's duck-troop origin is a finer Alabasta-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "The option literally describes Karoo's own species (a giant duck)."
+  }
+ },
+ "7ba52cb0b065f076": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Neptune Family is his own royal family, a clear fit."
+  },
+  "question": "Which crew or organization is Fukaboshi affiliated with?",
+  "key": "whichcrewororganizationisfukaboshiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Fukaboshi as a Neptune Family prince is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Fukaboshi is a recognizable Fish-Man Island prince."
+  }
+ },
+ "132abba4c41443e6": {
+  "casual": {
+   "knowledge_score": 3,
+   "guessable": true,
+   "reason": "Main character, trivially known."
+  },
+  "question": "Which crew or organization is Nami affiliated with?",
+  "key": "whichcrewororganizationisnamiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 1,
+   "guessable": false,
+   "reason": "Nami and the Straw Hat Pirates is the most basic fact in the series."
+  },
+  "skeptic": {
+   "knowledge_score": 3,
+   "guessable": false,
+   "reason": "This is an extremely famous, universally known fact."
+  }
+ },
+ "98482d4e1526988a": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Revolutionary Army fits her known role well."
+  },
+  "question": "Which crew or organization is Koala affiliated with?",
+  "key": "whichcrewororganizationiskoalaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Koala's Revolutionary Army membership is well remembered."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Koala is a recognizable Sabo-arc ally."
+  }
+ },
+ "5ce96872dbd1fce6": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Big Mom Pirates fits, one of Big Mom's minister chefs."
+  },
+  "question": "Which crew or organization is Tamago affiliated with?",
+  "key": "whichcrewororganizationistamagoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Tamago is a minor Big Mom Pirates commander few will recall exactly."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Tamago is an obscure Big Mom Pirates minister."
+  }
+ },
+ "bb8b9f29c0f1df53": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Her name directly matches the Shakky's Rip-off Bar option."
+  },
+  "question": "Which crew or organization is Shakuyaku affiliated with?",
+  "key": "whichcrewororganizationisshakuyakuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Shakuyaku and her Sabaody bar are a memorable recurring-location detail."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "'Shakuyaku' is directly echoed in the option name 'Shakky's Rip-off Bar'."
+  }
+ },
+ "32f35bd11861eb84": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Kuja Pirates fits Hancock's sister directly, well known from Amazon Lily."
+  },
+  "question": "Which crew or organization is Boa Sandersonia affiliated with?",
+  "key": "whichcrewororganizationisboasandersoniaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Sandersonia as Hancock's sister and Kuja Pirates is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Sandersonia is a recognizable sister of Hancock."
+  }
+ },
+ "883b169533042279": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Saul's exact affiliation is obscure Ohara backstory trivia with no clean fit among options."
+  },
+  "question": "Which crew or organization is Jaguar D. Saul affiliated with?",
+  "key": "whichcrewororganizationisjaguardsaulaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Saul is an emotional but one-off Ohara-backstory character."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Saul's specific organizational tie is an obscure backstory detail."
+  }
+ },
+ "15f477dcc320bd24": {
+  "casual": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "Heart Pirates is his well-known crew, Law's polar bear navigator."
+  },
+  "question": "Which crew or organization is Bepo affiliated with?",
+  "key": "whichcrewororganizationisbepoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Bepo as Law's Heart Pirates crewmate is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Bepo is well known as Law's navigator but placing the exact crew name still takes some attention."
+  }
+ },
+ "9cff5a50faa2425f": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "Kuja fits the Amazon Lily context directly, though a genuinely obscure figure."
+  },
+  "question": "Which crew or organization is Gloriosa affiliated with?",
+  "key": "whichcrewororganizationisgloriosaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Gloriosa is an explicit hard-tier example in the rubric itself."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Gloriosa is a deep-cut Amazon Lily background character."
+  }
+ },
+ "10d8e3b68c97a4dd": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Blueno is actually CP9 not CP0, a subtle wrong-branch trap."
+  },
+  "question": "Which crew or organization is Blueno affiliated with?",
+  "key": "whichcrewororganizationisbluenoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Blueno as a secret agent is memorable, and the other options obviously don't fit him."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Blueno is a recognizable CP9 member."
+  }
+ },
+ "f049345f7502372d": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Big Mom Pirates fits, Prometheus being Big Mom's sun homie."
+  },
+  "question": "Which crew or organization is Prometheus affiliated with?",
+  "key": "whichcrewororganizationisprometheusaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Prometheus as Big Mom's homie is a solid Whole Cake-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Prometheus is a secondary Whole Cake arc homie."
+  }
+ },
+ "9bf42babb65ac74e": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Obscure recent-arc character name unfamiliar to casual fans."
+  },
+  "question": "Which crew or organization is Shepherd Sommers affiliated with?",
+  "key": "whichcrewororganizationisshepherdsommersaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Shepherd Sommers is an obscure figure from the very recent Elbaph content."
+  },
+  "skeptic": {
+   "knowledge_score": 90,
+   "guessable": false,
+   "reason": "An extremely obscure recent-arc character."
+  }
+ },
+ "e16cd1508e88b71d": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Dr. Kureha doesn't clearly map to any of these odd options despite being fairly well known."
+  },
+  "question": "Which crew or organization is Kureha affiliated with?",
+  "key": "whichcrewororganizationiskurehaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Kureha's kingdom tie requires recalling the renamed Drum Kingdom detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Kureha is a well-known Drum Island arc doctor."
+  }
+ },
+ "11bda67660de0f06": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Obscure recent Elbaph-arc character unfamiliar to casual fans."
+  },
+  "question": "Which crew or organization is Manmayer Gunko affiliated with?",
+  "key": "whichcrewororganizationismanmayergunkoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Manmayer Gunko is an obscure recent minor character."
+  },
+  "skeptic": {
+   "knowledge_score": 90,
+   "guessable": false,
+   "reason": "An extremely obscure recent-arc name."
+  }
+ },
+ "01518284b1fe0e50": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Marines fits Sengoku's Zoan pet within the Marines, though obscure trivia to know at all."
+  },
+  "question": "Which crew or organization is Napoleon affiliated with?",
+  "key": "whichcrewororganizationisnapoleonaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Napoleon is a minor Big Mom Pirates homie few will place exactly."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "An obscure named-Marine trivia detail."
+  }
+ },
+ "35bd45090bfef1d2": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Blackbeard Pirates fits his known sniper role in that crew."
+  },
+  "question": "Which crew or organization is Van Augur affiliated with?",
+  "key": "whichcrewororganizationisvanauguraffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Van Augur as Blackbeard's sniper is a solid but supporting-cast detail."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Van Augur is a recognizable Blackbeard crew sniper."
+  }
+ },
+ "0bffb210011613e5": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Oimo the giant guard's exact Impel Down affiliation isn't clearly among these options."
+  },
+  "question": "Which crew or organization is Oimo affiliated with?",
+  "key": "whichcrewororganizationisoimoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Oimo is a minor Impel Down giant guard whose exact affiliation is obscure."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Oimo is a minor but memorable giant guard; the specific org tie is obscure."
+  }
+ },
+ "96d9cae5b939da25": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Impel Down directly matches his known warden role."
+  },
+  "question": "Which crew or organization is Hannyabal affiliated with?",
+  "key": "whichcrewororganizationishannyabalaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Hannyabal as an Impel Down vice warden is a solid arc-level detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Hannyabal is a recognizable Impel Down vice warden."
+  }
+ },
+ "7ebd4d9466e6a591": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Arabasta fits his known royal guard role directly."
+  },
+  "question": "Which crew or organization is Igaram affiliated with?",
+  "key": "whichcrewororganizationisigaramaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Igaram's Alabasta royal-guard role is a solid arc-level detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Igaram is a recognizable Alabasta-arc guard captain."
+  }
+ },
+ "0e9f5d96535fb1e3": {
+  "casual": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Obscure minor character unfamiliar to casual fans, no strong domain cue."
+  },
+  "question": "Which crew or organization is Kashii affiliated with?",
+  "key": "whichcrewororganizationiskashiiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Kashii is an obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Kashii is a minor giant guard; the specific org tie is obscure."
+  }
+ },
+ "f7fa6e1bafefaf8f": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Kuja Pirates fits Hancock's sister directly."
+  },
+  "question": "Which crew or organization is Boa Marigold affiliated with?",
+  "key": "whichcrewororganizationisboamarigoldaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Marigold as Hancock's sister and a Kuja Pirate is well known, and the other options obviously don't fit an Amazon Lily woman."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Marigold is a recognizable sister of Hancock."
+  }
+ },
+ "a2acb3f502813a23": {
+  "casual": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Obscure recent Egghead-arc figure unfamiliar to casual fans."
+  },
+  "question": "Which crew or organization is Figarland Garling affiliated with?",
+  "key": "whichcrewororganizationisfigarlandgarlingaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Figarland Garling is deep-cut, recently revealed backstory lore."
+  },
+  "skeptic": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "A very recently revealed, deep-lore Celestial Dragon figure."
+  }
+ },
+ "1fe6d049c41d3ea0": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "World Economy News Paper directly names his own well-known newspaper."
+  },
+  "question": "Which crew or organization is Morgans affiliated with?",
+  "key": "whichcrewororganizationismorgansaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Morgans and the World Economy News Paper is a recurring but background-level detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Morgans is recognizable from frequent narration cameos, but his outlet's formal name is a finer detail."
+  }
+ },
+ "0512f179db264ac2": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": true,
+   "reason": "Centaur Patrol Unit distinctly fits his centaur-like unit, though the underlying fact is very obscure."
+  },
+  "question": "Which crew or organization is Chadros Higelyges affiliated with?",
+  "key": "whichcrewororganizationischadroshigelygesaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Chadros Higelyges is an obscure figure from the very recent Elbaph content."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "An obscure Human Auctioning House-arc giant."
+  }
+ },
+ "b597bf1e0149595e": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Chopper, Brogy, and Urouge are all famous and clearly belong elsewhere, leaving the unfamiliar name by elimination."
+  },
+  "question": "Which of these characters is a member of the Centaur Patrol Unit?",
+  "key": "whichofthesecharactersisamemberofthecentaurpatrolunit",
+  "completionist": {
+   "knowledge_score": 85,
+   "guessable": true,
+   "reason": "The Centaur Patrol Unit is obscure Elbaph lore, but Chopper and Urouge are obviously unrelated famous characters, narrowing it."
+  },
+  "skeptic": {
+   "knowledge_score": 70,
+   "guessable": true,
+   "reason": "Chopper, Brogy, and Urouge are all well-established with other affiliations, leaving the obscure name by elimination."
+  }
+ },
+ "0c3dfbef22f212ac": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Blackbeard Pirates fits a well-known crew member."
+  },
+  "question": "Which crew or organization is Laffitte affiliated with?",
+  "key": "whichcrewororganizationislaffitteaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Laffitte as Blackbeard's strategist is a solid but supporting-cast detail."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Laffitte is a recognizable Blackbeard crew member."
+  }
+ },
+ "82c05c9fbc0ca9c4": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Evil Black Drum Kingdom fits his known home directly."
+  },
+  "question": "Which crew or organization is Dalton affiliated with?",
+  "key": "whichcrewororganizationisdaltonaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Dalton's role in the renamed kingdom is a solid arc-level detail."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Dalton is a recognizable Drum Island arc ally."
+  }
+ },
+ "4f174bfcbd6cd199": {
+  "casual": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Obscure character unfamiliar to casual fans."
+  },
+  "question": "Which crew or organization is Road affiliated with?",
+  "key": "whichcrewororganizationisroadaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Road is an obscure minor character most viewers won't place."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "An obscure, likely very recent-arc name."
+  }
+ },
+ "daba8bd3433e08a4": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Conis from Skypiea doesn't clearly map onto any of these odd options."
+  },
+  "question": "Which crew or organization is Conis affiliated with?",
+  "key": "whichcrewororganizationisconisaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Conis and Skypiea is a memorable arc-level detail."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Conis's listed affiliation doesn't match her well-known Skypiea role, making this a confusing, obscure item."
+  }
+ },
+ "4b8842c8f50db91f": {
+  "casual": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "Arabasta Kingdom directly matches the well-known King of Alabasta."
+  },
+  "question": "Which crew or organization is Nefertari Cobra affiliated with?",
+  "key": "whichcrewororganizationisnefertaricobraaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 10,
+   "guessable": false,
+   "reason": "Cobra as Alabasta's king is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Cobra is a well-known Alabasta-arc king."
+  }
+ },
+ "72a302de101ead4f": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Neptune Family fits the Fishman queen directly."
+  },
+  "question": "Which crew or organization is Otohime affiliated with?",
+  "key": "whichcrewororganizationisotohimeaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Otohime's Neptune Family tie is a memorable Fishman Island backstory detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Otohime is a recognizable Fish-Man Island queen."
+  }
+ },
+ "40689bf1ed59da8b": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Franky Family fits Water 7 shipwrights directly."
+  },
+  "question": "Which crew or organization is Mozu and Kiwi affiliated with?",
+  "key": "whichcrewororganizationismozuandkiwiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Mozu and Kiwi as Franky Family shipwrights is a solid Water 7-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Mozu and Kiwi are recognizable Water 7 shipwrights."
+  }
+ },
+ "238820c80e476ea9": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Arabasta Kingdom fits his known rebel leader role directly."
+  },
+  "question": "Which crew or organization is Koza affiliated with?",
+  "key": "whichcrewororganizationiskozaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Koza's Alabasta rebel role is a memorable arc-level detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Koza is a recognizable Alabasta-arc rebel leader."
+  }
+ },
+ "cc3c845486b7df59": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Saruyama Alliance is his own named partnership, a distinctive fit if recalled."
+  },
+  "question": "Which crew or organization is Mont Blanc Cricket affiliated with?",
+  "key": "whichcrewororganizationismontblanccricketaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Cricket's partnership name is an explicit hard-tier example in the rubric itself."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "This is an explicitly deep-cut, one-off partnership detail."
+  }
+ },
+ "4ec829d379ddc932": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "New Spiders Cafe fits his own shop directly on Amazon Lily."
+  },
+  "question": "Which crew or organization is Pappag affiliated with?",
+  "key": "whichcrewororganizationispappagaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Pappag's shop affiliation is a finer Fishman Island-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Pappag's shop name is an obscure supporting detail."
+  }
+ },
+ "f878447d52cfe502": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Red Hair Pirates is well known as Shanks' first mate's crew."
+  },
+  "question": "Which crew or organization is Benn Beckman affiliated with?",
+  "key": "whichcrewororganizationisbennbeckmanaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 10,
+   "guessable": false,
+   "reason": "Beckman as Shanks's first mate is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Beckman is a well-known Shanks crew member."
+  }
+ },
+ "9d012f62958c2f3d": {
+  "casual": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "Whitebeard Pirates is a well-known commander pairing."
+  },
+  "question": "Which crew or organization is Jozu affiliated with?",
+  "key": "whichcrewororganizationisjozuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Jozu as a Whitebeard commander is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Jozu is a well-known Whitebeard commander."
+  }
+ },
+ "aef0eff821580d97": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Prodence Kingdom directly names his own kingdom, a distinctive match."
+  },
+  "question": "Which crew or organization is Elizabello II affiliated with?",
+  "key": "whichcrewororganizationiselizabelloiiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Elizabello's kingdom is a finer Dressrosa-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": true,
+   "reason": "The regnal-style name 'Elizabello II' strongly implies kingship, matching the only kingdom-named option."
+  }
+ },
+ "f44dd0be57b2cba9": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Fire Tank Pirates fits Bege's underling, a recallable domain match."
+  },
+  "question": "Which crew or organization is Vito affiliated with?",
+  "key": "whichcrewororganizationisvitoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Vito is a minor supporting mafia-type character few will place exactly."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Vito is an obscure Capone Bege subordinate."
+  }
+ },
+ "402389c3d272b30f": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Red Hair Pirates well known as Usopp's father's crew."
+  },
+  "question": "Which crew or organization is Yasopp affiliated with?",
+  "key": "whichcrewororganizationisyasoppaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Yasopp as Usopp's father in the Red Hair Pirates is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Yasopp is a recognizable Shanks crew member and Usopp's father."
+  }
+ },
+ "70d6c3aef79a9495": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "Fake Straw Hat Crew directly describes his gimmick of impersonating Luffy."
+  },
+  "question": "Which crew or organization is Demalo Black affiliated with?",
+  "key": "whichcrewororganizationisdemaloblackaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Demalo Black's fake-crew gimmick is a minor, easily forgotten detail."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Demalo Black is an obscure, recent-arc antagonist."
+  }
+ },
+ "b2c424225502c97b": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "New Fish-Man Pirates fits the Fishman Island arc villain group."
+  },
+  "question": "Which crew or organization is Zeo affiliated with?",
+  "key": "whichcrewororganizationiszeoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Zeo's New Fish-Man Pirates membership is a solid Fishman Island-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Zeo is an obscure Fish-Man Island arc officer."
+  }
+ },
+ "7aca6fc79d121b7b": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Fallen Monk Pirates is his own distinctly named crew."
+  },
+  "question": "Which crew or organization is Urouge affiliated with?",
+  "key": "whichcrewororganizationisurougeaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Urouge's Fallen Monk Pirates is a solid supernova-era detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Urouge is a recognizable Worst Generation captain."
+  }
+ },
+ "72d59866dd3bcb53": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Pound's affiliation is obscure trivia and the odd 'Charlotte Familyformer' phrasing adds ambiguity."
+  },
+  "question": "Which crew or organization is Pound affiliated with?",
+  "key": "whichcrewororganizationispoundaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Pound is a minor Big Mom Pirates figure few will place exactly."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Pound is an obscure Big Mom Pirates minister."
+  }
+ },
+ "2bfe98e9ab084efc": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Marines G-1 Branch fits his known Marine vice admiral role versus clearly unrelated others."
+  },
+  "question": "Which crew or organization is Momonga affiliated with?",
+  "key": "whichcrewororganizationismomongaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Momonga as a Marine vice admiral is a solid but supporting-cast detail."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Momonga is a recognizable Marine vice admiral but his specific label is a fine detail."
+  }
+ },
+ "7960e699435416fe": {
+  "casual": {
+   "knowledge_score": 50,
+   "guessable": true,
+   "reason": "Thriller Bark Pirates fits her zombie character directly."
+  },
+  "question": "Which crew or organization is Victoria Cindry affiliated with?",
+  "key": "whichcrewororganizationisvictoriacindryaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Cindry's Thriller Bark tie is a solid but arc-specific detail."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Cindry is an obscure Thriller Bark backstory character."
+  }
+ },
+ "a0c2e90e521a4ef8": {
+  "casual": {
+   "knowledge_score": 2,
+   "guessable": true,
+   "reason": "Main character, trivially known."
+  },
+  "question": "Which crew or organization is Roronoa Zoro affiliated with?",
+  "key": "whichcrewororganizationisroronoazoroaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 1,
+   "guessable": false,
+   "reason": "Zoro and the Straw Hat Pirates is the most basic fact in the series."
+  },
+  "skeptic": {
+   "knowledge_score": 2,
+   "guessable": false,
+   "reason": "This is an extremely famous, universally known fact."
+  }
+ },
+ "a86652187e4b194b": {
+  "casual": {
+   "knowledge_score": 5,
+   "guessable": true,
+   "reason": "Heart Pirates is his own famous crew."
+  },
+  "question": "Which crew or organization is Trafalgar D. Water Law affiliated with?",
+  "key": "whichcrewororganizationistrafalgardwaterlawaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 3,
+   "guessable": false,
+   "reason": "Law leading the Heart Pirates is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 5,
+   "guessable": false,
+   "reason": "Law's captaincy of his own crew is extremely famous."
+  }
+ },
+ "3361333edfb99305": {
+  "casual": {
+   "knowledge_score": 3,
+   "guessable": true,
+   "reason": "Emperor-tier character, trivially known."
+  },
+  "question": "Which crew or organization is Charlotte Linlin affiliated with?",
+  "key": "whichcrewororganizationischarlottelinlinaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 3,
+   "guessable": false,
+   "reason": "Big Mom leading the Big Mom Pirates is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 5,
+   "guessable": false,
+   "reason": "Big Mom is one of the most famous Emperors."
+  }
+ },
+ "8b9e3ada51b755de": {
+  "casual": {
+   "knowledge_score": 3,
+   "guessable": true,
+   "reason": "Main character, trivially known."
+  },
+  "question": "Which crew or organization is Nico Robin affiliated with?",
+  "key": "whichcrewororganizationisnicorobinaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 1,
+   "guessable": false,
+   "reason": "Robin and the Straw Hat Pirates is the most basic fact in the series."
+  },
+  "skeptic": {
+   "knowledge_score": 3,
+   "guessable": false,
+   "reason": "This is an extremely famous, universally known fact."
+  }
+ },
+ "c417e91d04915c54": {
+  "casual": {
+   "knowledge_score": 3,
+   "guessable": true,
+   "reason": "Main character, trivially known."
+  },
+  "question": "Which crew or organization is Sanji affiliated with?",
+  "key": "whichcrewororganizationissanjiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 1,
+   "guessable": false,
+   "reason": "Sanji and the Straw Hat Pirates is the most basic fact in the series."
+  },
+  "skeptic": {
+   "knowledge_score": 3,
+   "guessable": false,
+   "reason": "This is an extremely famous, universally known fact."
+  }
+ },
+ "ab35ff95e545229d": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Clan of D fits Ace's mother, a recognizable if obscure connection."
+  },
+  "question": "Which crew or organization is Portgas D. Rouge affiliated with?",
+  "key": "whichcrewororganizationisportgasdrougeaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Rouge's connection to the D. bloodline is a well-remembered backstory detail."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Rouge is an obscure, emotional backstory-only character."
+  }
+ },
+ "ff400bdba606e800": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "The 'D.' in Portgas D. Rouge's name is a giveaway for a Clan of D question."
+  },
+  "question": "Which of these characters is a member of the Clan of D?",
+  "key": "whichofthesecharactersisamemberoftheclanofd",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "Portgas D. Rouge's own name literally contains 'D.', giving away the Clan of D answer."
+  },
+  "skeptic": {
+   "knowledge_score": 5,
+   "guessable": true,
+   "reason": "Only one option, 'Portgas D. Rouge', contains the middle initial 'D.' that the Clan of D question is about."
+  }
+ },
+ "33e8bec9d971877f": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Krieg Pirates is well known from the early East Blue Baratie arc."
+  },
+  "question": "Which crew or organization is Gin affiliated with?",
+  "key": "whichcrewororganizationisginaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Gin's Krieg Pirates membership is a memorable early East Blue-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Gin is a recognizable early East Blue arc character."
+  }
+ },
+ "d05ba4001ff2abc1": {
+  "casual": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Doflamingo's father's obscure flashback affiliation is deep lore most casual fans miss."
+  },
+  "question": "Which crew or organization is Donquixote Homing affiliated with?",
+  "key": "whichcrewororganizationisdonquixotehomingaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Homing's origin as a former Celestial Dragon is deep-cut Dressrosa flashback lore."
+  },
+  "skeptic": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Homing is an obscure backstory-only character."
+  }
+ },
+ "00908e25e411d5ed": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Galley-La Company is well known from the Water 7 arc."
+  },
+  "question": "Which crew or organization is Paulie affiliated with?",
+  "key": "whichcrewororganizationispaulieaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Paulie as a Galley-La shipwright is a memorable Water 7-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Paulie is a recognizable Water 7 shipwright."
+  }
+ },
+ "904e7577a8ee63c9": {
+  "casual": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Obscure minor character unfamiliar to casual fans despite a plausible-sounding option."
+  },
+  "question": "Which crew or organization is Jarul affiliated with?",
+  "key": "whichcrewororganizationisjarulaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Jarul is an obscure one-off minor pirate."
+  },
+  "skeptic": {
+   "knowledge_score": 90,
+   "guessable": false,
+   "reason": "An extremely obscure name with no wider recognition."
+  }
+ },
+ "eb3a2ed2d4ed3cde": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "Rocks Pirates is a distinctive, memorable legendary-crew name even to casual fans."
+  },
+  "question": "Which crew or organization is Buckingham Stussy affiliated with?",
+  "key": "whichcrewororganizationisbuckinghamstussyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Stussy's Rocks Pirates history is a significant but very recent deep-lore reveal."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Stussy's deep-lore tie to the ancient Rocks Pirates is a recent, obscure reveal."
+  }
+ },
+ "92a4845d7397a0d6": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Rosy Life Riders is his own named biker gang, a memorable comedic Sabaody detail."
+  },
+  "question": "Which crew or organization is Duval affiliated with?",
+  "key": "whichcrewororganizationisduvalaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Duval's biker gang is a finer post-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Duval is a recognizable comic-relief Sabaody character, but his gang's formal name is a finer detail."
+  }
+ },
+ "3e858f93a4c32db3": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Skypiea directly matches his known former-god role."
+  },
+  "question": "Which crew or organization is Gan Fall affiliated with?",
+  "key": "whichcrewororganizationisganfallaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Gan Fall as Skypiea's Sky Knight is a memorable arc-level detail."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Gan Fall is a recognizable Skypiea arc character."
+  }
+ },
+ "4b0fe055119e7a38": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Wano Country fits the legendary samurai Zoro idolizes."
+  },
+  "question": "Which crew or organization is Shimotsuki Ryuma affiliated with?",
+  "key": "whichcrewororganizationisshimotsukiryumaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Ryuma as a legendary Wano samurai is a memorable recurring detail."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "The 'Shimotsuki' surname reads as distinctly Japanese/Wano next to the Western-sounding or generic alternatives."
+  }
+ },
+ "d2aec408d9ff5c99": {
+  "casual": {
+   "knowledge_score": 65,
+   "guessable": true,
+   "reason": "Higuma Bandits fits a distinctive early East Blue reference, somewhat memorable."
+  },
+  "question": "Which crew or organization is Pickles affiliated with?",
+  "key": "whichcrewororganizationispicklesaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Pickles is an obscure one-off East Blue bandit."
+  },
+  "skeptic": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "An extremely obscure one-off minor bandit."
+  }
+ },
+ "f98dd34f23a8c785": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Roger Pirates fits the whale-island doctor's known past."
+  },
+  "question": "Which crew or organization is Crocus affiliated with?",
+  "key": "whichcrewororganizationiscrocusaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Crocus's Roger Pirates history is a finer background detail."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Crocus's history with the Roger Pirates is a lesser-known backstory detail."
+  }
+ },
+ "b5d494b23a183be7": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Baratie directly matches, a well-known restaurant chef."
+  },
+  "question": "Which crew or organization is Patty affiliated with?",
+  "key": "whichcrewororganizationispattyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Patty as a Baratie chef is a solid but supporting-cast detail."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Patty is a recognizable early-arc Baratie chef."
+  }
+ },
+ "4c15e0f78b9a0fb6": {
+  "casual": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Obscure minor shipwright character unfamiliar to casual fans."
+  },
+  "question": "Which crew or organization is Ikaros Much affiliated with?",
+  "key": "whichcrewororganizationisikarosmuchaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Ikaros Much is an obscure Water 7-backstory figure."
+  },
+  "skeptic": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "An extremely obscure named Red Hair Pirates member."
+  }
+ },
+ "fd511743db561092": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Heart Pirates well known as Law's crew member."
+  },
+  "question": "Which crew or organization is Penguin affiliated with?",
+  "key": "whichcrewororganizationispenguinaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Penguin as a Heart Pirates member is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Penguin is a recognizable Law crew member."
+  }
+ },
+ "ff3a1bffb6c79c90": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Kamabakka Kingdom fits his known Revolutionary/okama connection."
+  },
+  "question": "Which crew or organization is Inazuma affiliated with?",
+  "key": "whichcrewororganizationisinazumaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Inazuma's Revolutionary Army tie is a solid Impel Down-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Inazuma's specific affiliation is an obscure Impel Down/Revolutionary detail."
+  }
+ },
+ "91541780707a490a": {
+  "casual": {
+   "knowledge_score": 50,
+   "guessable": true,
+   "reason": "Yonta Maria Grand Fleet is his own distinctly named fleet."
+  },
+  "question": "Which crew or organization is Orlumbus affiliated with?",
+  "key": "whichcrewororganizationisorlumbusaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Orlumbus's fleet name is a finer post-Dressrosa detail."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Orlumbus is an obscure post-Dressrosa named fleet captain."
+  }
+ },
+ "42c1fef417b1ad35": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Heart Pirates well known as Law's crew member."
+  },
+  "question": "Which crew or organization is Shachi affiliated with?",
+  "key": "whichcrewororganizationisshachiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Shachi as a Heart Pirates member is well known."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Shachi is a recognizable Law crew member."
+  }
+ },
+ "df5e085f392eddc6": {
+  "casual": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Shyarly's affiliation is a specific and easily forgotten detail with no obviously fitting option."
+  },
+  "question": "Which crew or organization is Shyarly affiliated with?",
+  "key": "whichcrewororganizationisshyarlyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Shyarly's fortune-telling cafe is a finer Fishman Island-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "'Mermaid Cafe' directly describes what Shyarly is: a mermaid."
+  }
+ },
+ "2f4d08a98a25bcec": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "New Fish-Man Pirates fits the well-known Fishman Island antagonist crew."
+  },
+  "question": "Which crew or organization is Hyouzou affiliated with?",
+  "key": "whichcrewororganizationishyouzouaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Hyouzou's New Fish-Man Pirates membership is a solid Fishman Island-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Hyouzou is a recognizable Fish-Man Island arc swordsman."
+  }
+ },
+ "adab4e165d9d5c1b": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "World Government fits the infamous Celestial Dragon from a memorable Sabaody scene."
+  },
+  "question": "Which crew or organization is Rosward Charlos affiliated with?",
+  "key": "whichcrewororganizationisroswardcharlosaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Charlos as an infamous Celestial Dragon is a memorable Sabaody-arc detail."
+  },
+  "skeptic": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Charlos is a famous incident character, though the World Government tie itself needs specific knowledge."
+  }
+ },
+ "55b54e584ac9ad7f": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Mjosgard is a World Noble, so World Government is the only domain-fitting option even without specific recall."
+  },
+  "question": "Which crew or organization is Donquixote Mjosgard affiliated with?",
+  "key": "whichcrewororganizationisdonquixotemjosgardaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Celestial Dragon tied to Fisher Tiger's backstory but a background noble."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Mjosgard is a memorable but secondary Celestial Dragon character; the option set gives no clue."
+  }
+ },
+ "e09b0b36d32e2f5f": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Clover is remembered as an Ohara scholar, and Ohara Archaeologists is the only option that fits."
+  },
+  "question": "Which crew or organization is Clou D. Clover affiliated with?",
+  "key": "whichcrewororganizationiscloudcloveraffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Ohara scholar remembered mainly for the massacre backstory."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Clou D. Clover is a minor Ohara scholar most viewers won't recall."
+  }
+ },
+ "20086702264de41e": {
+  "casual": {
+   "knowledge_score": 82,
+   "guessable": false,
+   "reason": "Hack is a minor Fish-Man Island figure whose exact affiliation isn't common knowledge."
+  },
+  "question": "Which crew or organization is Hack affiliated with?",
+  "key": "whichcrewororganizationishackaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Minor Corrida Colosseum tournament fighter."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Hack is a mid-tier Fish-Man Island antagonist; all four options look equally valid crews."
+  }
+ },
+ "3a957f25f6eb20ac": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Gotti is an obscure background character with no strong recall cue."
+  },
+  "question": "Which crew or organization is Gotti affiliated with?",
+  "key": "whichcrewororganizationisgottiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Background Fire Tank Pirates crewmate, easy to forget."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Gotti is an obscure background pirate with no distinguishing clue in the options."
+  }
+ },
+ "9d0cc0ccd32a4c62": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Johnny is recognizable but his crew tie could be confused with the distractor crews."
+  },
+  "question": "Which crew or organization is Johnny affiliated with?",
+  "key": "whichcrewororganizationisjohnnyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Recurring bounty hunter partner of Zoro since East Blue."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Johnny is a recognizable early-series ally, moderately easy to place."
+  }
+ },
+ "95962bc7c62722e9": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Johnny is the only option plausibly tied to Zoro among clearly unrelated names."
+  },
+  "question": "Which of these characters is a member of the Roronoa Zoro's band?",
+  "key": "whichofthesecharactersisamemberoftheroronoazorosband",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Same Johnny/Yosaku duo, well-remembered recurring pair."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Same duo-level fame as Johnny; options are just character names with no tell."
+  }
+ },
+ "4984ea851a87037b": {
+  "casual": {
+   "knowledge_score": 83,
+   "guessable": false,
+   "reason": "Aladine is a minor Fish-Man Island local rarely remembered."
+  },
+  "question": "Which crew or organization is Aladine affiliated with?",
+  "key": "whichcrewororganizationisaladineaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Minor Fish-Man Island background ally."
+  },
+  "skeptic": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Aladine is a minor Sun Pirates elder, easy to forget."
+  }
+ },
+ "7dba0a6e31851335": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Jean Bart is a moderately known Heart Pirates member but not iconic."
+  },
+  "question": "Which crew or organization is Jean Bart affiliated with?",
+  "key": "whichcrewororganizationisjeanbartaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Law's giant crewmate, fairly recognizable."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Jean Bart is a fairly well-known Heart Pirates crewmate from Punk Hazard onward."
+  }
+ },
+ "00052cc4c4d09e4f": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Sun Pirates is the only Fish-Man-Island-appropriate option for Wadatsumi among unrelated choices."
+  },
+  "question": "Which crew or organization is Wadatsumi affiliated with?",
+  "key": "whichcrewororganizationiswadatsumiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Thriller Bark giant Luffy frees, memorable but arc-specific."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Wadatsumi is a notable but secondary Thriller Bark giant."
+  }
+ },
+ "8f43eaf2d616224b": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Gedatsu is a Skypiea priest, and God's Guards is the only fitting option domain-wise."
+  },
+  "question": "Which crew or organization is Gedatsu affiliated with?",
+  "key": "whichcrewororganizationisgedatsuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "One of Skypiea's four priests, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Gedatsu is one of several interchangeable Skypiea priests, easy to mix up."
+  }
+ },
+ "2c02ab37101699a5": {
+  "casual": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Carmel's affiliation is a niche Big Mom flashback detail."
+  },
+  "question": "Which crew or organization is Carmel affiliated with?",
+  "key": "whichcrewororganizationiscarmelaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Obscure figure from Big Mom's childhood flashback."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Carmel is a backstory-only character from Big Mom's origin, moderately obscure."
+  }
+ },
+ "8d389a2bacef6e90": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Toko is a minor Wano character whose family tie isn't widely retained."
+  },
+  "question": "Which crew or organization is Toko affiliated with?",
+  "key": "whichcrewororganizationistokoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Minor Wano child character, easy to forget her ties."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "Toko is a Japanese-styled name and Shimotsuki Family is the only similarly Japanese-flavored option, nudging a guess."
+  }
+ },
+ "98e9fbd30fdf8ffc": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Toko is the only Wano-associated name among otherwise unrelated pirates and agents."
+  },
+  "question": "Which of these characters is a member of the Shimotsuki Family?",
+  "key": "whichofthesecharactersisamemberoftheshimotsukifamily",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Same obscure Wano-linked character recall."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "Toko is the only Japanese-sounding name among otherwise Western-sounding distractors, matching the Shimotsuki Family theme."
+  }
+ },
+ "20ae1e7d2a867986": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Ryuboshi is a Ryugu prince, so Neptune Family is the obvious domain fit."
+  },
+  "question": "Which crew or organization is Ryuboshi affiliated with?",
+  "key": "whichcrewororganizationisryuboshiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "One of Fish-Man Island's three princes, arc-specific."
+  },
+  "skeptic": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Ryuboshi is a minor Ryugu Kingdom royal, easy to forget."
+  }
+ },
+ "33b5dd8f311dc83d": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Yosaku is closely remembered alongside Zoro, making that option the natural pick."
+  },
+  "question": "Which crew or organization is Yosaku affiliated with?",
+  "key": "whichcrewororganizationisyosakuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Recurring bounty hunter partner of Zoro since East Blue."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Yosaku shares Johnny's moderate early-series recognizability."
+  }
+ },
+ "0a1bde1d413faa20": {
+  "casual": {
+   "knowledge_score": 72,
+   "guessable": true,
+   "reason": "Gerd sounds giant-affiliated, nudging toward the giant-crew option without real recall."
+  },
+  "question": "Which crew or organization is Gerd affiliated with?",
+  "key": "whichcrewororganizationisgerdaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Recently introduced Elbaf giant, low recall."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Gerd is a very obscure giant character."
+  }
+ },
+ "71c669187d40a1e6": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Ohm is a Skypiea priest, making God's Army the clear domain fit."
+  },
+  "question": "Which crew or organization is Ohm affiliated with?",
+  "key": "whichcrewororganizationisohmaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Skypiea priest, remembered mainly by arc watchers."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Ohm is one of several similar-sounding Skypiea priests."
+  }
+ },
+ "dd361e863223248d": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Streusen is remembered as a Big Mom Pirates figure, the only crew-shaped option."
+  },
+  "question": "Which crew or organization is Streusen affiliated with?",
+  "key": "whichcrewororganizationisstreusenaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Big Mom's chef/caretaker, fairly memorable in Whole Cake arc."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Streusen is a fairly visible Big Mom Pirates chef."
+  }
+ },
+ "23c2646d39174398": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Blue Gilly is an obscure fishman with no strong recall cue."
+  },
+  "question": "Which crew or organization is Blue Gilly affiliated with?",
+  "key": "whichcrewororganizationisbluegillyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Minor Corrida Colosseum tournament fighter."
+  },
+  "skeptic": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Blue Gilly is an obscure Caribou Pirates crewmate."
+  }
+ },
+ "554079667f07fe0e": {
+  "casual": {
+   "knowledge_score": 22,
+   "guessable": true,
+   "reason": "Genzo is remembered as Cocoyasi Village's chief, and that option stands out."
+  },
+  "question": "Which crew or organization is Genzo affiliated with?",
+  "key": "whichcrewororganizationisgenzoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Cocoyasi Village chief, memorable Arlong Park figure."
+  },
+  "skeptic": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Genzo is a well-remembered figure from the Arlong Park arc."
+  }
+ },
+ "661b315ed91e5b78": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Vista is a well-known Whitebeard Pirates commander from the war arc."
+  },
+  "question": "Which crew or organization is Vista affiliated with?",
+  "key": "whichcrewororganizationisvistaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Well-known Whitebeard Pirates commander."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Vista is a well-known Whitebeard Pirates commander."
+  }
+ },
+ "4f42dc8731f8c203": {
+  "casual": {
+   "knowledge_score": 28,
+   "guessable": false,
+   "reason": "Lucky Roux is a recognizable Red Hair Pirates member."
+  },
+  "question": "Which crew or organization is Lucky Roux affiliated with?",
+  "key": "whichcrewororganizationisluckyrouxaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Well-known Red Hair Pirates member."
+  },
+  "skeptic": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Lucky Roux is a familiar Red Hair Pirates member."
+  }
+ },
+ "9c0e5be0a63e77d2": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Hamburg is an obscure minor commander with no strong recall cue."
+  },
+  "question": "Which crew or organization is Hamburg affiliated with?",
+  "key": "whichcrewororganizationishamburgaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure Water 7-era dock worker."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Hamburg is an obscure Foxy Pirates crewmate."
+  }
+ },
+ "9815fce25c27a9ce": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "A 'Minister' title strongly implies Ryugu Kingdom among unrelated pirate-crew options."
+  },
+  "question": "Which crew or organization is Minister of the Right affiliated with?",
+  "key": "whichcrewororganizationisministeroftherightaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Fish-Man Island government minister, arc-specific."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "The 'Minister of the Right' title echoes real Japanese court titles, pointing toward the only Japanese-mythology-flavored option, Ryugu Kingdom."
+  }
+ },
+ "d76e3af91a8eda1b": {
+  "casual": {
+   "knowledge_score": 88,
+   "guessable": false,
+   "reason": "Rimoshifu Killingham is an extremely obscure background noble."
+  },
+  "question": "Which crew or organization is Rimoshifu Killingham affiliated with?",
+  "key": "whichcrewororganizationisrimoshifukillinghamaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Very obscure recent-arc name."
+  },
+  "skeptic": {
+   "knowledge_score": 88,
+   "guessable": false,
+   "reason": "Rimoshifu Killingham is an extremely obscure recent-arc character."
+  }
+ },
+ "428690608e494dd9": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Marguerite is remembered from Amazon Lily, making Kuja Pirates the obvious fit."
+  },
+  "question": "Which crew or organization is Marguerite affiliated with?",
+  "key": "whichcrewororganizationismargueriteaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Amazon Lily ally who helped Luffy, fairly memorable."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Marguerite is a recognizable Kuja Pirates archer from the Amazon Lily arc."
+  }
+ },
+ "110a10c663fead71": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Babe is an obscure minor character with no strong recall cue."
+  },
+  "question": "Which crew or organization is Babe affiliated with?",
+  "key": "whichcrewororganizationisbabeaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Background Krieg Pirates crewman."
+  },
+  "skeptic": {
+   "knowledge_score": 72,
+   "guessable": false,
+   "reason": "Babe is an obscure Krieg Pirates crewmate."
+  }
+ },
+ "db36393ebe5e14be": {
+  "casual": {
+   "knowledge_score": 70,
+   "guessable": true,
+   "reason": "Figarland Shamrock is a recent, obscure reveal, though 'Knights of God' reads as the only order-like fit."
+  },
+  "question": "Which crew or organization is Figarland Shamrock affiliated with?",
+  "key": "whichcrewororganizationisfigarlandshamrockaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Recent, plot-significant but easy to have missed the name."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Figarland Shamrock is an obscure recent-flashback character."
+  }
+ },
+ "5c04f8bc9e707505": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Kokoro is a memorable Water 7 character tied to Tom's Workers."
+  },
+  "question": "Which crew or organization is Kokoro affiliated with?",
+  "key": "whichcrewororganizationiskokoroaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Water 7's eccentric mermaid old lady, fairly memorable."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Kokoro is a memorable Water 7-era mermaid caretaker."
+  }
+ },
+ "9346fb5ff2a14d2d": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Manboshi is a Ryugu prince, making Neptune Family the obvious fit."
+  },
+  "question": "Which crew or organization is Manboshi affiliated with?",
+  "key": "whichcrewororganizationismanboshiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "One of Fish-Man Island's three princes, arc-specific."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Manboshi is a minor Ryugu Kingdom royal."
+  }
+ },
+ "387f37b4cf7c096c": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Pell is a memorable Alabasta royal guard."
+  },
+  "question": "Which crew or organization is Pell affiliated with?",
+  "key": "whichcrewororganizationispellaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Iconic Arabasta guardian who sacrificed himself."
+  },
+  "skeptic": {
+   "knowledge_score": 32,
+   "guessable": false,
+   "reason": "Pell is well-remembered for his dramatic Alabasta sacrifice scene."
+  }
+ },
+ "913c9a6a525b02dc": {
+  "casual": {
+   "knowledge_score": 32,
+   "guessable": false,
+   "reason": "Chew is a recognizable Arlong Pirates member from Arlong Park."
+  },
+  "question": "Which crew or organization is Chew affiliated with?",
+  "key": "whichcrewororganizationischewaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Recognizable Arlong Pirates member."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Chew is a moderately recognizable Arlong Pirates officer."
+  }
+ },
+ "5c3ce6dbf34ac7fe": {
+  "casual": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Zambai is an obscure Alabasta rebel figure without a matching option to cue him."
+  },
+  "question": "Which crew or organization is Zambai affiliated with?",
+  "key": "whichcrewororganizationiszambaiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Water 7 dock foreman, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Zambai is a secondary Galley-La foreman, easy to forget."
+  }
+ },
+ "5f6a0119a9508663": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Kalgara is tied to the Shandia, the only option matching that Skypiea faction."
+  },
+  "question": "Which crew or organization is Kalgara affiliated with?",
+  "key": "whichcrewororganizationiskalgaraaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Shandia warrior from the Skypiea war flashback."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Kalgara is an obscure Shandia warrior."
+  }
+ },
+ "56f193dcc90e946b": {
+  "casual": {
+   "knowledge_score": 65,
+   "guessable": true,
+   "reason": "Yonta Maria Grand Fleet plausibly name-matches a Big Mom fleet commander like Shishilian."
+  },
+  "question": "Which crew or organization is Shishilian affiliated with?",
+  "key": "whichcrewororganizationisshishilianaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Obscure Big Mom fleet commander."
+  },
+  "skeptic": {
+   "knowledge_score": 82,
+   "guessable": false,
+   "reason": "Shishilian is an obscure Yonta Maria Grand Fleet captain."
+  }
+ },
+ "a1efa0e6ec4fc321": {
+  "casual": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Boo is a minor Big Mom Pirates figure with no matching option to cue him."
+  },
+  "question": "Which crew or organization is Boo affiliated with?",
+  "key": "whichcrewororganizationisbooaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Very obscure minor character."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Boo is a moderately visible Big Mom Pirates bodyguard."
+  }
+ },
+ "74e832333b4d71a0": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": false,
+   "reason": "Laboon waiting for the Rumbar Pirates is a fairly well-remembered Brook backstory beat."
+  },
+  "question": "Which crew or organization is Laboon affiliated with?",
+  "key": "whichcrewororganizationislaboonaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Whale bonded to Brook's old crew, fairly memorable."
+  },
+  "skeptic": {
+   "knowledge_score": 28,
+   "guessable": false,
+   "reason": "Laboon is an iconic whale tied to the memorable Reverse Mountain scene."
+  }
+ },
+ "db0db5a35eec6e3e": {
+  "casual": {
+   "knowledge_score": 50,
+   "guessable": true,
+   "reason": "Dosun is tied to Caesar's operation, making World Government a plausible fit."
+  },
+  "question": "Which crew or organization is Dosun affiliated with?",
+  "key": "whichcrewororganizationisdosunaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "New Fish-Man Pirates member, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 62,
+   "guessable": false,
+   "reason": "Dosun is a secondary New Fish-Man Pirates officer."
+  }
+ },
+ "c08434b67464c777": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Edward Weevil is a memorable 'surprise son' reveal tied to his own small crew."
+  },
+  "question": "Which crew or organization is Edward Weevil affiliated with?",
+  "key": "whichcrewororganizationisedwardweevilaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Claimed Whitebeard son turned Warlord, moderately notable."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Edward Weevil had a fairly memorable reveal as Whitebeard's alleged son."
+  }
+ },
+ "0e48590b954df170": {
+  "casual": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Gem is an obscure Foxy Pirates figure with no matching option to cue him."
+  },
+  "question": "Which crew or organization is Gem affiliated with?",
+  "key": "whichcrewororganizationisgemaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Gem is a lesser-known Big Mom Pirates officer."
+  }
+ },
+ "41fe0bda872a2eb4": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Nola is tied to the Shandia, the only option matching that faction."
+  },
+  "question": "Which crew or organization is Nola affiliated with?",
+  "key": "whichcrewororganizationisnolaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Skypiea's giant serpent guardian, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Nola is a fairly memorable giant snake guardian from Skypiea."
+  }
+ },
+ "d40184241c7a9e84": {
+  "casual": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Abdullah is an obscure Davy Back Fight participant with no matching option."
+  },
+  "question": "Which crew or organization is Abdullah affiliated with?",
+  "key": "whichcrewororganizationisabdullahaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Minor Corrida Colosseum tournament fighter."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Abdullah is a moderately memorable Corrida Colosseum duo member."
+  }
+ },
+ "cd9620c25b7a6650": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Gatz's Corrida Colosseum role is the only fitting option among unrelated choices."
+  },
+  "question": "Which crew or organization is Gatz affiliated with?",
+  "key": "whichcrewororganizationisgatzaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Gatz is a recognizable Colosseum announcer figure."
+  }
+ },
+ "c15099f563a4c683": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Suleiman is an obscure character with no strong recall cue."
+  },
+  "question": "Which crew or organization is Suleiman affiliated with?",
+  "key": "whichcrewororganizationissuleimanaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure minor/recent character."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Suleiman is a moderately memorable Alabasta guardian snake."
+  }
+ },
+ "26b4c20da26149e2": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Aisa is tied to the Shandia, the only option matching that Skypiea faction."
+  },
+  "question": "Which crew or organization is Aisa affiliated with?",
+  "key": "whichcrewororganizationisaisaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Young Shandia girl, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Aisa is a fairly recognizable Shandia child from Skypiea."
+  }
+ },
+ "e118bdc2fb22baca": {
+  "casual": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Surume's later affiliation is a niche detail without a matching option."
+  },
+  "question": "Which crew or organization is Surume affiliated with?",
+  "key": "whichcrewororganizationissurumeaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Giant squid pet, easy to forget its ties."
+  },
+  "skeptic": {
+   "knowledge_score": 48,
+   "guessable": false,
+   "reason": "Surume is a memorable giant squid character."
+  }
+ },
+ "754eb0bfbaf5cf0c": {
+  "casual": {
+   "knowledge_score": 65,
+   "guessable": true,
+   "reason": "Rocks Pirates is a plausible era-fit for an obscure old-timer like John."
+  },
+  "question": "Which crew or organization is John affiliated with?",
+  "key": "whichcrewororganizationisjohnaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Legendary Rocks Pirates member, obscure despite the crew's fame."
+  },
+  "skeptic": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "John is an obscure Rocks Pirates flashback member."
+  }
+ },
+ "1d3a64701fc9a2de": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Ginny is an obscure character with no strong recall cue."
+  },
+  "question": "Which crew or organization is Ginny affiliated with?",
+  "key": "whichcrewororganizationisginnyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Figure from Sabo's tragic childhood flashback."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Ginny is a moderately memorable figure from Sabo's backstory."
+  }
+ },
+ "c10be7612bff1d9b": {
+  "casual": {
+   "knowledge_score": 50,
+   "guessable": true,
+   "reason": "Fukurokuju is a Wano retainer, making Kurozumi Family the obvious domain fit."
+  },
+  "question": "Which crew or organization is Fukurokuju affiliated with?",
+  "key": "whichcrewororganizationisfukurokujuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Minor Orochi spy/subordinate in Wano."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Fukurokuju is a secondary Kurozumi subordinate, easy to forget."
+  }
+ },
+ "96610f3b778ce895": {
+  "casual": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Onimaru is a minor Kozuki retainer without a clearly matching option."
+  },
+  "question": "Which crew or organization is Onimaru affiliated with?",
+  "key": "whichcrewororganizationisonimaruaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure minor character."
+  },
+  "skeptic": {
+   "knowledge_score": 52,
+   "guessable": false,
+   "reason": "Onimaru is a fairly recognizable Mink warrior ally."
+  }
+ },
+ "3de8668bce4f591a": {
+  "casual": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Jeet is an obscure Davy Back Fight participant with no matching option."
+  },
+  "question": "Which crew or organization is Jeet affiliated with?",
+  "key": "whichcrewororganizationisjeetaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Minor Corrida Colosseum tournament fighter."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Jeet is a moderately memorable Corrida Colosseum duo member."
+  }
+ },
+ "c84a1387aaf835bd": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Marianne is an obscure character with no strong recall cue."
+  },
+  "question": "Which crew or organization is Marianne affiliated with?",
+  "key": "whichcrewororganizationismarianneaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Marianne is a secondary figure from Sabo's backstory."
+  }
+ },
+ "8ca4187f37b162bf": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "Kelly Funk is loosely tied to Kamabakka Kingdom in the memory of casual viewers."
+  },
+  "question": "Which crew or organization is Kelly Funk affiliated with?",
+  "key": "whichcrewororganizationiskellyfunkaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Funk Brothers bounty hunter, Punk Hazard-era minor character."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Kelly Funk is an obscure recent-arc bounty hunter."
+  }
+ },
+ "caf903f78a96a54e": {
+  "casual": {
+   "knowledge_score": 20,
+   "guessable": true,
+   "reason": "Coribou's name directly mirrors the Caribou Pirates option."
+  },
+  "question": "Which crew or organization is Coribou affiliated with?",
+  "key": "whichcrewororganizationiscoribouaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Name closely echoes 'Caribou Pirates,' hinting the answer."
+  },
+  "skeptic": {
+   "knowledge_score": 62,
+   "guessable": false,
+   "reason": "Coribou is a secondary character defined mainly by his brother Caribou."
+  }
+ },
+ "880151e32267911c": {
+  "casual": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Big Pan is an obscure character with no strong recall cue."
+  },
+  "question": "Which crew or organization is Big Pan affiliated with?",
+  "key": "whichcrewororganizationisbigpanaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Foxy Pirates crewmate from the Davy Back Fight arc."
+  },
+  "skeptic": {
+   "knowledge_score": 82,
+   "guessable": false,
+   "reason": "Big Pan is an obscure background character."
+  }
+ },
+ "5237f7625bc48f3c": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Mikita is an obscure character with no strong recall cue."
+  },
+  "question": "Which crew or organization is Mikita affiliated with?",
+  "key": "whichcrewororganizationismikitaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Mikita is an obscure Bellamy Pirates subordinate."
+  }
+ },
+ "9cf2e0e135a5353b": {
+  "casual": {
+   "knowledge_score": 38,
+   "guessable": true,
+   "reason": "Satori is a Skypiea priest, making God's Army the clear domain fit."
+  },
+  "question": "Which crew or organization is Satori affiliated with?",
+  "key": "whichcrewororganizationissatoriaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "One of Skypiea's four priests, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Satori is one of several similar Skypiea priests."
+  }
+ },
+ "163d18e9247a9572": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Masked Deuce's Spade Pirates tie is directly named among unrelated options."
+  },
+  "question": "Which crew or organization is Masked Deuce affiliated with?",
+  "key": "whichcrewororganizationismaskeddeuceaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Ace's Spade Pirates crewmate, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Masked Deuce is moderately memorable via his Spade Pirates/Ace tie."
+  }
+ },
+ "3688271f13db0209": {
+  "casual": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Squard's own crew name isn't offered, so casual viewers have no strong cue."
+  },
+  "question": "Which crew or organization is Squard affiliated with?",
+  "key": "whichcrewororganizationissquardaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Obscure filler-adjacent character, hard to place his crew."
+  },
+  "skeptic": {
+   "knowledge_score": 52,
+   "guessable": false,
+   "reason": "Squard is a moderately memorable pirate captain from the Impel Down/Marineford arcs."
+  }
+ },
+ "41e484d4359d9d39": {
+  "casual": {
+   "knowledge_score": 15,
+   "guessable": true,
+   "reason": "Makino running the Party's Bar is well remembered, and it's the only fitting option."
+  },
+  "question": "Which crew or organization is Makino affiliated with?",
+  "key": "whichcrewororganizationismakinoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 15,
+   "guessable": false,
+   "reason": "Iconic Windmill Village bartender, well remembered."
+  },
+  "skeptic": {
+   "knowledge_score": 22,
+   "guessable": false,
+   "reason": "Makino is an iconic, constantly-recurring Foosha Village character."
+  }
+ },
+ "5d5592d78a027e88": {
+  "casual": {
+   "knowledge_score": 50,
+   "guessable": true,
+   "reason": "Kabu is a Tontatta dwarf, making Tontatta Kingdom the obvious domain fit."
+  },
+  "question": "Which crew or organization is Kabu affiliated with?",
+  "key": "whichcrewororganizationiskabuaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Tontatta warrior from Dressrosa, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Kabu is an obscure minor character with no distinguishing clue."
+  }
+ },
+ "5b77adb8eb677ee5": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "The 'S-' naming convention flags Seraphim even without specific recall."
+  },
+  "question": "Which crew or organization is S-Snake affiliated with?",
+  "key": "whichcrewororganizationisssnakeaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "The 'S-' naming pattern signals a Seraphim unit."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": true,
+   "reason": "S-Snake's S- prefix directly matches the naming convention of the Seraphim option."
+  }
+ },
+ "b8ea3890a31b60d4": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "S-Snake is the only Seraphim-shaped name among clearly unrelated characters."
+  },
+  "question": "Which of these characters is a member of the Seraphim?",
+  "key": "whichofthesecharactersisamemberoftheseraphim",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "S-Snake's naming convention stands out from the other names."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": true,
+   "reason": "Reciprocal question: S-Snake's codename-style name is the clear giveaway for Seraphim membership."
+  }
+ },
+ "80d9755688a8c6d1": {
+  "casual": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Ganzui is an obscure Wano gang boss with no matching option."
+  },
+  "question": "Which crew or organization is Ganzui affiliated with?",
+  "key": "whichcrewororganizationisganzuiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 68,
+   "guessable": false,
+   "reason": "Ganzui is an obscure minor figure, easy to forget."
+  }
+ },
+ "52acf4da371ae80c": {
+  "casual": {
+   "knowledge_score": 82,
+   "guessable": false,
+   "reason": "Inuppe is an obscure Punk Hazard minion with no matching option."
+  },
+  "question": "Which crew or organization is Inuppe affiliated with?",
+  "key": "whichcrewororganizationisinuppeaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 80,
+   "guessable": false,
+   "reason": "Very obscure minor character."
+  },
+  "skeptic": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Inuppe is an obscure background character."
+  }
+ },
+ "06dbd058103312c5": {
+  "casual": {
+   "knowledge_score": 50,
+   "guessable": true,
+   "reason": "Tank Lepanto's name suggests Riku Family loyalism, the closest domain fit."
+  },
+  "question": "Which crew or organization is Tank Lepanto affiliated with?",
+  "key": "whichcrewororganizationistanklepantoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Riku Family general from Dressrosa's backstory."
+  },
+  "skeptic": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Tank Lepanto is a secondary Dressrosa-era retainer."
+  }
+ },
+ "559ac81a0115049c": {
+  "casual": {
+   "knowledge_score": 22,
+   "guessable": true,
+   "reason": "Nico Olvia is well remembered as an Ohara scholar, the obvious fit."
+  },
+  "question": "Which crew or organization is Nico Olvia affiliated with?",
+  "key": "whichcrewororganizationisnicoolviaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Robin's mother, central to a major flashback."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Nico Olvia is a well-known figure from Robin's backstory."
+  }
+ },
+ "e25a9b6e15d46d25": {
+  "casual": {
+   "knowledge_score": 28,
+   "guessable": false,
+   "reason": "Mr. 9 is a memorable Baroque Works duo member from Alabasta."
+  },
+  "question": "Which crew or organization is Mr. 9 affiliated with?",
+  "key": "whichcrewororganizationismr9affiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Well-known Baroque Works duo member from Arabasta."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Mr. 9 is a fairly recognizable Baroque Works duo member."
+  }
+ },
+ "27c4a7621072f2f6": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Sham is remembered from Captain Kuro's Black Cat Pirates arc."
+  },
+  "question": "Which crew or organization is Sham affiliated with?",
+  "key": "whichcrewororganizationisshamaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Kuro's Black Cat Pirates crewmate, Syrup Village arc."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Sham is a moderately recognizable Black Cat Pirates member."
+  }
+ },
+ "3e2310aa02c3c9ac": {
+  "casual": {
+   "knowledge_score": 42,
+   "guessable": false,
+   "reason": "Sarquiss is a recognizable Bellamy Pirates first mate."
+  },
+  "question": "Which crew or organization is Sarquiss affiliated with?",
+  "key": "whichcrewororganizationissarquissaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Bellamy's first mate, moderately memorable."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Sarquiss is a moderately visible Bellamy Pirates first mate."
+  }
+ },
+ "dd65e78ae63bfc8a": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": false,
+   "reason": "Buchi is remembered from Captain Kuro's Black Cat Pirates arc."
+  },
+  "question": "Which crew or organization is Buchi affiliated with?",
+  "key": "whichcrewororganizationisbuchiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Kuro's Black Cat Pirates crewmate, Syrup Village arc."
+  },
+  "skeptic": {
+   "knowledge_score": 58,
+   "guessable": false,
+   "reason": "Buchi is a moderately recognizable Black Cat Pirates twin."
+  }
+ },
+ "71ebe9f5b46fa673": {
+  "casual": {
+   "knowledge_score": 28,
+   "guessable": false,
+   "reason": "Kuroobi is a memorable Arlong Pirates officer."
+  },
+  "question": "Which crew or organization is Kuroobi affiliated with?",
+  "key": "whichcrewororganizationiskuroobiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Well-known Arlong Pirates karate fighter."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Kuroobi is a fairly memorable Arlong Pirates officer."
+  }
+ },
+ "9f90dae79a5f4b25": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Woop Slap is Foosha Village's mayor, the obvious fitting option."
+  },
+  "question": "Which crew or organization is Woop Slap affiliated with?",
+  "key": "whichcrewororganizationiswoopslapaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Foosha Village's mayor, early recognizable character."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Woop Slap is a recognizable recurring Foosha Village mayor."
+  }
+ },
+ "e3b474e87d080083": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Porche is remembered as a Foxy Pirates cheerleader, the clear fit."
+  },
+  "question": "Which crew or organization is Porche affiliated with?",
+  "key": "whichcrewororganizationisporcheaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Foxy Pirates member from the Davy Back Fight arc."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Porche is a moderately recognizable Foxy Pirates cheerleader."
+  }
+ },
+ "ad40dba340ce44d2": {
+  "casual": {
+   "knowledge_score": 58,
+   "guessable": true,
+   "reason": "Hakugan's tie to Skypiea is the only place-appropriate option offered."
+  },
+  "question": "Which crew or organization is Hakugan affiliated with?",
+  "key": "whichcrewororganizationishakuganaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Minor Skypiea-arc enforcer."
+  },
+  "skeptic": {
+   "knowledge_score": 72,
+   "guessable": false,
+   "reason": "Hakugan is an obscure secondary retainer character."
+  }
+ },
+ "7ab9f4c196092237": {
+  "casual": {
+   "knowledge_score": 55,
+   "guessable": true,
+   "reason": "The Kurozumi name strongly points to Wano Country among unrelated options."
+  },
+  "question": "Which crew or organization is Kurozumi Higurashi affiliated with?",
+  "key": "whichcrewororganizationiskurozumihigurashiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Orochi's mother from the Wano flashback."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": true,
+   "reason": "Kurozumi Higurashi's family name is a direct linguistic match to the Wano Country option, unlike the other non-Japanese-sounding choices."
+  }
+ },
+ "188582a6a4a7b75c": {
+  "casual": {
+   "knowledge_score": 48,
+   "guessable": false,
+   "reason": "Tilestone is a recognizable Water 7 figure, though Galley-La and Franky Family both plausibly fit."
+  },
+  "question": "Which crew or organization is Tilestone affiliated with?",
+  "key": "whichcrewororganizationistilestoneaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Water 7 foreman/bodyguard, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Tilestone is a recognizable Galley-La Company member."
+  }
+ },
+ "38550a4e49eaa014": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Dagama's name directly matches the Prodence Kingdom option."
+  },
+  "question": "Which crew or organization is Dagama affiliated with?",
+  "key": "whichcrewororganizationisdagamaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Caribou's obscure crewmate."
+  },
+  "skeptic": {
+   "knowledge_score": 72,
+   "guessable": false,
+   "reason": "Dagama is an obscure recent-arc character."
+  }
+ },
+ "2b3a5f36c0c20a40": {
+  "casual": {
+   "knowledge_score": 38,
+   "guessable": true,
+   "reason": "A 'Minister' title points to Ryugu Kingdom among unrelated pirate-crew options."
+  },
+  "question": "Which crew or organization is Minister of the Left affiliated with?",
+  "key": "whichcrewororganizationisministeroftheleftaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Fish-Man Island government minister, arc-specific."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "The 'Minister of the Left' title echoes Japanese court terminology, pointing to the only Japanese-mythology-flavored option, Ryugu Kingdom."
+  }
+ },
+ "6567c68fbfd9b170": {
+  "casual": {
+   "knowledge_score": 32,
+   "guessable": true,
+   "reason": "Mansherry is a memorable Tontatta princess, the obvious fit."
+  },
+  "question": "Which crew or organization is Mansherry affiliated with?",
+  "key": "whichcrewororganizationismansherryaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Tontatta healer princess, fairly memorable Dressrosa figure."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Mansherry is a fairly memorable Dressrosa-arc healer."
+  }
+ },
+ "2f48e4d02f64dd9e": {
+  "casual": {
+   "knowledge_score": 68,
+   "guessable": true,
+   "reason": "Barrels Pirates is a loosely plausible fit for an obscure figure like Goldberg."
+  },
+  "question": "Which crew or organization is Goldberg affiliated with?",
+  "key": "whichcrewororganizationisgoldbergaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 68,
+   "guessable": false,
+   "reason": "Goldberg is a minor, easily-forgotten CP9 agent."
+  }
+ },
+ "3c15ca9accb82e76": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Peepley Lulu is a Galley-La foreman, the obvious fitting option."
+  },
+  "question": "Which crew or organization is Peepley Lulu affiliated with?",
+  "key": "whichcrewororganizationispeepleyluluaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Water 7 foreman/bodyguard, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Peepley Lulu is a recognizable Galley-La foreman."
+  }
+ },
+ "0813cdb1661dbe2b": {
+  "casual": {
+   "knowledge_score": 65,
+   "guessable": true,
+   "reason": "Ragnir is a very recent Elbaf character, though the royal-family option is the closest fit."
+  },
+  "question": "Which crew or organization is Ragnir affiliated with?",
+  "key": "whichcrewororganizationisragniraffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Recent Elbaf-arc giant, low recall."
+  },
+  "skeptic": {
+   "knowledge_score": 82,
+   "guessable": false,
+   "reason": "Ragnir is an obscure very-recent-arc character."
+  }
+ },
+ "bd992fd2a06d12e0": {
+  "casual": {
+   "knowledge_score": 68,
+   "guessable": true,
+   "reason": "Human Auctioning House is a loosely plausible Sabaody-domain fit for an obscure figure."
+  },
+  "question": "Which crew or organization is Stansen affiliated with?",
+  "key": "whichcrewororganizationisstansenaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Stansen is an obscure minor giant pirate."
+  }
+ },
+ "61bbe1bb88dce06f": {
+  "casual": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Wanze is a minor Fish-Man Island chef without a matching option."
+  },
+  "question": "Which crew or organization is Wanze affiliated with?",
+  "key": "whichcrewororganizationiswanzeaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Life-return chef, notable but easy to misplace."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Wanze is a moderately recognizable chef-doctor character."
+  }
+ },
+ "d35b2848f854ee3c": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Inhel's name directly matches the Tontatta Scouting Unit option."
+  },
+  "question": "Which crew or organization is Inhel affiliated with?",
+  "key": "whichcrewororganizationisinhelaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Tontatta warrior, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Inhel is a moderately memorable Tontatta scout member."
+  }
+ },
+ "1aee1cb50fe487b1": {
+  "casual": {
+   "knowledge_score": 32,
+   "guessable": true,
+   "reason": "Carne is remembered from the Baratie arc, the obvious fitting option."
+  },
+  "question": "Which crew or organization is Carne affiliated with?",
+  "key": "whichcrewororganizationiscarneaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Sanji's fellow Baratie chef, moderately memorable."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Carne is a moderately recognizable Baratie sous chef."
+  }
+ },
+ "f3afd9d882e45781": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Charlotte Praline's Sun Pirates tie is recalled by those who watched Whole Cake Island's ending."
+  },
+  "question": "Which crew or organization is Charlotte Praline affiliated with?",
+  "key": "whichcrewororganizationischarlottepralineaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Obscure Big Mom daughter connected to the Sun Pirates."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Charlotte Praline is a moderately recognizable Big Mom daughter."
+  }
+ },
+ "9c2ada7385966277": {
+  "casual": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Kuromarimo is a minor Foxy Pirates figure without a matching option."
+  },
+  "question": "Which crew or organization is Kuromarimo affiliated with?",
+  "key": "whichcrewororganizationiskuromarimoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Obscure minor character."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Kuromarimo is a moderately recognizable Foxy Pirates officer."
+  }
+ },
+ "1825fd326691f940": {
+  "casual": {
+   "knowledge_score": 62,
+   "guessable": true,
+   "reason": "Estrid is a recent Elbaf character, though the royal-family option is the closest fit."
+  },
+  "question": "Which crew or organization is Estrid affiliated with?",
+  "key": "whichcrewororganizationisestridaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Recent Elbaf-arc figure, low recall."
+  },
+  "skeptic": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Estrid is an obscure very-recent-arc princess character."
+  }
+ },
+ "c34b82d905dcbcad": {
+  "casual": {
+   "knowledge_score": 42,
+   "guessable": true,
+   "reason": "Bomba's dwarf identity points obviously to Tontatta Kingdom."
+  },
+  "question": "Which crew or organization is Bomba affiliated with?",
+  "key": "whichcrewororganizationisbombaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Tontatta dwarf, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Bomba is a secondary Tontatta warrior."
+  }
+ },
+ "e9265f6cd339334c": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Shoujou's Saruyama Alliance tie is a classic obscure hard-tier fact with no cueing option."
+  },
+  "question": "Which crew or organization is Shoujou affiliated with?",
+  "key": "whichcrewororganizationisshoujouaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Cited by the rubric itself as a genuinely hard, obscure figure."
+  },
+  "skeptic": {
+   "knowledge_score": 58,
+   "guessable": false,
+   "reason": "Shoujou is a moderately recognizable Long Ring Long Land alliance member."
+  }
+ },
+ "bf65208587e6def6": {
+  "casual": {
+   "knowledge_score": 42,
+   "guessable": true,
+   "reason": "Capone Pez's name recalls Bege's Fire Tank Pirates, the obvious fit."
+  },
+  "question": "Which crew or organization is Capone Pez affiliated with?",
+  "key": "whichcrewororganizationiscaponepezaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Bege's son within the Fire Tank Pirates, arc-specific."
+  },
+  "skeptic": {
+   "knowledge_score": 68,
+   "guessable": false,
+   "reason": "Capone Pez is a moderately obscure recent-arc character."
+  }
+ },
+ "9d92edd7f4975c4d": {
+  "casual": {
+   "knowledge_score": 82,
+   "guessable": false,
+   "reason": "Drophy is a minor Big Mom Pirates figure without a matching option."
+  },
+  "question": "Which crew or organization is Drophy affiliated with?",
+  "key": "whichcrewororganizationisdrophyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Drophy is a secondary Rumbar Pirates crewmate."
+  }
+ },
+ "b0e312c69a9ab332": {
+  "casual": {
+   "knowledge_score": 32,
+   "guessable": true,
+   "reason": "Momoo is a recognizable Arlong Pirates member from Arlong Park."
+  },
+  "question": "Which crew or organization is Momoo affiliated with?",
+  "key": "whichcrewororganizationismomooaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Arlong's sea-cow mount, memorable to Arlong Park watchers."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Momoo is a fairly memorable Arlong Pirates sea monster."
+  }
+ },
+ "30c558540c280d1d": {
+  "casual": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "Shura is a Skypiea priest, making God's Army the clear fit."
+  },
+  "question": "Which crew or organization is Shura affiliated with?",
+  "key": "whichcrewororganizationisshuraaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "One of Skypiea's four priests, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Shura is one of several similar Skypiea priests."
+  }
+ },
+ "3fcb6f34e3d64b55": {
+  "casual": {
+   "knowledge_score": 42,
+   "guessable": true,
+   "reason": "Cotton's name directly matches the Tontatta Scouting Unit option."
+  },
+  "question": "Which crew or organization is Cotton affiliated with?",
+  "key": "whichcrewororganizationiscottonaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Tontatta warrior, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Cotton is a secondary Tontatta scout member."
+  }
+ },
+ "7e6f75ff3de8f2a2": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Chaka is a memorable Alabasta royal guard, the obvious fit."
+  },
+  "question": "Which crew or organization is Chaka affiliated with?",
+  "key": "whichcrewororganizationischakaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 25,
+   "guessable": false,
+   "reason": "Well-known Arabasta royal guard captain."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Chaka is a fairly recognizable Alabasta royal guard."
+  }
+ },
+ "140c8dec2de2cdfb": {
+  "casual": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Indigo is obscure and the Golden Lion Pirates option isn't a strong cue for casual viewers."
+  },
+  "question": "Which crew or organization is Indigo affiliated with?",
+  "key": "whichcrewororganizationisindigoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure movie/side-content character."
+  },
+  "skeptic": {
+   "knowledge_score": 70,
+   "guessable": false,
+   "reason": "Indigo is an obscure Golden Lion Pirates member."
+  }
+ },
+ "dc5d740bcfbb5583": {
+  "casual": {
+   "knowledge_score": 62,
+   "guessable": true,
+   "reason": "Usakkov's rabbit-like name loosely suggests the Newkama Land option."
+  },
+  "question": "Which crew or organization is Usakkov affiliated with?",
+  "key": "whichcrewororganizationisusakkovaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Minor Impel Down okama follower of Ivankov."
+  },
+  "skeptic": {
+   "knowledge_score": 72,
+   "guessable": false,
+   "reason": "Usakkov is an obscure Newkama Land associate."
+  }
+ },
+ "238bf4de51b52d87": {
+  "casual": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Bobby Funk is a minor Wano-adjacent figure without a matching option."
+  },
+  "question": "Which crew or organization is Bobby Funk affiliated with?",
+  "key": "whichcrewororganizationisbobbyfunkaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Funk Brothers bounty hunter, Punk Hazard-era minor character."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Bobby Funk is an obscure recent-arc bounty hunter."
+  }
+ },
+ "edba81d1b27e49df": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "The 'S-' naming convention flags Seraphim even without specific recall."
+  },
+  "question": "Which crew or organization is S-Hawk affiliated with?",
+  "key": "whichcrewororganizationisshawkaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "The 'S-' naming pattern signals a Seraphim unit."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": true,
+   "reason": "S-Hawk's S- prefix directly matches the naming convention of the Seraphim option."
+  }
+ },
+ "8cf7a49a1e0d3ab5": {
+  "casual": {
+   "knowledge_score": 42,
+   "guessable": true,
+   "reason": "Wicca's name directly matches the Tontatta Scouting Unit option."
+  },
+  "question": "Which crew or organization is Wicca affiliated with?",
+  "key": "whichcrewororganizationiswiccaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Tontatta dwarf, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Wicca is a fairly memorable young Tontatta scout member."
+  }
+ },
+ "2b7a9c14cf443efe": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Sadi is remembered as an Impel Down warden, the obvious fit."
+  },
+  "question": "Which crew or organization is Sadi affiliated with?",
+  "key": "whichcrewororganizationissadiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Impel Down's sadistic chief guard, fairly memorable."
+  },
+  "skeptic": {
+   "knowledge_score": 50,
+   "guessable": false,
+   "reason": "Sadi is a fairly memorable Impel Down warden."
+  }
+ },
+ "fb5f8f83e9a32966": {
+  "casual": {
+   "knowledge_score": 65,
+   "guessable": true,
+   "reason": "Bian's dwarf-sounding name loosely suggests the Tontatta Kingdom option."
+  },
+  "question": "Which crew or organization is Bian affiliated with?",
+  "key": "whichcrewororganizationisbianaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Bluejam Pirates member from the Goa Kingdom flashback."
+  },
+  "skeptic": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Bian is an obscure minor character."
+  }
+ },
+ "c01945746db0a51d": {
+  "casual": {
+   "knowledge_score": 45,
+   "guessable": true,
+   "reason": "Ripley's name directly matches the Walrus School option."
+  },
+  "question": "Which crew or organization is Ripley affiliated with?",
+  "key": "whichcrewororganizationisripleyaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 68,
+   "guessable": false,
+   "reason": "Ripley is a secondary Fish-Man Island caretaker figure."
+  }
+ },
+ "7e02eca26e650e55": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "The 'S-' naming convention flags Seraphim even without specific recall."
+  },
+  "question": "Which crew or organization is S-Bear affiliated with?",
+  "key": "whichcrewororganizationissbearaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "The 'S-' naming pattern signals a Seraphim unit."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": true,
+   "reason": "S-Bear's S- prefix directly matches the naming convention of the Seraphim option."
+  }
+ },
+ "0dd12c2830198f7c": {
+  "casual": {
+   "knowledge_score": 42,
+   "guessable": true,
+   "reason": "Bobomba is remembered as the Tontatta king, the obvious fit."
+  },
+  "question": "Which crew or organization is Bobomba affiliated with?",
+  "key": "whichcrewororganizationisbobombaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Tontatta queen, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Bobomba is a secondary Tontatta warrior."
+  }
+ },
+ "8633db4ec3a94e40": {
+  "casual": {
+   "knowledge_score": 30,
+   "guessable": true,
+   "reason": "Miss Monday is a memorable Baroque Works agent, the obvious fit."
+  },
+  "question": "Which crew or organization is Miss Monday affiliated with?",
+  "key": "whichcrewororganizationismissmondayaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Recognizable early Baroque Works agent."
+  },
+  "skeptic": {
+   "knowledge_score": 45,
+   "guessable": false,
+   "reason": "Miss Monday is a fairly recognizable Baroque Works member."
+  }
+ },
+ "0c7eb5e99308b29a": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "The 'Spand-' name echoes CP9's Spandam, nudging toward that option."
+  },
+  "question": "Which crew or organization is Spandine affiliated with?",
+  "key": "whichcrewororganizationisspandineaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "World Government official overseeing CP9, arc-specific."
+  },
+  "skeptic": {
+   "knowledge_score": 62,
+   "guessable": false,
+   "reason": "Spandine is a minor, easily-forgotten CP9 director."
+  }
+ },
+ "e5b5d3f0de416f2f": {
+  "casual": {
+   "knowledge_score": 25,
+   "guessable": true,
+   "reason": "Megalo is a memorable Fish-Man Island pet, and Ryugu Kingdom is the domain fit."
+  },
+  "question": "Which crew or organization is Megalo affiliated with?",
+  "key": "whichcrewororganizationismegaloaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 30,
+   "guessable": false,
+   "reason": "Shirahoshi's pet shark, well remembered from Fish-Man Island."
+  },
+  "skeptic": {
+   "knowledge_score": 40,
+   "guessable": false,
+   "reason": "Megalo is a well-known pet shark closely tied to Shirahoshi."
+  }
+ },
+ "8d930bdcb7c8e154": {
+  "casual": {
+   "knowledge_score": 60,
+   "guessable": true,
+   "reason": "The 'S-' naming convention flags Seraphim even without specific recall."
+  },
+  "question": "Which crew or organization is S-Shark affiliated with?",
+  "key": "whichcrewororganizationisssharkaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 35,
+   "guessable": true,
+   "reason": "The 'S-' naming pattern signals a Seraphim unit."
+  },
+  "skeptic": {
+   "knowledge_score": 80,
+   "guessable": true,
+   "reason": "S-Shark's S- prefix directly matches the naming convention of the Seraphim option."
+  }
+ },
+ "fde4fd88ca0b2110": {
+  "casual": {
+   "knowledge_score": 48,
+   "guessable": true,
+   "reason": "Komachiyo's Wano-alliance ties loosely fit the Ninja-Pirate-Mink-Samurai Alliance option."
+  },
+  "question": "Which crew or organization is Komachiyo affiliated with?",
+  "key": "whichcrewororganizationiskomachiyoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Minor Wano pet/companion, easy to forget its ties."
+  },
+  "skeptic": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Komachiyo is a moderately memorable pet companion character."
+  }
+ },
+ "bdcfe42313978b24": {
+  "casual": {
+   "knowledge_score": 82,
+   "guessable": false,
+   "reason": "Raki is a minor Wano civilian without a matching option."
+  },
+  "question": "Which crew or organization is Raki affiliated with?",
+  "key": "whichcrewororganizationisrakiaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Minor Shandia child from the Skypiea flashback."
+  },
+  "skeptic": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Raki is a secondary Shandia child character."
+  }
+ },
+ "24f4f9e714db1d9d": {
+  "casual": {
+   "knowledge_score": 82,
+   "guessable": false,
+   "reason": "Seto is an obscure character without a matching option."
+  },
+  "question": "Which crew or organization is Seto affiliated with?",
+  "key": "whichcrewororganizationissetoaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 75,
+   "guessable": false,
+   "reason": "Obscure background character."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Seto is a moderately obscure minor character."
+  }
+ },
+ "50ca29af69d487dd": {
+  "casual": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Nero is obscure, and two similar CP options split any guess."
+  },
+  "question": "Which crew or organization is Nero affiliated with?",
+  "key": "whichcrewororganizationisneroaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 65,
+   "guessable": false,
+   "reason": "Background Cipher Pol agent, low recall."
+  },
+  "skeptic": {
+   "knowledge_score": 62,
+   "guessable": false,
+   "reason": "Nero is a minor, easily-forgotten CP agent."
+  }
+ },
+ "1a3db43eb9dab73f": {
+  "casual": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Chess is a minor Big Mom Pirates figure without a matching option."
+  },
+  "question": "Which crew or organization is Chess affiliated with?",
+  "key": "whichcrewororganizationischessaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Foxy Pirates chess-themed crewmate."
+  },
+  "skeptic": {
+   "knowledge_score": 60,
+   "guessable": false,
+   "reason": "Chess is a secondary minor pirate crewmate."
+  }
+ },
+ "e8b462ebede9939c": {
+  "casual": {
+   "knowledge_score": 40,
+   "guessable": true,
+   "reason": "Gambia's name directly matches the Barto Club option."
+  },
+  "question": "Which crew or organization is Gambia affiliated with?",
+  "key": "whichcrewororganizationisgambiaaffiliatedwith",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Bartolomeo's Barto Club crewmate, arc-specific recall."
+  },
+  "skeptic": {
+   "knowledge_score": 62,
+   "guessable": false,
+   "reason": "Gambia is a moderately obscure Barto Club member."
+  }
  }
 }
