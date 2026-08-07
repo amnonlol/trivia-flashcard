@@ -4048,28 +4048,6 @@
   "sagaOrder": 2
  },
  {
-  "category": "Characters",
-  "type": "multiple",
-  "difficulty": "medium",
-  "question": "By what fiery epithet is Ace, the Whitebeard commander who appears in Alabasta, known?",
-  "correct_answer": "Fire Fist",
-  "incorrect_answers": [
-   "Iron Fist",
-   "Red-Leg",
-   "Diamond"
-  ],
-  "options": [
-   "Iron Fist",
-   "Fire Fist",
-   "Red-Leg",
-   "Diamond"
-  ],
-  "source": "https://onepiece.fandom.com/wiki/Portgas_D._Ace",
-  "explainer": "Portgas D. Ace is known as 'Fire Fist' Ace for his flame powers from the Mera Mera no Mi.",
-  "saga": "Alabasta",
-  "sagaOrder": 2
- },
- {
   "category": "Devil Fruits",
   "type": "multiple",
   "difficulty": "medium",
@@ -6134,28 +6112,6 @@
   ],
   "source": "https://onepiece.fandom.com/wiki/Birka",
   "explainer": "Enel came from the sky island of Birka, which he wiped out before taking over Skypiea.",
-  "saga": "Sky Island",
-  "sagaOrder": 3
- },
- {
-  "category": "Characters",
-  "type": "multiple",
-  "difficulty": "medium",
-  "question": "The captain of the Foxy Pirates, who challenged the Straw Hats to a Davy Back Fight, carried what epithet?",
-  "correct_answer": "Silver Fox",
-  "incorrect_answers": [
-   "Hyena",
-   "Red-Haired",
-   "Iron Mace"
-  ],
-  "options": [
-   "Hyena",
-   "Silver Fox",
-   "Red-Haired",
-   "Iron Mace"
-  ],
-  "source": "https://onepiece.fandom.com/wiki/Foxy",
-  "explainer": "Foxy the Silver Fox led the Foxy Pirates and dueled Luffy in the Davy Back Fight.",
   "saga": "Sky Island",
   "sagaOrder": 3
  },
@@ -8978,28 +8934,6 @@
  {
   "category": "Characters",
   "type": "multiple",
-  "difficulty": "medium",
-  "question": "The gray-haired coating mechanic the Straw Hats met on Sabaody turned out to be a living legend of the previous era. By what nickname is Silvers Rayleigh known?",
-  "correct_answer": "The Dark King",
-  "incorrect_answers": [
-   "The Red-Haired",
-   "The Fire Fist",
-   "The Heavenly Yaksha"
-  ],
-  "options": [
-   "The Red-Haired",
-   "The Dark King",
-   "The Fire Fist",
-   "The Heavenly Yaksha"
-  ],
-  "source": "https://onepiece.fandom.com/wiki/Silvers_Rayleigh",
-  "explainer": "Silvers Rayleigh, former first mate of the Roger Pirates, is known as the 'Dark King' and worked as a ship coater on Sabaody.",
-  "saga": "Summit War",
-  "sagaOrder": 6
- },
- {
-  "category": "Characters",
-  "type": "multiple",
   "difficulty": "hard",
   "question": "On Sabaody Archipelago the Straw Hats were pointed toward a coating mechanic by a laid-back bar owner and former pirate. What was the name of her establishment?",
   "correct_answer": "Shakky's Rip-off Bar",
@@ -11244,28 +11178,6 @@
  {
   "category": "Characters",
   "type": "multiple",
-  "difficulty": "medium",
-  "question": "The Marine admirals each carried a nickname combining a color and an animal. Which epithet belonged to the fiercely ruthless admiral Akainu?",
-  "correct_answer": "Red Dog",
-  "incorrect_answers": [
-   "Blue Pheasant",
-   "Yellow Monkey",
-   "Green Bull"
-  ],
-  "options": [
-   "Red Dog",
-   "Blue Pheasant",
-   "Yellow Monkey",
-   "Green Bull"
-  ],
-  "source": "https://onepiece.fandom.com/wiki/Sakazuki",
-  "explainer": "Akainu's epithet is the 'Red Dog', following the color-and-animal naming shared by the Marine admirals.",
-  "saga": "Summit War",
-  "sagaOrder": 6
- },
- {
-  "category": "Characters",
-  "type": "multiple",
   "difficulty": "hard",
   "question": "Alongside Sengoku stood an elderly female vice admiral and strategist known as the 'Great Staff Officer' of the Marines. Who was she?",
   "correct_answer": "Tsuru",
@@ -12624,28 +12536,6 @@
   ],
   "source": "https://onepiece.fandom.com/wiki/Bellamy",
   "explainer": "Bellamy, who humiliated Luffy in Jaya, returns as a devoted follower of Doflamingo.",
-  "saga": "Dressrosa",
-  "sagaOrder": 8
- },
- {
-  "category": "Characters",
-  "type": "multiple",
-  "difficulty": "medium",
-  "question": "A newly appointed Marine admiral who is blind and settles decisions with a roll of dice arrives to confront Doflamingo. What is his epithet?",
-  "correct_answer": "Fujitora",
-  "incorrect_answers": [
-   "Kizaru",
-   "Aokiji",
-   "Ryokugyu"
-  ],
-  "options": [
-   "Kizaru",
-   "Fujitora",
-   "Aokiji",
-   "Ryokugyu"
-  ],
-  "source": "https://onepiece.fandom.com/wiki/Issho",
-  "explainer": "Admiral Fujitora, the blind swordsman who relies on dice, comes to Dressrosa.",
   "saga": "Dressrosa",
   "sagaOrder": 8
  },
@@ -15000,28 +14890,6 @@
   ],
   "source": "https://onepiece.fandom.com/wiki/Charlotte_Praline",
   "explainer": "Charlotte Praline is a mermaid and the wife of Aladine, formerly of the Sun Pirates.",
-  "saga": "Whole Cake Island",
-  "sagaOrder": 9
- },
- {
-  "category": "Characters",
-  "type": "multiple",
-  "difficulty": "medium",
-  "question": "Sanji's only sister among the Vinsmoke siblings, who can neutralize poisons within her own body, carries which fighting epithet?",
-  "correct_answer": "Poison Pink",
-  "incorrect_answers": [
-   "Sparking Red",
-   "Electric Blue",
-   "Winch Green"
-  ],
-  "options": [
-   "Poison Pink",
-   "Sparking Red",
-   "Electric Blue",
-   "Winch Green"
-  ],
-  "source": "https://onepiece.fandom.com/wiki/Vinsmoke_Reiju",
-  "explainer": "Vinsmoke Reiju fights as 'Poison Pink' of Germa 66 and can absorb poison.",
   "saga": "Whole Cake Island",
   "sagaOrder": 9
  },
@@ -19340,28 +19208,6 @@
  {
   "category": "Crews & Organizations",
   "type": "multiple",
-  "difficulty": "medium",
-  "question": "Kaido, one of the Four Emperors, is famed throughout the world by what epithet?",
-  "correct_answer": "the Strongest Creature in the World",
-  "incorrect_answers": [
-   "the World's Greatest Swordsman",
-   "the King of the Pirates",
-   "the Hero of the Marines"
-  ],
-  "options": [
-   "the World's Greatest Swordsman",
-   "the Strongest Creature in the World",
-   "the King of the Pirates",
-   "the Hero of the Marines"
-  ],
-  "source": "https://onepiece.fandom.com/wiki/Kaidou",
-  "explainer": "Kaido is called the Strongest Creature in the World, reputed to be the toughest being alive on land, sea, or air.",
-  "saga": "Dressrosa",
-  "sagaOrder": 8
- },
- {
-  "category": "Crews & Organizations",
-  "type": "multiple",
   "difficulty": "hard",
   "question": "Following the events of Wano, which two rookies were newly recognized as Emperors of the Sea?",
   "correct_answer": "Monkey D. Luffy and Buggy",
@@ -20634,28 +20480,6 @@
   "explainer": "Gol D. Roger became known as the Pirate King, the only man to conquer the Grand Line and reach Laugh Tale.",
   "saga": "East Blue",
   "sagaOrder": 1
- },
- {
-  "category": "Characters",
-  "type": "multiple",
-  "difficulty": "medium",
-  "question": "Roger's first mate, who now coats ships at Sabaody, carries what epithet?",
-  "correct_answer": "the Dark King",
-  "incorrect_answers": [
-   "the Red-Haired",
-   "the Strongest Creature",
-   "the Hero of the Marines"
-  ],
-  "options": [
-   "the Red-Haired",
-   "the Dark King",
-   "the Strongest Creature",
-   "the Hero of the Marines"
-  ],
-  "source": "https://onepiece.fandom.com/wiki/Silvers_Rayleigh",
-  "explainer": "Silvers Rayleigh, right-hand man of the Pirate King, is known as the Dark King and works as a coating mechanic on Sabaody.",
-  "saga": "Summit War",
-  "sagaOrder": 6
  },
  {
   "category": "Crews & Organizations",

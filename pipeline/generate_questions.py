@@ -270,82 +270,6 @@ def bounty_amount(v) -> int | None:
     return int(digits) if digits.isdigit() else None
 
 
-_NIHONGO = re.compile(r"\{\{Nihongo\|([^|}]*)")
-_QUOTES = re.compile(r'["“”]')          # any double-quote mark (also mid-string)
-# Dub-only variants ("Sky Punk (4Kids...)", "...in the edited dub"). Whole *list
-# items* that are purely a dub note are skipped in favour of the canon epithet.
-_DUB_NOTE = re.compile(r"4Kids|Funimation|\bVIZ\b|edited dub|English version|subs",
-                       re.IGNORECASE)
-
-
-def clean_epithet(v) -> str | None:
-    """Extract a clean display epithet from the ``epithet`` field.
-
-    Epithets are iconic ("Pirate Hunter", "Cat Burglar", "Fire Fist"). The parser
-    resolves the wiki's ``{{Nihongo|...}}`` wrapper to a plain string ahead of us,
-    so the field arrives as a quoted string or a list of them
-    (``'"Chaser"'``, ``['"Sengoku the Buddha"', '"The Resourceful General"']``).
-    We take the first canon entry, drop parenthetical dub/translation notes and the
-    surrounding quotes, and skip list items that are *only* a dub variant so a
-    character keeps their real epithet rather than a 4Kids rename.
-    """
-    for item in as_list(v):
-        s = str(item)
-        m = _NIHONGO.search(s)          # tolerate a still-wrapped value, just in case
-        if m:
-            s = m.group(1)
-        if _DUB_NOTE.search(s) and "(" not in s:
-            continue                    # a bare dub-only alt; prefer the next entry
-        e = _QUOTES.sub("", strip_quals(s.split(";")[0])).strip(" ;,.")
-        if e and len(e) > 2 and "{{" not in e and e.lower() not in (
-                "former", "formerly", "n/a", "none", "unknown"):
-            return e
-    return None
-
-
-# Connectives left dangling once a name is cut out of an epithet. A leading
-# "the" is dropped ("Buggy the Clown" -> "Clown") but a leading "of" is kept —
-# "Kaidou of the Beasts" reads as an epithet at "of the Beasts" and as a stray
-# noun at "Beasts".
-_CONNECTOR = re.compile(r"(?i)^(?:the|and)\s+|\s+(?:the|of|and)$")
-
-# What's left of "Sir Crocodile" or "Captain John" once the name goes is a form of
-# address, not an epithet — it describes nobody in particular, so those characters
-# get no epithet question rather than one answered "Sir".
-_HONORIFIC = {"sir", "don", "madam", "madame", "master", "captain", "doctor",
-              "baron", "duke", "lady", "miss", "mister", "mr"}
-
-
-def strip_own_name(value: str, name: str) -> str | None:
-    """Cut the subject's own name out of one of their values.
-
-    Half the wiki's epithets embed the character's name — "Straw Hat Luffy",
-    "Pirate Hunter Zoro", "Sengoku the Buddha". Asked as "By what epithet is Zoro
-    known?" the name is the answer key, so we ship the name-free form the epithet
-    is actually quoted by ("Straw Hat", "Pirate Hunter", "Buddha") — for the
-    distractor pool too, so no option stands out by *lacking* a name either.
-
-    Returns None when what's left says nothing about the character: an "epithet"
-    that was only their name, or only an honorific (see ``_HONORIFIC``).
-    """
-    out = str(value)
-    for token in re.findall(r"[A-Za-z]+", str(name)):
-        if len(token) >= 3:
-            out = re.sub(rf"(?i)\b{re.escape(token)}\b", " ", out)
-    out = re.sub(r"\s+", " ", out).strip(" -,")
-    out = _CONNECTOR.sub("", out).strip(" -,")
-    if not out or norm_key(out) in _HONORIFIC:
-        return None
-    return out
-
-
-def display_epithet(rec: dict) -> str | None:
-    """The epithet a question should show: cleaned, then stripped of the owner's
-    own name (see ``strip_own_name``). Used for both answers and the pool."""
-    raw = clean_epithet(rec["fields"].get("epithet"))
-    return strip_own_name(raw, rec["title"]) if raw else None
-
-
 # A residence clause the wiki marks as history rather than a current home. The
 # field is a *timeline* — Diamante's reads "Downs (former); Spider Miles (former);
 # Dressrosa (former)" — so taking the first entry answered "Where does Diamante
@@ -404,7 +328,7 @@ def prominence(title: str, article_len: int) -> int:
 def difficulty(prom: int, depth: int) -> str:
     """Difficulty from subject prominence and template depth.
 
-    ``depth`` is 0 for a headline fact (Devil Fruit, crew, bounty, epithet) and 1
+    ``depth`` is 0 for a headline fact (Devil Fruit, crew, bounty) and 1
     for a deep cut (residence, region, translation). A deep cut is one tier harder
     than a headline fact about the same subject, so "Luffy's Devil Fruit" is easy
     while "Luffy's residence" is medium.
@@ -541,8 +465,9 @@ def norm_key(s: str) -> str:
 # Answer leaks
 # --------------------------------------------------------------------------- #
 # A question leaks when the answer echoes something the question already said:
-# "By what epithet is Buggy known?" -> "Buggy the Clown", "Which crew is Eustass
-# Kid affiliated with?" -> "Kid Pirates". Nobody has to know One Piece to pick the
+# "Which crew is Eustass Kid affiliated with?" -> "Kid Pirates", "Which Devil Fruit
+# did Koshi Falcon eat?" -> "Peregrine Falcon SMILE". Nobody has to know One Piece
+# to pick the
 # only option carrying the subject's own name, so the question grades recall of
 # nothing. Every template passes the entity it names (``leak_ref``) to
 # make_question, which prefers distractors carrying the same cue and drops the
@@ -654,7 +579,7 @@ def make_question(subject_seed, question, correct, pool, rng_master,
         return None
     rng = random.Random(f"{SEED}:{subject_seed}:{question}")
     # ``leak_ref`` is the entity the question names (the subject, or the crew /
-    # epithet / fruit it asks about when the *answer* is the subject).
+    # bounty / fruit it asks about when the *answer* is the subject).
     leaks = leaked(leak_ref, correct) if leak_ref else set()
     distractors = sample_distractors(correct, pool, rng, ctx_tier=ctx_tier,
                                      ctx_saga=ctx_saga, leaks=leaks)
@@ -772,10 +697,9 @@ def generate(by_kind):
     pool_df_user = build_pool(fruits, lambda fr: clean_name(fr["fields"].get("user")))
     pool_region = build_pool(locs, lambda l: primary(l["fields"].get("region")))
     pool_residence = build_pool(chars, lambda c: current_residence(c["fields"].get("residence")))
-    pool_epithet = build_pool(chars, display_epithet)
 
     # Character-name pool: the distractor source for the reverse/relational templates
-    # whose *answer is a character* (reverse-epithet, crew membership, bounty ranking).
+    # whose *answer is a character* (crew membership, reverse bounty).
     pool_name = build_pool(chars, lambda c: c["title"])
     pool_saga = saga_pool()
 
@@ -796,16 +720,6 @@ def generate(by_kind):
     )
     pool_origin = [p for p in pool_origin
                    if origin_freq[norm_key(p["v"])] >= MIN_ORIGIN_FREQ]
-
-    # Stripping the owner's name off an epithet (see strip_own_name) leaves a few
-    # characters sharing one generic remainder — "Captain" is both Kid's and John's,
-    # "Don" belongs to four. The forward question is still fine (each of them really
-    # does carry it), but asking it in reverse would have several right answers, one
-    # of which can be sitting in the options as a "wrong" one. Only ask the reverse
-    # for an epithet exactly one character carries.
-    epithet_owners = Counter(
-        norm_key(display_epithet(c)) for c in chars if display_epithet(c)
-    )
 
     region_freq = Counter(
         norm_key(primary(l["fields"].get("region")))
@@ -953,31 +867,6 @@ def generate(by_kind):
                 lead(f"{name} resides in {residence}", exp),
                 ctx_tier=prom, ctx_saga=so, leak_ref=name),
                 "char_residence", prom, saga)
-
-        # Epithets are asked in their name-free form (see strip_own_name); the
-        # explainer keeps the full canonical version for context.
-        raw_epithet = clean_epithet(f.get("epithet"))
-        epithet = strip_own_name(raw_epithet, name) if raw_epithet else None
-        if epithet:
-            emit(name, make_question(
-                name, f"By what epithet is {name} known?", epithet, pool_epithet,
-                rng, "Characters", difficulty(prom, 0), src,
-                lead(f'{name} is known as "{raw_epithet}"', exp),
-                ctx_tier=prom, ctx_saga=so, leak_ref=name), "char_epithet", prom, saga)
-
-        # Reverse-epithet: the same fact asked the other way. Iconic and only worth
-        # asking for recognisable subjects, so gate on prominence. Distractors are
-        # other characters, bounded to the subject's debut saga so a later-arc name
-        # can't leak as a wrong answer. Epithets more than one character carries are
-        # skipped in this direction (see epithet_owners).
-        if epithet and prom >= 1 and epithet_owners[norm_key(epithet)] == 1:
-            emit(name, make_question(
-                name, f"Which character is known by the epithet \"{epithet}\"?",
-                name, within_saga(pool_name, so), rng, "Characters",
-                difficulty(prom, 0), src,
-                lead(f'"{raw_epithet}" is the epithet of {name}', exp),
-                ctx_tier=prom, ctx_saga=so, leak_ref=epithet),
-                "epithet_reverse", prom, saga)
 
         # Crew membership (relational): "which of these is a member of X?". Answer is
         # the subject; distractors are characters who are *not* in that crew (checked

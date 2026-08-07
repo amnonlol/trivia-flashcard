@@ -70944,5 +70944,100 @@
    "guessable": false,
    "reason": "Gambia is a moderately obscure Barto Club member."
   }
+ },
+ "b08d358b9927b87d": {
+  "casual": {
+   "knowledge_score": 70,
+   "guessable": true,
+   "reason": "Casual fans rarely know the exact saga, but Final Saga and Wano are obviously too late for Blackbeard's debut, leaving a coin flip."
+  },
+  "question": "In which saga does Marshall D. Teach first appear?",
+  "key": "inwhichsagadoesmarshalldteachfirstappear",
+  "completionist": {
+   "knowledge_score": 55,
+   "guessable": false,
+   "reason": "Blackbeard's Mock Town intro in Jaya is a memorable scene but tying it to the 'Sky Island' saga label over East Blue takes real recall."
+  },
+  "skeptic": {
+   "knowledge_score": 58,
+   "guessable": false,
+   "reason": "All four options are legitimate, same-domain saga names with no structural tell pointing to one."
+  }
+ },
+ "cfee46afb45b17f1": {
+  "casual": {
+   "knowledge_score": 92,
+   "guessable": false,
+   "reason": "Exact bounty figures for minor pirates like Orlumbus, Gin, and Chew are not something a lapsed watcher retains."
+  },
+  "question": "Which character has a known bounty of 148,000,000 Berries?",
+  "key": "whichcharacterhasaknownbountyof148000000berries",
+  "completionist": {
+   "knowledge_score": 88,
+   "guessable": false,
+   "reason": "Matching an exact bounty figure to one of several deep-cut minor pirates (Orlumbus, Gin, Chew) is pure look-up trivia."
+  },
+  "skeptic": {
+   "knowledge_score": 78,
+   "guessable": false,
+   "reason": "Exact bounty figure for a minor character against three equally minor names with no giveaway."
+  }
+ },
+ "3c81d612712cdddf": {
+  "casual": {
+   "knowledge_score": 88,
+   "guessable": true,
+   "reason": "Three options read as a matched set of Skypiea priests, making the odd name out feel like the intended answer even without knowing the island."
+  },
+  "question": "Which of these characters is a member of the Ukkari Hot-Spring Island?",
+  "key": "whichofthesecharactersisamemberoftheukkarihotspringisland",
+  "completionist": {
+   "knowledge_score": 78,
+   "guessable": true,
+   "reason": "Nezumi is a lone East Blue Marine dropped among three Skypiea priests, a cross-domain tell that narrows the real guess to the trio."
+  },
+  "skeptic": {
+   "knowledge_score": 68,
+   "guessable": true,
+   "reason": "Three options (Ohm, Gedatsu, Satori) are a known matched trio from Sky Island while Nezumi is an unrelated outlier, so the odd one out is spottable without knowing the fact."
+  }
+ },
+ "88607b78ee52a635": {
+  "casual": {
+   "knowledge_score": 93,
+   "guessable": false,
+   "reason": "All four names are obscure minor pirates with no memorable bounty association for a casual viewer."
+  },
+  "question": "Which character has a known bounty of 29,000,000 Berries?",
+  "key": "whichcharacterhasaknownbountyof29000000berries",
+  "completionist": {
+   "knowledge_score": 90,
+   "guessable": false,
+   "reason": "Drophy, Gem, Marianne and Babe are all obscure enough that nobody retains their exact bounty figures unprompted."
+  },
+  "skeptic": {
+   "knowledge_score": 76,
+   "guessable": false,
+   "reason": "Exact bounty figure among four similarly obscure names with no distinguishing pattern."
+  }
+ },
+ "866273abc70b11fe": {
+  "casual": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Kuroobi has faint recognition from Arlong's crew but the precise bounty figure and the other three names are unknown to casual fans."
+  },
+  "question": "Which character has a known bounty of 7,500,000 Berries?",
+  "key": "whichcharacterhasaknownbountyof7500000berries",
+  "completionist": {
+   "knowledge_score": 85,
+   "guessable": false,
+   "reason": "Even recognizing Kuroobi as a known fishman doesn't help recall his precise bounty against equally obscure names."
+  },
+  "skeptic": {
+   "knowledge_score": 74,
+   "guessable": false,
+   "reason": "Exact bounty figure; Kuroobi is marginally more recognizable than the others but no option is structurally invented or off-domain."
+  }
  }
 }
